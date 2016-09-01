@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>AIDA</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../css/layout-default.css" rel="stylesheet"> -->
+    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="../css/layout-setup.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </script>
+  </head>
+  <body ms-controller="table-columns" class="ms-controller">
+      <div class="ui-layout-center">
+        <!-- 中间栏 -->
+        <!-- 上部菜单栏-->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul id="right-menu" class="menu nav navbar-nav">
+                <!-- <li><a href="#"><span class="sr-only">(current)</span></a></li> -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Entites & Sentences<span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entites </a></li>
+                    <li><a href="#">Sentences</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Knowledge triplet</a></li>
+                <li><a href="#">Generate kg</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!-- 文章选项卡 -->
+        <div class="container-fluid">
+          <button id="addTab" type="button" name="button">add tab</button>
+          <div class="panel panel-default">
+            <ul id="right-tabs" class="nav nav-tabs">
+              <li role="presentation" id="home-tab" class="active"><a href="#">Home</a></li>
+            </ul>
+            <div class="content-tab panel-body">
+              Basic panel example
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hide-tab-0" class="bottom-hide-tabs">
+        <div class="tabs-handle">
+          <p>Examples</p>
+        </div>
+        <div class="bottom-hide-tabs-container">
+
+        </div>
+      </div>
+      <div id="hide-tab-1" class="bottom-hide-tabs">
+        <div class="tabs-handle">
+          <p>Keyword</p>
+        </div>
+        <!-- 下部keywords可隐藏式选项卡 -->
+        <div class="bottom-hide-tabs-container">
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <!-- <th ms-for="(key,el) in @head" ms-attr="{id:@head[key].groupId}">{{el.title}}</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <td>
+                  <label ms-for="(key,el) in @keywords_1" onselectstart="return false" ms-attr="{for:@keywords_1[key]}"><input  type="checkbox" ms-duplex="@selected.column1" ms-attr="{id:@keywords_1[key],value:@keywords_1[key],class:'keywords_1'}">{{el}}</label>
+                  <div>{{@selected.column1}}</div>
+                </td>
+                <td>
+                  <label ms-for="(key,el) in @keywords_2" onselectstart="return false" ms-attr="{for:@keywords_2[key]}"><input  type="checkbox" ms-duplex="@selected.column2" ms-attr="{id:@keywords_2[key],value:@keywords_2[key],class:'keywords_2'}">{{el}}</label>
+                  <div>{{@selected.column2}}</div>
+                </td>
+                <td>
+                  <label ms-for="(key,el) in @keywords_3" onselectstart="return false" ms-attr="{for:@keywords_3[key]}"><input  type="checkbox" ms-duplex="@selected.column3" ms-attr="{id:@keywords_3[key],value:@keywords_3[key],class:'keywords_3'}">{{el}}</label>
+                  <div>{{@selected.column3}}</div>
+                </td>
+                <td>
+                  <label ms-for="(key,el) in @keywords_4" onselectstart="return false" ms-attr="{for:@keywords_4[key]}"><input  type="checkbox" ms-duplex="@selected.column4" ms-attr="{id:@keywords_4[key],value:@keywords_4[key],class:'keywords_4'}">{{el}}</label>
+                  <div>{{@selected.column4}}</div>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="hide-tab-2" class="bottom-hide-tabs">
+          <div class="tabs-handle">
+            <p>Charts</p>
+          </div>
+          <div class="bottom-hide-tabs-container">
+            <div class="table">
+              <canvas id="myChart" width="1000px" height="400"></canvas>
+            </div>
+          </div>
+        </div>
+
+      <div class="ui-layout-west">
+        <!-- 左侧栏 -->
+
+
+        <!-- 左侧菜单 -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">AIDA</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul id="left-menu" class="menu nav navbar-nav">
+                <li class="active"><a href="#">Search <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Parameters</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!-- 左侧搜索功能区 -->
+        <!-- 下部可隐藏式选项卡 -->
+
+        <div class="container-fluid">
+          <!-- 搜索功能面板 -->
+          <div ms-if="@show_search()" id="search-tab" class="left-tabs panel panel-default panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Keywords you selected：</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+
+                <!-- 绑定table-column中的selected -->
+                <div class="col-md-12">
+                  <div ms-for="el in @selected.column1" class="alert alert-success alert-dismissible" role="alert">
+                    <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert"  aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <span>{{el}}</span>
+                  </div>
+                  <div ms-for="el in @selected.column2" class="alert alert-success alert-dismissible" role="alert">
+                    <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <span>{{el}}</span>
+                  </div>
+                  <div ms-for="el in @selected.column3" class="alert alert-success alert-dismissible" role="alert">
+                    <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <span>{{el}}</span>
+                  </div>
+                  <div ms-for="el in @selected.column4" class="alert alert-success alert-dismissible" role="alert">
+                    <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <span>{{el}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <div class="container-fluid">
+                <div class="btn-group btn-group-justified" role="group">
+                  <a class="btn btn-danger" ms-on-click="@remove_all_selected"> Delete All ! </a>
+                  <a class="btn btn-success" ms-on-click="@submit_all_keywords"> Go! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 查询结果面板 -->
+          <div ms-if="@show_result()"  id="result-tab" class="left-tabs panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Result</h3>
+            </div>
+            <div class="panel-body">
+              <div class="alert alert-success" role="alert">
+                <a class="result-links" href=""><p class="folder-icons close-folder"></p><span class="result-titles"></span></a>
+              </div>
+            </div>
+          </div>
+          <!-- 属性修改面板 -->
+          <div id="parameters-tab" class="left-tabs hide panel panel-default panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Parameters：</h3>
+            </div>
+            <!-- <div class="panel-body"></div> -->
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="btn-group btn-group-justified">
+                    <span>parameter0</span><span id="amount-slider-0" class="badge"></span>
+                </div>
+                <div id="slider-0"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="btn-group btn-group-justified">
+                    <span>parameter1</span><span id="amount-slider-1" class="badge"></span>
+                </div>
+                <div id="slider-1"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="btn-group btn-group-justified">
+                    <span>parameter2</span><span id="amount-slider-2" class="badge"></span>
+                </div>
+                <div id="slider-2"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="btn-group btn-group-justified">
+                    <span>parameter3</span><span id="amount-slider-3" class="badge"></span>
+                </div>
+                <div id="slider-3"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="btn-group btn-group-justified">
+                    <span>parameter4</span><span id="amount-slider-4" class="badge"></span>
+                </div>
+                <div id="slider-4"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="btn-group btn-group-justified">
+                    <span>parameter5</span><span id="amount-slider-5" class="badge"></span>
+                </div>
+                <div id="slider-5"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="btn-group btn-group-justified">
+                    <span>parameter6</span><span id="amount-slider-6" class="badge"></span>
+                </div>
+                <div id="slider-6"></div>
+              </li>
+            </ul>
+            <div class="panel-footer">
+              <div class="container-fluid">
+                <div class="btn-group btn-group-justified" role="group">
+                  <a class="btn btn-success">Save! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <!-- jQuery (necessary for <Bootstra></Bootstra>p's JavaScript plugins) -->
+    <script src="../js/avalon.js"></script>
+    <script src="../js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/jquery.layout.js"></script>
+    <script type="text/javascript" src="../js/layout-setup.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Chart.js"></script>
+    <script src="../js/chart-setUp.js"></script>
+    <script src="../js/mvvm.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+  </body>
+</html>
