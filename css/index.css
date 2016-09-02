@@ -145,3 +145,12 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 .bottom-hide-tabs .table th,td{
   border:2px solid #ddd;
 }
+.checkbox-disabled{
+  color:#aaa;
+}
+label[data-selected=selected]{
+  color:red;
+}
+#hide-tab-1 input[type=checkbox]{
+  display: none;
+}
