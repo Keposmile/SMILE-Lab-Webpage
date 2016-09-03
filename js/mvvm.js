@@ -123,21 +123,19 @@ $(function(){
     open_content_tab:function(e){
       var _this=$(e.target);
       console.log(_this);
-      change_folder_icon(_this.parent());
       if($("#"+_this.parent().attr("data-id"))[0]){
         $("#"+_this.parent().attr("data-id")+" button").trigger("click");
+        disabled_change_right_menu();
       }
       else if (!$("#"+_this.parent().attr("data-id"))[0]) {
-
+        change_folder_icon(_this.parent());
         addTab(_this.text(),_this.parent().attr("data-id"));
+        disabled_change_right_menu();
       }
     },
     left_menu_status:0,
     left_menu_trigger:function(status){
       this.left_menu_status=status;
-    },
-    alt:function(){
-      alert("success");
     },
     show_search:function(){
       // console.log(this.left_menu_status===0);
