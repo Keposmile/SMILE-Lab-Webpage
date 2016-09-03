@@ -58,7 +58,6 @@
         </nav>
         <!-- 文章选项卡 -->
         <div class="container-fluid">
-          <button id="addTab" type="button" name="button">add tab</button>
           <div class="panel panel-default">
             <ul id="right-tabs" class="nav nav-tabs">
               <li role="presentation" id="home-tab" class="active"><a href="#">Home</a></li>
@@ -110,6 +109,7 @@
               </tr>
             </tbody>
           </table>
+          <div>{{@selected.column}}</div>
         </div>
       </div>
       <div id="hide-tab-2" class="bottom-hide-tabs">
@@ -143,8 +143,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul id="left-menu" class="menu nav navbar-nav">
-                <li class="active"><a href="#">Search <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Parameters</a></li>
+                <li class="active"><a ms-on-click="@left_menu_trigger(0)" href="#">Search <span class="sr-only">(current)</span></a></li>
+                <li><a ms-on-click="@left_menu_trigger(1)" href="#">Parameters</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -154,20 +154,19 @@
 
         <div class="container-fluid">
           <!-- 搜索功能面板 -->
-          <div ms-if="@show_search()" id="search-tab" class="left-tabs panel panel-default panel-info">
+          <div ms-visible="@show_search()" id="search-tab" class="left-tabs panel panel-default panel-info">
             <div class="panel-heading">
               <h3 class="panel-title">Keywords you selected：</h3>
             </div>
             <div class="panel-body">
               <div class="row">
-
                 <!-- 绑定table-column中的selected -->
                 <div class="col-md-12">
-                  <div ms-for="el in @selected.column1" class="alert alert-success alert-dismissible" role="alert">
+                  <div ms-for="el in @selected.column" class="alert alert-success alert-dismissible" role="alert">
                     <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert"  aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <span>{{el}}</span>
                   </div>
-                  <div ms-for="el in @selected.column2" class="alert alert-success alert-dismissible" role="alert">
+                  <!-- <div ms-for="el in @selected.column2" class="alert alert-success alert-dismissible" role="alert">
                     <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <span>{{el}}</span>
                   </div>
@@ -178,7 +177,7 @@
                   <div ms-for="el in @selected.column4" class="alert alert-success alert-dismissible" role="alert">
                     <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <span>{{el}}</span>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -192,18 +191,18 @@
             </div>
           </div>
           <!-- 查询结果面板 -->
-          <div ms-if="@show_result()"  id="result-tab" class="left-tabs panel panel-default">
+          <div ms-visible="@show_result()"  id="result-tab" class="left-tabs panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Result</h3>
             </div>
             <div class="panel-body">
-              <div class="alert alert-success" role="alert">
-                <a class="result-links" href=""><p class="folder-icons close-folder"></p><span class="result-titles"></span></a>
+              <div ms-for="el in @result.content" class="alert alert-success" role="alert">
+                <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
               </div>
             </div>
           </div>
           <!-- 属性修改面板 -->
-          <div id="parameters-tab" class="left-tabs hide panel panel-default panel-info">
+          <div ms-visible="@show_parameter()" id="parameters-tab" class="left-tabs panel panel-default panel-info">
             <div class="panel-heading">
               <h3 class="panel-title">Parameters：</h3>
             </div>
@@ -261,7 +260,6 @@
             </div>
           </div>
         </div>
-
       </div>
     <!-- jQuery (necessary for <Bootstra></Bootstra>p's JavaScript plugins) -->
     <script src="../js/avalon.js"></script>

@@ -154,3 +154,6 @@ label[data-selected=selected]{
 #hide-tab-1 input[type=checkbox]{
   display: none;
 }
+.ui-slider-range{
+  background-color: #0099ff;
+}

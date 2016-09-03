@@ -1,5 +1,5 @@
 $(function(){
-  setUp_keyword_table_column(3);
+  setUp_keyword_table_column(4);
   var vm_table_columns=avalon.define({
     $id:"table-columns",
     head:[{
@@ -20,49 +20,49 @@ $(function(){
         disabled:false
       }
     ],
-    keywords_1:{
-      academician:"academician",
-      actor:"actor",
-      businessman:"businessman",
-      businessperson:"businessperson",
-      soccer_player:"soccer_player",
-      chemist:"chemist",
-      teacher:"teacher"
-    },
-    keywords_2:{
-      vegetarian:"vegetarian",
-      violinist:"violinist",
-      trainer:"trainer",
-      spiritual_leader:"spiritual_leader",
-      sovereign:"sovereign",
-      writer:"writer",
-      wrestler:"wrestler",
-      songwriter:"songwriter"
-    },
-    keywords_3:{
-      device:"device",
-      publication:"publication",
-      ship:"ship",
-      memorial:"memorial",
-      catastrophe:"catastrophe",
-      riot:"riot",
-      invasion:"invasion",
-      festival:"festival"
-    },
-    keywords_4:{
-
-      team:"team",
-      enterprise:"enterprise",
-      league:"league",
-      company:"company",
-      institute:"institute",
-      university:"university"
-    },
+    keywords_1:[
+      "academician",
+      "actor",
+      "businessman",
+      "businessperson",
+      "soccer_player",
+      "chemist",
+      "teacher",
+    ],
+    keywords_2:[
+      "vegetarian",
+      "violinist",
+      "trainer",
+      "spiritual_leader",
+      "sovereign",
+      "writer",
+      "wrestler",
+      "songwriter"
+    ],
+    keywords_3:[
+      "device",
+      "publication",
+      "ship",
+      "memorial",
+      "catastrophe",
+      "riot",
+      "invasion",
+      "festival"
+    ],
+    keywords_4:[
+      "team",
+      "enterprise",
+      "league",
+      "company",
+      "institute",
+      "university"
+    ],
     selected:{
-      column1:[],
-      column2:[],
-      column3:[],
-      column4:[],
+      // column1:[],
+      // column2:[],
+      // column3:[],
+      // column4:[],
+      column:[]
     },
     disabled_other_columns:function(e){
       //禁用其他列的方法
@@ -87,7 +87,8 @@ $(function(){
       var otherColumnInput=$("#hide-tab-1 table input[type=checkbox]:not(."+_thisColumnClass+")");//获取非本列的input checkbox
       otherColumnInput.attr("disabled",true).parent().addClass("checkbox-disabled");//禁用其他列
       // console.log($("#hide-tab-1 table input[type=checkbox]:not(."+_thisColumnClass+")"));
-      if(this.selected["column"+_thisGroupIndex].length===0){//检测到本列数据为空时，还原其他列
+      // if(this.selected["column"+_thisGroupIndex].length===0){//检测到本列数据为空时，还原其他列
+      if(this.selected.column.length===0){//检测到本列数据为空时，还原其他列
         otherColumnInput.attr("disabled",false).parent().removeClass("checkbox-disabled");
       }
       console.log($("#hide-tab-1 table input[type=checkbox][checked=true]").parent().length);
@@ -109,25 +110,59 @@ $(function(){
 
     },
     result:{
+      // content:[
+      //   {
+      //     title:"this is result of search 1",
+      //     id:"11223344"
+      //   },{
+      //     title:"222222",
+      //     id:"889919292"
+      //   }
+      // ]
+    },
+    open_content_tab:function(e){
+      var _this=$(e.target);
+      console.log(_this);
+      change_folder_icon(_this.parent());
+      if($("#"+_this.parent().attr("data-id"))[0]){
+        $("#"+_this.parent().attr("data-id")+" button").trigger("click");
+      }
+      else if (!$("#"+_this.parent().attr("data-id"))[0]) {
 
+        addTab(_this.text(),_this.parent().attr("data-id"));
+      }
+    },
+    left_menu_status:0,
+    left_menu_trigger:function(status){
+      this.left_menu_status=status;
+    },
+    alt:function(){
+      alert("success");
     },
     show_search:function(){
-      return  isEmpty(this.result);
+      console.log(this.left_menu_status===0);
+      return this.left_menu_status===0;
     },
     show_result:function(){
-      return  !isEmpty(this.result);
+      // console.log((this.left_menu_status===0)&&(isEmpty(this.result)));
+      return (this.left_menu_status===0)&&(!isEmpty(this.result));
+    },
+    show_parameter:function(){
+      console.log(this.left_menu_status===1);
+      return this.left_menu_status===1;
     }
   });
   var vm_result=avalon.define({
-    $id:"result",
-
+    $id:"result"
   });
   avalon.scan(document.body);
 });
 function setUp_keyword_table_column(columnNum){
   $("#hide-tab-1 table>thead>tr").append("<th ms-for=\"(key,el) in @head | limitBy("+columnNum+")\" ms-attr=\"{id:@head[key].groupId}\">{{el.title}}</th>");
   for (var i = 1; i <= columnNum; i++) {
-    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:@keywords_"+i+"[key],class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:@keywords_"+i+"[key],value:@keywords_"+i+"[key],class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
+    // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:@keywords_"+i+"[key],class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:@keywords_"+i+"[key],value:@keywords_"+i+"[key],class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
+    // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
+    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
   }
 }
 function isEmpty(obj)
