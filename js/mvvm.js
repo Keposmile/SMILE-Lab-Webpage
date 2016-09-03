@@ -110,15 +110,15 @@ $(function(){
 
     },
     result:{
-      // content:[
-      //   {
-      //     title:"this is result of search 1",
-      //     id:"11223344"
-      //   },{
-      //     title:"222222",
-      //     id:"889919292"
-      //   }
-      // ]
+      content:[
+        {
+          title:"this is result of search 1",
+          id:"11223344"
+        },{
+          title:"222222",
+          id:"889919292"
+        }
+      ]
     },
     open_content_tab:function(e){
       var _this=$(e.target);

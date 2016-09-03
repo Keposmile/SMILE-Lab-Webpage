@@ -44,6 +44,9 @@ $(function(){
   // });
   delete_this_tab();
   show_hide_tabs();
+  $(window).resize(function(){
+    setUp_hide_tabs();
+  });
 });
 
 function menu_active_effect(position){
