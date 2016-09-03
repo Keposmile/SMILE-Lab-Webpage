@@ -68,6 +68,7 @@
           </div>
         </div>
       </div>
+      <!-- 下部可隐藏式选项卡 -->
       <div id="hide-tab-0" class="bottom-hide-tabs">
         <div class="tabs-handle">
           <p>Examples</p>
@@ -150,7 +151,7 @@
           </div><!-- /.container-fluid -->
         </nav>
         <!-- 左侧搜索功能区 -->
-        <!-- 下部可隐藏式选项卡 -->
+
 
         <div class="container-fluid">
           <!-- 搜索功能面板 -->
@@ -208,47 +209,12 @@
             </div>
             <!-- <div class="panel-body"></div> -->
             <ul class="list-group">
-              <li class="list-group-item">
+              <li ms-for=" ($index,el) in @sliderData " class="list-group-item">
                 <div class="btn-group btn-group-justified">
-                    <span>parameter0</span><span id="amount-slider-0" class="badge"></span>
+                  <span>{{el.parameter}}</span><span  class="badge">{{el.val}}</span>
+                  <input ms-attr="{id:'amount-slider-'+$index,class:'amount-slider'}" ms-duplex-string="@sliderData[$index].val" type="text">
                 </div>
-                <div id="slider-0"></div>
-              </li>
-              <li class="list-group-item">
-                <div class="btn-group btn-group-justified">
-                    <span>parameter1</span><span id="amount-slider-1" class="badge"></span>
-                </div>
-                <div id="slider-1"></div>
-              </li>
-              <li class="list-group-item">
-                <div class="btn-group btn-group-justified">
-                    <span>parameter2</span><span id="amount-slider-2" class="badge"></span>
-                </div>
-                <div id="slider-2"></div>
-              </li>
-              <li class="list-group-item">
-                <div class="btn-group btn-group-justified">
-                    <span>parameter3</span><span id="amount-slider-3" class="badge"></span>
-                </div>
-                <div id="slider-3"></div>
-              </li>
-              <li class="list-group-item">
-                <div class="btn-group btn-group-justified">
-                    <span>parameter4</span><span id="amount-slider-4" class="badge"></span>
-                </div>
-                <div id="slider-4"></div>
-              </li>
-              <li class="list-group-item">
-                <div class="btn-group btn-group-justified">
-                    <span>parameter5</span><span id="amount-slider-5" class="badge"></span>
-                </div>
-                <div id="slider-5"></div>
-              </li>
-              <li class="list-group-item">
-                <div class="btn-group btn-group-justified">
-                    <span>parameter6</span><span id="amount-slider-6" class="badge"></span>
-                </div>
-                <div id="slider-6"></div>
+                <div  ms-attr="{id:'slider-'+$index}" ></div>
               </li>
             </ul>
             <div class="panel-footer">

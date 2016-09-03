@@ -140,7 +140,7 @@ $(function(){
       alert("success");
     },
     show_search:function(){
-      console.log(this.left_menu_status===0);
+      // console.log(this.left_menu_status===0);
       return this.left_menu_status===0;
     },
     show_result:function(){
@@ -148,14 +148,51 @@ $(function(){
       return (this.left_menu_status===0)&&(!isEmpty(this.result));
     },
     show_parameter:function(){
-      console.log(this.left_menu_status===1);
+      // console.log(this.left_menu_status===1);
       return this.left_menu_status===1;
-    }
+    },
+    sliderData:[{
+      parameter:"parameter0",
+      min:0,
+      max:100,
+      val:20
+    },{
+      parameter:"parameter1",
+      min:0,
+      max:100,
+      val:30
+    },{
+      parameter:"parameter2",
+      min:0,
+      max:100,
+      val:40
+    },{
+      parameter:"parameter3",
+      min:0,
+      max:100,
+      val:50
+    },{
+      parameter:"parameter4",
+      min:0,
+      max:100,
+      val:60
+    },{
+      parameter:"parameter5",
+      min:0,
+      max:100,
+      val:70
+    },{
+      parameter:"parameter6",
+      min:0,
+      max:100,
+      val:80
+    }]
   });
   var vm_result=avalon.define({
     $id:"result"
   });
   avalon.scan(document.body);
+  setup_slider_group("slider",7,vm_table_columns.sliderData);
 });
 function setUp_keyword_table_column(columnNum){
   $("#hide-tab-1 table>thead>tr").append("<th ms-for=\"(key,el) in @head | limitBy("+columnNum+")\" ms-attr=\"{id:@head[key].groupId}\">{{el.title}}</th>");

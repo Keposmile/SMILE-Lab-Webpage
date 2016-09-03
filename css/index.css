@@ -158,3 +158,6 @@ label[data-selected=selected]{
 .ui-slider-range{
   background-color: #0099ff;
 }
+.amount-slider{
+  display: none;
+}

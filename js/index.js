@@ -1,47 +1,8 @@
 $(function(){
-  var sliderData=[{
-    min:0,
-    max:100,
-    val:20
-  },{
-    min:0,
-    max:100,
-    val:30
-  },{
-    min:0,
-    max:100,
-    val:40
-  },{
-    min:0,
-    max:100,
-    val:50
-  },{
-    min:0,
-    max:100,
-    val:60
-  },{
-    min:0,
-    max:100,
-    val:70
-  },{
-    min:0,
-    max:100,
-    val:80
-  }];
   menu_active_effect("left");
   menu_active_effect("right");
-  // change_tabs_on_left_menu();
   change_tabs_on_right();
-  // setup_parameter_slider("slider1",0,100,60)
-  setup_slider_group("slider",7,sliderData);
-  // $(".result-links").on("click",function(){
-  //   change_folder_icon($(this));
-  //   return false;
-  // });
   setUp_hide_tabs();
-  // $("#addTab").on("click",function(){
-  //   addTab();
-  // });
   delete_this_tab();
   show_hide_tabs();
   $(window).resize(function(){
@@ -91,7 +52,7 @@ function setup_parameter_slider(id,min,max,val){
     max: max,
     value: val,
     slide: function (event, ui) {
-        $("#amount-"+id).text(ui.value);
+        $("#amount-"+id).val(ui.value);
     }
   });
   $("#amount-"+id).val($("#"+id).slider("value"));
