@@ -98,6 +98,11 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 #hide-tab-1{
   left:220px;
   /*bottom:-350px;*/
+  -moz-user-select: none; 
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 
 #hide-tab-2{

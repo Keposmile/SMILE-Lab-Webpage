@@ -12,59 +12,78 @@ $(function(){
   var vm_body_columns=avalon.define({
     $id:"body-columns",
     head:[{
-        title:"大众汽车尾气排放丑闻",
+        title:"Syria refugee crisis",
         groupId:1,
         disabled:false
       },{
-        title:"美国总统选举",
+        title:"Iran nuclear",
         groupId:2,
         disabled:false
       },{
-        title:"叙利亚战争",
+        title:"Volkswagen scandal",
         groupId:3,
         disabled:false
       },{
-        title:"伊斯兰国",
+        title:"US presidential election",
         groupId:4,
         disabled:false
       }
     ],
+    //注意！！关键词不同的中可以出现相同的keyword，但是，在关键词数组中的位置绝对不能相同，否则会出错！
     keywords_1:[
-      "academician",
-      "actor",
-      "businessman",
-      "businessperson",
-      "soccer_player",
-      "chemist",
-      "teacher",
+      "civil war",
+      "humanitarian crisis",
+      "European EU",
+      "Russia",
+      "United States US america",
+      "government army",
+      "ISIS",
+      "Assad",
+      "Obama",
+      "John Kerry",
+      "Netanyahu",
+      "Hungary",
+      "Austria",
+      "Balkans Balkan",
+      "humanitarian assistance",
+      "aid",
+      "air strike"
     ],
     keywords_2:[
-      "vegetarian",
-      "violinist",
-      "trainer",
-      "spiritual_leader",
-      "sovereign",
-      "writer",
-      "wrestler",
-      "songwriter"
+      "nuclear deal",
+      "United States US america",
+      "Tehran",
+      "Israe",
+      "Saudi Arabia",
+      "ISIS",
+      "terrorist",
+      "uranium",
+      "Trump",
+      "Obama",
+      "Rouhani",
+      "Jewish",
+      "Hezbollah",
+      "negotiate"
     ],
     keywords_3:[
-      "device",
-      "publication",
-      "ship",
-      "memorial",
-      "catastrophe",
-      "riot",
-      "invasion",
-      "festival"
+      "Martin Winterkorn",
+      "models",
+      "Porsche",
+      "Audi",
+      "Skoda",
+      "vehicle",
+      "emission",
+      "tests",
+      "America",
+      "Europe",
+      "EPA"
     ],
     keywords_4:[
-      "team",
-      "enterprise",
-      "league",
-      "company",
-      "institute",
-      "university"
+      "candidate",
+      "Hillary Clinton",
+      "Donald Trump",
+      "Democratic Party GOP",
+      "Republican Party"
     ],
     selected:{
       // column1:[],
@@ -103,14 +122,17 @@ $(function(){
       var thisKeyword=$(e.target).parent().parent().find("span:eq(1)").text();
       console.log($("#"+thisKeyword));
       $("#"+thisKeyword).trigger("click").parent().attr("data-selected","");
+      // $("input[type=checkbox]["+thisKeyword+"]").trigger("click").parent().attr("data-selected","");
     },
     remove_all_selected:function(){
       var selected= this.selected;
-      for (var i in selected) {
-        for(var j=0;selected[i].length!==0;){
-          $("#"+selected[i][j]).trigger("click").parent().attr("data-selected","");
-        }
-      }
+      // for (var i in selected) {
+      //   for(var j=0;selected[i].length!==0;j++){
+      //     // $("input[type=checkbox]["+selected[i][j]+"]").trigger("click").parent().attr("data-selected","");
+      //
+      //   }
+      // }
+      $("#hide-tab-1 table input[type=checkbox]:checked").trigger("click").parent().attr("data-selected","");
       this.result={};
     },
     submit_all_keywords:function(){
@@ -273,7 +295,9 @@ function setUp_keyword_table_column(columnNum){
   for (var i = 1; i <= columnNum; i++) {
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:@keywords_"+i+"[key],class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:@keywords_"+i+"[key],value:@keywords_"+i+"[key],class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
-    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
+    // if($("#"))
+    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el+'_'+key,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el+'_'+key,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
+    // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{keyword-id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
   }
 }
 function isEmpty(obj){
