@@ -77,7 +77,7 @@
         </div>
         <!-- 下部keywords可隐藏式选项卡 -->
         <div class="bottom-hide-tabs-container">
-          <div class="keyword_slider">
+          <div class="keywords_slider">
             <p>
               这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
               这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
@@ -89,9 +89,10 @@
               这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
               这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
             </p>
-            <a href=""><img class="keywords_slider_btn" src="../img/up.png" alt=""></a>
+            <img  ms-on-click="@change_keywords_slider_down" class="keywords_slider_btn" src="../img/up.png" alt="" />
           </div>
-          <div class="keyword_slider">
+          <div class="keywords_slider" style="display:none">
+            <img  ms-on-click="@change_keywords_slider_up" class="keywords_slider_btn" src="../img/down.png" alt="" />
             <table class="table table-condensed">
               <thead>
                 <tr>

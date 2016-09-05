@@ -238,11 +238,27 @@ $(function(){
       //ajax提交选中的数据
 
     },
-    change_keywords_slider_up:function(){
-      // $(".keywords_silder").
+    change_keywords_slider_up:function(e){//向上滑动
+      var thisSlide=$(e.target).parent();
+      var index=$(".keywords_slider").index(thisSlide);
+      var prev=index-1;
+      $(".keywords_slider_btn").eq(index).animate({opacity:"0"},1000);
+      $(".keywords_slider").eq(index).slideUp(1000);
+      // console.log($(".keywords_slider").eq(index));
+      $(".keywords_slider").eq(prev).slideDown(1000);
+      // return false;
+      $(".keywords_slider_btn").eq(prev).animate({opacity:"0.5"},1000);
     },
-    change_keywords_slider_down:function(){
-
+    change_keywords_slider_down:function(e){//向下滑动
+      var thisSlide=$(e.target).parent();
+      var index=$(".keywords_slider").index(thisSlide);
+      var next=index+1;
+      console.log($(".keywords_slider").eq(index));
+      $(".keywords_slider").eq(index).slideUp(1000);
+      $(".keywords_slider").eq(next).slideDown(1000);
+      $(".keywords_slider_btn").eq(index).animate({opacity:"0"},1000);
+      $(".keywords_slider_btn").eq(next).animate({opacity:"0.5"},1000);
+      // return false;
     }
   });
   var vm_result=avalon.define({
