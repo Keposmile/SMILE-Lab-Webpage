@@ -22,7 +22,7 @@
 
   </script>
   </head>
-  <body ms-controller="table-columns" class="ms-controller">
+  <body ms-controller="body-columns" class="ms-controller">
       <div class="ui-layout-center">
         <!-- 中间栏 -->
 
@@ -42,17 +42,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul id="right-menu" class="menu nav navbar-nav">
                 <!-- <li><a href="#"><span class="sr-only">(current)</span></a></li> -->
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Entites & Sentences<span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Entites </a></li>
-                    <li><a href="#">Sentences</a></li>
-                  </ul>
-                </li>
+                <li><a href="#" >Sentences</a></li>
                 <li><a href="#">Knowledge triplet</a></li>
-                <li><a href="#" id="modal-trigger">Generate kg</a></li>
+                <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate kg</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -65,6 +57,7 @@
             </ul>
             <div class="content-tab panel-body">
               Basic panel example
+              <div ms-for="el in @open_content">{{el.title}}:{{el.id}}</div>
             </div>
           </div>
         </div>
@@ -84,34 +77,50 @@
         </div>
         <!-- 下部keywords可隐藏式选项卡 -->
         <div class="bottom-hide-tabs-container">
-          <table class="table table-condensed">
-            <thead>
-              <tr>
-                <!-- <th ms-for="(key,el) in @head" ms-attr="{id:@head[key].groupId}">{{el.title}}</th> -->
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <!-- <td>
-                  <label ms-for="(key,el) in @keywords_1" onselectstart="return false" ms-attr="{for:@keywords_1[key]}"><input  type="checkbox" ms-duplex="@selected.column1" ms-attr="{id:@keywords_1[key],value:@keywords_1[key],class:'keywords_1'}">{{el}}</label>
-                  <div>{{@selected.column1}}</div>
-                </td>
-                <td>
-                  <label ms-for="(key,el) in @keywords_2" onselectstart="return false" ms-attr="{for:@keywords_2[key]}"><input  type="checkbox" ms-duplex="@selected.column2" ms-attr="{id:@keywords_2[key],value:@keywords_2[key],class:'keywords_2'}">{{el}}</label>
-                  <div>{{@selected.column2}}</div>
-                </td>
-                <td>
-                  <label ms-for="(key,el) in @keywords_3" onselectstart="return false" ms-attr="{for:@keywords_3[key]}"><input  type="checkbox" ms-duplex="@selected.column3" ms-attr="{id:@keywords_3[key],value:@keywords_3[key],class:'keywords_3'}">{{el}}</label>
-                  <div>{{@selected.column3}}</div>
-                </td>
-                <td>
-                  <label ms-for="(key,el) in @keywords_4" onselectstart="return false" ms-attr="{for:@keywords_4[key]}"><input  type="checkbox" ms-duplex="@selected.column4" ms-attr="{id:@keywords_4[key],value:@keywords_4[key],class:'keywords_4'}">{{el}}</label>
-                  <div>{{@selected.column4}}</div>
-                </td> -->
-              </tr>
-            </tbody>
-          </table>
-          <div>{{@selected.column}}</div>
+          <div class="keyword_slider">
+            <p>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+              这是说明这是说明这是说明这是说明这是说明这是说明这是说明这是说明 <br>
+            </p>
+            <a href=""><img class="keywords_slider_btn" src="../img/up.png" alt=""></a>
+          </div>
+          <div class="keyword_slider">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <!-- <th ms-for="(key,el) in @head" ms-attr="{id:@head[key].groupId}">{{el.title}}</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!-- <td>
+                    <label ms-for="(key,el) in @keywords_1" onselectstart="return false" ms-attr="{for:@keywords_1[key]}"><input  type="checkbox" ms-duplex="@selected.column1" ms-attr="{id:@keywords_1[key],value:@keywords_1[key],class:'keywords_1'}">{{el}}</label>
+                    <div>{{@selected.column1}}</div>
+                  </td>
+                  <td>
+                    <label ms-for="(key,el) in @keywords_2" onselectstart="return false" ms-attr="{for:@keywords_2[key]}"><input  type="checkbox" ms-duplex="@selected.column2" ms-attr="{id:@keywords_2[key],value:@keywords_2[key],class:'keywords_2'}">{{el}}</label>
+                    <div>{{@selected.column2}}</div>
+                  </td>
+                  <td>
+                    <label ms-for="(key,el) in @keywords_3" onselectstart="return false" ms-attr="{for:@keywords_3[key]}"><input  type="checkbox" ms-duplex="@selected.column3" ms-attr="{id:@keywords_3[key],value:@keywords_3[key],class:'keywords_3'}">{{el}}</label>
+                    <div>{{@selected.column3}}</div>
+                  </td>
+                  <td>
+                    <label ms-for="(key,el) in @keywords_4" onselectstart="return false" ms-attr="{for:@keywords_4[key]}"><input  type="checkbox" ms-duplex="@selected.column4" ms-attr="{id:@keywords_4[key],value:@keywords_4[key],class:'keywords_4'}">{{el}}</label>
+                    <div>{{@selected.column4}}</div>
+                  </td> -->
+                </tr>
+              </tbody>
+            </table>
+            <!-- <div>{{@selected.column}}</div> -->
+          </div>
         </div>
       </div>
       <div id="hide-tab-2" class="bottom-hide-tabs">
@@ -200,6 +209,9 @@
             <div class="panel-body">
               <div ms-for="el in @result.content" class="alert alert-success" role="alert">
                 <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
+                <!-- <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><label ms-attr="{for:el.id}"><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></label></a> -->
+                <!-- <input type="checkbox" ms-attr=""> -->
+                <input type="checkbox" class="hide" ms-duplex="@open_content " ms-attr="{value:'{title:'+el.title+',id:'+el.id+'}'}" >
               </div>
             </div>
           </div>
@@ -233,14 +245,16 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title">Modal title</h4>
+              <h4 class="modal-title">请选择要上传的文章</h4>
             </div>
-            <div class="modal-body">
+            <!-- <div class="modal-body">
               <p>One fine body&hellip;</p>
-            </div>
+            </div> -->
+            <ul class="list-group">
+            </ul>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+              <button ms-on-click="@upload_selected_content" type="button" class="btn btn-primary">Upload！</button>
             </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->

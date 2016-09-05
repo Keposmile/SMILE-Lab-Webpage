@@ -1,7 +1,16 @@
 $(function(){
   setUp_keyword_table_column(4);
-  var vm_table_columns=avalon.define({
-    $id:"table-columns",
+  avalon.filters.jsonit=function(str){
+    return JSON.parse(str);
+  };
+  avalon.filters.value=function(obj){
+    var val=obj.value;
+    var newVal=avalon.filters.jsonit(val);
+    obj.value=newVal;
+    return obj;
+  };
+  var vm_body_columns=avalon.define({
+    $id:"body-columns",
     head:[{
         title:"大众汽车尾气排放丑闻",
         groupId:1,
@@ -80,14 +89,11 @@ $(function(){
         _this.attr("data-selected","selected");
       }
 
-      // console.log(_thisColumnClass);
+
       var pattern=/(keywords_)([0-9])+/;
       var _thisGroupIndex=_thisColumnClass.match(pattern)[2];
-      // console.log(_thisGroupIndex);
       var otherColumnInput=$("#hide-tab-1 table input[type=checkbox]:not(."+_thisColumnClass+")");//获取非本列的input checkbox
       otherColumnInput.attr("disabled",true).parent().addClass("checkbox-disabled");//禁用其他列
-      // console.log($("#hide-tab-1 table input[type=checkbox]:not(."+_thisColumnClass+")"));
-      // if(this.selected["column"+_thisGroupIndex].length===0){//检测到本列数据为空时，还原其他列
       if(this.selected.column.length===0){//检测到本列数据为空时，还原其他列
         otherColumnInput.attr("disabled",false).parent().removeClass("checkbox-disabled");
       }
@@ -105,9 +111,9 @@ $(function(){
           $("#"+selected[i][j]).trigger("click").parent().attr("data-selected","");
         }
       }
+      this.result={};
     },
     submit_all_keywords:function(){
-
     },
     result:{
       content:[
@@ -120,20 +126,27 @@ $(function(){
         }
       ]
     },
+    //左侧文章查询结果和对应tab打开关闭控制
     open_content_tab:function(e){
       var _this=$(e.target);
-      console.log(_this);
-      if($("#"+_this.parent().attr("data-id"))[0]){
-        $("#"+_this.parent().attr("data-id")+" button").trigger("click");
+      var _thisLink=_this.parent();
+      // _thisLink.parent().find("input:eq(0)").trigger("click");
+      console.log(this.open_content);
+      // console.log(this.open_content.length);
+      if($("#"+_thisLink.attr("data-id"))[0]){
+        $("#"+_thisLink.attr("data-id")+" button").trigger("click");
         disabled_change_right_menu();
+        // this.update_selected_content();
       }
-      else if (!$("#"+_this.parent().attr("data-id"))[0]) {
-        change_folder_icon(_this.parent());
-        addTab(_this.text(),_this.parent().attr("data-id"));
+      else if (!$("#"+_thisLink.attr("data-id"))[0]) {
+        change_folder_icon(_thisLink);
+        addTab(_this.text(),_thisLink.attr("data-id"));
         disabled_change_right_menu();
+        // this.update_selected_content();
       }
     },
-    left_menu_status:0,
+    left_menu_status:0,//左侧页面菜单的选择状态
+    //左侧页面菜单的选择状态控制器
     left_menu_trigger:function(status){
       this.left_menu_status=status;
     },
@@ -142,13 +155,14 @@ $(function(){
       return this.left_menu_status===0;
     },
     show_result:function(){
-      // console.log((this.left_menu_status===0)&&(isEmpty(this.result)));
-      return (this.left_menu_status===0)&&(!isEmpty(this.result));
+      // console.log();
+      return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.selected.column.length!==0);
     },
     show_parameter:function(){
       // console.log(this.left_menu_status===1);
       return this.left_menu_status===1;
     },
+    // 属性滑动块控制
     sliderData:[{
       parameter:"parameter0",
       min:0,
@@ -182,15 +196,61 @@ $(function(){
     },{
       parameter:"parameter6",
       min:0,
-      max:100,
+      max:1000  ,
       val:80
-    }]
+    }],
+    submit_parameter:function(){
+    },
+    get_parameter:function(contentId){
+      $("li[role=presentation][class=active]").attr("id");
+    },
+    update_selected_content:function(){
+      vm_body_columns.open_content=[];
+      var _content_tabs=$("#right-tabs>li:not(#home-tab)");
+      var _content_tabs_num=_content_tabs.length;
+      $("#myModal ul.list-group").html("");
+      for(var i=0;i<_content_tabs_num;i++){
+        vm_body_columns.open_content[i]={
+          title:$(_content_tabs[i]).find("span:eq(0)").text(),
+          id:$(_content_tabs[i]).attr("id")
+        };
+        $("#myModal ul.list-group").append("<li class=\" list-group-item\"><label for=\""+vm_body_columns.open_content[i].title+"\"><input id=\""+vm_body_columns.open_content[i].title+"\" type=\"checkbox\" name=\"name\"  value=\""+vm_body_columns.open_content[i].id+"\">"+vm_body_columns.open_content[i].title+"</label></li>");
+      }
+    },
+    open_content:[
+      // {
+      //   title:11,
+      //   id:22
+      // },{
+      //   title:33,
+      //   id:44
+      // }
+    ],
+    selected_content:[
+    ],
+    upload_selected_content:function(){
+      this.selected_content=$("#myModal li.list-group-item input[type=checkbox]").val();
+      var _selected_content=[];
+      $("#myModal li.list-group-item input[type=checkbox]:checked").each(function(){
+        _selected_content.push($(this).val());
+      });
+      this.selected_content=_selected_content;
+      //ajax提交选中的数据
+
+    },
+    change_keywords_slider_up:function(){
+      // $(".keywords_silder").
+    },
+    change_keywords_slider_down:function(){
+
+    }
   });
   var vm_result=avalon.define({
     $id:"result"
   });
   avalon.scan(document.body);
-  setup_slider_group("slider",7,vm_table_columns.sliderData);
+  setup_slider_group("slider",7,vm_body_columns.sliderData);
+
 });
 function setUp_keyword_table_column(columnNum){
   $("#hide-tab-1 table>thead>tr").append("<th ms-for=\"(key,el) in @head | limitBy("+columnNum+")\" ms-attr=\"{id:@head[key].groupId}\">{{el.title}}</th>");
@@ -200,8 +260,7 @@ function setUp_keyword_table_column(columnNum){
     $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
   }
 }
-function isEmpty(obj)
-{
+function isEmpty(obj){
   for (var name in obj)
   {
     return false;

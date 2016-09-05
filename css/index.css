@@ -161,3 +161,13 @@ label[data-selected=selected]{
 .amount-slider{
   display: none;
 }
+#myModal .list-group{
+  margin:20px 10px;
+}
+.tabs-handle>p{
+  cursor: pointer;
+}
+.keywords_slider_btn{
+  width: 20px;
+  float: right; 
+}
