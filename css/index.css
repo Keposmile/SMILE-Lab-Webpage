@@ -97,21 +97,34 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 
 #hide-tab-1{
   left:220px;
+  width:80%;
   /*bottom:-350px;*/
-  -moz-user-select: none; 
+  -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   -khtml-user-select: none;
   user-select: none;
 }
-
+#hide-tab-1 td{
+  width:26%;
+}
+#hide-tab-1 label{
+  /*max-width:50%;*/
+  float: left;
+  padding:3px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(116,247,148,0.8);
+  border-radius: 5px;
+}
 #hide-tab-2{
   left:420px;
   /*bottom:-350px;*/
 }
-.bottom-hide-tabs label{
+/*.bottom-hide-tabs label{
   width:100%;
-}
+}*/
 .bottom-hide-tabs>.tabs-handle{
   overflow:hidden;
 }
@@ -137,7 +150,10 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
   /*height:350px;*/
 }
 .bottom-hide-tabs td{
-  width:25%;
+  /*width:25%;*/
+}
+#hide-tab-1 .keywords_slider>p{
+  float: left;
 }
 .bottom-hide-tabs>div>.table,p{
   margin:0px;
@@ -147,6 +163,7 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
   padding:20px;
   border-collapse:collapse;
   border:2px solid #ddd;
+  margin-bottom: 0;
 }
 .bottom-hide-tabs .table th,td{
   border:2px solid #ddd;

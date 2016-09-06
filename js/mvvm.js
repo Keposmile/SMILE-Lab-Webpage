@@ -1,13 +1,12 @@
 $(function(){
   setUp_keyword_table_column(4);
-  avalon.filters.jsonit=function(str){
-    return JSON.parse(str);
-  };
-  avalon.filters.value=function(obj){
-    var val=obj.value;
-    var newVal=avalon.filters.jsonit(val);
-    obj.value=newVal;
-    return obj;
+  // avalon.filters.jsonit=function(str){
+  //   return JSON.parse(str);
+  // };
+  avalon.filters.clean=function(str){
+    var keywords_pattern=new RegExp(/[a-zA-Z""]+/g);
+    str=str.match(keywords_pattern);
+    return str;
   };
   var vm_body_columns=avalon.define({
     $id:"body-columns",
@@ -116,7 +115,8 @@ $(function(){
       if(this.selected.column.length===0){//检测到本列数据为空时，还原其他列
         otherColumnInput.attr("disabled",false).parent().removeClass("checkbox-disabled");
       }
-      console.log($("#hide-tab-1 table input[type=checkbox][checked=true]").parent().length);
+
+      // console.log($("#hide-tab-1 table input[type=checkbox][checked=true]").parent().length);
     },
     remove_from_table_selected:function(e){
       var thisKeyword=$(e.target).parent().parent().find("span:eq(1)").text();
@@ -125,17 +125,18 @@ $(function(){
       // $("input[type=checkbox]["+thisKeyword+"]").trigger("click").parent().attr("data-selected","");
     },
     remove_all_selected:function(){
-      var selected= this.selected;
-      // for (var i in selected) {
-      //   for(var j=0;selected[i].length!==0;j++){
-      //     // $("input[type=checkbox]["+selected[i][j]+"]").trigger("click").parent().attr("data-selected","");
-      //
-      //   }
-      // }
-      $("#hide-tab-1 table input[type=checkbox]:checked").trigger("click").parent().attr("data-selected","");
-      this.result={};
+      var selected= this.selected.column;
+      console.log($("#hide-tab-1 table input[type=checkbox]:checked").parent().length);
+      $("#hide-tab-1 table input[type=checkbox]:checked").parent().trigger("click").attr("data-selected","");
+      selected=[];
     },
     submit_all_keywords:function(){
+      var _keywords=this.selected.column;
+      var keywords_pattern=new RegExp(/[a-zA-Z""]+/g);
+      for(var i=0;i<_keywords.length;i++){
+        _keywords[i]=_keywords[i].match(keywords_pattern);
+      }
+
     },
     result:{
       content:[
@@ -261,7 +262,7 @@ $(function(){
 
 
 
-      
+
       postAjax(url,this.selected_content,function(){
         window.location="../node_page.html";
       });
@@ -302,7 +303,7 @@ function setUp_keyword_table_column(columnNum){
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:@keywords_"+i+"[key],class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:@keywords_"+i+"[key],value:@keywords_"+i+"[key],class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
     // if($("#"))
-    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el+'_'+key,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el+'_'+key,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
+    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el+'_'+key,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el+'_'+key,value:el+'_'+key,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{keyword-id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
   }
 }
