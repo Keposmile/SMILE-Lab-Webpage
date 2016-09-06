@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://maggie.lt.informatik.tu-darmstadt.de/non/de/?# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Networks of Names</title>
+
+        <!-- Play (AJAX routes) -->
+        <script type="text/javascript" src="../resources/routes"></script>
+
+        <!-- jQuery (for interaction with the user interface) -->
+        <script type="text/javascript" src="../resources/jquery-1.9.0.min.js"></script>
+
+        <!-- jQuery: hoverIntent (for smoother mouseover) -->
+        <script type="text/javascript" src="../resources/hoverIntent.js"></script>
+
+        <!-- CoffeeScript compiler (for dynamic settings in development) -->
+        <script src="../resources/coffee-script.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- D3 (for visualization) -->
+        <script type="text/javascript" src="../resources/d3.v3.js" charset="utf-8"></script>
+        <!-- <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script> -->
+
+        <!-- Bootstrap (for user interface) -->
+        <script type="text/javascript" src="../resources/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="../resources/bootstrap.min.css">
+
+        <!-- Bootstrap Datepicker (for date selection) -->
+        <script type="text/javascript" src="../resources/bootstrap-datepicker.js"></script>
+        <link type="text/css" rel="stylesheet" href="../resources/datepicker.css">
+
+        <!-- FileSaver, Blob (for exporting) -->
+        <script type="text/javascript" src="../resources/FileSaver.min.js"></script>
+        <script type="text/javascript" src="../resources/Blob.js"></script>
+
+        <!-- Networks of Names -->
+        <script type="text/javascript" src="../resources/utility.js"></script>
+        <script type="text/javascript" src="../resources/NetworksOfNames.js"></script>
+        <script type="text/javascript" src="../resources/actions.js"></script>
+        <script type="text/javascript" src="../resources/ui.js"></script>
+        <script type="text/javascript" src="../resources/ui-sources.js"></script>
+        <link type="text/css" rel="stylesheet" href="../resources/main.css">
+
+    </head>
+
+    <body data-feedly-mini="yes" style="zoom: 1;">
+      <div>
+          <script>
+            $(document).ready(function() {
+                showRelationship("/data/temp.json");
+            })
+          </script>
+
+          <div id="main">
+            <div id="notifications"></div>
+            <div id="vis"></div>
+          </div>
+
+          <div id="stringbox" style="position: absolute; float: left; white-space: nowrap; visibility: hidden; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: sans-serif, Arial;">19</div>
+          <iframe id="downloader-iframe" src="../resources/saved_resource.html" style="display: none;"></iframe>
+    </div>
+
+</body><div></div></html>

@@ -259,6 +259,12 @@ $(function(){
       this.selected_content=_selected_content;
       //ajax提交选中的数据
 
+
+
+      
+      postAjax(url,this.selected_content,function(){
+        window.location="../node_page.html";
+      });
     },
     change_keywords_slider_up:function(e){//向上滑动
       var thisSlide=$(e.target).parent();

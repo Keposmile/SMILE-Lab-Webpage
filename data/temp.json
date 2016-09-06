@@ -1,0 +1,116 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "name": "LADY Elsie Robson",
+            "numNeighbors": 14
+        },
+        {
+            "id": 2,
+            "name": "Works by the Newcastle Painters Group",
+            "numNeighbors": 23
+        },
+        {
+            "id": 3,
+            "name": "the Newcastle Painters Group",
+            "numNeighbors": 10
+        },
+        {
+            "id": 4,
+            "name": "the region",
+            "numNeighbors": 10
+        },
+        {
+            "id": 5,
+            "name": "to go on show at Willow Burn Hospice, near Lanchester later this month",
+            "numNeighbors": 10
+        },
+        {
+            "id": 6,
+            "name": "later this month",
+            "numNeighbors": 10
+        },
+        {
+            "id": 7,
+            "name": "_",
+            "numNeighbors": 10
+        },
+        {
+            "id": 8,
+            "name": "in Newcastle",
+            "numNeighbors": 10
+        },
+        {
+            "id": 9,
+            "name": "an art exhibition",
+            "numNeighbors": 10
+        },
+        {
+            "id": 21,
+            "name": "20 years ago",
+            "numNeighbors": 10
+        }
+    ],
+    "links": [
+        {
+            "id": 10,
+            "source": 1,
+            "target": 9,
+            "tags": [
+                {
+                    "label": "will officially unveil"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "source": 2,
+            "target": 5,
+            "tags": [
+                {
+                    "label": "are"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "source": 2,
+            "target": 6,
+            "tags": [
+                {
+                    "label": "to go"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "source": 3,
+            "target": 21,
+            "tags": [
+                {
+                    "label": "formed"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "source": 4,
+            "target": 7,
+            "tags": [
+                {
+                    "label": "have studied"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "source": 4,
+            "target": 8,
+            "tags": [
+                {
+                    "label": "taught"
+                }
+            ]
+        }
+    ]
+}

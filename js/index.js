@@ -132,3 +132,28 @@ function disabled_change_right_menu(){
     $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
   }
 }
+function postAjax(url,data,success){
+  $.ajax({
+    type: 'POST',
+    url: url,
+    dataType: 'json',
+    data: data,
+    success: success,
+    error:function () {
+      alert("服务器好像不太给力～");
+    }
+  });
+}
+
+function getAjax(url,data,success) {
+  $.ajax({
+    type: 'GET',
+    url: url,
+    dataType: 'json',
+    data: JSON.stringify(data),
+    success: success,
+    error:function () {
+      alert("服务器好像不太给力～");
+    }
+  });
+}
