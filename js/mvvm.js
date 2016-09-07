@@ -140,8 +140,8 @@ $(function(){
     },
     remove_from_table_selected:function(e){
       var thisKeyword=$(e.target).parent().parent().find("span:eq(1)").text();
-      console.log($("#"+thisKeyword));
-      $("#"+thisKeyword).trigger("click").parent().attr("data-selected","");
+      // console.log($("#"+thisKeyword));
+      $("label[for^=\""+thisKeyword+"\"][data-selected=selected]").trigger("click").attr("data-selected","");
       // $("input[type=checkbox]["+thisKeyword+"]").trigger("click").parent().attr("data-selected","");
     },
     remove_all_selected:function(){
@@ -155,26 +155,6 @@ $(function(){
       for(var i=0;i<_keywords.length;i++){
         _keywords[i]=_keywords[i].match(keywords_pattern);
       }
-      this.hide_bottom_tabs();
-      // postAjax(url,_keywords,function(){
-      // });
-      // console.log(this);
-      setTimeout(function(){
-        // console.log(this);
-        vm_body_columns.show_bottom_tabs();
-      },200);
-    },
-    disabled_left_part:function(){
-
-    },
-    enabled_left_part:function(){
-
-    },
-    show_bottom_tabs:function(){
-      $(".bottom-hide-tabs").show(1000);
-    },
-    hide_bottom_tabs:function(){
-      $(".bottom-hide-tabs").hide(1000);
     },
     result:{
       content:[
@@ -260,7 +240,34 @@ $(function(){
       max:1000  ,
       val:80
     }],
+    disabled_left_part:function(){
+      // alert($("body").css("height"));
+        $("#coverDiv").css({"height":$("body").height(),"width":$(".ui-layout-west").width()+35}).show();
+        $("div.ui-layout-resizer .ui-layout-resizer-west .ui-draggable-handle .ui-layout-resizer-open .ui-layout-resizer-west-open").removeClass("ui-draggable-handle");
+      $(window).resize(function(){
+        $("#coverDiv").css({"height":$("body").height(),"width":$(".ui-layout-west").width()+35}).show();
+      });
+    },
+    enabled_left_part:function(){
+      $("#coverDiv").hide();
+    },
+    show_bottom_tabs:function(){
+      $(".bottom-hide-tabs").show(1000);
+    },
+    hide_bottom_tabs:function(){
+      $(".bottom-hide-tabs").hide(1000);
+    },
     submit_parameter:function(){
+      this.hide_bottom_tabs();
+      this.disabled_left_part();
+      // postAjax(url,_keywords,function(){
+      // });
+      // console.log(this);
+      // setTimeout(function(){
+      //   // console.log(this);
+      //   vm_body_columns.enabled_left_part();
+      //   vm_body_columns.show_bottom_tabs();
+      // },1000);
     },
     get_parameter:function(contentId){
       $("li[role=presentation][class=active]").attr("id");

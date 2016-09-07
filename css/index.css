@@ -1,9 +1,9 @@
 .ms-controller{
    visibility: hidden
 }
-/*.ui-layout-west{
-  z-index: 100;
-}*/
+.ui-layout-west{
+  /*overflow: scroll;*/
+}
 body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
 
 #right-button-group{
@@ -221,4 +221,16 @@ label[data-selected=selected]{
 .loadingLine{
   height:100%;
 
+}
+#coverDiv{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.1);
+  float: left;
+  /*width:100%;*/
+  /*height: 100%;*/
+  z-index:2000;
+  visibility:visible;
 }
