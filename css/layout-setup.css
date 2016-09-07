@@ -2,7 +2,9 @@ body {
   font-family: 宋体,Geneva, Arial, Helvetica, sans-serif;
   font-size: 80%;
   *font-size: 80%;
-  background: #0099ff;
+  /*background: #0099ff;*/
+  /*background-color: #b5dac8;*/
+  /*background-color: #557b70;*/
 }
 
 /*
@@ -21,7 +23,10 @@ ui-layout-pane-[PANE-NAME]-[PANE-STATE] （如：ui-layout-pane-west-closed。�
 */
 .ui-layout-pane {
   background: #0099ff;
-    /*border:     0px solid #8db2e3;*/
+  /*background-color: #b5dac8;*/
+  /*background-color: #00302b;*/
+  /*background-color: #557b70;*/
+  /*border:     0px solid #8db2e3;*/
   padding: 10px;
   overflow: auto;
 
@@ -105,7 +110,8 @@ ui-layout-pane-[PANE-NAME]-[PANE-STATE] （如：ui-layout-pane-west-closed。�
  */
     /*鼠标悬停在拖动条上按钮的样式*/
   .ui-layout-toggler-hover {
-        background-color: #0099FF；
+        /*background-color: #0099FF；*/
+        background-color: #b5dac8;
         opacity: 1.00;
   filter: alpha(opacity=100);
 }

@@ -124,11 +124,13 @@ function disabled_change_right_menu(){
     // console.log($("#right-menu>li").length);
     // console.log($("#right-menu>li:not(.dropdown),ul.dropdown-menu>li"));
     $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
+    $("#dropdown-toggle").attr({"data-toggle":""});
     $("#modal-trigger").attr({"data-toggle":"","data-target":""});
   }else{
     // console.log($("#right-menu>li").length);
     // console.log($("#right-menu>li:not(.dropdown),ul.dropdown-menu>li"));
     $("#right-menu>li,ul.dropdown-menu>li").removeClass("disabled").find("a").attr("disabled",false);
+    $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
     $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
   }
 }

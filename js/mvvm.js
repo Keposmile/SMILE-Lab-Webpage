@@ -1,10 +1,10 @@
 $(function(){
-  setUp_keyword_table_column(4);
+  setUp_keyword_table_column(5);
   // avalon.filters.jsonit=function(str){
   //   return JSON.parse(str);
   // };
   avalon.filters.clean=function(str){
-    var keywords_pattern=new RegExp(/[a-zA-Z""]+/g);
+    var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
     str=str.match(keywords_pattern);
     return str;
   };
@@ -26,42 +26,46 @@ $(function(){
         title:"US presidential election",
         groupId:4,
         disabled:false
+      },{
+        title:"China cooperation with Sudan",
+        groupId:5,
+        disabled:false
       }
     ],
     //注意！！关键词不同的中可以出现相同的keyword，但是，在关键词数组中的位置绝对不能相同，否则会出错！
     keywords_1:[
       "civil war",
+      "ISIS",
+      "air strike",
       "humanitarian crisis",
+      "aid",
+      "Austria",
       "European EU",
       "Russia",
-      "United States US america",
-      "government army",
-      "ISIS",
       "Assad",
       "Obama",
+      "United States US america",
+      "government army",
       "John Kerry",
       "Netanyahu",
       "Hungary",
-      "Austria",
       "Balkans Balkan",
       "humanitarian assistance",
-      "aid",
-      "air strike"
     ],
     keywords_2:[
       "nuclear deal",
-      "United States US america",
+      "Hezbollah",
+      "Obama",
       "Tehran",
       "Israe",
+      "United States US america",
       "Saudi Arabia",
       "ISIS",
       "terrorist",
       "uranium",
       "Trump",
-      "Obama",
       "Rouhani",
       "Jewish",
-      "Hezbollah",
       "negotiate"
     ],
     keywords_3:[
@@ -83,6 +87,20 @@ $(function(){
       "Donald Trump",
       "Democratic Party GOP",
       "Republican Party"
+    ],
+    keywords_5:[
+      "petroleum",
+      "oil",
+      "trade",
+      "economic",
+      "cooperation",
+      "Omar al Bashir",
+      "investor",
+      "Xi Jinping",
+      "investment",
+      "Chinese Peoples\'s War",
+      "70th Anniversary",
+      "bilateral"
     ],
     selected:{
       // column1:[],
@@ -116,7 +134,9 @@ $(function(){
         otherColumnInput.attr("disabled",false).parent().removeClass("checkbox-disabled");
       }
 
-      // console.log($("#hide-tab-1 table input[type=checkbox][checked=true]").parent().length);
+      // 点击页面的leyword后，自动跳转到search TAB下
+      $("#left-menu li a:eq(0)").trigger("click");
+      this.left_menu_trigger(0);
     },
     remove_from_table_selected:function(e){
       var thisKeyword=$(e.target).parent().parent().find("span:eq(1)").text();
@@ -126,17 +146,35 @@ $(function(){
     },
     remove_all_selected:function(){
       var selected= this.selected.column;
-      console.log($("#hide-tab-1 table input[type=checkbox]:checked").parent().length);
       $("#hide-tab-1 table input[type=checkbox]:checked").parent().trigger("click").attr("data-selected","");
       selected=[];
     },
     submit_all_keywords:function(){
       var _keywords=this.selected.column;
-      var keywords_pattern=new RegExp(/[a-zA-Z""]+/g);
+      var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
       for(var i=0;i<_keywords.length;i++){
         _keywords[i]=_keywords[i].match(keywords_pattern);
       }
+      this.hide_bottom_tabs();
+      // postAjax(url,_keywords,function(){
+      // });
+      // console.log(this);
+      setTimeout(function(){
+        // console.log(this);
+        vm_body_columns.show_bottom_tabs();
+      },200);
+    },
+    disabled_left_part:function(){
 
+    },
+    enabled_left_part:function(){
+
+    },
+    show_bottom_tabs:function(){
+      $(".bottom-hide-tabs").show(1000);
+    },
+    hide_bottom_tabs:function(){
+      $(".bottom-hide-tabs").hide(1000);
     },
     result:{
       content:[

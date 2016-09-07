@@ -42,8 +42,15 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul id="right-menu" class="menu nav navbar-nav">
                 <!-- <li><a href="#"><span class="sr-only">(current)</span></a></li> -->
-                <li><a href="#" >Sentences</a></li>
-                <li><a href="#">Knowledge triplet</a></li>
+                <li role="presentation" class="dropdown">
+                  <a id="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Example<span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Example 1</a></li>
+                    <li><a href="#">Example 2</a></li>
+                  </ul>
+                </li>
                 <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate kg</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -63,14 +70,14 @@
         </div>
       </div>
       <!-- 下部可隐藏式选项卡 -->
-      <div id="hide-tab-0" class="bottom-hide-tabs">
+      <!-- <div id="hide-tab-0" class="bottom-hide-tabs">
         <div class="tabs-handle">
           <p>Examples</p>
         </div>
         <div class="bottom-hide-tabs-container">
 
         </div>
-      </div>
+      </div> -->
       <div id="hide-tab-1" class="bottom-hide-tabs">
         <div class="tabs-handle">
           <p>Keyword</p>
@@ -92,7 +99,6 @@
             <img  ms-on-click="@change_keywords_slider_down" class="keywords_slider_btn" src="../img/up.png" alt="" />
           </div>
           <div class="keywords_slider" style="display:none">
-            <img  ms-on-click="@change_keywords_slider_up" class="keywords_slider_btn" src="../img/down.png" alt="" />
             <table class="table table-condensed">
               <thead>
                 <tr>
@@ -122,6 +128,7 @@
             </table>
             <!-- <div>{{@selected.column}}</div> -->
             <!-- <div>{{@clean_keywords_selected}}</div> -->
+            <img  ms-on-click="@change_keywords_slider_up" class="keywords_slider_btn" src="../img/down.png" alt="" />
           </div>
         </div>
       </div>
@@ -235,7 +242,7 @@
             <div class="panel-footer">
               <div class="container-fluid">
                 <div class="btn-group btn-group-justified" role="group">
-                  <a class="btn btn-success">Save! </a>
+                  <a class="btn btn-success">Excuate! </a>
                 </div>
               </div>
             </div>
@@ -257,6 +264,25 @@
             <div class="modal-footer">
               <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
               <button ms-on-click="@upload_selected_content" type="button" class="btn btn-primary">Upload！</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <div id="loadingModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button id="closeLoading" type="button" class="hide close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">上传中...</h4>
+            </div>
+            <div class="modal-body">
+              <!-- <p>One fine body&hellip;</p> -->
+              <div class="loadingBorder">
+                <div class="loadingLine"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
             </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
