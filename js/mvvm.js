@@ -1,4 +1,5 @@
 $(function(){
+
   setUp_keyword_table_column(5);
   // avalon.filters.jsonit=function(str){
   //   return JSON.parse(str);
@@ -102,15 +103,14 @@ $(function(){
       "70th Anniversary",
       "bilateral"
     ],
+    //选择的关键词数组
     selected:{
-      // column1:[],
-      // column2:[],
-      // column3:[],
-      // column4:[],
+      groupId:"",
       column:[]
     },
+    //禁用其他列的方法
     disabled_other_columns:function(e){
-      //禁用其他列的方法
+
       var _this=$(e.target);
       if(_this.find("input[type=checkbox]:eq(0)").attr("disabled")){
         console.log("out");
@@ -134,45 +134,109 @@ $(function(){
         otherColumnInput.attr("disabled",false).parent().removeClass("checkbox-disabled");
       }
 
-      // 点击页面的leyword后，自动跳转到search TAB下
+      // 点击页面的keyword后，自动跳转到search TAB下
       $("#left-menu li a:eq(0)").trigger("click");
       this.left_menu_trigger(0);
     },
+    //移除单个keyword的选中
     remove_from_table_selected:function(e){
       var thisKeyword=$(e.target).parent().parent().find("span:eq(1)").text();
       // console.log($("#"+thisKeyword));
       $("label[for^=\""+thisKeyword+"\"][data-selected=selected]").trigger("click").attr("data-selected","");
       // $("input[type=checkbox]["+thisKeyword+"]").trigger("click").parent().attr("data-selected","");
     },
+    //移除所有keyword的选中
     remove_all_selected:function(){
       var selected= this.selected.column;
       $("#hide-tab-1 table input[type=checkbox]:checked").parent().trigger("click").attr("data-selected","");
       selected=[];
     },
+    //提交所有选中的keyword
     submit_all_keywords:function(){
       var _keywords=this.selected.column;
       var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
       for(var i=0;i<_keywords.length;i++){
         _keywords[i]=_keywords[i].match(keywords_pattern);
       }
+      var keywords_data={
+        status:0,
+        message:"NewTopicQuery",
+        data:{
+          TopicId:"",
+          TopicName:"",
+          KeywordsList:[]
+        }
+      };
+      // postAjax("",keywords_data,function(data){
+      getAjax("../data/result.json",null,function(data){
+        if (data.status===0) {
+          vm_body_columns.result.content=[];
+          vm_body_columns.chartsData.labels=[];
+          vm_body_columns.chartsData.datasets.data=[];
+          vm_body_columns.result.centent=data.data.News;
+          console.log(data.data.DateNum.length);
+          var result_content_model={
+            title:"",
+            id:""
+          };
+          for (var j= 0; j < data.data.News.length; j++) {
+            vm_body_columns.result.content.push(result_content_model);
+            vm_body_columns.result.content[j].title=data.data.News[j].NewsTitle;
+            vm_body_columns.result.content[j].id=data.data.News[j].NewsId;
+          }
+          for (var i = 0; i < data.data.DateNum.length; i++) {
+            vm_body_columns.chartsData.labels.push(data.data.DateNum[i].Date);
+            vm_body_columns.chartsData.datasets[0].data.push(data.data.DateNum[i].Count);
+          }
+          console.log(vm_body_columns.chartsData.labels);
+          chart_setup(vm_body_columns.chartsData);
+        }
+      });
+    },
+    chartsData:{
+      labels : [],
+      datasets : [{
+        label: "My First dataset",
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        data : []
+      }]
     },
     result:{
       content:[
-        {
-          title:"this is result of search 1",
-          id:"11223344"
-        },{
-          title:"222222",
-          id:"889919292"
-        }
+        // {
+        //   title:"this is result of search 1",
+        //   id:"11223344"
+        // },{
+        //   title:"222222",
+        //   id:"889919292"
+        // }
       ]
+    },
+    // have_result:function(){
+    //   console.log(this.result.content.length);
+    //   return (this.result.content.length!==0);
+    // },
+    show_result:function(){
+      // console.log("1");
+      // return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.selected.column.length!==0);
+      return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.result.content.length!==0);
+    },
+    guide_show_status:true,
+    show_guide:function(){
+      return this.guide_show_status;
+    },
+    content:{
+    },
+    have_content:function(){
+      return !isEmpty(this.content);
     },
     //左侧文章查询结果和对应tab打开关闭控制
     open_content_tab:function(e){
       var _this=$(e.target);
       var _thisLink=_this.parent();
       // _thisLink.parent().find("input:eq(0)").trigger("click");
-      console.log(this.open_content);
+      // console.log(this.open_content);
       // console.log(this.open_content.length);
       if($("#"+_thisLink.attr("data-id"))[0]){
         $("#"+_thisLink.attr("data-id")+" button").trigger("click");
@@ -195,13 +259,13 @@ $(function(){
       // console.log(this.left_menu_status===0);
       return this.left_menu_status===0;
     },
-    show_result:function(){
-      // console.log();
-      return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.selected.column.length!==0);
-    },
     show_parameter:function(){
       // console.log(this.left_menu_status===1);
       return this.left_menu_status===1;
+    },
+    content_slider_status:false,
+    show_content_slider:function(){
+      return vm_body_columns.content_slider_statu;
     },
     // 属性滑动块控制
     sliderData:[{
@@ -348,7 +412,7 @@ function setUp_keyword_table_column(columnNum){
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:@keywords_"+i+"[key],class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:@keywords_"+i+"[key],value:@keywords_"+i+"[key],class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
     // if($("#"))
-    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el+'_'+key,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el+'_'+key,value:el+'_'+key,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
+    $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el+'_'+key,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el+'_'+key,value:el+'_'+key,class:'keywords_"+i+"'}\">{{el}}</label></td>");
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{keyword-id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
   }
 }
@@ -358,4 +422,127 @@ function isEmpty(obj){
     return false;
   }
   return true;
+}
+
+
+function chart_setup(data){
+
+  //Get the context of the canvas element we want to select
+  var   options ={
+
+        //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+        scaleBeginAtZero : true,
+
+        //Boolean - Whether grid lines are shown across the chart
+        scaleShowGridLines : true,
+
+        //String - Colour of the grid lines
+        scaleGridLineColor : "rgba(0,0,0,.05)",
+
+        //Number - Width of the grid lines
+        scaleGridLineWidth : 1,
+
+        //Boolean - Whether to show horizontal lines (except X axis)
+        scaleShowHorizontalLines: true,
+
+        //Boolean - Whether to show vertical lines (except Y axis)
+        scaleShowVerticalLines: true,
+
+        //Boolean - If there is a stroke on each bar
+        barShowStroke : true,
+
+        //Number - Pixel width of the bar stroke
+        barStrokeWidth : 2,
+
+        //Number - Spacing between each of the X value sets
+        barValueSpacing : 5,
+
+        //Number - Spacing between data sets within X values
+        barDatasetSpacing : 1,
+
+        //String - A legend template
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+
+
+
+  };
+  //Get context with jQuery - using jQuery's .get() method.
+  var ctx = $("#myChart").get(0).getContext("2d");
+  //This will get the first returned node in the jQuery collection.
+  var Bar = new Chart(ctx).Bar(data,options);
+  // Bar.defaults = {
+  //
+  //   //Boolean - If we show the scale above the chart data
+  //   	scaleOverlay : false,
+  //
+  //   	//Boolean - If we want to override with a hard coded scale
+  //   	scaleOverride : false,
+  //
+  //   	//** Required if scaleOverride is true **
+  //   	//Number - The number of steps in a hard coded scale
+  //   	scaleSteps : null,
+  //   	//Number - The value jump in the hard coded scale
+  //   	scaleStepWidth : null,
+  //   	//Number - The scale starting value
+  //   	scaleStartValue : null,
+  //
+  //   	//String - Colour of the scale line
+  //   	scaleLineColor : "rgba(0,255,0,.1)",
+  //
+  //   	//Number - Pixel width of the scale line
+  //   	scaleLineWidth : 1,
+  //
+  //   	//Boolean - Whether to show labels on the scale
+  //   	scaleShowLabels : false,
+  //
+  //   	//Interpolated JS string - can access value
+  //   	scaleLabel : "<%=value%>",
+  //
+  //   	//String - Scale label font declaration for the scale label
+  //   	scaleFontFamily : "'Arial'",
+  //
+  //   	//Number - Scale label font size in pixels
+  //   	scaleFontSize : 12,
+  //
+  //   	//String - Scale label font weight style
+  //   	scaleFontStyle : "normal",
+  //
+  //   	//String - Scale label font colour
+  //   	scaleFontColor : "#666",
+  //
+  //   	///Boolean - Whether grid lines are shown across the chart
+  //   	scaleShowGridLines : true,
+  //
+  //   	//String - Colour of the grid lines
+  //   	scaleGridLineColor : "rgba(255,0,0,.05)",
+  //
+  //   	//Number - Width of the grid lines
+  //   	scaleGridLineWidth : 1,
+  //
+  //   	//Boolean - If there is a stroke on each bar
+  //   	barShowStroke : false,
+  //
+  //   	//Number - Pixel width of the bar stroke
+  //   	barStrokeWidth : 2,
+  //
+  //   	//Number - Spacing between each of the X value sets
+  //   	barValueSpacing : 5,
+  //
+  //   	//Number - Spacing between data sets within X values
+  //   	barDatasetSpacing : 1,
+  //
+  //   	//Boolean - Whether to animate the chart
+  //   	animation : true,
+  //
+  //   	//Number - Number of animation steps
+  //   	animationSteps : 60,
+  //
+  //   	//String - Animation easing effect
+  //   	animationEasing : "easeOutQuart",
+  //
+  //   	//Function - Fires when the animation is complete
+  //   	onAnimationComplete : null
+  //
+  // };
+  $("#hide-tab-2>div.tabs-handle>p").trigger("click");
 }

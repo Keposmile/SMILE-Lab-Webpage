@@ -5,7 +5,7 @@ $(function(){
   setUp_hide_tabs();
   delete_this_tab();
   show_hide_tabs();
-  disabled_change_right_menu();
+  // vm_body_columns.disabled_change_right_menu();
   $(window).resize(function(){
     setUp_hide_tabs();
   });
@@ -138,6 +138,7 @@ function postAjax(url,data,success){
   $.ajax({
     type: 'POST',
     url: url,
+    content:"application/json",
     dataType: 'json',
     data: data,
     success: success,
@@ -145,12 +146,14 @@ function postAjax(url,data,success){
       alert("服务器好像不太给力～");
     }
   });
+
 }
 
 function getAjax(url,data,success) {
   $.ajax({
     type: 'GET',
     url: url,
+    content:"application/json",
     dataType: 'json',
     data: JSON.stringify(data),
     success: success,

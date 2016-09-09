@@ -65,11 +65,16 @@
             <div class="content-tab panel-body">
               Basic panel example
               <div ms-for="el in @open_content">{{el.title}}:{{el.id}}</div>
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <div ms-if="@show_guide()" id="guide">
+                <h3>Guide</h3>
+              </div>
+              <div ms-if="@have_content()">?????</div>
+              <div ms-if="@show_content_slider()" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                   <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
 
@@ -77,16 +82,31 @@
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
                     <div class="carousel-caption">
-                    ...
+                      <h3>第一页</h3>
+                      <p>1111111111</p>
                     </div>
                   </div>
                   <div class="item">
-                    <img src="..." alt="...">
+                    <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
-                    ...
+                      <h3>第二页</h3>
+                      <p>2222222222</p>
                     </div>
                   </div>
-                  ...
+                  <div class="item">
+                    <!-- <img src="..." alt="..."> -->
+                    <div class="carousel-caption">
+                      <h3>第三页</h3>
+                      <p>3333333333</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <!-- <img src="..." alt="..."> -->
+                    <div class="carousel-caption">
+                      <h3>第四页</h3>
+                      <p>4444444444</p>
+                    </div>
+                  </div>
                 </div>
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -142,20 +162,8 @@
                 <tr>
                   <!-- <td>
                     <label ms-for="(key,el) in @keywords_1" onselectstart="return false" ms-attr="{for:@keywords_1[key]}"><input  type="checkbox" ms-duplex="@selected.column1" ms-attr="{id:@keywords_1[key],value:@keywords_1[key],class:'keywords_1'}">{{el}}</label>
-                    <div>{{@selected.column1}}</div>
-                  </td>
-                  <td>
-                    <label ms-for="(key,el) in @keywords_2" onselectstart="return false" ms-attr="{for:@keywords_2[key]}"><input  type="checkbox" ms-duplex="@selected.column2" ms-attr="{id:@keywords_2[key],value:@keywords_2[key],class:'keywords_2'}">{{el}}</label>
-                    <div>{{@selected.column2}}</div>
-                  </td>
-                  <td>
-                    <label ms-for="(key,el) in @keywords_3" onselectstart="return false" ms-attr="{for:@keywords_3[key]}"><input  type="checkbox" ms-duplex="@selected.column3" ms-attr="{id:@keywords_3[key],value:@keywords_3[key],class:'keywords_3'}">{{el}}</label>
-                    <div>{{@selected.column3}}</div>
-                  </td>
-                  <td>
-                    <label ms-for="(key,el) in @keywords_4" onselectstart="return false" ms-attr="{for:@keywords_4[key]}"><input  type="checkbox" ms-duplex="@selected.column4" ms-attr="{id:@keywords_4[key],value:@keywords_4[key],class:'keywords_4'}">{{el}}</label>
-                    <div>{{@selected.column4}}</div>
-                  </td> -->
+                    <div>{{@selected.column}}</div>
+                  </td>-->
                 </tr>
               </tbody>
             </table>
@@ -171,7 +179,7 @@
         </div>
         <div class="bottom-hide-tabs-container">
           <div class="table">
-            <canvas id="myChart" width="1000px" height="400"></canvas>
+            <canvas id="myChart" width="700" height="400"></canvas>
           </div>
         </div>
       </div>
@@ -241,7 +249,7 @@
                 <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
                 <!-- <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><label ms-attr="{for:el.id}"><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></label></a> -->
                 <!-- <input type="checkbox" ms-attr=""> -->
-                <input type="checkbox" class="hide" ms-duplex="@open_content " ms-attr="{value:'{title:'+el.title+',id:'+el.id+'}'}" >
+                <input type="checkbox" class="hide" ms-duplex="@open_content " ms-attr="{value:'{NewsTitle:'+el.NewsTitle+',NewsId:'+el.NewsId+'}'}" >
               </div>
             </div>
           </div>

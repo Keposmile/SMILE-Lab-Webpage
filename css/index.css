@@ -208,7 +208,7 @@ label[data-selected=selected]{
   opacity: 0.5;
 }
 .left-tabs{
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .loadingBorder{
@@ -241,18 +241,15 @@ label[data-selected=selected]{
 }
 .item{
   min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel-control{
-  top:80%;
+  top:85%;
   height: 39px;
   border-radius: 10px;
   background-color: #0099ff;
   opacity: 1;
   background-image: rgba(0,0,0,0);
-  background-image: -webkit-rgba(0,0,0,0);
-  background-image: -o-linear-rgba(0,0,0,0);
-  background-image: -webkit-rgba(0,0,0,0);
-  /*background-image: rgba(0,0,0,0);*/
 }
 span.glyphicon{
   top:30%;
@@ -270,4 +267,13 @@ span.glyphicon{
   overflow: hidden;
   /* clip: rect(0, 0, 0, 0); */
   border: 0;
+}
+.carousel-indicators{
+  /*background-color: #aaa;*/
+}
+.carousel-indicators li{
+  border: 1px solid #0099ff;
+}
+.carousel-indicators li.active{
+  background-color: #0099ff;
 }
