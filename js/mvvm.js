@@ -108,7 +108,7 @@ $(function(){
       groupId:"",
       column:[]
     },
-    //禁用其他列的方法
+    //选择关键词时禁用其他列
     disabled_other_columns:function(e){
 
       var _this=$(e.target);
@@ -153,11 +153,6 @@ $(function(){
     },
     //提交所有选中的keyword
     submit_all_keywords:function(){
-      var _keywords=this.selected.column;
-      var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
-      for(var i=0;i<_keywords.length;i++){
-        _keywords[i]=_keywords[i].match(keywords_pattern);
-      }
       var keywords_data={
         status:0,
         message:"NewTopicQuery",
@@ -167,10 +162,19 @@ $(function(){
           KeywordsList:[]
         }
       };
+      var _keywords=this.selected.column;
+      var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
+      for(var i=0;i<_keywords.length;i++){
+        keywords_data.data.KeywordsList[i]=_keywords[i].match(keywords_pattern);
+      }
+      console.log(keywords_data);
       // postAjax("",keywords_data,function(data){
       getAjax("../data/result.json",null,function(data){
         if (data.status===0) {
+          // $("#right-tabs>li:not(:first)").;
           vm_body_columns.result.content=[];
+          $(".tab-title>button").trigger("click");
+          // $("#right-tabs>li:not(:first)").remove();
           vm_body_columns.chartsData.labels=[];
           vm_body_columns.chartsData.datasets.data=[];
           vm_body_columns.result.centent=data.data.News;
@@ -263,10 +267,15 @@ $(function(){
       // console.log(this.left_menu_status===1);
       return this.left_menu_status===1;
     },
+
+
+    // 右侧页面轮播分页控制
     content_slider_status:false,
     show_content_slider:function(){
-      return vm_body_columns.content_slider_statu;
+      return vm_body_columns.content_slider_status;
     },
+
+
     // 属性滑动块控制
     sliderData:[{
       parameter:"parameter0",
@@ -304,23 +313,6 @@ $(function(){
       max:1000  ,
       val:80
     }],
-    disabled_left_part:function(){
-      // alert($("body").css("height"));
-        $("#coverDiv").css({"height":$("body").height(),"width":$(".ui-layout-west").width()+35}).show();
-        $("div.ui-layout-resizer .ui-layout-resizer-west .ui-draggable-handle .ui-layout-resizer-open .ui-layout-resizer-west-open").removeClass("ui-draggable-handle");
-      $(window).resize(function(){
-        $("#coverDiv").css({"height":$("body").height(),"width":$(".ui-layout-west").width()+35}).show();
-      });
-    },
-    enabled_left_part:function(){
-      $("#coverDiv").hide();
-    },
-    show_bottom_tabs:function(){
-      $(".bottom-hide-tabs").show(1000);
-    },
-    hide_bottom_tabs:function(){
-      $(".bottom-hide-tabs").hide(1000);
-    },
     submit_parameter:function(){
       this.hide_bottom_tabs();
       this.disabled_left_part();
@@ -336,6 +328,17 @@ $(function(){
     get_parameter:function(contentId){
       $("li[role=presentation][class=active]").attr("id");
     },
+    open_content:[
+      // {
+      //   title:11,
+      //   id:22
+      // },{
+      //   title:33,
+      //   id:44
+      // }
+    ],
+    selected_content:[],
+    // 更新选中的文章id
     update_selected_content:function(){
       vm_body_columns.open_content=[];
       var _content_tabs=$("#right-tabs>li:not(#home-tab)");
@@ -349,17 +352,7 @@ $(function(){
         $("#myModal ul.list-group").append("<li class=\" list-group-item\"><label for=\""+vm_body_columns.open_content[i].title+"\"><input id=\""+vm_body_columns.open_content[i].title+"\" type=\"checkbox\" name=\"name\"  value=\""+vm_body_columns.open_content[i].id+"\">"+vm_body_columns.open_content[i].title+"</label></li>");
       }
     },
-    open_content:[
-      // {
-      //   title:11,
-      //   id:22
-      // },{
-      //   title:33,
-      //   id:44
-      // }
-    ],
-    selected_content:[
-    ],
+    //提交选中的文章
     upload_selected_content:function(){
       this.selected_content=$("#myModal li.list-group-item input[type=checkbox]").val();
       var _selected_content=[];
@@ -376,6 +369,7 @@ $(function(){
         window.location="../node_page.html";
       });
     },
+    //底部tab分页滑动控制
     change_keywords_slider_up:function(e){//向上滑动
       var thisSlide=$(e.target).parent();
       var index=$(".keywords_slider").index(thisSlide);
@@ -397,15 +391,40 @@ $(function(){
       $(".keywords_slider_btn").eq(index).animate({opacity:"0"},1000);
       $(".keywords_slider_btn").eq(next).animate({opacity:"0.5"},1000);
       // return false;
+    },
+    //底部tab控制
+    show_bottom_tabs:function(){
+      $(".bottom-hide-tabs").show(1000);
+    },
+    //底部tab控制
+    hide_bottom_tabs:function(){
+      $(".bottom-hide-tabs").hide(1000);
+    },
+    //提交属性执行程序后，禁用左侧菜单
+    disabled_left_part:function(){
+      // alert($("body").css("height"));
+        $("#coverDiv").css({"height":$("body").height(),"width":$(".ui-layout-west").width()+35}).show();
+        $("div.ui-layout-resizer .ui-layout-resizer-west .ui-draggable-handle .ui-layout-resizer-open .ui-layout-resizer-west-open").removeClass("ui-draggable-handle");
+      $(window).resize(function(){
+        $("#coverDiv").css({"height":$("body").height(),"width":$(".ui-layout-west").width()+35}).show();
+      });
+    },
+    //提交属性执行程序后，禁用左侧菜单
+    enabled_left_part:function(){
+      $("#coverDiv").hide();
+    },
+
+    show_example_1:function(){
+      vm_body_columns.left_menu_trigger(1);
+      $("#left-menu>li:eq(1)").trigger("click");
     }
-  });
-  var vm_result=avalon.define({
-    $id:"result"
+
   });
   avalon.scan(document.body);
   setup_slider_group("slider",7,vm_body_columns.sliderData);
-
+  toggle_left_menu(vm_body_columns);
 });
+
 function setUp_keyword_table_column(columnNum){
   $("#hide-tab-1 table>thead>tr").append("<th ms-for=\"(key,el) in @head | limitBy("+columnNum+")\" ms-attr=\"{id:@head[key].groupId}\">{{el.title}}</th>");
   for (var i = 1; i <= columnNum; i++) {
@@ -544,5 +563,8 @@ function chart_setup(data){
   //   	onAnimationComplete : null
   //
   // };
-  $("#hide-tab-2>div.tabs-handle>p").trigger("click");
+  if($("#hide-tab-2").css("bottom")!=="0px"){
+    $("#hide-tab-2>div.tabs-handle>p").trigger("click");
+  }
+
 }

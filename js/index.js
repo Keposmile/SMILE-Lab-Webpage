@@ -5,10 +5,11 @@ $(function(){
   setUp_hide_tabs();
   delete_this_tab();
   show_hide_tabs();
-  // vm_body_columns.disabled_change_right_menu();
+  disabled_change_right_menu();
   $(window).resize(function(){
     setUp_hide_tabs();
   });
+
 });
 
 function menu_active_effect(position){
@@ -26,7 +27,6 @@ function change_tabs_on_left_menu(){
   var menu_links=$("#left-menu>li");
   menu_links.eq(0).on("click",function(){
     show_left_tab("search");
-
   });
   menu_links.eq(1).on("click",function(){
     show_left_tab("parameters");
@@ -66,17 +66,21 @@ function change_folder_icon(_this){
   openIcon.removeClass("open-folder").addClass("close-folder");
   closeIcon.removeClass("close-folder").addClass("open-folder");
 }
+
 function addTab(tabTitle,tabId){
   if (!$("#"+tabId)[0]) {
-    $("#right-tabs").append("<li id=\""+tabId+"\" role='presentation'><a  class='tab-title' href='#'><span>"+tabTitle+"</span><button class='close tab-delete' data-dismiss='alert' aria-label='Close' type='button'><span>&times;</span></button></a></li>");
+    $("#right-tabs").append("<li id=\""+tabId+"\" role='presentation'><a  class='tab-title'  href='#'><span>"+tabTitle+"</span><button class='close tab-delete' data-dismiss='alert' aria-label='Close' type='button'><span>&times;</span></button></a></li>");
     $("#right-tabs>li").removeClass("active");
     $("#right-tabs>li:last-child").addClass("active");
   }
+  enabled_parameter();
 }
+
 function active_tabs_on_right(index){
   $("#right-tabs>li").removeClass("active");
   $("#right-tabs>li:eq("+index+")").addClass("active");
 }
+
 function change_tabs_on_right(){
   $(document).on("click","#right-tabs>li",function(){
     var _this=$(this);
@@ -84,6 +88,7 @@ function change_tabs_on_right(){
     active_tabs_on_right(index);
   });
 }
+
 function delete_this_tab(e){
   $(document).on("click",".tab-delete",function(){
     // alert("!");
@@ -97,6 +102,7 @@ function delete_this_tab(e){
     change_folder_icon($("a[data-id="+thisId+"]"));
   });
 }
+//底部tab控制
 function show_hide_tabs(){
   $(".tabs-handle>p").on("click",function(){
     var hide_tab=$(this).parent().parent();
@@ -109,6 +115,7 @@ function show_hide_tabs(){
     }
   });
 }
+//底部tab控制
 function setUp_hide_tabs(){
   // $(".bottom-hide-tabs").css("bottom","-"+$(this).find(".bottom-hide-tabs-container").eq(0).css("height"));
   var tabs=$(".bottom-hide-tabs");
@@ -119,6 +126,7 @@ function setUp_hide_tabs(){
     _this.css("bottom","-"+_this.find(".bottom-hide-tabs-container").eq(0).css("height")).css("z-index",z_index);
   }
 }
+//控制右侧的顶部菜单的禁用/启用
 function disabled_change_right_menu(){
   if($("#right-tabs>li").length==1){
     // console.log($("#right-menu>li").length);
@@ -126,13 +134,36 @@ function disabled_change_right_menu(){
     $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
     $("#dropdown-toggle").attr({"data-toggle":""});
     $("#modal-trigger").attr({"data-toggle":"","data-target":""});
+    // $("#left-menu>li:eq(0)").trigger("click");
+    disabled_parameter();
   }else{
     // console.log($("#right-menu>li").length);
     // console.log($("#right-menu>li:not(.dropdown),ul.dropdown-menu>li"));
     $("#right-menu>li,ul.dropdown-menu>li").removeClass("disabled").find("a").attr("disabled",false);
     $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
     $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
+    enabled_parameter();
   }
+}
+//打开result的tab后，点击右侧的tab，左侧的menu随之切换
+function toggle_left_menu(vm_body_columns){
+  $(document).on("click","#right-tabs>li:not(:first)",function() {
+    // console.log(1);
+    vm_body_columns.left_menu_trigger(1);
+    $("#left-menu>li:eq(1)").trigger("click");
+  });
+  $(document).on("click","#right-tabs>li:first",function(){
+    vm_body_columns.left_menu_trigger(0);
+    $("#left-menu>li:eq(0)").trigger("click");
+  });
+}
+//禁用left_menu的parameter
+function disabled_parameter(){
+  $("#left-menu>li:eq(1)").addClass("disabled").attr("disabled",true);
+}
+//启用left_menu的parameter
+function enabled_parameter(){
+  $("#left-menu>li:eq(1)").removeClass("disabled").attr("disabled",false);
 }
 function postAjax(url,data,success){
   $.ajax({
