@@ -1,0 +1,29 @@
+{
+  "status":0,
+  "sliderData":[{
+    "parameter":"parameter0",
+    "min":0,
+    "max":100,
+    "val":2
+  },{
+    "parameter":"parameter1",
+    "min":0,
+    "max":100,
+    "val":80
+  },{
+    "parameter":"parameter2",
+    "min":0,
+    "max":100,
+    "val":20
+  },{
+    "parameter":"parameter1",
+    "min":0,
+    "max":100,
+    "val":60
+  },{
+    "parameter":"parameter2",
+    "min":0,
+    "max":100,
+    "val":40
+  }]
+}

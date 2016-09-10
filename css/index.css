@@ -234,17 +234,18 @@ label[data-selected=selected]{
   z-index:2000;
   visibility:visible;
 }
-#carousel-example-generic{
+#carousel{
   width:100%;
-  height:500px;
+  /*height:500px;*/
   margin:10px auto;
 }
 .item{
   min-height: 400px;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #000;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 .carousel-control{
-  top:85%;
+  top:95%;
   height: 39px;
   border-radius: 10px;
   background-color: #0099ff;
@@ -297,7 +298,20 @@ span.glyphicon{
   font-size: 15px;
   margin: 0 5px 0 0;
 }
-.alert-success {
+#result-tab .alert-success {
   background-color: rgba(0,0,0,0);
   border-color:rgba(0,0,0,0);
+}
+#content p{
+  font-size: 15px;
+}
+#content span{
+  display: inline-block;
+  margin:5px 20px 20px 0;
+  font-size: 15px;
+}
+.carousel-caption{
+  color: #000;
+  padding-bottom: 80px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
