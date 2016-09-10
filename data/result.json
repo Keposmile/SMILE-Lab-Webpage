@@ -6,14 +6,17 @@
     "TopicName":"Syria",
     "News":[
       {
+        "confident":"10",
         "NewsId":"f74bb34a-6b3b-4eee-9489-b5b88251d010",
         "NewsTitle":" ISIS defector"
       },
       {
+        "confident":"10",
         "NewsId":"f8c9e153-15bd-4caa-9a24-6769fe2df1d2",
         "NewsTitle":"U.S."
       },
       {
+        "confident":"10",
         "NewsId":"473b0005-3ad2-4d50-8cb5-978b3dfd7ef3",
         "NewsTitle":"Refugee crisis in 20 photos"
       }

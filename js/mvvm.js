@@ -1,9 +1,6 @@
 $(function(){
 
   setUp_keyword_table_column(5);
-  // avalon.filters.jsonit=function(str){
-  //   return JSON.parse(str);
-  // };
   avalon.filters.clean=function(str){
     var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
     str=str.match(keywords_pattern);
@@ -105,7 +102,8 @@ $(function(){
     ],
     //选择的关键词数组
     selected:{
-      groupId:"",
+      TopicId:"",
+      TopicName:"",
       column:[]
     },
     //选择关键词时禁用其他列
@@ -119,19 +117,23 @@ $(function(){
 
       // label样式设置
       var _thisColumnClass=$(e.target).attr("class");
+      console.log(_thisColumnClass);
       if(_this.attr("data-selected")=="selected"){
         _this.attr("data-selected","");
       }else {
         _this.attr("data-selected","selected");
       }
-
-
       var pattern=/(keywords_)([0-9])+/;
       var _thisGroupIndex=_thisColumnClass.match(pattern)[2];
+      console.log(_thisGroupIndex);
+      vm_body_columns.selected.TopicId=vm_body_columns.head[_thisGroupIndex-1].groupId;
+      vm_body_columns.selected.TopicName=vm_body_columns.head[_thisGroupIndex-1].title;
       var otherColumnInput=$("#hide-tab-1 table input[type=checkbox]:not(."+_thisColumnClass+")");//获取非本列的input checkbox
       otherColumnInput.attr("disabled",true).parent().addClass("checkbox-disabled");//禁用其他列
-      if(this.selected.column.length===0){//检测到本列数据为空时，还原其他列
+      if(this.selected.column.length===0){//检测到本列数据为空时，还原其他列,并清空已有数据
         otherColumnInput.attr("disabled",false).parent().removeClass("checkbox-disabled");
+        vm_body_columns.selected.TopicId="";
+        vm_body_columns.selected.TopicName="";
       }
 
       // 点击页面的keyword后，自动跳转到search TAB下
@@ -165,13 +167,20 @@ $(function(){
       var _keywords=this.selected.column;
       var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
       for(var i=0;i<_keywords.length;i++){
-        keywords_data.data.KeywordsList[i]=_keywords[i].match(keywords_pattern);
+        keywords_data.data.KeywordsList[i]={
+          KeywordOrder:i,
+          Keyword:_keywords[i].match(keywords_pattern)[0]
+        };
+        console.log(keywords_data.data.KeywordsList[i].Keyword);
       }
+      keywords_data.data.TopicId=vm_body_columns.selected.TopicId;
+      keywords_data.data.TopicName=vm_body_columns.selected.TopicName;
       console.log(keywords_data);
       // postAjax("",keywords_data,function(data){
       getAjax("../data/result.json",null,function(data){
         if (data.status===0) {
           // $("#right-tabs>li:not(:first)").;
+          $("#hide-tab-2>.disabled").removeClass("disabled");
           vm_body_columns.result.content=[];
           $(".tab-title>button").trigger("click");
           // $("#right-tabs>li:not(:first)").remove();
@@ -181,12 +190,14 @@ $(function(){
           console.log(data.data.DateNum.length);
           var result_content_model={
             title:"",
-            id:""
+            id:"",
+            confident:""
           };
           for (var j= 0; j < data.data.News.length; j++) {
             vm_body_columns.result.content.push(result_content_model);
             vm_body_columns.result.content[j].title=data.data.News[j].NewsTitle;
             vm_body_columns.result.content[j].id=data.data.News[j].NewsId;
+            vm_body_columns.result.content[j].confident=data.data.News[j].confident;
           }
           for (var i = 0; i < data.data.DateNum.length; i++) {
             vm_body_columns.chartsData.labels.push(data.data.DateNum[i].Date);
@@ -232,6 +243,27 @@ $(function(){
     },
     content:{
     },
+    show_content_status:false,
+    show_content:function(){
+      return this.show_content_status;
+    },
+    updateContent:function(data_id){//更新页面content的内容
+      var data={
+        "status":1,
+        "message":" NewsDetailQuery",
+        "newsId":data_id
+      };
+      console.log(data);
+      getAjax("../data/content.json",null,function(data){
+      // postAjax(url,data,function(data){
+        if(data.status==1){
+          content=data;
+          this.guide_show_status=false;
+          this.show_content_status=true;
+        }
+      });
+    },
+    // content_show_status:false,
     have_content:function(){
       return !isEmpty(this.content);
     },
@@ -253,10 +285,13 @@ $(function(){
         disabled_change_right_menu();
         // this.update_selected_content();
       }
+      var data_id=_thisLink.attr("data-id");
+      this.updateContent(data_id);
     },
     left_menu_status:0,//左侧页面菜单的选择状态
     //左侧页面菜单的选择状态控制器
     left_menu_trigger:function(status){
+      console.log(status);
       this.left_menu_status=status;
     },
     show_search:function(){
@@ -264,18 +299,13 @@ $(function(){
       return this.left_menu_status===0;
     },
     show_parameter:function(){
-      // console.log(this.left_menu_status===1);
       return this.left_menu_status===1;
     },
-
-
     // 右侧页面轮播分页控制
     content_slider_status:false,
     show_content_slider:function(){
       return vm_body_columns.content_slider_status;
     },
-
-
     // 属性滑动块控制
     sliderData:[{
       parameter:"parameter0",
@@ -423,6 +453,7 @@ $(function(){
   avalon.scan(document.body);
   setup_slider_group("slider",7,vm_body_columns.sliderData);
   toggle_left_menu(vm_body_columns);
+  delete_this_tab(vm_body_columns);
 });
 
 function setUp_keyword_table_column(columnNum){
@@ -443,9 +474,10 @@ function isEmpty(obj){
   return true;
 }
 
-
 function chart_setup(data){
 
+  $("#chartPosition").empty();
+  $("#chartPosition").append("<canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>");
   //Get the context of the canvas element we want to select
   var   options ={
 

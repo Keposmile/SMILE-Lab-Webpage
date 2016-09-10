@@ -3,7 +3,6 @@ $(function(){
   menu_active_effect("right");
   change_tabs_on_right();
   setUp_hide_tabs();
-  delete_this_tab();
   show_hide_tabs();
   disabled_change_right_menu();
   $(window).resize(function(){
@@ -89,7 +88,7 @@ function change_tabs_on_right(){
   });
 }
 
-function delete_this_tab(e){
+function delete_this_tab(vm_body_columns){
   $(document).on("click",".tab-delete",function(){
     // alert("!");
     var thisLi=$(this).parent().parent();
@@ -100,11 +99,18 @@ function delete_this_tab(e){
     var thisId=thisLi.attr("id");
     disabled_change_right_menu();
     change_folder_icon($("a[data-id="+thisId+"]"));
+    if($("#right-tabs>li").length==1){
+      // vm_body_columns.left_menu_trigger(0);
+      // $("#left-menu>li:eq(0)").trigger("click");
+      console.log("here");
+      $("#right-tabs>li:first").trigger("click");
+      // console.log("vm_body_columns.left_menu_status:"+vm_body_columns.left_menu_status);
+    }
   });
 }
 //底部tab控制
 function show_hide_tabs(){
-  $(".tabs-handle>p").on("click",function(){
+  $(document).on("click", ".tabs-handle:not(.disabled)>p",function(){
     var hide_tab=$(this).parent().parent();
     if(hide_tab.css("bottom")!="0px"){
       hide_tab.css("z-index","200").stop().animate({bottom:"0px"},500);
@@ -148,12 +154,14 @@ function disabled_change_right_menu(){
 //打开result的tab后，点击右侧的tab，左侧的menu随之切换
 function toggle_left_menu(vm_body_columns){
   $(document).on("click","#right-tabs>li:not(:first)",function() {
-    // console.log(1);
-    vm_body_columns.left_menu_trigger(1);
-    $("#left-menu>li:eq(1)").trigger("click");
+    if($("#right-tabs>li:not(:first)").length!==0){
+      vm_body_columns.left_menu_trigger(1);
+      $("#left-menu>li:eq(1)").trigger("click");
+    }
   });
   $(document).on("click","#right-tabs>li:first",function(){
     vm_body_columns.left_menu_trigger(0);
+    console.log("vm_body_columns.left_menu_status:"+vm_body_columns.left_menu_status);
     $("#left-menu>li:eq(0)").trigger("click");
   });
 }
@@ -165,6 +173,7 @@ function disabled_parameter(){
 function enabled_parameter(){
   $("#left-menu>li:eq(1)").removeClass("disabled").attr("disabled",false);
 }
+
 function postAjax(url,data,success){
   $.ajax({
     type: 'POST',
