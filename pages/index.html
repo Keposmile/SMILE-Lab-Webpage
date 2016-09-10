@@ -47,8 +47,8 @@
                   Example<span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#" ms-on-click="@show_example_1()">Example 1</a></li>
-                    <li><a href="#">Example 2</a></li>
+                    <li><a href="#" ms-on-click="@show_example(1)">Example 1</a></li>
+                    <li><a href="#" ms-on-click="@show_example(2)">Example 2</a></li>
                   </ul>
                 </li>
                 <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate kg</a></li>
@@ -63,12 +63,13 @@
               <li role="presentation" id="home-tab" class="active"><a href="#">Home</a></li>
             </ul>
             <div class="content-tab panel-body">
-              <!-- <div ms-for="el in @open_content">{{el.title}}:{{el.id}}</div> -->
               <div ms-if="@show_guide()" id="guide">
                 <h1>The Guide</h1>
               </div>
-              <div ms-if="@show_content()" id="content">this is content {{@content}}</div>
-              <!-- <div ms-if="@have_content()">?????</div> -->
+              <div ms-if="@show_content()" id="content">
+                <div><p>{{@content.NewsContent}}</p></div>
+
+              </div>
               <div  ms-if="@show_content_slider()" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -206,6 +207,7 @@
               <ul id="left-menu" class="menu nav navbar-nav">
                 <li class="active"><a ms-on-click="@left_menu_trigger(0)" href="#">Search <span class="sr-only">(current)</span></a></li>
                 <li><a ms-on-click="@left_menu_trigger(1)" href="#">Parameters</a></li>
+                <li id="cover"></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
