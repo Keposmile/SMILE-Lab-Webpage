@@ -295,7 +295,207 @@ $(function(){
     },
 
     TripletsData:{
-
+      "winSize":4,
+      "step":2,
+      "SentenceNum":10,
+      "EffectTripletsNum":30,
+      "Sentences":[
+        {
+          "SentenceOrder":1,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":3,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.93,
+            "Subject":"Comcast",
+            "Relation":" is bringing",
+            "Object":"a couple of new third-party connected devices",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.97,
+            "Subject":"One of them",
+            "Relation":"is",
+            "Object":"the garage door",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":3,
+            "Confidence":0.82,
+            "Context":"Context(this latest move will allow,List([32, 59))):(both products; to be controlled; )"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        },{
+          "SentenceOrder":2,
+          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
+          "TripletsNum":2,
+          "Triplets":[{
+            "TripletOrder":1,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"aa",
+            "Object":"bb",
+            "Attribute":"attri"
+          },{
+            "TripletOrder":2,
+            "Confidence":0.82,
+            "Subject":"Comcast",
+            "Relation":"cc",
+            "Object":"dd",
+            "Attribute":"attri"
+          }]
+        }
+      ]
     },
     update_triplets_data:function(NewsId){
       var data={
@@ -307,6 +507,26 @@ $(function(){
       getAjax("../data/triplets.json",null,function(data){
         data.Data=vm_body_columns.TripletsData;
       });
+    },
+    show_slider_win_effect:function(){
+      var totalTriGroup=$(".Sentences1");
+      var winSize=this.TripletsData.winSize;
+      var firstIndex=-1;
+      var step=this.TripletsData.step;
+      // console.log(firstIndex+" "+lastIndex+" "+step);
+      // var nowInWin=getItemsBetween(firstIndex,lastIndex,".Sentences1");
+      // nowInWin.addClass("in-win");
+      var timer=setInterval(function(){
+        var nowInWin=getItemsBetween(firstIndex,winSize,".Sentences1");
+        totalTriGroup.removeClass("in-win");
+        if(nowInWin.length!==winSize){
+          clearInterval(timer);
+        }else{
+          nowInWin.addClass("in-win");
+          firstIndex+=step;
+        }
+        console.log("1:"+firstIndex+" ");
+      },3000);
     },
     left_menu_status:0,//左侧页面菜单的选择状态
     //左侧页面菜单的选择状态控制器
@@ -844,6 +1064,14 @@ function switch_tabs_right(vm_body_columns){
     vm_body_columns.update_parameter(_thisTabId);
 
   });
+}
+// firstIndex是第一个元素的index，lastIndex是最后一个的后面一个的index;
+function getItemsBetween(firstIndex,lastIndex,selecter){
+  if(firstIndex==(-1)){
+    return $(selecter+":lt("+lastIndex+")");
+  }
+  console.log($(selecter+":gt("+firstIndex+"):lt("+lastIndex+")"));
+  return $(selecter+":gt("+firstIndex+"):lt("+lastIndex+")");
 }
 
 function postAjax(url,data,success){

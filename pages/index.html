@@ -91,6 +91,10 @@
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
                     <div class="carousel-caption">
+                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                      <div class="divide_line"></div>
+
                       <h3 ms-text="@content.NewsTitle"></h3>
                       <div>
                         <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
@@ -102,6 +106,10 @@
                   <div class="item">
                     <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
+                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                      <div class="divide_line"></div>
+
                       <h3 ms-text="@content.NewsTitle"></h3>
                       <div>
                         <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
@@ -112,25 +120,48 @@
                   </div>
                   <div class="item">
                     <div class="carousel-caption">
+                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                      <div class="divide_line"></div>
+
                       <h3>Triplets</h3>
-                      <!-- <div ms-for="el in @TripletsData.Sentences">
+                      <div class="Sentences" ms-for="el in @TripletsData.Sentences">
                         <h5>{{el.Sentence}}</h5>
-                        <div class="triplets" ms-if="!el.Context">
-                          <p class="Subject">{{el.Subject}}</p>
-                          <p class="Relation">{{el.Relation}}</p>
-                          <p class="Object">{{el.Object}}</p>
+                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
+                          <span class="Confidence">{{el.Confidence}}</span>
+                          (<span class="Subject">{{el.Subject}}</span>;
+                          <span class="Relation">{{el.Relation}}</span>;
+                          <span class="Object">{{el.Object}}</span>)
                         </div>
-
-
-                      </div> -->
+                        <div class="triplets" ms-if="el.Context"ms-for="el in el.Triplets">
+                          <span class="Confidence">{{el.Confidence}}</span>
+                          <span class="Context">{{el.Context}}</span>
+                        </div>
+                      </div>
 
                     </div>
                   </div>
                   <div class="item">
                     <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
-                      <h3>第四页</h3>
-                      <p>4444444444</p>
+                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                      <div class="divide_line"></div>
+                      <h3 ms-on-click="@show_slider_win_effect()">Triplets</h3>
+                      <div class="Sentences1" ms-for="el in @TripletsData.Sentences">
+                        <h5>{{el.Sentence}}</h5>
+                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
+                          <span class="Confidence">{{el.Confidence}}</span>
+                          (<span class="Subject">{{el.Subject}}</span>;
+                          <span class="Relation">{{el.Relation}}</span>;
+                          <span class="Object">{{el.Object}}</span>)
+                        </div>
+                        <div class="triplets" ms-if="el.Context"ms-for="el in el.Triplets">
+                          <span class="Confidence">{{el.Confidence}}</span>
+                          <span class="Context">{{el.Context}}</span>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                   <div class="item">
