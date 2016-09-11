@@ -149,9 +149,23 @@ $(function(){
     },
     //移除所有keyword的选中
     remove_all_selected:function(){
-      var selected= this.selected.column;
+      var selected= this.selected;
       $("#hide-tab-1 table input[type=checkbox]:checked").parent().trigger("click").attr("data-selected","");
-      selected=[];
+      selected.column=[];
+      selected.TopicId="";
+      selected.TopicName="";
+      this.result.content=[];
+      $("#right-tabs>li:not(:first)").remove();
+      if($("#hide-tab-2").css("bottom")==="0px"){
+        $("#hide-tab-2>.tabs-handle>p").trigger("click");
+      }
+      $("#hide-tab-2>.tabs-handle").addClass("disabled");
+      this.guide_show_status=true;
+      this.content_show_status=false;
+      this.content_slider_show_status=false;
+      $("#home-tab").trigger("click");
+      disabled_parameter();
+      disabled_change_right_menu(vm_body_columns);
     },
     //提交所有选中的keyword
     submit_all_keywords:function(){
@@ -175,7 +189,7 @@ $(function(){
       }
       keywords_data.data.TopicId=vm_body_columns.selected.TopicId;
       keywords_data.data.TopicName=vm_body_columns.selected.TopicName;
-      console.log(keywords_data);
+      // console.log(keywords_data);
       // postAjax("",keywords_data,function(data){
       getAjax("../data/result.json",null,function(data){
         if (data.status===0) {
@@ -187,7 +201,7 @@ $(function(){
           vm_body_columns.chartsData.labels=[];
           vm_body_columns.chartsData.datasets.data=[];
           vm_body_columns.result.centent=data.data.News;
-          console.log(data.data.DateNum.length);
+          // console.log(data.data.DateNum.length);
           var result_content_model={
             title:"",
             id:"",
@@ -203,7 +217,7 @@ $(function(){
             vm_body_columns.chartsData.labels.push(data.data.DateNum[i].Date);
             vm_body_columns.chartsData.datasets[0].data.push(data.data.DateNum[i].Count);
           }
-          console.log(vm_body_columns.chartsData.labels);
+          // console.log(vm_body_columns.chartsData.labels);
           chart_setup(vm_body_columns.chartsData);
         }
       });
@@ -217,6 +231,7 @@ $(function(){
         data : []
       }]
     },
+
     result:{
       content:[
         // {
@@ -241,13 +256,12 @@ $(function(){
     show_guide:function(){
       return this.guide_show_status;
     },
-    content:{
-    },
-    show_content_status:false,
+    content:{},
+    content_show_status:false,
     show_content:function(){
-      return this.show_content_status;
+      return this.content_show_status;
     },
-    updateContent:function(data_id){//更新页面content的内容
+    update_content:function(data_id){//更新页面content的内容
       var data={
         "status":1,
         "message":" NewsDetailQuery",
@@ -257,16 +271,27 @@ $(function(){
       getAjax("../data/content.json",null,function(data){
       // postAjax(url,data,function(data){
         if(data.status==1){
-          content=data;
+          vm_body_columns.content=data;
+          vm_body_columns.content.NewsContent=data.NewsContent.replace(/([\n])/g,"<br/>");
+          // vm_body_columns.content.NewsContent=vm_body_columns.content.NewsContent.replace(/([\"\'])/g,"");
+          // while(vm_body_columns.content.NewsContent.match(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/g).length!==0){
+          // console.log(vm_body_columns.content.NewsContent.match(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/).length);
+            vm_body_columns.content.NewsContent=vm_body_columns.content.NewsContent.replace(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/,"$1 $3");
+          // }
+          console.log(vm_body_columns.content.NewsContent.match(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/).length);
+          // vm_body_columns.content.NewsContent=vm_body_columns.content.NewsContent.replace(/(<br\/>)+/g,"");
+          // $("#content>div:eq(1)").empty().html(vm_body_columns.content.NewsContent);
+          // alert(vm_body_columns.content.NewsContent);
+          console.log(data);
           this.guide_show_status=false;
-          this.show_content_status=true;
+          this.content_show_status=true;
         }
       });
     },
     // content_show_status:false,
-    have_content:function(){
-      return !isEmpty(this.content);
-    },
+    // have_content:function(){
+    //   return !isEmpty(this.content);
+    // },
     //左侧文章查询结果和对应tab打开关闭控制
     open_content_tab:function(e){
       var _this=$(e.target);
@@ -274,24 +299,27 @@ $(function(){
       // _thisLink.parent().find("input:eq(0)").trigger("click");
       // console.log(this.open_content);
       // console.log(this.open_content.length);
-      if($("#"+_thisLink.attr("data-id"))[0]){
+      if($("#"+_thisLink.attr("data-id"))[0]){//关闭文章tab
         $("#"+_thisLink.attr("data-id")+" button").trigger("click");
-        disabled_change_right_menu();
+        disabled_change_right_menu(vm_body_columns);
         // this.update_selected_content();
       }
-      else if (!$("#"+_thisLink.attr("data-id"))[0]) {
+      else if (!$("#"+_thisLink.attr("data-id"))[0]) {//打开新的文章tab
         change_folder_icon(_thisLink);
         addTab(_this.text(),_thisLink.attr("data-id"));
-        disabled_change_right_menu();
+        disabled_change_right_menu(vm_body_columns);
+        // this.guide_show_status=false;
+        // this.content_show_status=true;
+        // console.log(vm_body_columns.content_show_status);
         // this.update_selected_content();
       }
       var data_id=_thisLink.attr("data-id");
-      this.updateContent(data_id);
+      this.update_content(data_id);
     },
     left_menu_status:0,//左侧页面菜单的选择状态
     //左侧页面菜单的选择状态控制器
     left_menu_trigger:function(status){
-      console.log(status);
+      // console.log(status);
       this.left_menu_status=status;
     },
     show_search:function(){
@@ -302,9 +330,9 @@ $(function(){
       return this.left_menu_status===1;
     },
     // 右侧页面轮播分页控制
-    content_slider_status:false,
+    content_slider_show_status:false,
     show_content_slider:function(){
-      return vm_body_columns.content_slider_status;
+      return vm_body_columns.content_slider_show_status;
     },
     // 属性滑动块控制
     sliderData:[{
@@ -332,16 +360,6 @@ $(function(){
       min:0,
       max:100,
       val:60
-    },{
-      parameter:"parameter5",
-      min:0,
-      max:100,
-      val:70
-    },{
-      parameter:"parameter6",
-      min:0,
-      max:1000  ,
-      val:80
     }],
     submit_parameter:function(){
       this.hide_bottom_tabs();
@@ -355,8 +373,16 @@ $(function(){
       //   vm_body_columns.show_bottom_tabs();
       // },1000);
     },
-    get_parameter:function(contentId){
-      $("li[role=presentation][class=active]").attr("id");
+    update_parameter:function(contentId){
+      // $("li[role=presentation][class=active]").attr("id");
+
+      // postAjax(url,data,function(){
+      getAjax("../data/parameter.json",null,function(data){
+        if(data.status===0){
+          vm_body_columns.sliderData=data.sliderData;
+          setup_slider_group("slider",5,vm_body_columns.sliderData);
+        }
+      });
     },
     open_content:[
       // {
@@ -443,17 +469,50 @@ $(function(){
     enabled_left_part:function(){
       $("#coverDiv").hide();
     },
-
-    show_example_1:function(){
+    example_info:{
+      page:"1",
+      example_index:"1"
+    },
+    show_example:function(example_index){
+      $("#home-tab>a").trigger("click");
       vm_body_columns.left_menu_trigger(1);
       $("#left-menu>li:eq(1)").trigger("click");
+      this.content_slider_show_status=true;
+      this.content_show_status=false;
+      this.guide_show_status=false;
+      // var data={
+      //
+      // };
+      // //拉取example的数据
+      // postAjax(url,data,function(){
+      //
+      // });
+    },
+    get_example_page_info:function(){
+
     }
 
   });
   avalon.scan(document.body);
-  setup_slider_group("slider",7,vm_body_columns.sliderData);
+
+  menu_active_effect("left");
+  menu_active_effect("right");
+  change_tabs_on_right(vm_body_columns);
+  setUp_hide_tabs();
+  show_hide_tabs();
+  disabled_change_right_menu(vm_body_columns);
+  $(window).resize(function(){
+    setUp_hide_tabs();
+  });
+  setup_slider_group("slider",5,vm_body_columns.sliderData);
   toggle_left_menu(vm_body_columns);
   delete_this_tab(vm_body_columns);
+  switch_tabs_right(vm_body_columns);
+
+  $("#carousel").on('slid.bs.carousel', function () {
+  	$("#carousel").carousel("pause");
+  });
+
 });
 
 function setUp_keyword_table_column(columnNum){
@@ -466,6 +525,7 @@ function setUp_keyword_table_column(columnNum){
     // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{keyword-id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
   }
 }
+
 function isEmpty(obj){
   for (var name in obj)
   {
@@ -599,4 +659,231 @@ function chart_setup(data){
     $("#hide-tab-2>div.tabs-handle>p").trigger("click");
   }
 
+}
+
+
+
+
+
+
+
+function menu_active_effect(position){
+  $("#"+position+"-menu>li").on("click",function(){
+    // console.log(1);
+    $("#"+position+"-menu>li").removeClass("active");
+    $(this).addClass("active");
+    if(position=="right"){
+      $("li.dropdown").removeClass("active");
+    }
+  });
+
+}
+
+function change_tabs_on_left_menu(){
+  var menu_links=$("#left-menu>li");
+  menu_links.eq(0).on("click",function(){
+    show_left_tab("search");
+  });
+  menu_links.eq(1).on("click",function(){
+    show_left_tab("parameters");
+  });
+}
+
+function show_left_tab(id){
+  $(".left-tabs").addClass("hide");
+  $("#"+id+"-tab").removeClass("hide");
+}
+
+function setup_slider_group(groupId,sliderNum,sliderData){
+  // console.log(1);
+  for(var i=0;i<sliderNum;i++){
+    setup_parameter_slider(groupId+"-"+i,sliderData[i].min,sliderData[i].max,sliderData[i].val);
+  }
+}
+
+
+function setup_parameter_slider(id,min,max,val){
+  // console.log(2);
+  $("#"+id).slider({
+    range: "min",
+    min: min,
+    max: max,
+    value: val,
+    slide: function (event, ui) {
+        $("#amount-"+id).val(ui.value);
+    }
+  });
+  $("#amount-"+id).val($("#"+id).slider("value"));
+}
+
+function change_folder_icon(_this){
+  // console.log(_this);
+  var openIcon=_this.find("p.open-folder");
+  var closeIcon=_this.find("p.close-folder");
+  openIcon.removeClass("open-folder").addClass("close-folder");
+  closeIcon.removeClass("close-folder").addClass("open-folder");
+}
+
+function addTab(tabTitle,tabId){
+  if (!$("#"+tabId)[0]) {
+    $("#right-tabs").append("<li id=\""+tabId+"\" role='presentation'><a  class='tab-title'  href='#'><span>"+tabTitle+"</span><button class='close tab-delete' data-dismiss='alert' aria-label='Close' type='button'><span>&times;</span></button></a></li>");
+    $("#right-tabs>li").removeClass("active");
+    $("#right-tabs>li:last-child").addClass("active");
+  }
+  enabled_parameter();
+}
+
+function active_tabs_on_right(index){
+  $("#right-tabs>li").removeClass("active");
+  $("#right-tabs>li:eq("+index+")").addClass("active");
+}
+
+function change_tabs_on_right(vm_body_columns){
+  $(document).on("click","#right-tabs>li",function(){
+    var _this=$(this);
+    var index = $("#right-tabs>li").index(_this);
+    active_tabs_on_right(index);
+    if(index===0){
+      vm_body_columns.guide_show_status=true;
+      vm_body_columns.content_show_status=false;
+      vm_body_columns.content_slider_show_status=false;
+    }
+    if(!vm_body_columns.onExecute){//未在执行中时切换页面
+
+
+    }
+  });
+}
+
+function delete_this_tab(vm_body_columns){
+  $(document).on("click",".tab-delete",function(){
+    // alert("!");
+    var thisLi=$(this).parent().parent();
+    var index=$("#right-tabs>li").index(thisLi);
+    index=index-1;
+    active_tabs_on_right(index);
+    thisLi.remove();
+    var thisId=thisLi.attr("id");
+    disabled_change_right_menu(vm_body_columns);
+    change_folder_icon($("a[data-id="+thisId+"]"));
+  });
+}
+
+
+//底部tab控制
+function show_hide_tabs(){
+  $(document).on("click", ".tabs-handle:not(.disabled)>p",function(){
+    var hide_tab=$(this).parent().parent();
+    if(hide_tab.css("bottom")!="0px"){
+      hide_tab.css("z-index","200").stop().animate({bottom:"0px"},500);
+    }else if(hide_tab.css("bottom")=="0px"){
+      var index=$(".bottom-hide-tabs").index(hide_tab);
+      var z_index=100+index;
+      hide_tab.stop().animate({bottom:"-"+hide_tab.find(".bottom-hide-tabs-container").eq(0).css("height")},500).css("z-index",z_index);
+    }
+  });
+}
+//底部tab控制
+function setUp_hide_tabs(){
+  // $(".bottom-hide-tabs").css("bottom","-"+$(this).find(".bottom-hide-tabs-container").eq(0).css("height"));
+  var tabs=$(".bottom-hide-tabs");
+  for(var i=0;i<tabs.length;i++){
+    var _this=tabs.eq(i);
+    var index=tabs.index(_this);
+    var z_index=100+index;
+    _this.css("bottom","-"+_this.find(".bottom-hide-tabs-container").eq(0).css("height")).css("z-index",z_index);
+  }
+}
+//控制右侧的顶部菜单的禁用/启用
+function disabled_change_right_menu(vm_body_columns){
+  if($("#right-tabs>li").length==1){
+    // console.log($("#right-menu>li").length);
+    // console.log($("#right-menu>li:not(.dropdown),ul.dropdown-menu>li"));
+    $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
+    $("#dropdown-toggle").attr({"data-toggle":""});
+    $("#modal-trigger").attr({"data-toggle":"","data-target":""});
+    $("#right-tabs>li:first").trigger("click");
+    // $("#left-menu>li:eq(0)").trigger("click");
+    // console.log(vm_body_columns.guide_show_status);
+    vm_body_columns.guide_show_status=true;
+    vm_body_columns.content_show_status=false;
+    disabled_parameter();
+  }else{
+    // console.log($("#right-menu>li").length);
+    // console.log($("#right-menu>li:not(.dropdown),ul.dropdown-menu>li"));
+    // console.log(vm_body_columns.guide_show_status);
+    vm_body_columns.guide_show_status=false;
+    vm_body_columns.content_show_status=true;
+    $("#right-menu>li,ul.dropdown-menu>li").removeClass("disabled").find("a").attr("disabled",false);
+    $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
+    $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
+    enabled_parameter();
+  }
+}
+//打开result的tab后，点击右侧的tab，左侧的menu随之切换
+function toggle_left_menu(vm_body_columns){
+  $(document).on("click","#right-tabs>li:not(:first)",function() {
+    if($("#right-tabs>li:not(:first)").length!==0){
+      vm_body_columns.left_menu_trigger(1);
+      $("#left-menu>li:eq(1)").trigger("click");
+    }
+  });
+  $(document).on("click","#right-tabs>li:first",function(){
+    vm_body_columns.left_menu_trigger(0);
+    // console.log("vm_body_columns.left_menu_status:"+vm_body_columns.left_menu_status);
+    $("#left-menu>li:eq(0)").trigger("click");
+  });
+}
+//禁用left_menu的parameter
+function disabled_parameter(){
+  $("#left-menu>li:eq(1)").addClass("disabled");
+  var parameter_offset=$("#left-menu>li:eq(1)").offset();
+  $("#cover").removeClass("hide").css({"left":parameter_offset.left,"top":parameter_offset.top,"width": "113px","position":"fixed","height": "50px","z-index":"1000"});
+  // $(window).resize(function(){
+  //
+  // });
+}
+//启用left_menu的parameter
+function enabled_parameter(){
+  $("#left-menu>li:eq(1)").removeClass("disabled");
+  $("#cover").addClass("hide");
+}
+
+function switch_tabs_right(vm_body_columns){
+  $(document).on("click","#right-tabs>li:not(:first)",function(){
+    var _thisTabId=$(this).attr("id");
+    // console.log(_thisTabId);
+    vm_body_columns.update_content(_thisTabId);
+    vm_body_columns.update_parameter(_thisTabId);
+
+  });
+}
+
+function postAjax(url,data,success){
+  $.ajax({
+    type: 'POST',
+    url: url,
+    content:"application/json",
+    dataType: 'json',
+    data: data,
+    success: success,
+    error:function () {
+      alert("服务器好像不太给力～");
+    }
+  });
+
+}
+
+function getAjax(url,data,success) {
+  $.ajax({
+    type: 'GET',
+    url: url,
+    content:"application/json",
+    dataType: 'json',
+    data: JSON.stringify(data),
+    success: success,
+    error:function () {
+      alert("服务器好像不太给力～");
+    }
+  });
 }
