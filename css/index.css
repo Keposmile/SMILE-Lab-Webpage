@@ -162,6 +162,10 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 }
 #hide-tab-1 .keywords_slider>p{
   float: left;
+  word-break: break-word;
+  width: 95%;
+  font-size: 16px;
+  line-height: 35px;
 }
 .bottom-hide-tabs>div>.table,p{
   margin:0px;
@@ -180,7 +184,7 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
   color:#aaa;
 }
 label[data-selected=selected]{
-  color:#0099ff;
+  color:#dd0011;
 }
 #hide-tab-1 input[type=checkbox]{
   display: none;

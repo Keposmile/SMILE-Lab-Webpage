@@ -295,8 +295,8 @@ $(function(){
     },
 
     TripletsData:{
-      "winSize":4,
-      "step":2,
+      "winSize":6,
+      "step":1,
       "SentenceNum":10,
       "EffectTripletsNum":30,
       "Sentences":[
@@ -513,20 +513,23 @@ $(function(){
       var winSize=this.TripletsData.winSize;
       var firstIndex=-1;
       var step=this.TripletsData.step;
-      // console.log(firstIndex+" "+lastIndex+" "+step);
-      // var nowInWin=getItemsBetween(firstIndex,lastIndex,".Sentences1");
-      // nowInWin.addClass("in-win");
+      var nowFinalIndex=winSize-step;
       var timer=setInterval(function(){
-        var nowInWin=getItemsBetween(firstIndex,winSize,".Sentences1");
-        totalTriGroup.removeClass("in-win");
-        if(nowInWin.length!==winSize){
+        if(nowFinalIndex==(-1)){
+          //回调点
           clearInterval(timer);
+          totalTriGroup.removeClass("in-win");
         }else{
+          nowFinalIndex+=step;
+          var nowInWin=getItemsBetween(firstIndex,winSize,".Sentences1");
+          totalTriGroup.removeClass("in-win");
           nowInWin.addClass("in-win");
           firstIndex+=step;
+          if(nowFinalIndex>=totalTriGroup.length){
+            nowFinalIndex=(-1);
+          }
         }
-        console.log("1:"+firstIndex+" ");
-      },3000);
+      },1000);
     },
     left_menu_status:0,//左侧页面菜单的选择状态
     //左侧页面菜单的选择状态控制器
@@ -1070,7 +1073,7 @@ function getItemsBetween(firstIndex,lastIndex,selecter){
   if(firstIndex==(-1)){
     return $(selecter+":lt("+lastIndex+")");
   }
-  console.log($(selecter+":gt("+firstIndex+"):lt("+lastIndex+")"));
+  // console.log($(selecter+":gt("+firstIndex+"):lt("+lastIndex+")"));
   return $(selecter+":gt("+firstIndex+"):lt("+lastIndex+")");
 }
 
