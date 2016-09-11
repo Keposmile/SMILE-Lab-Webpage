@@ -66,7 +66,7 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 }
 .tab-delete{
   width:20px;
-  line-height:10px;
+  line-height:4px;
   overflow:hidden;
 }
 .tab-title{
@@ -276,4 +276,28 @@ span.glyphicon{
 }
 .carousel-indicators li.active{
   background-color: #0099ff;
+}
+.menu>li>a{
+  padding: 10px;
+  line-height: 30px;
+  font-size: 18px;
+}
+#right-tabs>li>a{
+  padding: 10px;
+  line-height: 12px;
+  font-size: 15px;
+}
+#hide-tab-2>.disabled{
+  color:#aaa;
+}
+.confident{
+  float: left;
+  display: block;
+  line-height: 20px;
+  font-size: 15px;
+  margin: 0 5px 0 0;
+}
+.alert-success {
+  background-color: rgba(0,0,0,0);
+  border-color:rgba(0,0,0,0);
 }

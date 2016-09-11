@@ -63,13 +63,13 @@
               <li role="presentation" id="home-tab" class="active"><a href="#">Home</a></li>
             </ul>
             <div class="content-tab panel-body">
-              Basic panel example
-              <div ms-for="el in @open_content">{{el.title}}:{{el.id}}</div>
+              <!-- <div ms-for="el in @open_content">{{el.title}}:{{el.id}}</div> -->
               <div ms-if="@show_guide()" id="guide">
-                <h3>Guide</h3>
+                <h1>The Guide</h1>
               </div>
-              <div ms-if="@have_content()">?????</div>
-              <div  id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <div ms-if="@show_content()" id="content">this is content {{@content}}</div>
+              <!-- <div ms-if="@have_content()">?????</div> -->
+              <div  ms-if="@show_content_slider()" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -174,12 +174,12 @@
         </div>
       </div>
       <div id="hide-tab-2" class="bottom-hide-tabs">
-        <div class="tabs-handle">
+        <div class="tabs-handle disabled">
           <p>Charts</p>
         </div>
         <div class="bottom-hide-tabs-container">
-          <div class="table">
-            <canvas id="myChart" width="700" height="400"></canvas>
+          <div id="chartPosition" class="table">
+
           </div>
         </div>
       </div>
@@ -246,7 +246,7 @@
             </div>
             <div class="panel-body">
               <div ms-for="el in @result.content" class="alert alert-success" role="alert">
-                <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
+                <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><span class="confident">{{el.confident}}</span><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
                 <!-- <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><label ms-attr="{for:el.id}"><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></label></a> -->
                 <!-- <input type="checkbox" ms-attr=""> -->
                 <input type="checkbox" class="hide" ms-duplex="@open_content " ms-attr="{value:'{NewsTitle:'+el.NewsTitle+',NewsId:'+el.NewsId+'}'}" >
