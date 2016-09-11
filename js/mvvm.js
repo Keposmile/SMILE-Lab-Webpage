@@ -189,7 +189,6 @@ $(function(){
       }
       keywords_data.data.TopicId=vm_body_columns.selected.TopicId;
       keywords_data.data.TopicName=vm_body_columns.selected.TopicName;
-      // console.log(keywords_data);
       // postAjax("",keywords_data,function(data){
       getAjax("../data/result.json",null,function(data){
         if (data.status===0) {
@@ -197,11 +196,9 @@ $(function(){
           $("#hide-tab-2>.disabled").removeClass("disabled");
           vm_body_columns.result.content=[];
           $(".tab-title>button").trigger("click");
-          // $("#right-tabs>li:not(:first)").remove();
           vm_body_columns.chartsData.labels=[];
           vm_body_columns.chartsData.datasets.data=[];
           vm_body_columns.result.centent=data.data.News;
-          // console.log(data.data.DateNum.length);
           var result_content_model={
             title:"",
             id:"",
@@ -217,7 +214,6 @@ $(function(){
             vm_body_columns.chartsData.labels.push(data.data.DateNum[i].Date);
             vm_body_columns.chartsData.datasets[0].data.push(data.data.DateNum[i].Count);
           }
-          // console.log(vm_body_columns.chartsData.labels);
           chart_setup(vm_body_columns.chartsData);
         }
       });
@@ -243,10 +239,6 @@ $(function(){
         // }
       ]
     },
-    // have_result:function(){
-    //   console.log(this.result.content.length);
-    //   return (this.result.content.length!==0);
-    // },
     show_result:function(){
       // console.log("1");
       // return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.selected.column.length!==0);
@@ -272,26 +264,11 @@ $(function(){
       // postAjax(url,data,function(data){
         if(data.status==1){
           vm_body_columns.content=data;
-          vm_body_columns.content.NewsContent=data.NewsContent.replace(/([\n])/g,"<br/>");
-          // vm_body_columns.content.NewsContent=vm_body_columns.content.NewsContent.replace(/([\"\'])/g,"");
-          // while(vm_body_columns.content.NewsContent.match(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/g).length!==0){
-          // console.log(vm_body_columns.content.NewsContent.match(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/).length);
-            vm_body_columns.content.NewsContent=vm_body_columns.content.NewsContent.replace(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/,"$1 $3");
-          // }
-          console.log(vm_body_columns.content.NewsContent.match(/(["']{1}.+?)(<br\/>)+(.+?["']{1})/).length);
-          // vm_body_columns.content.NewsContent=vm_body_columns.content.NewsContent.replace(/(<br\/>)+/g,"");
-          // $("#content>div:eq(1)").empty().html(vm_body_columns.content.NewsContent);
-          // alert(vm_body_columns.content.NewsContent);
-          console.log(data);
           this.guide_show_status=false;
           this.content_show_status=true;
         }
       });
     },
-    // content_show_status:false,
-    // have_content:function(){
-    //   return !isEmpty(this.content);
-    // },
     //左侧文章查询结果和对应tab打开关闭控制
     open_content_tab:function(e){
       var _this=$(e.target);
@@ -315,6 +292,21 @@ $(function(){
       }
       var data_id=_thisLink.attr("data-id");
       this.update_content(data_id);
+    },
+
+    TripletsData:{
+
+    },
+    update_triplets_data:function(NewsId){
+      var data={
+        "status":1,
+        "message":" NewsTripletsExtraction",
+        "newsId":NewsId
+      };
+      // postAjax(url,data,function(data){
+      getAjax("../data/triplets.json",null,function(data){
+        data.Data=vm_body_columns.TripletsData;
+      });
     },
     left_menu_status:0,//左侧页面菜单的选择状态
     //左侧页面菜单的选择状态控制器
@@ -380,7 +372,7 @@ $(function(){
       getAjax("../data/parameter.json",null,function(data){
         if(data.status===0){
           vm_body_columns.sliderData=data.sliderData;
-          setup_slider_group("slider",5,vm_body_columns.sliderData);
+          setup_slider_group("slider",vm_body_columns.sliderData);
         }
       });
     },
@@ -504,7 +496,7 @@ $(function(){
   $(window).resize(function(){
     setUp_hide_tabs();
   });
-  setup_slider_group("slider",5,vm_body_columns.sliderData);
+  setup_slider_group("slider",vm_body_columns.sliderData);
   toggle_left_menu(vm_body_columns);
   delete_this_tab(vm_body_columns);
   switch_tabs_right(vm_body_columns);
@@ -518,11 +510,7 @@ $(function(){
 function setUp_keyword_table_column(columnNum){
   $("#hide-tab-1 table>thead>tr").append("<th ms-for=\"(key,el) in @head | limitBy("+columnNum+")\" ms-attr=\"{id:@head[key].groupId}\">{{el.title}}</th>");
   for (var i = 1; i <= columnNum; i++) {
-    // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:@keywords_"+i+"[key],class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:@keywords_"+i+"[key],value:@keywords_"+i+"[key],class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
-    // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\" onselectstart=\"return false\"  ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column"+i+"\" ms-attr=\"{id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
-    // if($("#"))
     $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el+'_'+key,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{id:el+'_'+key,value:el+'_'+key,class:'keywords_"+i+"'}\">{{el}}</label></td>");
-    // $("#hide-tab-1 table>tbody>tr").append("<td><label ms-for=\"(key,el) in @keywords_"+i+"\"   ms-on-click=\"@disabled_other_columns\"  ms-attr=\"{for:el,class:'keywords_"+i+"'}\"><input  type=\"checkbox\" ms-duplex=\"@selected.column\" ms-attr=\"{keyword-id:el,value:el,class:'keywords_"+i+"'}\">{{el}}</label><!-- <div>{{@selected.column1}}</div> --></td>");
   }
 }
 
@@ -694,13 +682,12 @@ function show_left_tab(id){
   $("#"+id+"-tab").removeClass("hide");
 }
 
-function setup_slider_group(groupId,sliderNum,sliderData){
+function setup_slider_group(groupId,sliderData){
   // console.log(1);
-  for(var i=0;i<sliderNum;i++){
+  for(var i=0;i<sliderData.length;i++){
     setup_parameter_slider(groupId+"-"+i,sliderData[i].min,sliderData[i].max,sliderData[i].val);
   }
 }
-
 
 function setup_parameter_slider(id,min,max,val){
   // console.log(2);

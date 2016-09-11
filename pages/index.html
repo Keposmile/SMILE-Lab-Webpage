@@ -73,9 +73,8 @@
                     <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
                   </div>
                   <p><b>Content:</b></p>
-                  <div ms-html="@content.NewsContent"></div>
+                  <div><pre  ms-html="@content.NewsContent"></pre></div>
                 </div>
-
               </div>
               <div  ms-if="@show_content_slider()" id="carousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
@@ -92,28 +91,39 @@
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
                     <div class="carousel-caption">
-                      <!-- <h3>第一页</h3>
-                      <p>1111111111</p> -->
                       <h3 ms-text="@content.NewsTitle"></h3>
                       <div>
                         <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
                       </div>
                       <p><b>Content:</b></p>
-                      <div ms-html="@content.NewsContent"></div>
+                      <div><pre  ms-html="@content.NewsContent"></pre></div>
                     </div>
                   </div>
                   <div class="item">
                     <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
-                      <h3>第二页</h3>
-                      <p>2222222222</p>
+                      <h3 ms-text="@content.NewsTitle"></h3>
+                      <div>
+                        <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
+                      </div>
+                      <p><b>Content:</b></p>
+                      <div><pre  ms-html="@content.NewsContent"></pre></div>
                     </div>
                   </div>
                   <div class="item">
-                    <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
-                      <h3>第三页</h3>
-                      <p>3333333333</p>
+                      <h3>Triplets</h3>
+                      <!-- <div ms-for="el in @TripletsData.Sentences">
+                        <h5>{{el.Sentence}}</h5>
+                        <div class="triplets" ms-if="!el.Context">
+                          <p class="Subject">{{el.Subject}}</p>
+                          <p class="Relation">{{el.Relation}}</p>
+                          <p class="Object">{{el.Object}}</p>
+                        </div>
+
+
+                      </div> -->
+
                     </div>
                   </div>
                   <div class="item">
@@ -126,8 +136,7 @@
                   <div class="item">
                     <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
-                      <h3>第五页</h3>
-                      <p>55555555</p>
+                      <div id=""></div>
                     </div>
                   </div>
                   <div class="item">
