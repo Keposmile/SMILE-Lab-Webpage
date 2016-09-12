@@ -6,5 +6,31 @@
   "Source":"Look Local",
   "NewsTitle":"Trump targeted in US Republican debate",
   "mediaType":"News",
-  "DateTime":"2016-09-04 21:44:25.0"
+  "DateTime":"2016-09-04 21:44:25.0",
+  "sliderData":[{
+    "parameter":"parameter0",
+    "min":0,
+    "max":100,
+    "val":2
+  },{
+    "parameter":"parameter1",
+    "min":0,
+    "max":100,
+    "val":80
+  },{
+    "parameter":"parameter2",
+    "min":0,
+    "max":100,
+    "val":20
+  },{
+    "parameter":"parameter1",
+    "min":0,
+    "max":100,
+    "val":60
+  },{
+    "parameter":"parameter2",
+    "min":0,
+    "max":100,
+    "val":40
+  }]
 }

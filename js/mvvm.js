@@ -108,16 +108,13 @@ $(function(){
     },
     //选择关键词时禁用其他列
     disabled_other_columns:function(e){
-
       var _this=$(e.target);
       if(_this.find("input[type=checkbox]:eq(0)").attr("disabled")){
         console.log("out");
         return false;
       }
-
       // label样式设置
       var _thisColumnClass=$(e.target).attr("class");
-      console.log(_thisColumnClass);
       if(_this.attr("data-selected")=="selected"){
         _this.attr("data-selected","");
       }else {
@@ -125,7 +122,7 @@ $(function(){
       }
       var pattern=/(keywords_)([0-9])+/;
       var _thisGroupIndex=_thisColumnClass.match(pattern)[2];
-      console.log(_thisGroupIndex);
+      // console.log(_thisGroupIndex);
       vm_body_columns.selected.TopicId=vm_body_columns.head[_thisGroupIndex-1].groupId;
       vm_body_columns.selected.TopicName=vm_body_columns.head[_thisGroupIndex-1].title;
       var otherColumnInput=$("#hide-tab-1 table input[type=checkbox]:not(."+_thisColumnClass+")");//获取非本列的input checkbox
@@ -143,9 +140,7 @@ $(function(){
     //移除单个keyword的选中
     remove_from_table_selected:function(e){
       var thisKeyword=$(e.target).parent().parent().find("span:eq(1)").text();
-      // console.log($("#"+thisKeyword));
       $("label[for^=\""+thisKeyword+"\"][data-selected=selected]").trigger("click").attr("data-selected","");
-      // $("input[type=checkbox]["+thisKeyword+"]").trigger("click").parent().attr("data-selected","");
     },
     //移除所有keyword的选中
     remove_all_selected:function(){
@@ -185,63 +180,59 @@ $(function(){
           KeywordOrder:i,
           Keyword:_keywords[i].match(keywords_pattern)[0]
         };
-        console.log(keywords_data.data.KeywordsList[i].Keyword);
       }
       keywords_data.data.TopicId=vm_body_columns.selected.TopicId;
       keywords_data.data.TopicName=vm_body_columns.selected.TopicName;
-      // postAjax("",keywords_data,function(data){
-      getAjax("../data/result.json",null,function(data){
-        if (data.status===0) {
-          // $("#right-tabs>li:not(:first)").;
-          $("#hide-tab-2>.disabled").removeClass("disabled");
-          vm_body_columns.result.content=[];
-          $(".tab-title>button").trigger("click");
-          vm_body_columns.chartsData.labels=[];
-          vm_body_columns.chartsData.datasets.data=[];
-          vm_body_columns.result.centent=data.data.News;
-          var result_content_model={
-            title:"",
-            id:"",
-            confident:""
-          };
-          for (var j= 0; j < data.data.News.length; j++) {
-            vm_body_columns.result.content.push(result_content_model);
-            vm_body_columns.result.content[j].title=data.data.News[j].NewsTitle;
-            vm_body_columns.result.content[j].id=data.data.News[j].NewsId;
-            vm_body_columns.result.content[j].confident=data.data.News[j].confident;
-          }
-          for (var i = 0; i < data.data.DateNum.length; i++) {
-            vm_body_columns.chartsData.labels.push(data.data.DateNum[i].Date);
-            vm_body_columns.chartsData.datasets[0].data.push(data.data.DateNum[i].Count);
-          }
-          chart_setup(vm_body_columns.chartsData);
+      if(keywords_data.data.KeywordsList.length===0){
+        alert("Please select keywords first!");
+      }else{
+        if($("#hide-tab-1").css("bottom")=="0px"){
+          $("#hide-tab-1>div.tabs-handle>p").trigger("click");
         }
-      });
+        if(this.onExamlpe){
+          this.onExamlpe=!this.onExamlpe;
+        }
+        console.log(this.onExamlpe);
+        // postAjax("",keywords_data,function(data){
+        getAjax("../data/result.json",null,function(data){
+          if (data.status===0) {
+            // $("#right-tabs>li:not(:first)").;
+            $("#hide-tab-2>.disabled").removeClass("disabled");
+            vm_body_columns.result.content=[];
+            $(".tab-title>button").trigger("click");
+            vm_body_columns.chartsData.labels=[];
+            vm_body_columns.chartsData.data=[];
+            vm_body_columns.result.centent=data.data.News;
+            var result_content_model={
+              title:"",
+              id:"",
+              confident:""
+            };
+            for (var j= 0; j < data.data.News.length; j++) {
+              vm_body_columns.result.content.push(result_content_model);
+              vm_body_columns.result.content[j].title=data.data.News[j].NewsTitle;
+              vm_body_columns.result.content[j].id=data.data.News[j].NewsId;
+              vm_body_columns.result.content[j].confident=data.data.News[j].confident;
+            }
+            for (var i = 0; i < data.data.DateNum.length; i++) {
+              vm_body_columns.chartsData.labels.push(data.data.DateNum[i].Date);
+              vm_body_columns.chartsData.data.push(data.data.DateNum[i].Count);
+            }
+            chart_setup(vm_body_columns.chartsData);
+          }
+        });
+      }
     },
     chartsData:{
       labels : [],
-      datasets : [{
-        label: "My First dataset",
-        fillColor : "rgba(151,187,205,0.5)",
-        strokeColor : "rgba(151,187,205,1)",
-        data : []
-      }]
+      data : []
     },
 
     result:{
       content:[
-        // {
-        //   title:"this is result of search 1",
-        //   id:"11223344"
-        // },{
-        //   title:"222222",
-        //   id:"889919292"
-        // }
       ]
     },
     show_result:function(){
-      // console.log("1");
-      // return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.selected.column.length!==0);
       return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.result.content.length!==0);
     },
     guide_show_status:true,
@@ -253,19 +244,23 @@ $(function(){
     show_content:function(){
       return this.content_show_status;
     },
-    update_content:function(data_id){//更新页面content的内容
+    update_content_parameter:function(data_id){//更新页面content的内容
       var data={
         "status":1,
         "message":" NewsDetailQuery",
         "newsId":data_id
       };
-      console.log(data);
+      console.log(data_id);
       getAjax("../data/content.json",null,function(data){
       // postAjax(url,data,function(data){
         if(data.status==1){
+          //更新文章内容
           vm_body_columns.content=data;
           this.guide_show_status=false;
           this.content_show_status=true;
+          //更新参数内容
+          vm_body_columns.sliderData=data.sliderData;
+          setup_slider_group("slider",vm_body_columns.sliderData);
         }
       });
     },
@@ -273,25 +268,22 @@ $(function(){
     open_content_tab:function(e){
       var _this=$(e.target);
       var _thisLink=_this.parent();
-      // _thisLink.parent().find("input:eq(0)").trigger("click");
-      // console.log(this.open_content);
-      // console.log(this.open_content.length);
-      if($("#"+_thisLink.attr("data-id"))[0]){//关闭文章tab
-        $("#"+_thisLink.attr("data-id")+" button").trigger("click");
-        disabled_change_right_menu(vm_body_columns);
-        // this.update_selected_content();
-      }
-      else if (!$("#"+_thisLink.attr("data-id"))[0]) {//打开新的文章tab
-        change_folder_icon(_thisLink);
-        addTab(_this.text(),_thisLink.attr("data-id"));
-        disabled_change_right_menu(vm_body_columns);
-        // this.guide_show_status=false;
-        // this.content_show_status=true;
-        // console.log(vm_body_columns.content_show_status);
-        // this.update_selected_content();
-      }
       var data_id=_thisLink.attr("data-id");
-      this.update_content(data_id);
+      if($("#"+data_id)[0]){//关闭文章tab
+        $("#"+data_id+" button").trigger("click");
+        disabled_change_right_menu(vm_body_columns);
+        // this.update_selected_content();
+      }
+      else if (!$("#"+data_id)[0]) {//打开新的文章tab
+        change_folder_icon(_thisLink);
+        addTab(_this.text(),data_id);
+        disabled_change_right_menu(vm_body_columns);
+        data_id=$("#right-tabs>li.active").attr("id");
+        this.update_content_parameter(data_id);
+      }
+      if($("#hide-tab-2").css("bottom")==="0px"){
+        $("#hide-tab-2>div.tabs-handle>p").trigger("click");
+      }
     },
 
     TripletsData:{
@@ -536,6 +528,13 @@ $(function(){
     left_menu_trigger:function(status){
       // console.log(status);
       this.left_menu_status=status;
+      if(status===0&&this.onExamlpe){
+        console.log("1:1");
+        this.enabled_left_part();
+      }else if (status==1&&this.onExamlpe) {
+        console.log("1:2");
+        this.disabled_parameter_panel();
+      }
     },
     show_search:function(){
       // console.log(this.left_menu_status===0);
@@ -576,26 +575,34 @@ $(function(){
       max:100,
       val:60
     }],
-    submit_parameter:function(){
+    onExecute:false,
+    execute:function(){
+      this.onExecute=true;
       this.hide_bottom_tabs();
       this.disabled_left_part();
       // postAjax(url,_keywords,function(){
       // });
-      // console.log(this);
       // setTimeout(function(){
       //   // console.log(this);
       //   vm_body_columns.enabled_left_part();
       //   vm_body_columns.show_bottom_tabs();
       // },1000);
+      vm_body_columns.guide_show_status=false;
+      vm_body_columns.content_show_status=false;
+      vm_body_columns.content_slider_show_status=true;
+      disabled_change_right_menu(this);
+    },
+    finish_execute:function(){
+      this.onExecute=false;
+      this.enabled_left_part();
+      disabled_change_right_menu(this);
     },
     update_parameter:function(contentId){
       // $("li[role=presentation][class=active]").attr("id");
-
       // postAjax(url,data,function(){
       getAjax("../data/parameter.json",null,function(data){
         if(data.status===0){
-          vm_body_columns.sliderData=data.sliderData;
-          setup_slider_group("slider",vm_body_columns.sliderData);
+
         }
       });
     },
@@ -633,12 +640,9 @@ $(function(){
       this.selected_content=_selected_content;
       //ajax提交选中的数据
 
-
-
-
-      postAjax(url,this.selected_content,function(){
-        window.location="../node_page.html";
-      });
+      // postAjax(url,this.selected_content,function(){
+        window.location="./result.html";
+      // });
     },
     //底部tab分页滑动控制
     change_keywords_slider_up:function(e){//向上滑动
@@ -656,7 +660,7 @@ $(function(){
       var thisSlide=$(e.target).parent();
       var index=$(".keywords_slider").index(thisSlide);
       var next=index+1;
-      console.log($(".keywords_slider").eq(index));
+      // console.log($(".keywords_slider").eq(index));
       $(".keywords_slider").eq(index).slideUp(1000);
       $(".keywords_slider").eq(next).slideDown(1000);
       $(".keywords_slider_btn").eq(index).animate({opacity:"0"},1000);
@@ -684,17 +688,32 @@ $(function(){
     enabled_left_part:function(){
       $("#coverDiv").hide();
     },
+    disabled_parameter_panel:function(){
+      $("#coverDiv").show();
+      $("#coverDiv").css({"height":$("body").height()-60,"width":$(".ui-layout-west").width()+35}).show();
+      // $("div.ui-layout-resizer .ui-layout-resizer-west .ui-draggable-handle .ui-layout-resizer-open .ui-layout-resizer-west-open").removeClass("ui-draggable-handle");
+      $(window).resize(function(){
+        $("#coverDiv").css({"height":$("body").height()-60,"width":$(".ui-layout-west").width()+35}).show();
+      });
+    },
     example_info:{
       page:"1",
       example_index:"1"
     },
+    onExamlpe:false,
     show_example:function(example_index){
-      $("#home-tab>a").trigger("click");
-      vm_body_columns.left_menu_trigger(1);
-      $("#left-menu>li:eq(1)").trigger("click");
-      this.content_slider_show_status=true;
-      this.content_show_status=false;
-      this.guide_show_status=false;
+      if(!this.onExecute){
+        this.onExamlpe=true;
+        $("#home-tab>a").trigger("click");
+        enabled_parameter();
+        vm_body_columns.left_menu_trigger(1);
+        $("#left-menu>li:eq(1)").trigger("click");
+        this.content_slider_show_status=true;
+        this.content_show_status=false;
+        this.guide_show_status=false;
+        this.disabled_parameter_panel();
+      }
+
       // var data={
       //
       // };
@@ -704,7 +723,57 @@ $(function(){
       // });
     },
     get_example_page_info:function(){
-
+    },
+    relationChartData1:{
+      nodes:[
+        {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
+        {category:1, name: '1-1',value : 2},
+        {category:1, name: '1-2',value : 3},
+        {category:1, name: '克拉拉-乔布斯',value : 3},
+        {category:1, name: '劳伦-鲍威尔',value : 7},
+        {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
+        {category:2, name: '奥巴马',value : 8},
+        {category:2, name: '比尔-盖茨',value : 9},
+        {category:2, name: '乔纳森-艾夫',value : 4},
+        {category:2, name: '蒂姆-库克',value : 4},
+        {category:2, name: '龙-韦恩',value : 1},
+      ],
+      links:[]
+    },
+    relationChartData2:{
+      nodes:[
+        {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
+        {category:1, name: '1-1',value : 2},
+        {category:1, name: '1-2',value : 3},
+        {category:1, name: '克拉拉-乔布斯',value : 3},
+        {category:1, name: '劳伦-鲍威尔',value : 7},
+        {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
+        {category:2, name: '奥巴马',value : 8},
+        {category:2, name: '比尔-盖茨',value : 9},
+        {category:2, name: '乔纳森-艾夫',value : 4},
+        {category:2, name: '蒂姆-库克',value : 4},
+        {category:2, name: '龙-韦恩',value : 1},
+      ],
+      links:[
+        {source : '丽萨-乔布斯', target : '乔布斯', weight : 1, name: '女儿'},
+        {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
+        {source : '克拉拉-乔布斯', target : '乔布斯', weight : 1, name: '母亲'},
+        {source : '蒂姆-库克', target : '奥巴马', weight : 1}
+      ]
+    },
+    setUpCharts1:function(){
+      getAjax("../data/chartData1",null,function(){
+        
+      });
+      relation_chart_setup("relation-chart-1",this.relationChartData1);
+    },
+    setUpCharts2:function(){
+      relation_chart_setup("relation-chart-2",this.relationChartData2);
+    },
+    update_slider_info:function(){
+      var leftBtn=$("#carousel a.left");
+      var rightBtn=$("#carousel a.right");
+      var sliderIndexNow=$("li[data-target=#carousel].active").attr("data-slide-to");
     }
 
   });
@@ -722,7 +791,7 @@ $(function(){
   setup_slider_group("slider",vm_body_columns.sliderData);
   toggle_left_menu(vm_body_columns);
   delete_this_tab(vm_body_columns);
-  switch_tabs_right(vm_body_columns);
+  // switch_tabs_right(vm_body_columns);
 
   $("#carousel").on('slid.bs.carousel', function () {
   	$("#carousel").carousel("pause");
@@ -746,141 +815,174 @@ function isEmpty(obj){
 }
 
 function chart_setup(data){
+  var myChart = echarts.init(document.getElementById('chartPosition'),'macarons');
+  var option = {
+      title : {
+        text: 'News Title',
+        // subtext: '纯属虚构'
+      },
+      tooltip : {
+        trigger: 'axis'
+      },
+      legend: {
+        data:['新闻条数']
+      },
 
-  $("#chartPosition").empty();
-  $("#chartPosition").append("<canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>");
-  //Get the context of the canvas element we want to select
-  var   options ={
-
-        //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-        scaleBeginAtZero : true,
-
-        //Boolean - Whether grid lines are shown across the chart
-        scaleShowGridLines : true,
-
-        //String - Colour of the grid lines
-        scaleGridLineColor : "rgba(0,0,0,.05)",
-
-        //Number - Width of the grid lines
-        scaleGridLineWidth : 1,
-
-        //Boolean - Whether to show horizontal lines (except X axis)
-        scaleShowHorizontalLines: true,
-
-        //Boolean - Whether to show vertical lines (except Y axis)
-        scaleShowVerticalLines: true,
-
-        //Boolean - If there is a stroke on each bar
-        barShowStroke : true,
-
-        //Number - Pixel width of the bar stroke
-        barStrokeWidth : 2,
-
-        //Number - Spacing between each of the X value sets
-        barValueSpacing : 5,
-
-        //Number - Spacing between data sets within X values
-        barDatasetSpacing : 1,
-
-        //String - A legend template
-        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-
-
-
+      toolbox: {
+        show : true,
+        feature : {
+          // mark : {show: true},
+          dataView : {show: true, readOnly: false},
+          magicType : {show: true, type: ['line', 'bar']},
+          restore : {show: true},
+          saveAsImage : {show: true}
+        }
+      },
+      calculable : true,
+      xAxis : [
+        {
+          type : 'category',
+          data :data.labels
+          //  ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+        }
+      ],
+      yAxis : [
+        {
+          type : 'value'
+        }
+      ],
+      series : [
+        {
+          name:'新闻条数',
+          type:'bar',
+          data:data.data,
+          // [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+          markPoint : {
+            data : [
+              {type : 'max', name: '最大值'},
+              {type : 'min', name: '最小值'}
+            ]
+          },
+          markLine : {
+            data : [
+              {type : 'average', name: '平均值'}
+            ]
+          }
+        }
+      ]
   };
-  //Get context with jQuery - using jQuery's .get() method.
-  var ctx = $("#myChart").get(0).getContext("2d");
-  //This will get the first returned node in the jQuery collection.
-  var Bar = new Chart(ctx).Bar(data,options);
-  // Bar.defaults = {
-  //
-  //   //Boolean - If we show the scale above the chart data
-  //   	scaleOverlay : false,
-  //
-  //   	//Boolean - If we want to override with a hard coded scale
-  //   	scaleOverride : false,
-  //
-  //   	//** Required if scaleOverride is true **
-  //   	//Number - The number of steps in a hard coded scale
-  //   	scaleSteps : null,
-  //   	//Number - The value jump in the hard coded scale
-  //   	scaleStepWidth : null,
-  //   	//Number - The scale starting value
-  //   	scaleStartValue : null,
-  //
-  //   	//String - Colour of the scale line
-  //   	scaleLineColor : "rgba(0,255,0,.1)",
-  //
-  //   	//Number - Pixel width of the scale line
-  //   	scaleLineWidth : 1,
-  //
-  //   	//Boolean - Whether to show labels on the scale
-  //   	scaleShowLabels : false,
-  //
-  //   	//Interpolated JS string - can access value
-  //   	scaleLabel : "<%=value%>",
-  //
-  //   	//String - Scale label font declaration for the scale label
-  //   	scaleFontFamily : "'Arial'",
-  //
-  //   	//Number - Scale label font size in pixels
-  //   	scaleFontSize : 12,
-  //
-  //   	//String - Scale label font weight style
-  //   	scaleFontStyle : "normal",
-  //
-  //   	//String - Scale label font colour
-  //   	scaleFontColor : "#666",
-  //
-  //   	///Boolean - Whether grid lines are shown across the chart
-  //   	scaleShowGridLines : true,
-  //
-  //   	//String - Colour of the grid lines
-  //   	scaleGridLineColor : "rgba(255,0,0,.05)",
-  //
-  //   	//Number - Width of the grid lines
-  //   	scaleGridLineWidth : 1,
-  //
-  //   	//Boolean - If there is a stroke on each bar
-  //   	barShowStroke : false,
-  //
-  //   	//Number - Pixel width of the bar stroke
-  //   	barStrokeWidth : 2,
-  //
-  //   	//Number - Spacing between each of the X value sets
-  //   	barValueSpacing : 5,
-  //
-  //   	//Number - Spacing between data sets within X values
-  //   	barDatasetSpacing : 1,
-  //
-  //   	//Boolean - Whether to animate the chart
-  //   	animation : true,
-  //
-  //   	//Number - Number of animation steps
-  //   	animationSteps : 60,
-  //
-  //   	//String - Animation easing effect
-  //   	animationEasing : "easeOutQuart",
-  //
-  //   	//Function - Fires when the animation is complete
-  //   	onAnimationComplete : null
-  //
-  // };
+  myChart.setOption(option);
   if($("#hide-tab-2").css("bottom")!=="0px"){
     $("#hide-tab-2>div.tabs-handle>p").trigger("click");
   }
 
 }
 
+function relation_chart_setup(id,data){
+  var myChart = echarts.init(document.getElementById(id),'macarons');
+  var option = {
+      title : {
+        text: '人物关系：乔布斯',
+        subtext: '数据来自人立方',
+        x:'right',
+        y:'bottom'
+      },
+      tooltip : {
+        trigger: 'item',
+        formatter: '{a} : {b}'
+      },
+      toolbox: {
+        show : true,
+        feature : {
+          restore : {show: true},
+          // magicType: {show: true, type: ['force', 'chord']},
+          // saveAsImage : {show: true}
+        }
+      },
+      legend: {
+        x: 'left',
+        data:['家人','朋友']
+      },
+      series : [{
+          type:'force',
+          name : "三元组",
+          ribbonType: false,
+          categories : [{
+            name: '人物'
+          },
+          {
+            name: '家人'
+          },
+          {
+            name:'朋友'
+          }],
+          itemStyle: {
+            normal: {
+              label: {
+                show: true,
+                // position:'outer',
+                textStyle: {
+                  color: '#333'
+                }
+              },
+              nodeStyle : {
+                brushType : 'both',
+                borderColor : 'rgba(255,215,0,0.4)',
+                borderWidth : 1
+              },
+              linkStyle: {
+                type: 'curve',
+                width:4
+              }
+            },
+            emphasis: {
+              label: {
+                show: true
+                // textStyle: null      // 默认使用全局文本样式，详见TEXTSTYLE
+              },
+              nodeStyle : {
+                //r: 30
+              },
+              linkStyle : {}
+            }
+          },
+          useWorker: true,
+          minRadius : 15,
+          maxRadius :20,
+          gravity: 5.1,
+          scaling: 1.5,
+          roam: 'move',
+          nodes:data.nodes,
+            // {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
+            // {category:1, name: '1-1',value : 2},
+            // {category:1, name: '1-2',value : 3},
+            // {category:1, name: '克拉拉-乔布斯',value : 3},
+            // {category:1, name: '劳伦-鲍威尔',value : 7},
+            // {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
+            // {category:2, name: '奥巴马',value : 8},
+            // {category:2, name: '比尔-盖茨',value : 9},
+            // {category:2, name: '乔纳森-艾夫',value : 4},
+            // {category:2, name: '蒂姆-库克',value : 4},
+            // {category:2, name: '龙-韦恩',value : 1},
 
+          links : data.links
+            // {source : '丽萨-乔布斯', target : '乔布斯', weight : 1, name: '女儿'},
+            // {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
+            // {source : '克拉拉-乔布斯', target : '乔布斯', weight : 1, name: '母亲'},
+            // {source : '蒂姆-库克', target : '奥巴马', weight : 1}
 
+        }
+      ]
+    };
 
-
-
+  myChart.setOption(option);
+  // if($("#hide-tab-2").css("bottom")!=="0px"){
+  //   $("#hide-tab-2>div.tabs-handle>p").trigger("click");
+  // }
+}
 
 function menu_active_effect(position){
   $("#"+position+"-menu>li").on("click",function(){
-    // console.log(1);
     $("#"+position+"-menu>li").removeClass("active");
     $(this).addClass("active");
     if(position=="right"){
@@ -906,21 +1008,19 @@ function show_left_tab(id){
 }
 
 function setup_slider_group(groupId,sliderData){
-  // console.log(1);
   for(var i=0;i<sliderData.length;i++){
     setup_parameter_slider(groupId+"-"+i,sliderData[i].min,sliderData[i].max,sliderData[i].val);
   }
 }
 
 function setup_parameter_slider(id,min,max,val){
-  // console.log(2);
   $("#"+id).slider({
     range: "min",
     min: min,
     max: max,
     value: val,
     slide: function (event, ui) {
-        $("#amount-"+id).val(ui.value);
+      $("#amount-"+id).val(ui.value);
     }
   });
   $("#amount-"+id).val($("#"+id).slider("value"));
@@ -952,15 +1052,21 @@ function change_tabs_on_right(vm_body_columns){
   $(document).on("click","#right-tabs>li",function(){
     var _this=$(this);
     var index = $("#right-tabs>li").index(_this);
-    active_tabs_on_right(index);
-    if(index===0){
-      vm_body_columns.guide_show_status=true;
-      vm_body_columns.content_show_status=false;
-      vm_body_columns.content_slider_show_status=false;
-    }
     if(!vm_body_columns.onExecute){//未在执行中时切换页面
-
-
+      if(index===0){
+        vm_body_columns.guide_show_status=true;
+        vm_body_columns.content_show_status=false;
+        vm_body_columns.content_slider_show_status=false;
+        disabled_parameter();
+      }else{
+        vm_body_columns.guide_show_status=false;
+        vm_body_columns.content_show_status=true;
+        vm_body_columns.content_slider_show_status=false;
+        enabled_parameter();
+      }
+      active_tabs_on_right(index);
+      var _thisContentId=$("#right-tabs>li.active").attr("id");
+      vm_body_columns.update_content_parameter(_thisContentId);
     }
   });
 }
@@ -968,17 +1074,18 @@ function change_tabs_on_right(vm_body_columns){
 function delete_this_tab(vm_body_columns){
   $(document).on("click",".tab-delete",function(){
     // alert("!");
-    var thisLi=$(this).parent().parent();
-    var index=$("#right-tabs>li").index(thisLi);
-    index=index-1;
-    active_tabs_on_right(index);
-    thisLi.remove();
-    var thisId=thisLi.attr("id");
-    disabled_change_right_menu(vm_body_columns);
-    change_folder_icon($("a[data-id="+thisId+"]"));
+    if(!vm_body_columns.onExecute){
+      var thisLi=$(this).parent().parent();
+      var index=$("#right-tabs>li").index(thisLi);
+      index=index-1;
+      active_tabs_on_right(index);
+      thisLi.remove();
+      var thisId=thisLi.attr("id");
+      disabled_change_right_menu(vm_body_columns);
+      change_folder_icon($("a[data-id="+thisId+"]"));
+    }
   });
 }
-
 
 //底部tab控制
 function show_hide_tabs(){
@@ -993,6 +1100,7 @@ function show_hide_tabs(){
     }
   });
 }
+
 //底部tab控制
 function setUp_hide_tabs(){
   // $(".bottom-hide-tabs").css("bottom","-"+$(this).find(".bottom-hide-tabs-container").eq(0).css("height"));
@@ -1007,8 +1115,6 @@ function setUp_hide_tabs(){
 //控制右侧的顶部菜单的禁用/启用
 function disabled_change_right_menu(vm_body_columns){
   if($("#right-tabs>li").length==1){
-    // console.log($("#right-menu>li").length);
-    // console.log($("#right-menu>li:not(.dropdown),ul.dropdown-menu>li"));
     $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
     $("#dropdown-toggle").attr({"data-toggle":""});
     $("#modal-trigger").attr({"data-toggle":"","data-target":""});
@@ -1017,13 +1123,20 @@ function disabled_change_right_menu(vm_body_columns){
     // console.log(vm_body_columns.guide_show_status);
     vm_body_columns.guide_show_status=true;
     vm_body_columns.content_show_status=false;
+    vm_body_columns.content_slider_show_status=false;
     disabled_parameter();
-  }else{
-    // console.log($("#right-menu>li").length);
-    // console.log($("#right-menu>li:not(.dropdown),ul.dropdown-menu>li"));
-    // console.log(vm_body_columns.guide_show_status);
+  }else if (vm_body_columns.onExecute) {
+    $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
+    $("#dropdown-toggle").attr({"data-toggle":""});
+    $("#modal-trigger").attr({"data-toggle":"","data-target":""});
+    vm_body_columns.guide_show_status=false;
+    vm_body_columns.content_show_status=false;
+    vm_body_columns.content_slider_show_status=true;
+  }
+  else{
     vm_body_columns.guide_show_status=false;
     vm_body_columns.content_show_status=true;
+    vm_body_columns.content_slider_show_status=false;
     $("#right-menu>li,ul.dropdown-menu>li").removeClass("disabled").find("a").attr("disabled",false);
     $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
     $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
@@ -1039,9 +1152,12 @@ function toggle_left_menu(vm_body_columns){
     }
   });
   $(document).on("click","#right-tabs>li:first",function(){
-    vm_body_columns.left_menu_trigger(0);
-    // console.log("vm_body_columns.left_menu_status:"+vm_body_columns.left_menu_status);
-    $("#left-menu>li:eq(0)").trigger("click");
+    if(!vm_body_columns.onExecute){
+      vm_body_columns.left_menu_trigger(0);
+      // console.log("vm_body_columns.left_menu_status:"+vm_body_columns.left_menu_status);
+      $("#left-menu>li:eq(0)").trigger("click");
+    }
+
   });
 }
 //禁用left_menu的parameter
@@ -1049,9 +1165,7 @@ function disabled_parameter(){
   $("#left-menu>li:eq(1)").addClass("disabled");
   var parameter_offset=$("#left-menu>li:eq(1)").offset();
   $("#cover").removeClass("hide").css({"left":parameter_offset.left,"top":parameter_offset.top,"width": "113px","position":"fixed","height": "50px","z-index":"1000"});
-  // $(window).resize(function(){
-  //
-  // });
+
 }
 //启用left_menu的parameter
 function enabled_parameter(){
@@ -1059,15 +1173,6 @@ function enabled_parameter(){
   $("#cover").addClass("hide");
 }
 
-function switch_tabs_right(vm_body_columns){
-  $(document).on("click","#right-tabs>li:not(:first)",function(){
-    var _thisTabId=$(this).attr("id");
-    // console.log(_thisTabId);
-    vm_body_columns.update_content(_thisTabId);
-    vm_body_columns.update_parameter(_thisTabId);
-
-  });
-}
 // firstIndex是第一个元素的index，lastIndex是最后一个的后面一个的index;
 function getItemsBetween(firstIndex,lastIndex,selecter){
   if(firstIndex==(-1)){

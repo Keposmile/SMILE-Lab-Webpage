@@ -70,9 +70,9 @@
                 <div>
                   <h3 ms-text="@content.NewsTitle"></h3>
                   <div>
-                    <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
+                    <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
                   </div>
-                  <p><b>Content:</b></p>
+                  <p><b>Content：</b></p>
                   <div><pre  ms-html="@content.NewsContent"></pre></div>
                 </div>
               </div>
@@ -91,36 +91,36 @@
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
                     <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <h4><img src="../img/info.png" alt="">tips：</h4>
                       <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                       <div class="divide_line"></div>
 
                       <h3 ms-text="@content.NewsTitle"></h3>
                       <div>
-                        <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
+                        <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
                       </div>
-                      <p><b>Content:</b></p>
+                      <p><b>Content：</b></p>
                       <div><pre  ms-html="@content.NewsContent"></pre></div>
                     </div>
                   </div>
                   <div class="item">
                     <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <h4><img src="../img/info.png" alt="">tips：</h4>
                       <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                       <div class="divide_line"></div>
 
                       <h3 ms-text="@content.NewsTitle"></h3>
                       <div>
-                        <p><b>Source:</b><span ms-html="@content.Source"></span><b>Datetime:</b><span ms-html="@content.DateTime"></span></p>
+                        <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
                       </div>
-                      <p><b>Content:</b></p>
+                      <p><b>Content：</b></p>
                       <div><pre  ms-html="@content.NewsContent"></pre></div>
                     </div>
                   </div>
                   <div class="item">
                     <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <h4><img src="../img/info.png" alt="">tips：</h4>
                       <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                       <div class="divide_line"></div>
 
@@ -144,7 +144,7 @@
                   <div class="item">
                     <!-- <img src="..." alt="..."> -->
                     <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips:</h4>
+                      <h4><img src="../img/info.png" alt="">tips：</h4>
                       <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                       <div class="divide_line"></div>
                       <h3 ms-on-click="@show_slider_win_effect()">Triplets</h3>
@@ -165,16 +165,17 @@
                     </div>
                   </div>
                   <div class="item">
-                    <!-- <img src="..." alt="..."> -->
+                    <h5 ms-on-click="@setUpCharts1()">charts1</h5>
                     <div class="carousel-caption">
-                      <div id=""></div>
+                      <div class="sliderLeftBox"></div>
+                      <div class="sliderRightBox" id="relation-chart-1"></div>
                     </div>
                   </div>
                   <div class="item">
-                    <!-- <img src="..." alt="..."> -->
+                    <h5 ms-on-click="@setUpCharts2()">charts2</h5>
                     <div class="carousel-caption">
-                      <h3>第六页</h3>
-                      <p>66666666</p>
+                      <div class="sliderLeftBox"></div>
+                      <div class="sliderRightBox" id="relation-chart-2"></div>
                     </div>
                   </div>
                 </div>
@@ -335,7 +336,7 @@
             <div class="panel-footer">
               <div class="container-fluid">
                 <div class="btn-group btn-group-justified" role="group">
-                  <a ms-on-click="@submit_parameter" class="btn btn-success">Execute! </a>
+                  <a ms-on-click="@execute" class="btn btn-success">Execute! </a>
                 </div>
               </div>
             </div>
@@ -388,8 +389,7 @@
     <script type="text/javascript" src="../js/layout-setup.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/Chart.js"></script>
-    <script src="../js/chart-setUp.js"></script>
+    <script src="../js/echarts-all.js"></script>
     <script src="../js/mvvm.js"></script>
     <script type="text/javascript" src="../js/index.js"></script>
   </body>
