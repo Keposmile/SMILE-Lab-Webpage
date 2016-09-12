@@ -738,8 +738,9 @@ $(function(){
         {category:2, name: '蒂姆-库克',value : 4},
         {category:2, name: '龙-韦恩',value : 1},
       ],
-      links:[]
+      links:[],
     },
+    relationTripletData1:{},
     relationChartData2:{
       nodes:[
         {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
@@ -761,9 +762,11 @@ $(function(){
         {source : '蒂姆-库克', target : '奥巴马', weight : 1}
       ]
     },
+    relationTripletData2:{},
     setUpCharts1:function(){
-      getAjax("../data/chartData1",null,function(){
-        
+      getAjax("../data/chartData1",null,function(data){
+        this.relationTripletData1=data.Data;
+        this.relationChartData1=setNodesAndLinks(data.Data);
       });
       relation_chart_setup("relation-chart-1",this.relationChartData1);
     },
@@ -980,7 +983,41 @@ function relation_chart_setup(id,data){
   //   $("#hide-tab-2>div.tabs-handle>p").trigger("click");
   // }
 }
-
+function  setNodesAndLinks(data){
+  var nodes=[];
+    // {category:1, name: '1-1',value : 2,label:'2'},
+  var links=[];
+    // {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
+  for(var i=0;i<data.Groups.length;i++){
+    var _thisGroup=data.Groups[i];
+    var nodeObj={};
+    var linksObj={};
+    for (var j = 0; j < _thisGroup.Triplets.length; j++) {
+      var _thisTriplets=_thisGroup.Triplets[j];
+      nodeObj.category=i;
+      if(!_thisTriplets.Context){
+        nodeObj.name="( "+_thisTriplets.Subject+","+_thisTriplets.Relation+","+_thisTriplets. Object+" )";
+      }else{
+        nodeObj.name="( "+_thisTriplets.Context+" )";
+      }
+      if(j===0){
+        linkObj.source=nodeObj.name;
+      }else if (j==1) {
+        linkObj.target=nodeObj.name;
+        linksObj.weight=1;
+        linkObj.name=_thisGroup.Similarity;
+        links.push(linkObj);
+      }
+      nodeObj.value=j;
+      nodeObj.label=i+"-"+_thisTriplets.TripletOrder;
+      nodes.push(nodeObj);
+    }
+  }
+  return {
+    links:links,
+    nodes:nodes
+  };
+}
 function menu_active_effect(position){
   $("#"+position+"-menu>li").on("click",function(){
     $("#"+position+"-menu>li").removeClass("active");
