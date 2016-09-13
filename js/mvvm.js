@@ -6,7 +6,7 @@ $(function(){
     str=str.match(keywords_pattern);
     return str;
   };
-  var vm_body_columns=avalon.define({
+  var vm=avalon.define({
     $id:"body-columns",
     head:[{
         title:"Syria refugee crisis",
@@ -110,7 +110,6 @@ $(function(){
     disabled_other_columns:function(e){
       var _this=$(e.target);
       if(_this.find("input[type=checkbox]:eq(0)").attr("disabled")){
-        console.log("out");
         return false;
       }
       // label样式设置
@@ -122,15 +121,14 @@ $(function(){
       }
       var pattern=/(keywords_)([0-9])+/;
       var _thisGroupIndex=_thisColumnClass.match(pattern)[2];
-      // console.log(_thisGroupIndex);
-      vm_body_columns.selected.TopicId=vm_body_columns.head[_thisGroupIndex-1].groupId;
-      vm_body_columns.selected.TopicName=vm_body_columns.head[_thisGroupIndex-1].title;
+      vm.selected.TopicId=vm.head[_thisGroupIndex-1].groupId;
+      vm.selected.TopicName=vm.head[_thisGroupIndex-1].title;
       var otherColumnInput=$("#hide-tab-1 table input[type=checkbox]:not(."+_thisColumnClass+")");//获取非本列的input checkbox
       otherColumnInput.attr("disabled",true).parent().addClass("checkbox-disabled");//禁用其他列
       if(this.selected.column.length===0){//检测到本列数据为空时，还原其他列,并清空已有数据
         otherColumnInput.attr("disabled",false).parent().removeClass("checkbox-disabled");
-        vm_body_columns.selected.TopicId="";
-        vm_body_columns.selected.TopicName="";
+        vm.selected.TopicId="";
+        vm.selected.TopicName="";
       }
 
       // 点击页面的keyword后，自动跳转到search TAB下
@@ -160,7 +158,7 @@ $(function(){
       this.content_slider_show_status=false;
       $("#home-tab").trigger("click");
       disabled_parameter();
-      disabled_change_right_menu(vm_body_columns);
+      disabled_change_right_menu(vm);
     },
     //提交所有选中的keyword
     submit_all_keywords:function(){
@@ -181,8 +179,8 @@ $(function(){
           Keyword:_keywords[i].match(keywords_pattern)[0]
         };
       }
-      keywords_data.data.TopicId=vm_body_columns.selected.TopicId;
-      keywords_data.data.TopicName=vm_body_columns.selected.TopicName;
+      keywords_data.data.TopicId=vm.selected.TopicId;
+      keywords_data.data.TopicName=vm.selected.TopicName;
       if(keywords_data.data.KeywordsList.length===0){
         alert("Please select keywords first!");
       }else{
@@ -191,76 +189,84 @@ $(function(){
         }
         if(this.onExamlpe){
           this.onExamlpe=!this.onExamlpe;
+          this.exampleInfo.page=0;
         }
-        console.log(this.onExamlpe);
+        // console.log(this.onExamlpe);
         // postAjax("",keywords_data,function(data){
         getAjax("../data/result.json",null,function(data){
           if (data.status===0) {
             // $("#right-tabs>li:not(:first)").;
             $("#hide-tab-2>.disabled").removeClass("disabled");
-            vm_body_columns.result.content=[];
+            vm.result.content=[];
             $(".tab-title>button").trigger("click");
-            vm_body_columns.chartsData.labels=[];
-            vm_body_columns.chartsData.data=[];
-            vm_body_columns.result.centent=data.data.News;
+            vm.chartsData.labels=[];
+            vm.chartsData.data=[];
+            vm.result.centent=data.data.News;
             var result_content_model={
               title:"",
               id:"",
               confident:""
             };
             for (var j= 0; j < data.data.News.length; j++) {
-              vm_body_columns.result.content.push(result_content_model);
-              vm_body_columns.result.content[j].title=data.data.News[j].NewsTitle;
-              vm_body_columns.result.content[j].id=data.data.News[j].NewsId;
-              vm_body_columns.result.content[j].confident=data.data.News[j].confident;
+              vm.result.content.push(result_content_model);
+              vm.result.content[j].title=data.data.News[j].NewsTitle;
+              vm.result.content[j].id=data.data.News[j].NewsId;
+              vm.result.content[j].confident=data.data.News[j].confident;
             }
             for (var i = 0; i < data.data.DateNum.length; i++) {
-              vm_body_columns.chartsData.labels.push(data.data.DateNum[i].Date);
-              vm_body_columns.chartsData.data.push(data.data.DateNum[i].Count);
+              vm.chartsData.labels.push(data.data.DateNum[i].Date);
+              vm.chartsData.data.push(data.data.DateNum[i].Count);
             }
-            chart_setup(vm_body_columns.chartsData);
+            chart_setup(vm.chartsData);
           }
         });
       }
     },
+
     chartsData:{
       labels : [],
       data : []
     },
 
     result:{
-      content:[
-      ]
+      content:[]
     },
+
     show_result:function(){
       return (this.left_menu_status===0)&&(!isEmpty(this.result))&&(this.result.content.length!==0);
     },
+
     guide_show_status:true,
+
     show_guide:function(){
       return this.guide_show_status;
     },
+
     content:{},
+
     content_show_status:false,
+
     show_content:function(){
       return this.content_show_status;
     },
+
     update_content_parameter:function(data_id){//更新页面content的内容
       var data={
         "status":1,
         "message":" NewsDetailQuery",
         "newsId":data_id
       };
-      console.log(data_id);
+      // console.log(data_id);
       getAjax("../data/content.json",null,function(data){
       // postAjax(url,data,function(data){
         if(data.status==1){
           //更新文章内容
-          vm_body_columns.content=data;
+          vm.content=data;
           this.guide_show_status=false;
           this.content_show_status=true;
           //更新参数内容
-          vm_body_columns.sliderData=data.sliderData;
-          setup_slider_group("slider",vm_body_columns.sliderData);
+          vm.sliderData=data.sliderData;
+          setup_slider_group("slider",vm.sliderData);
         }
       });
     },
@@ -271,13 +277,13 @@ $(function(){
       var data_id=_thisLink.attr("data-id");
       if($("#"+data_id)[0]){//关闭文章tab
         $("#"+data_id+" button").trigger("click");
-        disabled_change_right_menu(vm_body_columns);
+        disabled_change_right_menu(vm);
         // this.update_selected_content();
       }
       else if (!$("#"+data_id)[0]) {//打开新的文章tab
         change_folder_icon(_thisLink);
         addTab(_this.text(),data_id);
-        disabled_change_right_menu(vm_body_columns);
+        disabled_change_right_menu(vm);
         data_id=$("#right-tabs>li.active").attr("id");
         this.update_content_parameter(data_id);
       }
@@ -489,7 +495,8 @@ $(function(){
         }
       ]
     },
-    update_triplets_data:function(NewsId){
+
+    update_triplets_data:function(NewsId){//抽取新闻中有效的三元组的ajax
       var data={
         "status":1,
         "message":" NewsTripletsExtraction",
@@ -497,9 +504,10 @@ $(function(){
       };
       // postAjax(url,data,function(data){
       getAjax("../data/triplets.json",null,function(data){
-        data.Data=vm_body_columns.TripletsData;
+        data.Data=vm.TripletsData;
       });
     },
+
     show_slider_win_effect:function(){
       var totalTriGroup=$(".Sentences1");
       var winSize=this.TripletsData.winSize;
@@ -523,16 +531,15 @@ $(function(){
         }
       },1000);
     },
+
     left_menu_status:0,//左侧页面菜单的选择状态
     //左侧页面菜单的选择状态控制器
     left_menu_trigger:function(status){
       // console.log(status);
       this.left_menu_status=status;
       if(status===0&&this.onExamlpe){
-        console.log("1:1");
         this.enabled_left_part();
       }else if (status==1&&this.onExamlpe) {
-        console.log("1:2");
         this.disabled_parameter_panel();
       }
     },
@@ -546,7 +553,7 @@ $(function(){
     // 右侧页面轮播分页控制
     content_slider_show_status:false,
     show_content_slider:function(){
-      return vm_body_columns.content_slider_show_status;
+      return vm.content_slider_show_status;
     },
     // 属性滑动块控制
     sliderData:[{
@@ -576,21 +583,56 @@ $(function(){
       val:60
     }],
     onExecute:false,
-    execute:function(){
-      this.onExecute=true;
-      this.hide_bottom_tabs();
-      this.disabled_left_part();
-      // postAjax(url,_keywords,function(){
-      // });
-      // setTimeout(function(){
-      //   // console.log(this);
-      //   vm_body_columns.enabled_left_part();
-      //   vm_body_columns.show_bottom_tabs();
-      // },1000);
-      vm_body_columns.guide_show_status=false;
-      vm_body_columns.content_show_status=false;
-      vm_body_columns.content_slider_show_status=true;
-      disabled_change_right_menu(this);
+    executeInfo:{
+      id:""
+    },
+    execute:function(id,IsExample){
+      var data={};
+      if(IsExample){//example状态
+        vm.onExamlpe=true;
+        vm.executeInfo.id=id;
+        this.disabled_parameter_panel();
+
+        $("#home-tab>a").trigger("click");
+        enabled_parameter();
+        vm.left_menu_trigger(1);
+        $("#left-menu>li:eq(1)").trigger("click");
+        data={
+          id:id
+        };
+      }else{
+        vm.onExecute=true;
+
+        this.disabled_left_part();
+
+        this.hide_bottom_tabs();
+
+        var sliderData=vm.sliderData;
+        for(var i=0;i<sliderData.length;i++){
+          var sliderObj={
+            parameter:sliderData[i].parameter,
+            val:sliderData[i].val
+          };
+          data.parameters.push(sliderObj);
+          sliderObj={};
+        }
+        data={
+          id:id,
+          parameters:sliderData
+        };
+
+      }
+
+      this.content_slider_show_status=true;
+      this.content_show_status=false;
+      this.guide_show_status=false;
+
+      postAjax(url,data,function(data){
+        if(data.status===0){
+          // 提交文章id和属性完成后
+          disabled_change_right_menu(vm);
+        }
+      });
     },
     finish_execute:function(){
       this.onExecute=false;
@@ -618,16 +660,16 @@ $(function(){
     selected_content:[],
     // 更新选中的文章id
     update_selected_content:function(){
-      vm_body_columns.open_content=[];
+      vm.open_content=[];
       var _content_tabs=$("#right-tabs>li:not(#home-tab)");
       var _content_tabs_num=_content_tabs.length;
       $("#myModal ul.list-group").html("");
       for(var i=0;i<_content_tabs_num;i++){
-        vm_body_columns.open_content[i]={
+        vm.open_content[i]={
           title:$(_content_tabs[i]).find("span:eq(0)").text(),
           id:$(_content_tabs[i]).attr("id")
         };
-        $("#myModal ul.list-group").append("<li class=\" list-group-item\"><label for=\""+vm_body_columns.open_content[i].title+"\"><input id=\""+vm_body_columns.open_content[i].title+"\" type=\"checkbox\" name=\"name\"  value=\""+vm_body_columns.open_content[i].id+"\">"+vm_body_columns.open_content[i].title+"</label></li>");
+        $("#myModal ul.list-group").append("<li class=\" list-group-item\"><label for=\""+vm.open_content[i].title+"\"><input id=\""+vm.open_content[i].title+"\" type=\"checkbox\" name=\"name\"  value=\""+vm.open_content[i].id+"\">"+vm.open_content[i].title+"</label></li>");
       }
     },
     //提交选中的文章
@@ -685,9 +727,11 @@ $(function(){
       });
     },
     //提交属性执行程序后，禁用左侧菜单
+
     enabled_left_part:function(){
       $("#coverDiv").hide();
     },
+
     disabled_parameter_panel:function(){
       $("#coverDiv").show();
       $("#coverDiv").css({"height":$("body").height()-60,"width":$(".ui-layout-west").width()+35}).show();
@@ -696,79 +740,96 @@ $(function(){
         $("#coverDiv").css({"height":$("body").height()-60,"width":$(".ui-layout-west").width()+35}).show();
       });
     },
-    example_info:{
-      page:"1",
-      example_index:"1"
-    },
-    onExamlpe:false,
-    show_example:function(example_index){
-      if(!this.onExecute){
-        this.onExamlpe=true;
-        $("#home-tab>a").trigger("click");
-        enabled_parameter();
-        vm_body_columns.left_menu_trigger(1);
-        $("#left-menu>li:eq(1)").trigger("click");
-        this.content_slider_show_status=true;
-        this.content_show_status=false;
-        this.guide_show_status=false;
-        this.disabled_parameter_panel();
-      }
 
-      // var data={
-      //
-      // };
-      // //拉取example的数据
-      // postAjax(url,data,function(){
-      //
-      // });
+    exampleInfo:{
+      page:0,
+      example_id:""
     },
-    get_example_page_info:function(){
+
+    onExamlpe:false,
+
+    right_slider_ctn:function(){
+      if(this.onExamlpe){
+          vm.switch_slider_ajax(vm.exampleInfo.example_id,vm.exampleInfo.page);
+      }else if(this.onExecute){
+        setTimeout(function(){
+          vm.switch_slider_ajax(vm.executeInfo.id,vm.exampleInfo.page);
+        },3000);
+      }
+      vm.exampleInfo.page++;
     },
-    relationChartData1:{
-      nodes:[
-        {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
-        {category:1, name: '1-1',value : 2},
-        {category:1, name: '1-2',value : 3},
-        {category:1, name: '克拉拉-乔布斯',value : 3},
-        {category:1, name: '劳伦-鲍威尔',value : 7},
-        {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
-        {category:2, name: '奥巴马',value : 8},
-        {category:2, name: '比尔-盖茨',value : 9},
-        {category:2, name: '乔纳森-艾夫',value : 4},
-        {category:2, name: '蒂姆-库克',value : 4},
-        {category:2, name: '龙-韦恩',value : 1},
-      ],
-      links:[],
+
+    switch_slider_ajax:function(id,pageindex){//根据当前slider的index执行不同的ajax请求
+      console.log(pageindex);
+      console.log(id);
+      if(pageindex>5){
+        vm.exampleInfo.example_id=0;
+      }
+      switch (pageindex) {
+        // case 0:
+        //   vm.execute();
+        //   break;
+        case 1:
+          vm.update_content_parameter(id);
+          break;
+        case 2:
+          vm.update_triplets_data(id);
+          break;
+        case 3:
+          vm.update_triplets_data(id);
+          break;
+        case 4:
+          vm.setUpCharts1();
+          break;
+        case 5:
+          vm.setUpCharts2();
+          break;
+        default:
+
+      }
+      $("#carousel").carousel("pause");
     },
-    relationTripletData1:{},
+
+    relationChartData1:{},
+    relationTripletData1:{
+      // SentenceNum:null,
+      // EffectTripletsNum:null,
+      // GroupNum:null,
+      Groups:[]
+    },
     relationChartData2:{
       nodes:[
-        {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
-        {category:1, name: '1-1',value : 2},
-        {category:1, name: '1-2',value : 3},
-        {category:1, name: '克拉拉-乔布斯',value : 3},
-        {category:1, name: '劳伦-鲍威尔',value : 7},
-        {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
-        {category:2, name: '奥巴马',value : 8},
-        {category:2, name: '比尔-盖茨',value : 9},
-        {category:2, name: '乔纳森-艾夫',value : 4},
-        {category:2, name: '蒂姆-库克',value : 4},
-        {category:2, name: '龙-韦恩',value : 1},
-      ],
-      links:[
-        {source : '丽萨-乔布斯', target : '乔布斯', weight : 1, name: '女儿'},
-        {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
-        {source : '克拉拉-乔布斯', target : '乔布斯', weight : 1, name: '母亲'},
-        {source : '蒂姆-库克', target : '奥巴马', weight : 1}
-      ]
+                    {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
+                    {category:1, name: '1-1',value : 2,label:"233333333333"},
+                    {category:1, name: '1-2',value : 3},
+                    {category:1, name: '克拉拉-乔布斯',value : 3},
+                    {category:1, name: '劳伦-鲍威尔',value : 7},
+                    {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
+                    {category:2, name: '奥巴马',value : 8},
+                    {category:2, name: '比尔-盖茨',value : 9},
+                    {category:2, name: '乔纳森-艾夫',value : 4},
+                    {category:2, name: '蒂姆-库克',value : 4},
+                    {category:2, name: '龙-韦恩',value : 1},
+                ],
+                links : [
+                    // {source : '丽萨-乔布斯', target : '乔布斯', weight : 1, name: '女儿'},
+                    // {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
+                    // {source : '克拉拉-乔布斯', target : '乔布斯', weight : 1, name: '母亲'},
+                    // {source : '蒂姆-库克', target : '奥巴马', weight : 1}
+                ]
     },
-    relationTripletData2:{},
+    relationTripletData2:{
+      Groups:[]
+    },
     setUpCharts1:function(){
-      getAjax("../data/chartData1",null,function(data){
-        this.relationTripletData1=data.Data;
-        this.relationChartData1=setNodesAndLinks(data.Data);
+      getAjax("../data/chartData1.json",null,function(data){
+        if(data.Status===0){
+          vm.relationTripletData1=data.Data;
+          vm.relationChartData1=setNodesAndLinks(data.Data);
+          relation_chart_setup("relation-chart-1",vm.relationChartData1);
+        }
       });
-      relation_chart_setup("relation-chart-1",this.relationChartData1);
+      // console.log(JSON.parse(JSON.stringify(vm.relationTripletData1)));
     },
     setUpCharts2:function(){
       relation_chart_setup("relation-chart-2",this.relationChartData2);
@@ -778,24 +839,22 @@ $(function(){
       var rightBtn=$("#carousel a.right");
       var sliderIndexNow=$("li[data-target=#carousel].active").attr("data-slide-to");
     }
-
   });
+
   avalon.scan(document.body);
 
   menu_active_effect("left");
   menu_active_effect("right");
-  change_tabs_on_right(vm_body_columns);
+  change_tabs_on_right(vm);
   setUp_hide_tabs();
   show_hide_tabs();
-  disabled_change_right_menu(vm_body_columns);
+  disabled_change_right_menu(vm);
   $(window).resize(function(){
     setUp_hide_tabs();
   });
-  setup_slider_group("slider",vm_body_columns.sliderData);
-  toggle_left_menu(vm_body_columns);
-  delete_this_tab(vm_body_columns);
-  // switch_tabs_right(vm_body_columns);
-
+  setup_slider_group("slider",vm.sliderData);
+  toggle_left_menu(vm);
+  delete_this_tab(vm);
   $("#carousel").on('slid.bs.carousel', function () {
   	$("#carousel").carousel("pause");
   });
@@ -885,8 +944,8 @@ function relation_chart_setup(id,data){
   var myChart = echarts.init(document.getElementById(id),'macarons');
   var option = {
       title : {
-        text: '人物关系：乔布斯',
-        subtext: '数据来自人立方',
+        // text: '人物关系：乔布斯',
+        // subtext: '数据来自人立方',
         x:'right',
         y:'bottom'
       },
@@ -983,6 +1042,7 @@ function relation_chart_setup(id,data){
   //   $("#hide-tab-2>div.tabs-handle>p").trigger("click");
   // }
 }
+
 function  setNodesAndLinks(data){
   var nodes=[];
     // {category:1, name: '1-1',value : 2,label:'2'},
@@ -991,7 +1051,7 @@ function  setNodesAndLinks(data){
   for(var i=0;i<data.Groups.length;i++){
     var _thisGroup=data.Groups[i];
     var nodeObj={};
-    var linksObj={};
+    var linkObj={};
     for (var j = 0; j < _thisGroup.Triplets.length; j++) {
       var _thisTriplets=_thisGroup.Triplets[j];
       nodeObj.category=i;
@@ -1004,13 +1064,14 @@ function  setNodesAndLinks(data){
         linkObj.source=nodeObj.name;
       }else if (j==1) {
         linkObj.target=nodeObj.name;
-        linksObj.weight=1;
+        linkObj.weight=1;
         linkObj.name=_thisGroup.Similarity;
         links.push(linkObj);
       }
-      nodeObj.value=j;
+      nodeObj.value=_thisGroup.Similarity;
       nodeObj.label=i+"-"+_thisTriplets.TripletOrder;
       nodes.push(nodeObj);
+      nodeObj={};
     }
   }
   return {
@@ -1018,6 +1079,7 @@ function  setNodesAndLinks(data){
     nodes:nodes
   };
 }
+
 function menu_active_effect(position){
   $("#"+position+"-menu>li").on("click",function(){
     $("#"+position+"-menu>li").removeClass("active");
@@ -1080,45 +1142,47 @@ function addTab(tabTitle,tabId){
   enabled_parameter();
 }
 
-function active_tabs_on_right(index){
+function active_tabs_on_right(index,vm){
   $("#right-tabs>li").removeClass("active");
   $("#right-tabs>li:eq("+index+")").addClass("active");
+  vm.executeInfo.id=$("#right-tabs>li.active").attr("id");
+  console.log(vm.executeInfo.id);
 }
 
-function change_tabs_on_right(vm_body_columns){
+function change_tabs_on_right(vm){
   $(document).on("click","#right-tabs>li",function(){
     var _this=$(this);
     var index = $("#right-tabs>li").index(_this);
-    if(!vm_body_columns.onExecute){//未在执行中时切换页面
+    if(!vm.onExecute){//未在执行中时切换页面
       if(index===0){
-        vm_body_columns.guide_show_status=true;
-        vm_body_columns.content_show_status=false;
-        vm_body_columns.content_slider_show_status=false;
+        vm.guide_show_status=true;
+        vm.content_show_status=false;
+        vm.content_slider_show_status=false;
         disabled_parameter();
       }else{
-        vm_body_columns.guide_show_status=false;
-        vm_body_columns.content_show_status=true;
-        vm_body_columns.content_slider_show_status=false;
+        vm.guide_show_status=false;
+        vm.content_show_status=true;
+        vm.content_slider_show_status=false;
         enabled_parameter();
       }
-      active_tabs_on_right(index);
+      active_tabs_on_right(index,vm);
       var _thisContentId=$("#right-tabs>li.active").attr("id");
-      vm_body_columns.update_content_parameter(_thisContentId);
+      vm.update_content_parameter(_thisContentId);
     }
   });
 }
 
-function delete_this_tab(vm_body_columns){
+function delete_this_tab(vm){
   $(document).on("click",".tab-delete",function(){
     // alert("!");
-    if(!vm_body_columns.onExecute){
+    if(!vm.onExecute){
       var thisLi=$(this).parent().parent();
       var index=$("#right-tabs>li").index(thisLi);
       index=index-1;
-      active_tabs_on_right(index);
+      active_tabs_on_right(index,vm);
       thisLi.remove();
       var thisId=thisLi.attr("id");
-      disabled_change_right_menu(vm_body_columns);
+      disabled_change_right_menu(vm);
       change_folder_icon($("a[data-id="+thisId+"]"));
     }
   });
@@ -1150,30 +1214,30 @@ function setUp_hide_tabs(){
   }
 }
 //控制右侧的顶部菜单的禁用/启用
-function disabled_change_right_menu(vm_body_columns){
+function disabled_change_right_menu(vm){
   if($("#right-tabs>li").length==1){
     $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
     $("#dropdown-toggle").attr({"data-toggle":""});
     $("#modal-trigger").attr({"data-toggle":"","data-target":""});
     $("#right-tabs>li:first").trigger("click");
     // $("#left-menu>li:eq(0)").trigger("click");
-    // console.log(vm_body_columns.guide_show_status);
-    vm_body_columns.guide_show_status=true;
-    vm_body_columns.content_show_status=false;
-    vm_body_columns.content_slider_show_status=false;
+    // console.log(vm.guide_show_status);
+    vm.guide_show_status=true;
+    vm.content_show_status=false;
+    vm.content_slider_show_status=false;
     disabled_parameter();
-  }else if (vm_body_columns.onExecute) {
+  }else if (vm.onExecute) {
     $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
     $("#dropdown-toggle").attr({"data-toggle":""});
     $("#modal-trigger").attr({"data-toggle":"","data-target":""});
-    vm_body_columns.guide_show_status=false;
-    vm_body_columns.content_show_status=false;
-    vm_body_columns.content_slider_show_status=true;
+    vm.guide_show_status=false;
+    vm.content_show_status=false;
+    vm.content_slider_show_status=true;
   }
   else{
-    vm_body_columns.guide_show_status=false;
-    vm_body_columns.content_show_status=true;
-    vm_body_columns.content_slider_show_status=false;
+    vm.guide_show_status=false;
+    vm.content_show_status=true;
+    vm.content_slider_show_status=false;
     $("#right-menu>li,ul.dropdown-menu>li").removeClass("disabled").find("a").attr("disabled",false);
     $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
     $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
@@ -1181,17 +1245,17 @@ function disabled_change_right_menu(vm_body_columns){
   }
 }
 //打开result的tab后，点击右侧的tab，左侧的menu随之切换
-function toggle_left_menu(vm_body_columns){
+function toggle_left_menu(vm){
   $(document).on("click","#right-tabs>li:not(:first)",function() {
     if($("#right-tabs>li:not(:first)").length!==0){
-      vm_body_columns.left_menu_trigger(1);
+      vm.left_menu_trigger(1);
       $("#left-menu>li:eq(1)").trigger("click");
     }
   });
   $(document).on("click","#right-tabs>li:first",function(){
-    if(!vm_body_columns.onExecute){
-      vm_body_columns.left_menu_trigger(0);
-      // console.log("vm_body_columns.left_menu_status:"+vm_body_columns.left_menu_status);
+    if(!vm.onExecute){
+      vm.left_menu_trigger(0);
+      // console.log("vm.left_menu_status:"+vm.left_menu_status);
       $("#left-menu>li:eq(0)").trigger("click");
     }
 

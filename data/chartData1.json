@@ -12,16 +12,16 @@
       "Triplets":[{
         "TripletOrder":1,
         "Confidence":0.82,
-        "Subject":"Comcast",
-        "Relation":"aa",
-        "Object":"bb",
+        "Subject":"Comca1st",
+        "Relation":"aa1",
+        "Object":"bb1",
         "Attribute":"attri"
       },{
         "TripletOrder":2,
         "Confidence":0.82,
         "Subject":"Comcast",
-        "Relation":"cc",
-        "Object":"dd",
+        "Relation":"cc2",
+        "Object":"dd2",
         "Attribute":"attri"
       }]
     },{
@@ -31,16 +31,16 @@
         "TripletOrder":1,
         "Confidence":0.82,
         "Subject":"Comcast",
-        "Relation":"aa",
-        "Object":"bb",
+        "Relation":"aa3",
+        "Object":"bb4",
         "Attribute":"attri"
       },
       {
         "TripletOrder":2,
         "Confidence":0.82,
         "Subject":"Comcast",
-        "Relation":"cc",
-        "Object":"dd",
+        "Relation":"cc4",
+        "Object":"dd4",
         "Attribute":"attri"
       }]
     }]

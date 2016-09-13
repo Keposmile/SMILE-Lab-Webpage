@@ -47,8 +47,8 @@
                   Example<span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#" ms-on-click="@show_example(1)">Example 1</a></li>
-                    <li><a href="#" ms-on-click="@show_example(2)">Example 2</a></li>
+                    <li><a href="#" ms-on-click="@execute('1',true)">Example 1</a></li>
+                    <li><a href="#" ms-on-click="@execute('2',true)">Example 2</a></li>
                   </ul>
                 </li>
                 <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate kg</a></li>
@@ -76,6 +76,8 @@
                   <div><pre  ms-html="@content.NewsContent"></pre></div>
                 </div>
               </div>
+
+
               <div  ms-if="@show_content_slider()" id="carousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -167,7 +169,17 @@
                   <div class="item">
                     <h5 ms-on-click="@setUpCharts1()">charts1</h5>
                     <div class="carousel-caption">
-                      <div class="sliderLeftBox"></div>
+                      <div class="sliderLeftBox">
+                        <div ms-for="el in @relationTripletData1.Groups">
+                          <h5>{{el.Similarity}}</h5>
+                          <div ms-for="el in el.Triplets">
+                            <span class="Confidence">{{el.Confidence}}</span>
+                            (<span class="Subject">{{el.Subject}}</span>;
+                            <span class="Relation">{{el.Relation}}</span>;
+                            <span class="Object">{{el.Object}}</span>)
+                          </div>
+                        </div>
+                      </div>
                       <div class="sliderRightBox" id="relation-chart-1"></div>
                     </div>
                   </div>
@@ -184,7 +196,7 @@
                   <span class="glyphicon glyphicon-chevron-left"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <a ms-on-click="@right_slider_ctn()" class="right carousel-control" href="#carousel" role="button" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -194,14 +206,6 @@
         </div>
       </div>
       <!-- 下部可隐藏式选项卡 -->
-      <!-- <div id="hide-tab-0" class="bottom-hide-tabs">
-        <div class="tabs-handle">
-          <p>Examples</p>
-        </div>
-        <div class="bottom-hide-tabs-container">
-
-        </div>
-      </div> -->
       <div id="hide-tab-1" class="bottom-hide-tabs">
         <div class="tabs-handle">
           <p>Keyword</p>
@@ -231,8 +235,6 @@
                 </tr>
               </tbody>
             </table>
-            <!-- <div>{{@selected.column}}</div> -->
-            <!-- <div>{{@clean_keywords_selected}}</div> -->
             <img  ms-on-click="@change_keywords_slider_up" class="keywords_slider_btn" src="../img/down.png" alt="" />
           </div>
         </div>
@@ -248,7 +250,6 @@
         </div>
       </div>
       <div id="coverDiv"></div>
-      <!-- <div id="coverDiv"></div> -->
       <div class="ui-layout-west">
         <!-- 左侧栏 -->
 
@@ -336,7 +337,7 @@
             <div class="panel-footer">
               <div class="container-fluid">
                 <div class="btn-group btn-group-justified" role="group">
-                  <a ms-on-click="@execute" class="btn btn-success">Execute! </a>
+                  <a ms-on-click="@execute(vm.executeInfo.id,false)" class="btn btn-success">Execute! </a>
                 </div>
               </div>
             </div>
