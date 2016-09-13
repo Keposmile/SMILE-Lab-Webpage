@@ -62,7 +62,7 @@ $(function () {
         */
     }
     );
-    myLayout.sizePane("west", 350);//设置左边分栏宽度
+    myLayout.sizePane("west", 400);//设置左边分栏宽度
 });
 
 // $(document).ready(function() {

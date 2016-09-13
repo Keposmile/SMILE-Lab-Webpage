@@ -171,6 +171,14 @@ $(function(){
           KeywordsList:[]
         }
       };
+      if(vm.onExamlpe||vm.onExecute){
+        vm.onExamlpe=false;
+        vm.onExecute=false;
+      }
+      $("div.carousel-inner:first>div.item").removeClass("active");
+      $("li[data-target='#carousel']").removeClass("active");
+      $("div.carousel-inner:first>div.item:first").addClass("active");
+      $("li[data-target='#carousel']:first").addClass("active");
       var _keywords=this.selected.column;
       var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
       for(var i=0;i<_keywords.length;i++){
@@ -193,7 +201,7 @@ $(function(){
         }
         // console.log(this.onExamlpe);
         // postAjax("",keywords_data,function(data){
-        getAjax("../data/result.json",null,function(data){
+        getAjax("../data/result2.json",null,function(data){
           if (data.status===0) {
             // $("#right-tabs>li:not(:first)").;
             $("#hide-tab-2>.disabled").removeClass("disabled");
@@ -598,8 +606,9 @@ $(function(){
         this.disabled_parameter_panel();
 
         $("div.carousel-inner:first>div.item").removeClass("active");
+        $("li[data-target='#carousel']").removeClass("active");
         $("div.carousel-inner:first>div.item:first").addClass("active");
-
+        $("li[data-target='#carousel']:first").addClass("active");
         $("#home-tab>a").trigger("click");
 
         enabled_parameter();
@@ -616,7 +625,9 @@ $(function(){
 
         this.hide_bottom_tabs();
         $("div.carousel-inner:first>div.item").removeClass("active");
+        $("li[data-target='#carousel']").removeClass("active");
         $("div.carousel-inner:first>div.item:first").addClass("active");
+        $("li[data-target='#carousel']:first").addClass("active");
 
         $("#execute").addClass("disable-execute");
         vm.executeInfo.id=id;
@@ -1347,7 +1358,7 @@ function getAjax(url,data,success) {
   $.ajax({
     type: 'GET',
     url: url,
-    content:"application/json",
+    // content:"application/json",
     dataType: 'json',
     data: JSON.stringify(data),
     success: success,
