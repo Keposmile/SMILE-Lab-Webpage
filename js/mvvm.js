@@ -285,6 +285,7 @@ $(function(){
         addTab(_this.text(),data_id);
         disabled_change_right_menu(vm);
         data_id=$("#right-tabs>li.active").attr("id");
+        vm.executeInfo.id=data_id;
         this.update_content_parameter(data_id);
       }
       if($("#hide-tab-2").css("bottom")==="0px"){
@@ -593,12 +594,17 @@ $(function(){
       var data={};
       if(IsExample){//example状态
         vm.onExamlpe=true;
-        vm.executeInfo.id=id;
+        vm.exampleInfo.example_id=id;
         this.disabled_parameter_panel();
 
+        $("div.carousel-inner:first>div.item").removeClass("active");
+        $("div.carousel-inner:first>div.item:first").addClass("active");
+
         $("#home-tab>a").trigger("click");
+
         enabled_parameter();
         vm.left_menu_trigger(1);
+
         $("#left-menu>li:eq(1)").trigger("click");
         data={
           id:id
@@ -609,6 +615,11 @@ $(function(){
         this.disabled_left_part();
 
         this.hide_bottom_tabs();
+        $("div.carousel-inner:first>div.item").removeClass("active");
+        $("div.carousel-inner:first>div.item:first").addClass("active");
+
+        $("#execute").addClass("disable-execute");
+        vm.executeInfo.id=id;
         data={
           id:id,
           parameters:[]
@@ -628,13 +639,12 @@ $(function(){
       this.content_slider_show_status=true;
       this.content_show_status=false;
       this.guide_show_status=false;
-      if(vm.onExecute){
-        console.log($("#carousel>a.carousel-control").length);
-        $("a.carousel-control").addClass("disabled");
-      }
+      $("a.carousel-control").addClass("disabled");
+
       // postAjax(url,data,function(data){
       //   if(data.status===0){
       //     // 提交文章id和属性完成后
+        // if()
           disabled_change_right_menu(vm);
           vm.right_slider_ctn();
       //   }
@@ -643,7 +653,14 @@ $(function(){
     finish_execute:function(){
       this.onExecute=false;
       this.enabled_left_part();
-      disabled_change_right_menu(this);
+      vm.exampleInfo.page=0;
+
+      $("#right-menu>li,ul.dropdown-menu>li").removeClass("disabled").find("a").attr("disabled",false);
+      $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
+      $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
+      // $("body").scrollLeft($("body").css(height));
+      // disabled_change_right_menu(this);
+
     },
     update_parameter:function(contentId){
       // $("li[role=presentation][class=active]").attr("id");
@@ -736,12 +753,15 @@ $(function(){
 
     enabled_left_part:function(){
       $("#coverDiv").hide();
+      $("#execute").removeClass("disable-execute");
     },
 
     disabled_parameter_panel:function(){
       $("#coverDiv").show();
       $("#coverDiv").css({"height":$("body").height()-60,"width":$(".ui-layout-west").width()+35}).show();
       // $("div.ui-layout-resizer .ui-layout-resizer-west .ui-draggable-handle .ui-layout-resizer-open .ui-layout-resizer-west-open").removeClass("ui-draggable-handle");
+      $("#execute").addClass("disable-execute");
+      console.log($("#execute").attr("class"));
       $(window).resize(function(){
         $("#coverDiv").css({"height":$("body").height()-60,"width":$(".ui-layout-west").width()+35}).show();
       });
@@ -756,8 +776,16 @@ $(function(){
 
     right_slider_ctn:function(){
       if(this.onExamlpe){
+        var timer=setInterval(function(){
+          $("a.right.carousel-control").trigger("click");
           vm.switch_slider_ajax(vm.exampleInfo.example_id,vm.exampleInfo.page);
           vm.exampleInfo.page++;
+          if(vm.exampleInfo.page==6){
+            $("#carousel>a.carousel-control").removeClass("disabled");
+            clearInterval(timer);
+            vm.finish_execute();
+          }
+        },3000);
       }else if(this.onExecute){
         var timer=setInterval(function(){
           $("a.right.carousel-control").trigger("click");
@@ -766,7 +794,7 @@ $(function(){
           if(vm.exampleInfo.page==6){
             $("#carousel>a.carousel-control").removeClass("disabled");
             clearInterval(timer);
-            // vm.finish_execute();
+            vm.finish_execute();
           }
         },3000);
       }
@@ -873,7 +901,7 @@ $(function(){
   toggle_left_menu(vm);
   delete_this_tab(vm);
   $("#carousel").on('slid.bs.carousel', function () {
-  	$("#carousel").carousel("pause");
+    $("#carousel").carousel("pause");
   });
 
 });
@@ -897,14 +925,13 @@ function chart_setup(data){
   var myChart = echarts.init(document.getElementById('chartPosition'),'macarons');
   var option = {
       title : {
-        text: 'News Title',
-        // subtext: '纯属虚构'
+        text: 'News Statistics',
       },
       tooltip : {
         trigger: 'axis'
       },
       legend: {
-        data:['新闻条数']
+        data:['The items of News']
       },
 
       toolbox: {
@@ -932,7 +959,7 @@ function chart_setup(data){
       ],
       series : [
         {
-          name:'新闻条数',
+          name:'The items of News',
           type:'bar',
           data:data.data,
           // [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
@@ -1243,13 +1270,13 @@ function disabled_change_right_menu(vm){
     vm.content_show_status=false;
     vm.content_slider_show_status=false;
     disabled_parameter();
-  }else if (vm.onExecute) {
+  }else if (vm.onExecute||vm.onExamlpe) {
     $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled",true);
     $("#dropdown-toggle").attr({"data-toggle":""});
     $("#modal-trigger").attr({"data-toggle":"","data-target":""});
-    vm.guide_show_status=false;
-    vm.content_show_status=false;
-    vm.content_slider_show_status=true;
+    // vm.guide_show_status=false;
+    // vm.content_show_status=false;
+    // vm.content_slider_show_status=true;
   }
   else{
     vm.guide_show_status=false;
@@ -1281,6 +1308,7 @@ function toggle_left_menu(vm){
 //禁用left_menu的parameter
 function disabled_parameter(){
   $("#left-menu>li:eq(1)").addClass("disabled");
+  console.log($("#execute").attr("class"));
   var parameter_offset=$("#left-menu>li:eq(1)").offset();
   $("#cover").removeClass("hide").css({"left":parameter_offset.left,"top":parameter_offset.top,"width": "113px","position":"fixed","height": "50px","z-index":"1000"});
 

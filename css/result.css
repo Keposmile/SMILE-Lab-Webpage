@@ -1,0 +1,40 @@
+#leftDiv{
+  float: left;
+  width:25%;
+  height:757px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border: 2px solid rgba(121, 121, 121, 0.2);
+  border-right: 0px;
+  margin: 20px 0 20px 20px;
+  overflow-y: scroll;
+}
+#main{
+  float: left;
+  overflow: hidden;
+  width:70%;
+  border-top-right-radius:10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid rgba(121, 121, 121, 0.2);
+  margin: 20px 20px 20px 0;
+}
+svg{
+  width:100%;
+}
+svg>rect{
+  width:100%;
+}
+.triplets>span{
+  font-size:20px;
+  margin-left:20px;
+  margin-right: 20px;
+}
+.triplets>span{
+  margin-left:20px;
+  margin-right: 20px;
+}
+.Confidence{
+  color:#00aa99;
+}

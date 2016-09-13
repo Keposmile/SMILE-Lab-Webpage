@@ -238,6 +238,7 @@ label[data-selected=selected]{
   /*height: 100%;*/
   z-index:2000;
   visibility:visible;
+  cursor: not-allowed;
 }
 #carousel{
   width:100%;
@@ -390,4 +391,9 @@ pre>b{
 .carousel-control.disabled{
   /*background-color: #aaa;*/
   display:none;
+}
+a.btn-success.disable-execute{
+  color: #fff;
+  background-color: #f00000;
+  border-color: #f00000;
 }
