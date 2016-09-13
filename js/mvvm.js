@@ -586,6 +586,9 @@ $(function(){
     executeInfo:{
       id:""
     },
+    GoExecute:function(){
+      vm.execute(vm.executeInfo.id,false);
+    },
     execute:function(id,IsExample){
       var data={};
       if(IsExample){//example状态
@@ -606,7 +609,10 @@ $(function(){
         this.disabled_left_part();
 
         this.hide_bottom_tabs();
-
+        data={
+          id:id,
+          parameters:[]
+        };
         var sliderData=vm.sliderData;
         for(var i=0;i<sliderData.length;i++){
           var sliderObj={
@@ -616,23 +622,23 @@ $(function(){
           data.parameters.push(sliderObj);
           sliderObj={};
         }
-        data={
-          id:id,
-          parameters:sliderData
-        };
 
       }
 
       this.content_slider_show_status=true;
       this.content_show_status=false;
       this.guide_show_status=false;
-
-      postAjax(url,data,function(data){
-        if(data.status===0){
-          // 提交文章id和属性完成后
+      if(vm.onExecute){
+        console.log($("#carousel>a.carousel-control").length);
+        $("a.carousel-control").addClass("disabled");
+      }
+      // postAjax(url,data,function(data){
+      //   if(data.status===0){
+      //     // 提交文章id和属性完成后
           disabled_change_right_menu(vm);
-        }
-      });
+          vm.right_slider_ctn();
+      //   }
+      // });
     },
     finish_execute:function(){
       this.onExecute=false;
@@ -742,7 +748,7 @@ $(function(){
     },
 
     exampleInfo:{
-      page:0,
+      page:1,
       example_id:""
     },
 
@@ -751,12 +757,20 @@ $(function(){
     right_slider_ctn:function(){
       if(this.onExamlpe){
           vm.switch_slider_ajax(vm.exampleInfo.example_id,vm.exampleInfo.page);
+          vm.exampleInfo.page++;
       }else if(this.onExecute){
-        setTimeout(function(){
+        var timer=setInterval(function(){
+          $("a.right.carousel-control").trigger("click");
           vm.switch_slider_ajax(vm.executeInfo.id,vm.exampleInfo.page);
+          vm.exampleInfo.page++;
+          if(vm.exampleInfo.page==6){
+            $("#carousel>a.carousel-control").removeClass("disabled");
+            clearInterval(timer);
+            // vm.finish_execute();
+          }
         },3000);
       }
-      vm.exampleInfo.page++;
+
     },
 
     switch_slider_ajax:function(id,pageindex){//根据当前slider的index执行不同的ajax请求
@@ -777,6 +791,9 @@ $(function(){
           break;
         case 3:
           vm.update_triplets_data(id);
+          // setTimeout(function(){
+            // vm.show_slider_win_effect();
+          // },5000);
           break;
         case 4:
           vm.setUpCharts1();
@@ -787,7 +804,7 @@ $(function(){
         default:
 
       }
-      $("#carousel").carousel("pause");
+      // $("#carousel").carousel("pause");
     },
 
     relationChartData1:{},

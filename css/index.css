@@ -387,3 +387,7 @@ pre>b{
   border-radius: 5px;
   border: 1px solid rgba(121, 121, 121, 0.2);
 }
+.carousel-control.disabled{
+  /*background-color: #aaa;*/
+  display:none;
+}

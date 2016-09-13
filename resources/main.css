@@ -119,3 +119,9 @@ html {
 #new-to {
   width: 80px;
 }
+svg{
+  width:100%;
+}
+svg>rect{
+  width:100%;
+}
