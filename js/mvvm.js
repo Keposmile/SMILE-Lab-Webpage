@@ -1358,7 +1358,7 @@ function getAjax(url,data,success) {
   $.ajax({
     type: 'GET',
     url: url,
-    // content:"application/json",
+    content:"application/json",
     dataType: 'json',
     data: JSON.stringify(data),
     success: success,
