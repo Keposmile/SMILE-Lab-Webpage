@@ -1,7 +1,8 @@
 {"status":0,"message":"NewTopicQuery","data": {
 "TopicId"
   :1,"TopicName": "presidential elections","News":[{"NewsId":"c06297cb-0db2-48c4-8d04-0e6ae5632369","NewsTitle":"How 'Trump' interviewed Clinton","confident":"898.172"
-},{"NewsId":"f155b269-4762-4d31-aaac-41edea78efb4","NewsTitle":"Clinton aide","confident":"898.172"
+},{"NewsId":"0a968691-8cf6-4678-88f5-13ad24b73b8b","NewsTitle":"Clinton aide","confident":"898.172"
+},{"NewsId":"473b0005-3ad2-4d50-8cb5-978b3dfd7ef3","NewsTitle":"Clinton aide","confident":"898.172"
 },{"NewsId":"dcd6b19d-3001-4651-8dc7-374fd2cfbb80","NewsTitle":"Bernie Sanders Landslide Victory? Non-White Democrats and White Liberals Could Unite to Make This Happen","confident":"156.638"
 },{"NewsId":"bb18d0f8-f41f-4850-92a1-da53237dd6fd","NewsTitle":"Clinton breaks Keystone silence, says she opposes pipeline","confident":"116.468"
 },{"NewsId":"923ea998-f57d-4c2b-920a-3aef77be7603","NewsTitle":"Hillary Clinton says she opposes Keystone pipeline","confident":"111.434"

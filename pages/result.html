@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../js/results/ui-sources.js"></script>
 
     <script type="text/javascript" src="../js/avalon.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/result.js"></script>
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/main.css">
     <link type="text/css" rel="stylesheet" href="../css/result.css">
@@ -30,6 +30,7 @@
   <body data-feedly-mini="yes" style="zoom: 1;">
     <div>
       <div ms-controller="leftDiv" id="leftDiv" class="well well-large">
+        <input id="returnBtn" class="btn btn-success" type="button" value="返回">
         <h1>{{@title}}</h1>
         <div ms-for="el in @content" class="well well-large">
           <h2>{{el.title}}</h2>

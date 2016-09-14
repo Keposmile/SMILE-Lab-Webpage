@@ -1,0 +1,36 @@
+{
+  "status":1,
+  "message":" NewsDetailQuery",
+  "NewsId":"473b0005-3ad2-4d50-8cb5-978b3dfd7ef3",
+  "NewsContent":"Europe's refugee crisis in 20 photos So far in 2015, <b>more</b> than 300,000 refugees and migrants crossed the Mediterranean, exceeding the number in all of 2014, which was 219,000, a United Nations spokeswoman said. Click through to see images from the refugee crisis in Europe. ..",
+  "NewsTitle":"Refugee crisis in 20 photos",
+  "MediaType":"News",
+  "Source":"CNN Money",
+  "DateTime":"2016-09-04 21:47:49",
+  "sliderData":[{
+    "parameter":"parameter0",
+    "min":0,
+    "max":101110,
+    "val":2
+  },{
+    "parameter":"parameter1",
+    "min":0,
+    "max":10210,
+    "val":80
+  },{
+    "parameter":"parameter2",
+    "min":0,
+    "max":10220,
+    "val":20
+  },{
+    "parameter":"parameter1",
+    "min":0,
+    "max":100,
+    "val":60
+  },{
+    "parameter":"parameter2",
+    "min":0,
+    "max":100,
+    "val":40
+  }]
+}

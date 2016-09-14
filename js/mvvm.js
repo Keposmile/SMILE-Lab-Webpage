@@ -203,7 +203,7 @@ $(function(){
         }
         // console.log(this.onExamlpe);
         // postAjax("",keywords_data,function(data){
-        getAjax("../data/result2.json",null,function(data){
+        getAjax("../data/search_result/result2.json",null,function(data){//文章查询结果
           if (data.status===0) {
             // $("#right-tabs>li:not(:first)").;
             $("#hide-tab-2>.disabled").removeClass("disabled");
@@ -254,7 +254,20 @@ $(function(){
       return this.guide_show_status;
     },
 
-    content:{},
+    content:{
+      // "status":1,
+      // "message":" NewsDetailQuery",
+      // "NewsId":"0a968691-8cf6-4678-88f5-13ad24b73b8b",
+      // "NewsContent":"Published 09/17/2015                    \n                \n                \n                    by  \nSimi <b>Valley</b> (United States) (AFP) \n\nTrump swiftly returned fire, living up to his billing as the campaign bulldog by attacking his rivals, further imposing himself on the race to determine who will go up against the Democratic nominee, likely Hillary Clinton. \n\n\"Mr. Trump, we don't need an apprentice in the White House, we have one right now,\" Wisconsin Governor Scott Walker told Trump -- a snarky reference to the title of the real estate mogul's reality television show. \n\nThat remark kicked off several minutes of Trump-related thrusts and parries that have come to define much of the 2016 presidential race. \n\nTen challengers flanked Trump on stage in the heavyweight clash at the Ronald Reagan Presidential Library in Simi Valley, California. \n\nThey are all seeking an opening against the man who has defied all political odds to lead the Republican race for the party's nomination ahead of the November 2016 election. \n\nAFP / Frederic J Brown \nRepublican presidential hopefuls Ben Carson (L) and Donald Trump talk before the Republican Presidential Debate at the Ronald Reagan Presidential Library in Simi Valley, California, September 16, 2015 \n\nMany are under intense pressure to deliver a breakout performance that would help separate them from the large pack of candidates vying for the White House -- or risk a campaign meltdown that could see them shunted to the side as the first state nomination votes in February draw nearer. \n\n- Trump on the attack - \n\nCarly Fiorina, the one Republican woman in the race and the only candidate to rise from last month's undercard debate to Wednesday's main stage, offered passionate calls for defunding women's health care provider Planned Parenthood, a publicly funded organization that offers abortions. \n\nFiorina, the former chief executive of Hewlett-Packard, also delivered a withering response to insulting comments about her looks that Trump made in a recent magazine interview. \n\n\"I think women all over this country heard very clearly what Mr. Trump said,\" she said, offering him a cold stare. \n\nAFP / Frederic J Brown \nRepublican presidential hopefuls George Pataki (L), Rick Santorum (C) and Rand Paul arrive for the Republican Presidential Debate at the Ronald Reagan Presidential Library in Simi Valley, California, September 16, 2015 \n\nTrump did not ignore the assaults, taking digs at rivals from virtually his first moments on stage. \n\n\"First of all, Rand Paul shouldn't even be on this stage. He's number 11 and has one percent in the polls,\" Trump said of the Kentucky senator who has signalled he would not hesitate to take the gloves off with Trump. \n\nPaul, who has slipped in the polls since brusquely criticizing Trump in the first debate, attacked Trump's \"junior high\" snarls. \n\n\"Are we not way above that? Would we not all be worried to have someone like that in charge of the nuclear arsenal?\" Paul asked. \n\nEarlier, a foursome of low-polling candidates took their shots at Trump in the \"undercard\" debate. \n\nA fiery Senator Lindsey Graham warned against nominating \"cartoon character\" Trump, while former New York governor George Pataki declared Trump \"unfit to be president of the United States.\" \n\nAFP / Frederic J Brown \nCarly Fiorina, the former chief executive of Hewlett-Packard, delivered a withering response to insulting comments about her looks that Donald Trump made in a recent magazine interview \n\nThe main event's 11 candidates clashed extensively on issues including immigration, how to handle a looming government shutdown, and dealing with Russian President Vladimir Putin. \n\nJeb Bush, perhaps the campaign's ultimate establishment Republican, has seen his political fortunes tumble in the months since Trump entered the race, and he sought to claw back some of his lost ground by projecting himself as an even-keeled conservative who can lead from day one. \n\n\"You can't just, you know, talk about this stuff and insult leaders around the world and expect a good result,\" Bush said. \n\n\"You have to do this with a steady hand, and I believe I have those skills.\" \n\n- Anti-establishment rise - \n\nAs more conventional candidates like Ohio Governor John Kasich and Senator Marco Rubio struggle to gain precious air time with the media, which is spending vast time and resources on covering Trump, another outsider, retired neurosurgeon Ben Carson, has quietly gained ground. \n\nThe latest CBS News poll found Trump still ahead at 27 percent support, but the soft-spoken Carson -- who is essentially the anti-Trump -- swelled to 23 percent. \n\nWhile it is unclear whether Carson poses an immediate threat to Trump's dominance, the rise of the doctor, who like Trump has never held public office, is more evidence of an anti-establishment wave washing over the 2016 nomination race. \n\n\"I'm extraordinarily concerned about the direction of this country, the fiscal irresponsibility, the failure to take a leadership position in the world,\" Carson said. \n?? 2015 AFP",
+      // "Source":"Look Local",
+      // "NewsTitle":"Trump targeted in11111 US Republican debate",
+      // "mediaType":"News",
+      // "DateTime":"2016-09-04 21:44:25.0",
+      // "sliderData":[]
+    },
+    content1:{
+
+    },
 
     content_show_status:false,
 
@@ -263,23 +276,52 @@ $(function(){
     },
 
     update_content_parameter:function(data_id){//更新页面content的内容
-      var data={
+      var data1={
         "status":1,
         "message":" NewsDetailQuery",
         "newsId":data_id
       };
       // console.log(data_id);
-      if(data.newsId!=="home-tab"){
-        getAjax("../data/"+data.newsId+".json",null,function(data){
+      if(data1.newsId!=="home-tab"){
+        getAjax("../data/content/"+data_id+".json",null,function(data){//文章内容和slider第一页
         // postAjax(url,data,function(data){
-          if(data.status==1){
-            //更新文章内容
-            vm.content=data;
-            this.guide_show_status=false;
-            this.content_show_status=true;
-            //更新参数内容
-            vm.sliderData=data.sliderData;
-            setup_slider_group("slider",vm.sliderData);
+          if(data.NewsId==data_id){
+            if(data.status==1){
+              //更新文章内容
+              data.NewsContent=data.NewsContent.replace(/([\"])/g," ”");
+              data.NewsContent=data.NewsContent.replace(/(['])/g," ’");
+              vm.content=data;
+              this.guide_show_status=false;
+              this.content_show_status=true;
+              //更新参数内容
+              vm.sliderData=data.sliderData;
+              setup_slider_group("slider",vm.sliderData);
+            }
+          }
+        });
+      }
+
+    },
+    update_content_parameter_after:function(data_id){//更新slider content指代消解后的的内容
+      var data1={
+        "status":1,
+        "message":" NewsDetailQuery",
+        "newsId":data_id
+      };
+      // console.log(data_id);
+      if(data1.newsId!=="home-tab"){
+        getAjax("../data/after/"+data_id+".json",null,function(data){//指代消解后
+        // postAjax(url,data,function(data){
+          if(data.NewsId==data_id){
+            if(data.status==1){
+              //更新文章内容
+              vm.content1=data;
+              this.guide_show_status=false;
+              this.content_show_status=true;
+              //更新参数内容
+              vm.sliderData=data.sliderData;
+              setup_slider_group("slider",vm.sliderData);
+            }
           }
         });
       }
@@ -337,177 +379,6 @@ $(function(){
             "Confidence":0.82,
             "Context":"Context(this latest move will allow,List([32, 59))):(both products; to be controlled; )"
           }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
-        },{
-          "SentenceOrder":2,
-          "Sentence":"Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-          "TripletsNum":2,
-          "Triplets":[{
-            "TripletOrder":1,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"aa",
-            "Object":"bb",
-            "Attribute":"attri"
-          },{
-            "TripletOrder":2,
-            "Confidence":0.82,
-            "Subject":"Comcast",
-            "Relation":"cc",
-            "Object":"dd",
-            "Attribute":"attri"
-          }]
         }
       ]
     },
@@ -520,8 +391,8 @@ $(function(){
       };
       // postAjax(url,data,function(data){
       if(data.newsId!=="home-tab"){
-        getAjax("../data/triplets/"+data.newsId+".json",null,function(data){
-          data.Data=vm.TripletsData;
+        getAjax("../data/triplets/"+data.newsId+".json",null,function(data){//slider3-4页三元组部分
+          vm.TripletsData=data;
         });
       }
     },
@@ -671,6 +542,7 @@ $(function(){
     },
     finish_execute:function(){
       this.onExecute=false;
+      this.onExamlpe=false;
       this.enabled_left_part();
       vm.exampleInfo.page=0;
 
@@ -678,22 +550,23 @@ $(function(){
       $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
       $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
 
-      vm.show_bottom_tabs();
+      $(".bottom-hide-tabs").css("display","block");
+      // vm.show_bottom_tabs();
       // $("body").scrollLeft($("body").css(height));
       // disabled_change_right_menu(this);
 
     },
-    update_parameter:function(contentId){
-      // $("li[role=presentation][class=active]").attr("id");
-      // postAjax(url,data,function(){
-      if(contentId!=="home-tab"){
-        getAjax("../data/parameter/"+contentId+".json",null,function(data){
-          if(data.status===0){
-
-          }
-        });
-      }
-    },
+    // update_parameter:function(contentId){
+    //   // $("li[role=presentation][class=active]").attr("id");
+    //   // postAjax(url,data,function(){
+    //   if(contentId!=="home-tab"){
+    //     postAjax("../data/parameter/"+contentId+".json",null,function(data){
+    //       if(data.status===0){
+    //
+    //       }
+    //     });
+    //   }
+    // },
     open_content:[
       // {
       //   title:11,
@@ -819,7 +692,7 @@ $(function(){
             clearInterval(timer);
             vm.finish_execute();
           }
-        },3000);
+        },1000);
       }
 
     },
@@ -835,7 +708,7 @@ $(function(){
         //   vm.execute();
         //   break;
         case 1:
-          vm.update_content_parameter(id);
+          vm.update_content_parameter_after(id);
           break;
         case 2:
           vm.update_triplets_data(id);
@@ -843,14 +716,14 @@ $(function(){
         case 3:
           vm.update_triplets_data(id);
           // setTimeout(function(){
-            // vm.show_slider_win_effect();
-          // },5000);
+            vm.show_slider_win_effect();
+          // },1000);
           break;
         case 4:
-          vm.setUpCharts1();
+          vm.setUpCharts1(id);
           break;
         case 5:
-          vm.setUpCharts2();
+          vm.setUpCharts2(id);
           break;
         default:
 
@@ -858,7 +731,10 @@ $(function(){
       // $("#carousel").carousel("pause");
     },
 
-    relationChartData1:{},
+    relationChartData1:{
+      nodes:[],
+      links:[]
+    },
     relationTripletData1:{
       // SentenceNum:null,
       // EffectTripletsNum:null,
@@ -866,41 +742,54 @@ $(function(){
       Groups:[]
     },
     relationChartData2:{
-      nodes:[
-                    {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
-                    {category:1, name: '1-1',value : 2,label:"233333333333"},
-                    {category:1, name: '1-2',value : 3},
-                    {category:1, name: '克拉拉-乔布斯',value : 3},
-                    {category:1, name: '劳伦-鲍威尔',value : 7},
-                    {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
-                    {category:2, name: '奥巴马',value : 8},
-                    {category:2, name: '比尔-盖茨',value : 9},
-                    {category:2, name: '乔纳森-艾夫',value : 4},
-                    {category:2, name: '蒂姆-库克',value : 4},
-                    {category:2, name: '龙-韦恩',value : 1},
-                ],
-                links : [
-                    // {source : '丽萨-乔布斯', target : '乔布斯', weight : 1, name: '女儿'},
-                    // {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
-                    // {source : '克拉拉-乔布斯', target : '乔布斯', weight : 1, name: '母亲'},
-                    // {source : '蒂姆-库克', target : '奥巴马', weight : 1}
-                ]
+      nodes:[],
+      links:[]
+      // nodes:[
+      //               {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
+      //               {category:1, name: '1-1',value : 2,label:"233333333333"},
+      //               {category:1, name: '1-2',value : 3},
+      //               {category:1, name: '克拉拉-乔布斯',value : 3},
+      //               {category:1, name: '劳伦-鲍威尔',value : 7},
+      //               {category:1, name: '史蒂夫-沃兹尼艾克',value : 5},
+      //               {category:2, name: '奥巴马',value : 8},
+      //               {category:2, name: '比尔-盖茨',value : 9},
+      //               {category:2, name: '乔纳森-艾夫',value : 4},
+      //               {category:2, name: '蒂姆-库克',value : 4},
+      //               {category:2, name: '龙-韦恩',value : 1},
+      //           ],
+      //           links : [
+      //               // {source : '丽萨-乔布斯', target : '乔布斯', weight : 1, name: '女儿'},
+      //               // {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
+      //               // {source : '克拉拉-乔布斯', target : '乔布斯', weight : 1, name: '母亲'},
+      //               // {source : '蒂姆-库克', target : '奥巴马', weight : 1}
+      //           ]
     },
     relationTripletData2:{
       Groups:[]
     },
-    setUpCharts1:function(){
-      getAjax("../data/chartData1.json",null,function(data){
+    setUpCharts1:function(id){
+      getAjax("../data/chartsData1/"+id+".json",null,function(data){//设置图表1
         if(data.Status===0){
           vm.relationTripletData1=data.Data;
-          vm.relationChartData1=setNodesAndLinks(data.Data);
+          console.log(data.Data);
+          vm.relationChartData1=setNodesAndLinks(data.Data,false);
           relation_chart_setup("relation-chart-1",vm.relationChartData1);
         }
       });
       // console.log(JSON.parse(JSON.stringify(vm.relationTripletData1)));
     },
-    setUpCharts2:function(){
-      relation_chart_setup("relation-chart-2",this.relationChartData2);
+    setUpCharts2:function(id){
+      //设置图表二
+      getAjax("../data/chartsData2/"+id+".json",null,function(data){//设置图表1
+        if(data.Status===0){
+          vm.relationTripletData1=data.Data;
+          console.log(data.Data);
+          vm.relationChartData2=setNodesAndLinks(data.Data,true);
+          console.log(JSON.stringify(vm.relationChartData2));
+          relation_chart_setup("relation-chart-2",vm.relationChartData2);
+        }
+      });
+
     },
     update_slider_info:function(){
       var leftBtn=$("#carousel a.left");
@@ -1028,22 +917,22 @@ function relation_chart_setup(id,data){
           // saveAsImage : {show: true}
         }
       },
-      legend: {
-        x: 'left',
-        data:['家人','朋友']
-      },
+      // legend: {
+      //   x: 'left',
+      //   data:['家人','朋友']
+      // },
       series : [{
           type:'force',
-          name : "三元组",
+          name : "Triplets",
           ribbonType: false,
           categories : [{
-            name: '人物'
+            name: ''
           },
           {
-            name: '家人'
+            name: ''
           },
           {
-            name:'朋友'
+            name:''
           }],
           itemStyle: {
             normal: {
@@ -1110,7 +999,7 @@ function relation_chart_setup(id,data){
   // }
 }
 
-function  setNodesAndLinks(data){
+function  setNodesAndLinks(data,coverSame){
   var nodes=[];
     // {category:1, name: '1-1',value : 2,label:'2'},
   var links=[];
@@ -1137,10 +1026,24 @@ function  setNodesAndLinks(data){
       }
       nodeObj.value=_thisGroup.Similarity;
       nodeObj.label=i+"-"+_thisTriplets.TripletOrder;
-      nodes.push(nodeObj);
+
+      if(coverSame===true){
+        var nodeSame=0;
+        for(var k=0;k<nodes.length;k++){
+          if(nodes[k].name==nodeObj.name){//不存在重名
+            nodeSame++;
+          }
+        }
+        if(nodeSame===0){
+          nodes.push(nodeObj);
+        }
+      }else{
+        nodes.push(nodeObj);
+      }
       nodeObj={};
     }
   }
+  console.log(links);
   return {
     links:links,
     nodes:nodes
@@ -1221,6 +1124,7 @@ function change_tabs_on_right(vm){
     var _this=$(this);
     var index = $("#right-tabs>li").index(_this);
     if(!vm.onExecute){//未在执行中时切换页面
+      console.log("index:"+index);
       if(index===0){
         vm.guide_show_status=true;
         vm.content_show_status=false;

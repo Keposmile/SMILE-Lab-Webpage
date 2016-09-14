@@ -112,12 +112,12 @@
                       <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                       <div class="divide_line"></div>
 
-                      <h3 ms-text="@content.NewsTitle"></h3>
+                      <h3 ms-text="@content1.NewsTitle"></h3>
                       <div>
-                        <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
+                        <p><b>Source：</b><span ms-html="@content1.Source"></span><b>Datetime：</b><span ms-html="@content1.DateTime"></span></p>
                       </div>
                       <p><b>Content：</b></p>
-                      <div><pre  ms-html="@content.NewsContent"></pre></div>
+                      <div><pre  ms-html="@content1.NewsContent"></pre></div>
                     </div>
                   </div>
                   <div class="item">
@@ -167,27 +167,47 @@
                     </div>
                   </div>
                   <div class="item">
-                    <h5 ms-on-click="@setUpCharts1()">charts1</h5>
                     <div class="carousel-caption">
-                      <div class="sliderLeftBox">
-                        <div ms-for="el in @relationTripletData1.Groups">
-                          <h5>{{el.Similarity}}</h5>
-                          <div ms-for="el in el.Triplets">
-                            <span class="Confidence">{{el.Confidence}}</span>
-                            (<span class="Subject">{{el.Subject}}</span>;
-                            <span class="Relation">{{el.Relation}}</span>;
-                            <span class="Object">{{el.Object}}</span>)
+                      <h4><img src="../img/info.png" alt="">tips：</h4>
+                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                      <div class="divide_line"></div>
+                      <h5 ms-on-click="@setUpCharts1()">charts1</h5>
+                      <div class="carousel-caption">
+                        <div class="sliderLeftBox">
+                          <div ms-for="el in @relationTripletData1.Groups">
+                            <h5>{{el.Similarity}}</h5>
+                            <div ms-for="el in el.Triplets">
+                              <span class="Confidence">{{el.Confidence}}</span>
+                              (<span class="Subject">{{el.Subject}}</span>;
+                              <span class="Relation">{{el.Relation}}</span>;
+                              <span class="Object">{{el.Object}}</span>)
+                            </div>
                           </div>
                         </div>
+                        <div class="sliderRightBox" id="relation-chart-1"></div>
                       </div>
-                      <div class="sliderRightBox" id="relation-chart-1"></div>
                     </div>
                   </div>
                   <div class="item">
-                    <h5 ms-on-click="@setUpCharts2()">charts2</h5>
                     <div class="carousel-caption">
-                      <div class="sliderLeftBox"></div>
-                      <div class="sliderRightBox" id="relation-chart-2"></div>
+                      <h4><img src="../img/info.png" alt="">tips：</h4>
+                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                      <div class="divide_line"></div>
+                      <h5 ms-on-click="@setUpCharts2()">charts2</h5>
+                      <div class="carousel-caption">
+                        <div class="sliderLeftBox">
+                          <div ms-for="el in @relationTripletData1.Groups">
+                            <h5>{{el.Similarity}}</h5>
+                            <div ms-for="el in el.Triplets">
+                              <span class="Confidence">{{el.Confidence}}</span>
+                              (<span class="Subject">{{el.Subject}}</span>;
+                              <span class="Relation">{{el.Relation}}</span>;
+                              <span class="Object">{{el.Object}}</span>)
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderRightBox" id="relation-chart-2"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
