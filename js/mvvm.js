@@ -681,7 +681,7 @@ $(function(){
             clearInterval(timer);
             vm.finish_execute();
           }
-        },3000);
+        },3000);//example切换时间
       }else if(this.onExecute){
         var timer=setInterval(function(){
           $("a.right.carousel-control").trigger("click");
@@ -692,7 +692,7 @@ $(function(){
             clearInterval(timer);
             vm.finish_execute();
           }
-        },1000);
+        },7000);//execute切换时间
       }
 
     },
