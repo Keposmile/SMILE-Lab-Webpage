@@ -157,6 +157,7 @@ $(function(){
       this.content_show_status=false;
       this.content_slider_show_status=false;
       $("#home-tab").trigger("click");
+      vm.show_bottom_tabs();
       disabled_parameter();
       disabled_change_right_menu(vm);
     },
@@ -179,6 +180,7 @@ $(function(){
       $("li[data-target='#carousel']").removeClass("active");
       $("div.carousel-inner:first>div.item:first").addClass("active");
       $("li[data-target='#carousel']:first").addClass("active");
+
       var _keywords=this.selected.column;
       var keywords_pattern=new RegExp(/[a-zA-Z\s]+/g);
       for(var i=0;i<_keywords.length;i++){
@@ -215,6 +217,8 @@ $(function(){
               id:"",
               confident:""
             };
+            disabled_parameter();
+            disabled_change_right_menu(vm);
             for (var j= 0; j < data.data.News.length; j++) {
               vm.result.content.push(result_content_model);
               vm.result.content[j].title=data.data.News[j].NewsTitle;
@@ -265,18 +269,21 @@ $(function(){
         "newsId":data_id
       };
       // console.log(data_id);
-      getAjax("../data/content.json",null,function(data){
-      // postAjax(url,data,function(data){
-        if(data.status==1){
-          //更新文章内容
-          vm.content=data;
-          this.guide_show_status=false;
-          this.content_show_status=true;
-          //更新参数内容
-          vm.sliderData=data.sliderData;
-          setup_slider_group("slider",vm.sliderData);
-        }
-      });
+      if(data.newsId!=="home-tab"){
+        getAjax("../data/"+data.newsId+".json",null,function(data){
+        // postAjax(url,data,function(data){
+          if(data.status==1){
+            //更新文章内容
+            vm.content=data;
+            this.guide_show_status=false;
+            this.content_show_status=true;
+            //更新参数内容
+            vm.sliderData=data.sliderData;
+            setup_slider_group("slider",vm.sliderData);
+          }
+        });
+      }
+
     },
     //左侧文章查询结果和对应tab打开关闭控制
     open_content_tab:function(e){
@@ -512,9 +519,11 @@ $(function(){
         "newsId":NewsId
       };
       // postAjax(url,data,function(data){
-      getAjax("../data/triplets.json",null,function(data){
-        data.Data=vm.TripletsData;
-      });
+      if(data.newsId!=="home-tab"){
+        getAjax("../data/triplets/"+data.newsId+".json",null,function(data){
+          data.Data=vm.TripletsData;
+        });
+      }
     },
 
     show_slider_win_effect:function(){
@@ -605,10 +614,7 @@ $(function(){
         vm.exampleInfo.example_id=id;
         this.disabled_parameter_panel();
 
-        $("div.carousel-inner:first>div.item").removeClass("active");
-        $("li[data-target='#carousel']").removeClass("active");
-        $("div.carousel-inner:first>div.item:first").addClass("active");
-        $("li[data-target='#carousel']:first").addClass("active");
+
         $("#home-tab>a").trigger("click");
 
         enabled_parameter();
@@ -624,11 +630,6 @@ $(function(){
         this.disabled_left_part();
 
         this.hide_bottom_tabs();
-        $("div.carousel-inner:first>div.item").removeClass("active");
-        $("li[data-target='#carousel']").removeClass("active");
-        $("div.carousel-inner:first>div.item:first").addClass("active");
-        $("li[data-target='#carousel']:first").addClass("active");
-
         $("#execute").addClass("disable-execute");
         vm.executeInfo.id=id;
         data={
@@ -647,9 +648,16 @@ $(function(){
 
       }
 
+
       this.content_slider_show_status=true;
       this.content_show_status=false;
       this.guide_show_status=false;
+
+      $("div.carousel-inner:first>div.item").removeClass("active");
+      $("li[data-target='#carousel']").removeClass("active");
+      $("div.carousel-inner:first>div.item:first").addClass("active");
+      $("li[data-target='#carousel']:first").addClass("active");
+
       $("a.carousel-control").addClass("disabled");
 
       // postAjax(url,data,function(data){
@@ -669,6 +677,8 @@ $(function(){
       $("#right-menu>li,ul.dropdown-menu>li").removeClass("disabled").find("a").attr("disabled",false);
       $("#dropdown-toggle").attr({"data-toggle":"dropdown"});
       $("#modal-trigger").attr({"data-toggle":"modal","data-target":"#myModal"});
+
+      vm.show_bottom_tabs();
       // $("body").scrollLeft($("body").css(height));
       // disabled_change_right_menu(this);
 
@@ -676,11 +686,13 @@ $(function(){
     update_parameter:function(contentId){
       // $("li[role=presentation][class=active]").attr("id");
       // postAjax(url,data,function(){
-      getAjax("../data/parameter.json",null,function(data){
-        if(data.status===0){
+      if(contentId!=="home-tab"){
+        getAjax("../data/parameter/"+contentId+".json",null,function(data){
+          if(data.status===0){
 
-        }
-      });
+          }
+        });
+      }
     },
     open_content:[
       // {

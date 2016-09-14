@@ -1,7 +1,7 @@
 #leftDiv{
   float: left;
   width:25%;
-  height:757px;
+  height:805px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius:0;
@@ -14,9 +14,12 @@
 #main{
   float: left;
   overflow: hidden;
-  width:60g%;
+  width:60%;
+  min-width: 625px;
   border-top-right-radius:10px;
   border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   border: 2px solid rgba(121, 121, 121, 0.2);
   margin: 20px 20px 20px 0;
 }
@@ -27,14 +30,14 @@ svg>rect{
   width:100%;
 }
 .triplets>span{
-  font-size:20px;
-  margin-left:20px;
-  margin-right: 20px;
-}
-.triplets>span{
-  margin-left:20px;
-  margin-right: 20px;
+  font-size:15px;
+  margin-left:5px;
+  margin-right:5px;
 }
 .Confidence{
   color:#00aa99;
+}
+body{
+  background-color: #0099ff;
+  overflow-x: scroll;
 }
