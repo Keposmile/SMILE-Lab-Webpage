@@ -43,6 +43,25 @@
         "Object":"dd4",
         "Attribute":"attri"
       }]
+    },{
+      "GroupNum":3,
+      "Similarity":0.98,
+      "Triplets":[{
+        "TripletOrder":1,
+        "Confidence":0.82,
+        "Subject":"Comcast",
+        "Relation":"cc4",
+        "Object":"dd4",
+        "Attribute":"attri"
+      },
+      {
+        "TripletOrder":2,
+        "Confidence":0.82,
+        "Subject":"Comcast",
+        "Relation":"cc1",
+        "Object":"dd2",
+        "Attribute":"attri"
+      }]
     }]
   }
 }

@@ -1,0 +1,232 @@
+{
+  "status": 0,
+  "message": "NewTopicQuery",
+  "data": {
+    "TopicId": 1,
+    "TopicName": "presidential elections",
+    "News": [
+      {
+        "NewsId": "c06297cb-0db2-48c4-8d04-0e6ae5632369",
+        "NewsTitle": "How 'Trump' interviewed Clinton",
+        "confident": "898.172"
+      },
+      {
+        "NewsId": "f155b269-4762-4d31-aaac-41edea78efb4",
+        "NewsTitle": "Clinton aide",
+        "confident": "898.172"
+      },
+      {
+        "NewsId": "dcd6b19d-3001-4651-8dc7-374fd2cfbb80",
+        "NewsTitle": "Bernie Sanders Landslide Victory? Non-White Democrats and White Liberals Could Unite to Make This Happen",
+        "confident": "156.638"
+      },
+      {
+        "NewsId": "bb18d0f8-f41f-4850-92a1-da53237dd6fd",
+        "NewsTitle": "Clinton breaks Keystone silence,\n         says she opposes pipeline",
+        "confident": "116.468"
+      },
+      {
+        "NewsId": "923ea998-f57d-4c2b-920a-3aef77be7603",
+        "NewsTitle": "Hillary Clinton says she opposes Keystone pipeline",
+        "confident": "111.434"
+      },
+      {
+        "NewsId": "ce73a3bc-76a4-49fa-b504-4a42aac70249",
+        "NewsTitle": "Hillary Clinton Tells NBC News She Is 'Sorry' for Email Confusion - NBCNews.com",
+        "confident": "135.345"
+      },
+      {
+        "NewsId": "c25021ef-a1cd-4b89-ab07-27f81534ae68",
+        "NewsTitle": "Why Hillary Clinton May Not Have The Women's Vote Locked Up",
+        "confident": "117.148"
+      },
+      {
+        "NewsId": "e96f4c47-8409-4d84-8393-094b0fea8b86",
+        "NewsTitle": "Clinton breaks Keystone silence,\n         says she opposes pipeline",
+        "confident": "100.907"
+      },
+      {
+        "NewsId": "21d7bee4-7b43-4eba-aba7-15d879d54edb",
+        "NewsTitle": "Hillary Clinton Is ‘Sorry’ For Confusion Regarding Emails",
+        "confident": "90.3815"
+      },
+      {
+        "NewsId": "31df4f2a-3d09-4669-8179-35d4b20edfb0",
+        "NewsTitle": "Hillary Compares GOP to Terrorists and Nazis but Says Campaigns Shouldn’t Be About Insults",
+        "confident": "85.1156"
+      },
+      {
+        "NewsId": "01440ecf-ecc4-4c1b-b547-9921532bec07",
+        "NewsTitle": "What Clinton Plans If Iran Cheats on Nuke Deal",
+        "confident": "86.9374"
+      },
+      {
+        "NewsId": "ab800850-ba34-49b4-8ff6-2553e6211074",
+        "NewsTitle": "Hillary Clinton a 'Great Admirer' of Pope Francis",
+        "confident": "73.5017"
+      },
+      {
+        "NewsId": "79591872-a209-456c-9157-2a7fee041899",
+        "NewsTitle": "Clinton stands against controversial Keystone pipeline",
+        "confident": "68.7611"
+      },
+      {
+        "NewsId": "0a968691-8cf6-4678-88f5-13ad24b73b8b",
+        "NewsTitle": "Trump targeted in US Republican debate",
+        "confident": "167.623"
+      },
+      {
+        "NewsId": "1b7ee723-3763-4a51-aec7-7ce9d7df6b2c",
+        "NewsTitle": "Marco Rubio announces he doesn’t support granting Puerto Rico the bankruptcy provisions it’s looking for",
+        "confident": "69.5261"
+      },
+      {
+        "NewsId": "750b0e39-be7b-4766-b9fc-376c35198754",
+        "NewsTitle": "Tuesday 9/8/2015 - 8am",
+        "confident": "62.9247"
+      },
+      {
+        "NewsId": "c29e2a5e-a2df-4f7a-9bba-8b48a2d3060f",
+        "NewsTitle": "Trust of the People Eroding over Hilary Email Server",
+        "confident": "58.3989"
+      },
+      {
+        "NewsId": "f815c789-f621-4f0d-863b-bba783f12ed9",
+        "NewsTitle": "Donald Trump Turns Up The Heat In 2nd GOP Debate",
+        "confident": "117.814"
+      },
+      {
+        "NewsId": "72e303c3-d3c7-4868-bd04-999659c42c67",
+        "NewsTitle": "I won’t shrink from military action against Iran if needed",
+        "confident": "55.599"
+      },
+      {
+        "NewsId": "2e83191a-8d75-4b65-a4f0-02edc66fa488",
+        "NewsTitle": "Gun Rights Group Thanks Hillary Clinton For Energizing Gun Owners",
+        "confident": "53.6583"
+      }
+    ],
+    "DateNum": [
+      {
+        "Date": "2015-09-01",
+        "Count": 60
+      },
+      {
+        "Date": "2015-09-02",
+        "Count": 50
+      },
+      {
+        "Date": "2015-09-03",
+        "Count": 70
+      },
+      {
+        "Date": "2015-09-04",
+        "Count": 62
+      },
+      {
+        "Date": "2015-09-05",
+        "Count": 29
+      },
+      {
+        "Date": "2015-09-06",
+        "Count": 35
+      },
+      {
+        "Date": "2015-09-07",
+        "Count": 54
+      },
+      {
+        "Date": "2015-09-08",
+        "Count": 67
+      },
+      {
+        "Date": "2015-09-09",
+        "Count": 86
+      },
+      {
+        "Date": "2015-09-10",
+        "Count": 64
+      },
+      {
+        "Date": "2015-09-11",
+        "Count": 46
+      },
+      {
+        "Date": "2015-09-12",
+        "Count": 35
+      },
+      {
+        "Date": "2015-09-13",
+        "Count": 36
+      },
+      {
+        "Date": "2015-09-14",
+        "Count": 51
+      },
+      {
+        "Date": "2015-09-15",
+        "Count": 77
+      },
+      {
+        "Date": "2015-09-16",
+        "Count": 109
+      },
+      {
+        "Date": "2015-09-17",
+        "Count": 124
+      },
+      {
+        "Date": "2015-09-18",
+        "Count": 82
+      },
+      {
+        "Date": "2015-09-19",
+        "Count": 57
+      },
+      {
+        "Date": "2015-09-20",
+        "Count": 59
+      },
+      {
+        "Date": "2015-09-21",
+        "Count": 95
+      },
+      {
+        "Date": "2015-09-22",
+        "Count": 98
+      },
+      {
+        "Date": "2015-09-23",
+        "Count": 73
+      },
+      {
+        "Date": "2015-09-24",
+        "Count": 75
+      },
+      {
+        "Date": "2015-09-25",
+        "Count": 82
+      },
+      {
+        "Date": "2015-09-26",
+        "Count": 35
+      },
+      {
+        "Date": "2015-09-27",
+        "Count": 35
+      },
+      {
+        "Date": "2015-09-28",
+        "Count": 66
+      },
+      {
+        "Date": "2015-09-29",
+        "Count": 65
+      },
+      {
+        "Date": "2015-09-30",
+        "Count": 75
+      }
+    ]
+  }
+}
