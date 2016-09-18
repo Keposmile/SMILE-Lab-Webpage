@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,390 +21,459 @@
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  </script>
-  </head>
-  <body ms-controller="body-columns" class="ms-controller">
-      <div class="ui-layout-center">
+    </script>
+</head>
+
+<body ms-controller="body-columns" class="ms-controller">
+    <div class="ui-layout-center">
         <!-- 中间栏 -->
 
         <!-- 上部菜单栏-->
         <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul id="right-menu" class="menu nav navbar-nav">
-                <!-- <li><a href="#"><span class="sr-only">(current)</span></a></li> -->
-                <li role="presentation" class="dropdown">
-                  <a id="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="right-menu" class="menu nav navbar-nav">
+                        <!-- <li><a href="#"><span class="sr-only">(current)</span></a></li> -->
+                        <li role="presentation" class="dropdown">
+                            <a id="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" href="#">
                   Example<span class="caret"></span>
                   </a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#" ms-on-click="@execute('0a968691-8cf6-4678-88f5-13ad24b73b8b',true)">Example 1</a></li>
-                    <!-- execute()的第一个参数改为example对应的id即可 -->
-                    <li><a href="#" ms-on-click="@execute('0a968691-8cf6-4678-88f5-13ad24b73b8b',true)">Example 2</a></li>
-                    <!-- execute()的第一个参数改为example对应的id即可 -->
-                  </ul>
-                </li>
-                <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate kg</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" ms-on-click="@execute('0a968691-8cf6-4678-88f5-13ad24b73b8b',true)">Example 1</a></li>
+                                <!-- execute()的第一个参数改为example对应的id即可 -->
+                                <li><a href="#" ms-on-click="@execute('0a968691-8cf6-4678-88f5-13ad24b73b8b',true)">Example 2</a></li>
+                                <!-- execute()的第一个参数改为example对应的id即可 -->
+                            </ul>
+                        </li>
+                        <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate kg</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
         </nav>
         <!-- 文章选项卡 -->
         <div class="container-fluid">
-          <div class="panel panel-default">
-            <ul id="right-tabs" class="nav nav-tabs">
-              <li role="presentation" id="home-tab" class="active"><a href="#">Home</a></li>
-            </ul>
-            <div class="content-tab panel-body">
-              <div ms-if="@show_guide()" id="guide">
-                <h1>The Guide</h1>
-              </div>
-              <div ms-if="@show_content()" id="content">
-                <div>
-                  <h3 ms-text="@content.NewsTitle"></h3>
-                  <div>
-                    <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
-                  </div>
-                  <p><b>Content：</b></p>
-                  <div><pre  ms-html="@content.NewsContent"></pre></div>
-                </div>
-              </div>
-
-
-              <div  ms-if="@show_content_slider()" id="carousel" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
-              <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel" class="active"></li>
-                  <li data-target="#carousel"></li>
-                  <li data-target="#carousel"></li>
-                  <li data-target="#carousel"></li>
-                  <li data-target="#carousel"></li>
-                  <li data-target="#carousel"></li>
-                </ol>
-
-              <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox" data-interval="false">
-                  <div class="item active">
-                    <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips：</h4>
-                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                      <div class="divide_line"></div>
-
-                      <h3 ms-text="@content.NewsTitle"></h3>
-                      <div>
-                        <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
-                      </div>
-                      <p><b>Content：</b></p>
-                      <div><pre  ms-html="@content.NewsContent"></pre></div>
+            <div class="panel panel-default">
+                <ul id="right-tabs" class="nav nav-tabs">
+                    <li role="presentation" id="home-tab" class="active"><a href="#">Home</a></li>
+                </ul>
+                <div class="content-tab panel-body">
+                    <div ms-if="@show_guide()" id="guide">
+                        <h1>The Guide</h1>
                     </div>
-                  </div>
-                  <div class="item">
-                    <!-- <img src="..." alt="..."> -->
-                    <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips：</h4>
-                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                      <div class="divide_line"></div>
+                    <div ms-if="@show_content()" id="content" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#content" class="active"></li>
+                            <li data-target="#content"></li>
+                            <li data-target="#content"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" data-interval="false">
+                            <div class="item active">
+                                <div class="carousel-caption">
+                                    <!-- <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div> -->
 
-                      <h3 ms-text="@content1.NewsTitle"></h3>
-                      <div>
-                        <p><b>Source：</b><span ms-html="@content1.Source"></span><b>Datetime：</b><span ms-html="@content1.DateTime"></span></p>
-                      </div>
-                      <p><b>Content：</b></p>
-                      <div><pre  ms-html="@content1.NewsContent"></pre></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips：</h4>
-                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                      <div class="divide_line"></div>
-
-                      <h3>Triplets</h3>
-                      <div class="Sentences" ms-for="el in @TripletsData.Sentences">
-                        <h5>{{el.Sentence}}</h5>
-                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
-                          <span class="Confidence">{{el.Confidence}}</span>
-                          (<span class="Subject">{{el.Subject}}</span>;
-                          <span class="Relation">{{el.Relation}}</span>;
-                          <span class="Object">{{el.Object}}</span>)
-                        </div>
-                        <div class="triplets" ms-if="el.Context"ms-for="el in el.Triplets">
-                          <span class="Confidence">{{el.Confidence}}</span>
-                          <span class="Context">{{el.Context}}</span>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="item">
-                    <!-- <img src="..." alt="..."> -->
-                    <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips：</h4>
-                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                      <div class="divide_line"></div>
-                      <h3 ms-on-click="@show_slider_win_effect()">Triplets</h3>
-                      <div class="Sentences1" ms-for="el in @TripletsData.Sentences">
-                        <h5>{{el.Sentence}}</h5>
-                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
-                          <span class="Confidence">{{el.Confidence}}</span>
-                          (<span class="Subject">{{el.Subject}}</span>;
-                          <span class="Relation">{{el.Relation}}</span>;
-                          <span class="Object">{{el.Object}}</span>)
-                        </div>
-                        <div class="triplets" ms-if="el.Context"ms-for="el in el.Triplets">
-                          <span class="Confidence">{{el.Confidence}}</span>
-                          <span class="Context">{{el.Context}}</span>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips：</h4>
-                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                      <div class="divide_line"></div>
-                      <h5 ms-on-click="@setUpCharts1()">charts1</h5>
-                      <div class="carousel-caption">
-                        <div class="sliderLeftBox">
-                          <div ms-for="el in @relationTripletData1.Groups">
-                            <h5>{{el.Similarity}}</h5>
-                            <div ms-for="el in el.Triplets">
-                              <span class="Confidence">{{el.Confidence}}</span>
-                              (<span class="Subject">{{el.Subject}}</span>;
-                              <span class="Relation">{{el.Relation}}</span>;
-                              <span class="Object">{{el.Object}}</span>)
+                                    <h3 ms-text="@content.NewsTitle"></h3>
+                                    <div>
+                                        <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
+                                    </div>
+                                    <p><b>Content：</b></p>
+                                    <div><pre ms-html="@content.NewsContent"></pre></div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="sliderRightBox" id="relation-chart-1"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="carousel-caption">
-                      <h4><img src="../img/info.png" alt="">tips：</h4>
-                      <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                      <div class="divide_line"></div>
-                      <h5 ms-on-click="@setUpCharts2()">charts2</h5>
-                      <div class="carousel-caption">
-                        <div class="sliderLeftBox">
-                          <div ms-for="el in @relationTripletData2.Groups">
-                            <h5>{{el.Similarity}}</h5>
-                            <div ms-for="el in el.Triplets">
-                              <span class="Confidence">{{el.Confidence}}</span>
-                              (<span class="Subject">{{el.Subject}}</span>;
-                              <span class="Relation">{{el.Relation}}</span>;
-                              <span class="Object">{{el.Object}}</span>)
+                            <div class="item">
+                                <!-- <img src="..." alt="..."> -->
+                                <div class="carousel-caption">
+                                    <!-- <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div> -->
+
+                                    <h3 ms-text="@content1.NewsTitle"></h3>
+                                    <div>
+                                        <p><b>Source：</b><span ms-html="@content1.Source"></span><b>Datetime：</b><span ms-html="@content1.DateTime"></span></p>
+                                    </div>
+                                    <p><b>Content：</b></p>
+                                    <div><pre ms-html="@content1.NewsContent"></pre></div>
+                                </div>
                             </div>
-                          </div>
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <!-- <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div> -->
+
+                                    <h3>Triplets</h3>
+                                    <div class="Sentences" ms-for="el in @TripletsData.Sentences">
+                                        <h5>{{el.Sentence}}</h5>
+                                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
+                                            <span class="Confidence">{{el.Confidence}}</span> (
+                                            <span class="Subject">{{el.Subject}}</span>;
+                                            <span class="Relation">{{el.Relation}}</span>;
+                                            <span class="Object">{{el.Object}}</span>)
+                                        </div>
+                                        <div class="triplets" ms-if="el.Context" ms-for="el in el.Triplets">
+                                            <span class="Confidence">{{el.Confidence}}</span>
+                                            <span class="Context">{{el.Context}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="sliderRightBox" id="relation-chart-2"></div>
-                      </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#content" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#content" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                  </div>
+
+
+                    <div ms-if="@show_content_slider()" id="carousel" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" class="active"></li>
+                            <li data-target="#carousel"></li>
+                            <li data-target="#carousel"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" data-interval="false">
+                            <!-- <div class="item active">
+                                <div class="carousel-caption">
+                                    <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div>
+
+                                    <h3 ms-text="@content.NewsTitle"></h3>
+                                    <div>
+                                        <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
+                                    </div>
+                                    <p><b>Content：</b></p>
+                                    <div><pre ms-html="@content.NewsContent"></pre></div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="item">
+                                <div class="carousel-caption">
+                                    <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div>
+
+                                    <h3 ms-text="@content1.NewsTitle"></h3>
+                                    <div>
+                                        <p><b>Source：</b><span ms-html="@content1.Source"></span><b>Datetime：</b><span ms-html="@content1.DateTime"></span></p>
+                                    </div>
+                                    <p><b>Content：</b></p>
+                                    <div><pre ms-html="@content1.NewsContent"></pre></div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="item">
+                                <div class="carousel-caption">
+                                    <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div>
+
+                                    <h3>Triplets</h3>
+                                    <div class="Sentences" ms-for="el in @TripletsData.Sentences">
+                                        <h5>{{el.Sentence}}</h5>
+                                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
+                                            <span class="Confidence">{{el.Confidence}}</span> (
+                                            <span class="Subject">{{el.Subject}}</span>;
+                                            <span class="Relation">{{el.Relation}}</span>;
+                                            <span class="Object">{{el.Object}}</span>)
+                                        </div>
+                                        <div class="triplets" ms-if="el.Context" ms-for="el in el.Triplets">
+                                            <span class="Confidence">{{el.Confidence}}</span>
+                                            <span class="Context">{{el.Context}}</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <div class="item active">
+                                <!-- <img src="..." alt="..."> -->
+                                <div class="carousel-caption">
+                                    <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div>
+                                    <h3 ms-on-click="@show_slider_win_effect()">Triplets</h3>
+                                    <div class="Sentences1" ms-for="el in @TripletsData.Sentences">
+                                        <h5>{{el.Sentence}}</h5>
+                                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
+                                            <span class="Confidence">{{el.Confidence}}</span> (
+                                            <span class="Subject">{{el.Subject}}</span>;
+                                            <span class="Relation">{{el.Relation}}</span>;
+                                            <span class="Object">{{el.Object}}</span>)
+                                        </div>
+                                        <div class="triplets" ms-if="el.Context" ms-for="el in el.Triplets">
+                                            <span class="Confidence">{{el.Confidence}}</span>
+                                            <span class="Context">{{el.Context}}</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div>
+                                    <h5 ms-on-click="@setUpCharts1()">charts1</h5>
+                                    <div class="carousel-caption">
+                                        <div class="sliderLeftBox">
+                                            <div ms-for="el in @relationTripletData1.Groups">
+                                                <h5>{{el.Similarity}}</h5>
+                                                <div ms-for="el in el.Triplets">
+                                                    <span class="Confidence">{{el.Confidence}}</span> (
+                                                    <span class="Subject">{{el.Subject}}</span>;
+                                                    <span class="Relation">{{el.Relation}}</span>;
+                                                    <span class="Object">{{el.Object}}</span>)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sliderRightBox" id="relation-chart-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <h4><img src="../img/info.png" alt="">tips：</h4>
+                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <div class="divide_line"></div>
+                                    <h5 ms-on-click="@setUpCharts2()">charts2</h5>
+                                    <div class="carousel-caption">
+                                        <div class="sliderLeftBox">
+                                            <div ms-for="el in @relationTripletData2.Groups">
+                                                <h5>{{el.Similarity}}</h5>
+                                                <div ms-for="el in el.Triplets">
+                                                    <span class="Confidence">{{el.Confidence}}</span> (
+                                                    <span class="Subject">{{el.Subject}}</span>;
+                                                    <span class="Relation">{{el.Relation}}</span>;
+                                                    <span class="Object">{{el.Object}}</span>)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sliderRightBox" id="relation-chart-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a ms-on-click="@right_slider_ctn()" class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a ms-on-click="@right_slider_ctn()" class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- 下部可隐藏式选项卡 -->
-      <div id="hide-tab-1" class="bottom-hide-tabs">
+    </div>
+    <!-- 下部可隐藏式选项卡 -->
+    <div id="hide-tab-1" class="bottom-hide-tabs">
         <div class="tabs-handle">
-          <p>Keyword</p>
+            <p>Keyword</p>
         </div>
         <!-- 下部keywords可隐藏式选项卡 -->
         <div class="bottom-hide-tabs-container">
-          <div class="keywords_slider">
-            <h2><b>The Signal Media One-Million News Articles Dataset</b></h2>
-            <p>This dataset is released by Signal Media to facilitate conducting research on news articles. It can be used for submissions to the NewsIR'16 workshop, but it is intended to serve the community for research on news retrieval in general. <br>
-  The articles of the dataset were originally collected by Moreover Technologies (one of Signal's content providers) from a variety of news sources for a period of 1 month (1-30 September 2015). It contains 1 million articles that are mainly English, but they also include non-English and multi-lingual articles. Sources of these articles include major ones, such as Reuters, in addition to local news sources and blogs.
-            </p>
-            <img  ms-on-click="@change_keywords_slider_down" class="keywords_slider_btn" src="../img/up.png" alt="" />
-          </div>
-          <div class="keywords_slider" style="display:none">
-            <table class="table table-condensed">
-              <thead>
-                <tr>
-                  <!-- <th ms-for="(key,el) in @head" ms-attr="{id:@head[key].groupId}">{{el.title}}</th> -->
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <!-- <td>
+            <div class="keywords_slider">
+                <h2><b>The Signal Media One-Million News Articles Dataset</b></h2>
+                <p>This dataset is released by Signal Media to facilitate conducting research on news articles. It can be used for submissions to the NewsIR'16 workshop, but it is intended to serve the community for research on news retrieval in general.
+                    <br> The articles of the dataset were originally collected by Moreover Technologies (one of Signal's content providers) from a variety of news sources for a period of 1 month (1-30 September 2015). It contains 1 million articles that
+                    are mainly English, but they also include non-English and multi-lingual articles. Sources of these articles include major ones, such as Reuters, in addition to local news sources and blogs.
+                </p>
+                <img ms-on-click="@change_keywords_slider_down" class="keywords_slider_btn" src="../img/up.png" alt="" />
+            </div>
+            <div class="keywords_slider" style="display:none">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <!-- <th ms-for="(key,el) in @head" ms-attr="{id:@head[key].groupId}">{{el.title}}</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- <td>
                     <label ms-for="(key,el) in @keywords_1" onselectstart="return false" ms-attr="{for:@keywords_1[key]}"><input  type="checkbox" ms-duplex="@selected.column1" ms-attr="{id:@keywords_1[key],value:@keywords_1[key],class:'keywords_1'}">{{el}}</label>
                     <div>{{@selected.column}}</div>
                   </td>-->
-                </tr>
-              </tbody>
-            </table>
-            <img  ms-on-click="@change_keywords_slider_up" class="keywords_slider_btn" src="../img/down.png" alt="" />
-          </div>
+                        </tr>
+                    </tbody>
+                </table>
+                <img ms-on-click="@change_keywords_slider_up" class="keywords_slider_btn" src="../img/down.png" alt="" />
+            </div>
         </div>
-      </div>
-      <div id="hide-tab-2" class="bottom-hide-tabs">
+    </div>
+    <div id="hide-tab-2" class="bottom-hide-tabs">
         <div class="tabs-handle disabled">
-          <p>Charts</p>
+            <p>Charts</p>
         </div>
         <div class="bottom-hide-tabs-container">
-          <div id="chartPosition" class="table">
+            <div id="chartPosition" class="table">
 
-          </div>
+            </div>
         </div>
-      </div>
-      <div id="coverDiv"></div>
-      <div class="ui-layout-west">
+    </div>
+    <div id="coverDiv"></div>
+    <div class="ui-layout-west">
         <!-- 左侧栏 -->
 
         <!-- 左侧菜单 -->
         <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">AIDA</a>
+                    <a class="navbar-brand" href="#">AIDA</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="left-menu" class="menu nav navbar-nav">
+                        <li class="active"><a ms-on-click="@left_menu_trigger(0)" href="#">Search <span class="sr-only">(current)</span></a></li>
+                        <li><a ms-on-click="@left_menu_trigger(1)" href="#">Parameters</a></li>
+                        <li id="cover"></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul id="left-menu" class="menu nav navbar-nav">
-                <li class="active"><a ms-on-click="@left_menu_trigger(0)" href="#">Search <span class="sr-only">(current)</span></a></li>
-                <li><a ms-on-click="@left_menu_trigger(1)" href="#">Parameters</a></li>
-                <li id="cover"></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+            <!-- /.container-fluid -->
         </nav>
         <!-- 左侧搜索功能区 -->
 
 
         <div class="container-fluid">
-          <!-- 搜索功能面板 -->
-          <div ms-visible="@show_search()" id="search-tab" class="left-tabs panel panel-default panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Keywords you selected：</h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <!-- 绑定table-column中的selected -->
-                <div class="col-md-12">
-                  <div ms-for="el in @selected.column" class="alert alert-success alert-dismissible" role="alert">
-                    <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert"  aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <span>{{el | clean}}</span>
-                  </div>
+            <!-- 搜索功能面板 -->
+            <div ms-visible="@show_search()" id="search-tab" class="left-tabs panel panel-default panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Keywords you selected：</h3>
                 </div>
-              </div>
-            </div>
-            <div class="panel-footer">
-              <div class="container-fluid">
-                <div class="btn-group btn-group-justified" role="group">
-                  <a class="btn btn-danger" ms-on-click="@remove_all_selected"> Delete All ! </a>
-                  <a class="btn btn-success" ms-on-click="@submit_all_keywords"> Go! </a>
+                <div class="panel-body">
+                    <div class="row">
+                        <!-- 绑定table-column中的selected -->
+                        <div class="col-md-12">
+                            <div ms-for="el in @selected.column" class="alert alert-success alert-dismissible" role="alert">
+                                <button ms-on-click="@remove_from_table_selected" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <span>{{el | clean}}</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- 查询结果面板 -->
-          <div ms-visible="@show_result()"  id="result-tab" class="left-tabs panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Result</h3>
-            </div>
-            <div class="panel-body">
-              <div ms-for="el in @result.content" class="alert alert-success" role="alert">
-                <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><span class="confident">{{el.confident}}</span><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
-                <!-- <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><label ms-attr="{for:el.id}"><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></label></a> -->
-                <!-- <input type="checkbox" ms-attr=""> -->
-                <input type="checkbox" class="hide" ms-duplex="@open_content " ms-attr="{value:'{NewsTitle:'+el.NewsTitle+',NewsId:'+el.NewsId+'}'}" >
-              </div>
-            </div>
-          </div>
-          <!-- 属性修改面板 -->
-          <div ms-visible="@show_parameter()" id="parameters-tab" class="left-tabs panel panel-default panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Parameters：</h3>
-            </div>
-            <!-- <div class="panel-body"></div> -->
-            <ul class="list-group">
-              <li ms-for=" ($index,el) in @sliderData " class="list-group-item">
-                <div class="btn-group btn-group-justified">
-                  <span>{{el.parameter}}</span><span  class="badge">{{el.val}}</span>
-                  <input ms-attr="{id:'amount-slider-'+$index,class:'amount-slider'}" ms-duplex-string="@sliderData[$index].val" type="text">
+                <div class="panel-footer">
+                    <div class="container-fluid">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <a class="btn btn-danger" ms-on-click="@remove_all_selected"> Delete All ! </a>
+                            <a class="btn btn-success" ms-on-click="@submit_all_keywords"> Go! </a>
+                        </div>
+                    </div>
                 </div>
-                <div  ms-attr="{id:'slider-'+$index}" ></div>
-              </li>
-            </ul>
-            <div class="panel-footer">
-              <div class="container-fluid">
-                <div class="btn-group btn-group-justified" role="group">
-                  <a id="execute" ms-on-click="@GoExecute" class="btn btn-success">Execute! </a>
-                </div>
-              </div>
             </div>
-          </div>
+            <!-- 查询结果面板 -->
+            <div ms-visible="@show_result()" id="result-tab" class="left-tabs panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Result</h3>
+                </div>
+                <div class="panel-body">
+                    <div ms-for="el in @result.content" class="alert alert-success" role="alert">
+                        <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><span class="confident">{{el.confident}}</span><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
+                        <!-- <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><label ms-attr="{for:el.id}"><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></label></a> -->
+                        <!-- <input type="checkbox" ms-attr=""> -->
+                        <input type="checkbox" class="hide" ms-duplex="@open_content " ms-attr="{value:'{NewsTitle:'+el.NewsTitle+',NewsId:'+el.NewsId+'}'}">
+                    </div>
+                </div>
+            </div>
+            <!-- 属性修改面板 -->
+            <div ms-visible="@show_parameter()" id="parameters-tab" class="left-tabs panel panel-default panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Parameters：</h3>
+                </div>
+                <!-- <div class="panel-body"></div> -->
+                <ul class="list-group">
+                    <li ms-for=" ($index,el) in @sliderData " class="list-group-item">
+                        <div class="btn-group btn-group-justified">
+                            <span>{{el.parameter}}</span><span class="badge">{{el.val}}</span>
+                            <input ms-attr="{id:'amount-slider-'+$index,class:'amount-slider'}" ms-duplex-string="@sliderData[$index].val" type="text">
+                        </div>
+                        <div ms-attr="{id:'slider-'+$index}"></div>
+                    </li>
+                </ul>
+                <div class="panel-footer">
+                    <div class="container-fluid">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <a id="execute" ms-on-click="@GoExecute" class="btn btn-success">Execute! </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="myModal" class="modal fade">
+    </div>
+    <div id="myModal" class="modal fade">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title">请选择要上传的文章</h4>
-            </div>
-            <!-- <div class="modal-body">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">请选择要上传的文章</h4>
+                </div>
+                <!-- <div class="modal-body">
               <p>One fine body&hellip;</p>
             </div> -->
-            <ul class="list-group">
-            </ul>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-              <button ms-on-click="@upload_selected_content" type="button" class="btn btn-primary">Upload！</button>
+                <ul class="list-group">
+                </ul>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                    <button ms-on-click="@upload_selected_content" type="button" class="btn btn-primary">Upload！</button>
+                </div>
             </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
-      <div id="loadingModal" class="modal fade">
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div id="loadingModal" class="modal fade">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button id="closeLoading" type="button" class="hide close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title">上传中...</h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button id="closeLoading" type="button" class="hide close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">上传中...</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>One fine body&hellip;</p> -->
+                    <div class="loadingBorder">
+                        <div class="loadingLine"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                </div>
             </div>
-            <div class="modal-body">
-              <!-- <p>One fine body&hellip;</p> -->
-              <div class="loadingBorder">
-                <div class="loadingLine"></div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <!-- jQuery (necessary for <Bootstra></Bootstra>p's JavaScript plugins) -->
     <script src="../js/avalon.js"></script>
     <script src="../js/jquery-1.12.2.min.js"></script>
@@ -414,5 +484,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/echarts-all.js"></script>
     <script src="../js/mvvm.js"></script>
-  </body>
+</body>
+
 </html>

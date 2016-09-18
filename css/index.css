@@ -311,10 +311,10 @@ span.glyphicon{
 #content p{
   font-size: 15px;
 }
-#content span{
+#content .item span{
   display: inline-block;
-  margin:5px 20px 20px 0;
-  font-size: 15px;
+  /*margin:5px 20px 20px 0;
+  font-size: 15px;*/
 }
 .carousel-caption{
   overflow: hidden;
