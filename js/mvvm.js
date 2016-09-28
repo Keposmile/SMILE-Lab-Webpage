@@ -35,7 +35,6 @@ $(function() {
             "ISIS",
             "air strike",
             "humanitarian crisis",
-            "aid",
             "Austria",
             "European EU",
             "Russia",
@@ -47,7 +46,7 @@ $(function() {
             "Netanyahu",
             "Hungary",
             "Balkans Balkan",
-            "humanitarian assistance",
+            "humanitarian assistance aid",
         ],
         keywords_2: [
             "nuclear deal",
@@ -70,20 +69,17 @@ $(function() {
             "models",
             "Porsche",
             "Audi",
-            "Skoda",
-            "vehicle",
             "emission",
             "tests",
-            "America",
-            "Europe",
+            "German",
             "EPA"
         ],
         keywords_4: [
             "candidate",
             "Hillary Clinton",
             "Donald Trump",
-            "Democratic Party GOP",
-            "Republican Party"
+            "Democratic PDP",
+            "Republican GOP"
         ],
         keywords_5: [
             "petroleum",
@@ -196,10 +192,10 @@ $(function() {
                 if ($("#hide-tab-1").css("bottom") == "0px") {
                     $("#hide-tab-1>div.tabs-handle>p").trigger("click");
                 }
-                if (this.onExamlpe) {
-                    this.onExamlpe = !this.onExamlpe;
-                    this.exampleInfo.page = 0;
-                }
+                // if (this.onExamlpe) {
+                //     this.onExamlpe = !this.onExamlpe;
+                //     this.exampleInfo.page = 0;
+                // }
                 // console.log(this.onExamlpe);
                 // postAjax("../data/search_result",keywords_data,function(data){
                 getAjax("../data/search_result/result22.json", null, function(data) { //文章查询结果
@@ -475,27 +471,52 @@ $(function() {
         executeInfo: {
             id: ""
         },
+        example_img:{
+          first:"1",
+          list:["2","3","4","5","6"]
+        },
+        showExampleSlider:false,
+        show_example:function(index){
+          $("#home-tab").trigger("click");
+          vm.showExampleSlider=true;
+          $("li[data-target='#example'].active").removeClass("active");
+          $("li[data-target='#example']:first").addClass("active");
+          $("div.example-items").removeClass("active");
+          $("div.example-items:first").addClass("active");
+          if(index==1){
+            vm.example_img={
+              first:"1",
+              list:["2","3","4","5","6"]
+            };//example1图集
+          }else if (index == 2) {
+            vm.example_img={
+              first:"8",
+              list:["9","10","11","12","13"]
+            };//example2图集
+          }
+
+        },
         GoExecute: function() {
             vm.execute(vm.executeInfo.id, false);
         },
         execute: function(id, IsExample) {
             var data = {};
-            if (IsExample) { //example状态
-                vm.onExamlpe = true;
-                vm.exampleInfo.example_id = id;
-                this.disabled_parameter_panel();
-
-
-                $("#home-tab>a").trigger("click");
-
-                enabled_parameter();
-                vm.left_menu_trigger(1);
-
-                $("#left-menu>li:eq(1)").trigger("click");
-                data = {
-                    id: id
-                };
-            } else {
+            // if (IsExample) { //example状态
+            //     vm.onExamlpe = true;
+            //     vm.exampleInfo.example_id = id;
+            //     this.disabled_parameter_panel();
+            //
+            //
+            //     $("#home-tab>a").trigger("click");
+            //
+            //     enabled_parameter();
+            //     vm.left_menu_trigger(1);
+            //
+            //     $("#left-menu>li:eq(1)").trigger("click");
+            //     data = {
+            //         id: id
+            //     };
+            // } else {
                 vm.onExecute = true;
 
                 this.disabled_left_part();
@@ -517,7 +538,7 @@ $(function() {
                     sliderObj = {};
                 }
 
-            }
+            // }
 
 
             this.content_slider_show_status = true;
@@ -702,18 +723,18 @@ $(function() {
         onExamlpe: false,
 
         right_slider_ctn: function() {
-            if (this.onExamlpe) {
-                var timer = setInterval(function() {
-                    $("a.right.carousel-control").trigger("click");
-                    vm.switch_slider_ajax(vm.exampleInfo.example_id, vm.exampleInfo.page);
-                    vm.exampleInfo.page++;
-                    if (vm.exampleInfo.page == 3) {
-                        $("#carousel>a.carousel-control").removeClass("disabled");
-                        clearInterval(timer);
-                        vm.finish_execute();
-                    }
-                }, 3000); //example切换时间
-            } else if (this.onExecute) {
+            // if (this.onExamlpe) {
+            //     var timer = setInterval(function() {
+            //         $("a.right.carousel-control").trigger("click");
+            //         vm.switch_slider_ajax(vm.exampleInfo.example_id, vm.exampleInfo.page);
+            //         vm.exampleInfo.page++;
+            //         if (vm.exampleInfo.page == 3) {
+            //             $("#carousel>a.carousel-control").removeClass("disabled");
+            //             clearInterval(timer);
+            //             vm.finish_execute();
+            //         }
+            //     }, 3000); //example切换时间
+            // } else if (this.onExecute) {
                 var timer = setInterval(function() {
                     $("a.right.carousel-control").trigger("click");
                     vm.switch_slider_ajax(vm.executeInfo.id, vm.exampleInfo.page);
@@ -724,7 +745,7 @@ $(function() {
                         vm.finish_execute();
                     }
                 }, 7000); //execute切换时间
-            }
+            // }
 
         },
 
@@ -1167,6 +1188,7 @@ function change_tabs_on_right(vm) {
                 vm.guide_show_status = true;
                 vm.content_show_status = false;
                 vm.content_slider_show_status = false;
+                vm.showExampleSlider = false;
                 disabled_parameter();
             } else {
                 vm.guide_show_status = false;

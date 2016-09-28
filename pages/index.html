@@ -49,9 +49,9 @@
                   Example<span class="caret"></span>
                   </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#" ms-on-click="@execute('0a968691-8cf6-4678-88f5-13ad24b73b8b',true)">Example 1</a></li>
+                                <li><a href="#" ms-on-click="@show_example(1)">Example 1</a></li>
                                 <!-- execute()的第一个参数改为example对应的id即可 -->
-                                <li><a href="#" ms-on-click="@execute('0a968691-8cf6-4678-88f5-13ad24b73b8b',true)">Example 2</a></li>
+                                <li><a href="#" ms-on-click="@show_example(2)">Example 2</a></li>
                                 <!-- execute()的第一个参数改为example对应的id即可 -->
                             </ul>
                         </li>
@@ -70,7 +70,40 @@
                 </ul>
                 <div class="content-tab panel-body">
                     <div ms-if="@show_guide()" id="guide">
-                        <h1>The Guide</h1>
+                        <div ms-if="!@showExampleSlider">
+                          <h1>The Guide</h1>
+                        </div>
+                        <div ms-if="@showExampleSlider" id="example" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#example" data-slide-to="0" class="active"></li>
+                            <li data-target="#example" data-slide-to="1"></li>
+                            <li data-target="#example" data-slide-to="2"></li>
+                            <li data-target="#example" data-slide-to="3"></li>
+                            <li data-target="#example" data-slide-to="4"></li>
+                            <li data-target="#example" data-slide-to="5"></li>
+                          </ol>
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item example-items active">
+                              <img ms-attr="{src:@example_img.first}" alt="">
+                            </div>
+                            <div class="item example-items" ms-for="el in @example_img.list">
+                              <img ms-attr="{src:el}">
+                            </div>
+                          </div>
+
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#example" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#example" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
                     </div>
                     <div ms-if="@show_content()" id="content" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
                         <!-- Indicators -->
@@ -398,7 +431,7 @@
                 </div>
                 <div class="panel-body">
                     <div ms-for="el in @result.content" class="alert alert-success" role="alert">
-                        <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><span class="confident">{{el.confident}}</span><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></a>
+                        <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><span class="confident">{{el.confident | number(2)}}</span><p class="folder-icons close-folder"></p><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(23,'...')}}</span></a>
                         <!-- <a ms-attr="{'data-id':el.id}" class="result-links" href="#"><p class="folder-icons close-folder"></p><label ms-attr="{for:el.id}"><span  ms-on-click="@open_content_tab" class="result-titles">{{el.title | truncate(20,'...')}}</span></label></a> -->
                         <!-- <input type="checkbox" ms-attr=""> -->
                         <input type="checkbox" class="hide" ms-duplex="@open_content " ms-attr="{value:'{NewsTitle:'+el.NewsTitle+',NewsId:'+el.NewsId+'}'}">
