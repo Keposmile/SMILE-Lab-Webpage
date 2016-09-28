@@ -342,6 +342,11 @@ $(function() {
                 vm.update_content_parameter(data_id);
                 vm.update_content_parameter_after(data_id);
                 vm.update_triplets_data(data_id);
+                //打开新的标签页时初始化轮播器为第一页
+                $("#content .item").removeClass("active");
+                $("#content .item:first").addClass("active");
+                $("li[data-target='#content']").removeClass("active");
+                $("li[data-target='#content']:first").addClass("active");
             }
             if ($("#hide-tab-2").css("bottom") === "0px") {
                 $("#hide-tab-2>div.tabs-handle>p").trigger("click");
@@ -1168,7 +1173,7 @@ function addTab(tabTitle, tabId) {
         $("#right-tabs>li").removeClass("active");
         $("#right-tabs>li:last-child").addClass("active");
     }
-    enabled_parameter();
+    // enabled_parameter();
 }
 
 function active_tabs_on_right(index, vm) {
@@ -1194,13 +1199,19 @@ function change_tabs_on_right(vm) {
                 vm.guide_show_status = false;
                 vm.content_show_status = true;
                 vm.content_slider_show_status = false;
-                enabled_parameter();
+                // enabled_parameter();
             }
             active_tabs_on_right(index, vm);
             var _thisContentId = $("#right-tabs>li.active").attr("id");
             vm.update_content_parameter(_thisContentId);
             vm.update_content_parameter_after(_thisContentId);
             vm.update_triplets_data(_thisContentId);
+            //切换右侧选项卡时，初始化轮播器为第一页
+            $("#content .item").removeClass("active");
+            $("#content .item:first").addClass("active");
+            $("li[data-target='#content']").removeClass("active");
+            $("li[data-target='#content']:first").addClass("active");
+
         }
     });
 }
@@ -1292,18 +1303,53 @@ function disabled_change_right_menu(vm) {
             "data-toggle": "modal",
             "data-target": "#myModal"
         });
-        enabled_parameter();
+        // enabled_parameter();
     }
 }
 //打开result的tab后，点击右侧的tab，左侧的menu随之切换
 function toggle_left_menu(vm) {
     $(document).on("click", "#right-tabs>li:not(:first)", function() {
         if ($("#right-tabs>li:not(:first)").length !== 0) {
-            vm.left_menu_trigger(1);
-            $("#left-menu>li:eq(1)").trigger("click");
+            // vm.left_menu_trigger(1);
+            // $("#left-menu>li:eq(1)").trigger("click");
         }
     });
-    $(document).on("click", "#right-tabs>li:first", function() {
+    $(document).on("click","#content a.carousel-control.right",function(){
+        var ContentCarouselItems=$("#content div.item");
+        var activeItem=$("#content div.active");
+        console.log(activeItem);
+        // var index=activeItem.index(ContentCarouselItems);
+        var index=ContentCarouselItems.index(activeItem);
+        console.log(index);
+        if(index==1||index==2){
+          enabled_parameter();
+          vm.left_menu_trigger(1);
+          $("#left-menu>li:eq(1)").trigger("click");
+
+        }else {
+          vm.left_menu_trigger(0);
+          $("#left-menu>li:eq(0)").trigger("click");
+          disabled_parameter();
+        }
+    });
+    $(document).on("click","#content a.carousel-control.left",function(){
+        // var ContentCarouselItems=$("#content div.item");
+        // var activeItem=$("#content div.active");
+        // console.log(activeItem);
+        // // var index=activeItem.index(ContentCarouselItems);
+        // var index=ContentCarouselItems.index(activeItem);
+        // console.log(index);
+        // if(index==1||index==2){
+        //   vm.left_menu_trigger(1);
+        //   $("#left-menu>li:eq(1)").trigger("click");
+        // }else {
+          disabled_parameter();
+          vm.left_menu_trigger(0);
+          $("#left-menu>li:eq(0)").trigger("click");
+        // }
+    });
+    // $(document).on("click", "#right-tabs>li:first", function() {
+    $(document).on("click", "#right-tabs>li", function() {
         if (!vm.onExecute) {
             vm.left_menu_trigger(0);
             // console.log("vm.left_menu_status:"+vm.left_menu_status);
