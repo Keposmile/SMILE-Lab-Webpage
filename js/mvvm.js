@@ -427,10 +427,9 @@ $(function() {
         left_menu_trigger: function(status) {
             // console.log(status);
             this.left_menu_status = status;
-            if (status === 0 && this.onExamlpe) {
+            if (status === 0 ) {
                 this.enabled_left_part();
-            } else if (status == 1 && this.onExamlpe) {
-                this.disabled_parameter_panel();
+            } else if (status == 1) {
             }
         },
         show_search: function() {
@@ -506,22 +505,6 @@ $(function() {
         },
         execute: function(id, IsExample) {
             var data = {};
-            // if (IsExample) { //example状态
-            //     vm.onExamlpe = true;
-            //     vm.exampleInfo.example_id = id;
-            //     this.disabled_parameter_panel();
-            //
-            //
-            //     $("#home-tab>a").trigger("click");
-            //
-            //     enabled_parameter();
-            //     vm.left_menu_trigger(1);
-            //
-            //     $("#left-menu>li:eq(1)").trigger("click");
-            //     data = {
-            //         id: id
-            //     };
-            // } else {
                 vm.onExecute = true;
 
                 this.disabled_left_part();

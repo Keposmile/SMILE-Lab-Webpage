@@ -49,13 +49,13 @@
                   Example<span class="caret"></span>
                   </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#" ms-on-click="@show_example(1)">Example 1</a></li>
+                                <li><a href="#" ms-on-click="@show_example(1)">Doc-One</a></li>
                                 <!-- execute()的第一个参数改为example对应的id即可 -->
-                                <li><a href="#" ms-on-click="@show_example(2)">Example 2</a></li>
+                                <li><a href="#" ms-on-click="@show_example(2)">Doc-Two</a></li>
                                 <!-- execute()的第一个参数改为example对应的id即可 -->
                             </ul>
                         </li>
-                        <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate kg</a></li>
+                        <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate Knowledge Graph</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -427,7 +427,7 @@
             <!-- 查询结果面板 -->
             <div ms-visible="@show_result()" id="result-tab" class="left-tabs panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Result</h3>
+                    <h3 class="panel-title">Multi-doc Ranking</h3>
                 </div>
                 <div class="panel-body">
                     <div ms-for="el in @result.content" class="alert alert-success" role="alert">
