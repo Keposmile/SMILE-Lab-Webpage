@@ -82,17 +82,13 @@ $(function() {
             "Republican GOP"
         ],
         keywords_5: [
-            "petroleum",
-            "oil",
-            "trade",
-            "economic",
+            "petroleum oil",
+            "economic trade",
             "cooperation",
             "Omar al Bashir",
-            "investor",
             "Xi Jinping",
-            "investment",
-            "Chinese Peoples\'s War",
-            "70th Anniversary",
+            "Chinese Peoples\'s War 70th Anniversary",
+            "investor investment",
             "bilateral"
         ],
         //选择的关键词数组
