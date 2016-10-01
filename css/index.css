@@ -243,7 +243,7 @@ label[data-selected=selected]{
 #carousel{
   width:100%;
   /*height:500px;*/
-  margin:10px auto;
+  /*margin:10px auto;*/
 }
 .item{
   min-height: 400px;
@@ -251,7 +251,7 @@ label[data-selected=selected]{
   /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 .carousel-control{
-  top:97%;
+  top:100%;
   height: 39px;
   border-radius: 10px;
   background-color: #0099ff;

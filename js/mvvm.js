@@ -303,7 +303,6 @@ $(function() {
                             vm.content1 = data;
                             this.guide_show_status = false;
                             this.content_show_status = true;
-
                         }
                     }
                 });
@@ -340,37 +339,26 @@ $(function() {
         },
 
         TripletsData: {
-            "winSize": 6,
-            "step": 1,
-            "SentenceNum": 10,
-            "EffectTripletsNum": 30,
-            "Sentences": [{
-                "SentenceOrder": 1,
-                "Sentence": "Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
-                "TripletsNum": 3,
-                "Triplets": [
-                //     "TripletOrder": 1,
-                //     "Confidence": 0.93,
-                //     "Subject": "Comcast",
-                //     "Relation": " is bringing",
-                //     "Object": "a couple of new third-party connected devices",
-                //     "Attribute": "attri"
-                // }, {
-                //     "TripletOrder": 2,
-                //     "Confidence": 0.97,
-                //     "Subject": "One of them",
-                //     "Relation": "is",
-                //     "Object": "the garage door",
-                //     "Attribute": "attri"
-                // }, {
-                //     "TripletOrder": 3,
-                //     "Confidence": 0.82,
-                //     "Context": "Context(this latest move will allow,List([32, 59))):(both products; to be controlled; )"
-                // }
-                ]
+          "winSize":null,
+          "step":null,
+          "SentenceNum": null,
+          "Sentences": [
+            {
+              "SentenceOrder": null,
+              "Sentence": "",
+              "TripletsNum": null,
+              "Triplets": [
+                {
+                  "TripletOrder": null,
+                  "Confidence": "",
+                  "Subject": "",
+                  "Relation": "",
+                  "Object": "",
+                  "Attribute": ""
+                }
+              ]
             }]
         },
-
         update_triplets_data: function(NewsId) { //抽取新闻中有效的三元组的ajax
             var data = {
                 "status": 1,
@@ -379,23 +367,28 @@ $(function() {
             };
             // postAjax(url,data,function(data){
             if (data.newsId !== "home-tab") {
+              console.log(data.newsId);
                 getAjax("../data/triplets/" + data.newsId + ".json", null, function(data) { //slider3-4页三元组部分
+                    console.log(vm.TripletsData1);
+                    console.log(data.Data);
+                    vm.TripletsData.Sentences=[];
                     vm.TripletsData = data.Data;
-
-                    //更新参数内容
                     vm.sliderData = data.sliderData;
                     setup_slider_group("slider", vm.sliderData);
+                    // vm.
                 });
             }
         },
-
         show_slider_win_effect: function() {
             var totalTriGroup = $(".Sentences1");
             var winSize = this.TripletsData.winSize;
             var firstIndex = -1;
             var step = this.TripletsData.step;
             var nowFinalIndex = winSize - step;
+            console.log(totalTriGroup.length);
+
             var timer = setInterval(function() {
+                console.log(nowFinalIndex);
                 if (nowFinalIndex == (-1)) {
                     //回调点
                     clearInterval(timer);
@@ -403,6 +396,7 @@ $(function() {
                 } else {
                     nowFinalIndex += step;
                     var nowInWin = getItemsBetween(firstIndex, winSize, ".Sentences1");
+                    console.log(nowInWin.length);
                     totalTriGroup.removeClass("in-win");
                     nowInWin.addClass("in-win");
                     firstIndex += step;
@@ -410,7 +404,7 @@ $(function() {
                         nowFinalIndex = (-1);
                     }
                 }
-            }, 1000);
+            }, 500);
         },
 
         left_menu_status: 0, //左侧页面菜单的选择状态
@@ -536,6 +530,12 @@ $(function() {
             //     // 提交文章id和属性完成后
             // if()
             disabled_change_right_menu(vm);
+            vm.TripletsData.winSize =parseInt(vm.sliderData[0].val);
+            vm.TripletsData.step = parseInt(vm.sliderData[1].val);
+
+            console.log(vm.TripletsData.winSize);
+            console.log(vm.TripletsData.step);
+            vm.show_slider_win_effect();
             vm.right_slider_ctn();
             //   }
             // });
@@ -723,7 +723,7 @@ $(function() {
                         clearInterval(timer);
                         vm.finish_execute();
                     }
-                }, 7000); //execute切换时间
+                }, 15000); //execute切换时间
             // }
 
         },
@@ -803,7 +803,7 @@ $(function() {
                 if (data.Status === 0) {
                     vm.relationTripletData1 = data.Data;
                     console.log(data.Data);
-                    vm.relationChartData1 = setNodesAndLinks(data.Data, false);
+                    vm.relationChartData1 = setNodesAndLinks1(data.Data, false);
                     relation_chart_setup("relation-chart-1", vm.relationChartData1);
                 }
             });
@@ -815,7 +815,7 @@ $(function() {
                 if (data.Status === 0) {
                     vm.relationTripletData2 = data.Data;
                     console.log(data.Data);
-                    vm.relationChartData2 = setNodesAndLinks(data.Data, true);
+                    vm.relationChartData2 = setNodesAndLinks2(data.Data, true);
                     console.log(JSON.stringify(vm.relationChartData2));
                     relation_chart_setup("relation-chart-2", vm.relationChartData2);
                 }
@@ -1036,7 +1036,7 @@ function relation_chart_setup(id, data) {
     // }
 }
 
-function setNodesAndLinks(data, coverSame) {
+function setNodesAndLinks2(data, coverSame) {
     var nodes = [];
     // {category:1, name: '1-1',value : 2,label:'2'},
     var links = [];
