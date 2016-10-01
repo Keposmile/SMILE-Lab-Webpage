@@ -246,15 +246,7 @@ $(function() {
         },
 
         content: {
-            // "status":1,
-            // "message":" NewsDetailQuery",
-            // "NewsId":"0a968691-8cf6-4678-88f5-13ad24b73b8b",
-            // "NewsContent":"Published 09/17/2015                    \n                \n                \n                    by  \nSimi <b>Valley</b> (United States) (AFP) \n\nTrump swiftly returned fire, living up to his billing as the campaign bulldog by attacking his rivals, further imposing himself on the race to determine who will go up against the Democratic nominee, likely Hillary Clinton. \n\n\"Mr. Trump, we don't need an apprentice in the White House, we have one right now,\" Wisconsin Governor Scott Walker told Trump -- a snarky reference to the title of the real estate mogul's reality television show. \n\nThat remark kicked off several minutes of Trump-related thrusts and parries that have come to define much of the 2016 presidential race. \n\nTen challengers flanked Trump on stage in the heavyweight clash at the Ronald Reagan Presidential Library in Simi Valley, California. \n\nThey are all seeking an opening against the man who has defied all political odds to lead the Republican race for the party's nomination ahead of the November 2016 election. \n\nAFP / Frederic J Brown \nRepublican presidential hopefuls Ben Carson (L) and Donald Trump talk before the Republican Presidential Debate at the Ronald Reagan Presidential Library in Simi Valley, California, September 16, 2015 \n\nMany are under intense pressure to deliver a breakout performance that would help separate them from the large pack of candidates vying for the White House -- or risk a campaign meltdown that could see them shunted to the side as the first state nomination votes in February draw nearer. \n\n- Trump on the attack - \n\nCarly Fiorina, the one Republican woman in the race and the only candidate to rise from last month's undercard debate to Wednesday's main stage, offered passionate calls for defunding women's health care provider Planned Parenthood, a publicly funded organization that offers abortions. \n\nFiorina, the former chief executive of Hewlett-Packard, also delivered a withering response to insulting comments about her looks that Trump made in a recent magazine interview. \n\n\"I think women all over this country heard very clearly what Mr. Trump said,\" she said, offering him a cold stare. \n\nAFP / Frederic J Brown \nRepublican presidential hopefuls George Pataki (L), Rick Santorum (C) and Rand Paul arrive for the Republican Presidential Debate at the Ronald Reagan Presidential Library in Simi Valley, California, September 16, 2015 \n\nTrump did not ignore the assaults, taking digs at rivals from virtually his first moments on stage. \n\n\"First of all, Rand Paul shouldn't even be on this stage. He's number 11 and has one percent in the polls,\" Trump said of the Kentucky senator who has signalled he would not hesitate to take the gloves off with Trump. \n\nPaul, who has slipped in the polls since brusquely criticizing Trump in the first debate, attacked Trump's \"junior high\" snarls. \n\n\"Are we not way above that? Would we not all be worried to have someone like that in charge of the nuclear arsenal?\" Paul asked. \n\nEarlier, a foursome of low-polling candidates took their shots at Trump in the \"undercard\" debate. \n\nA fiery Senator Lindsey Graham warned against nominating \"cartoon character\" Trump, while former New York governor George Pataki declared Trump \"unfit to be president of the United States.\" \n\nAFP / Frederic J Brown \nCarly Fiorina, the former chief executive of Hewlett-Packard, delivered a withering response to insulting comments about her looks that Donald Trump made in a recent magazine interview \n\nThe main event's 11 candidates clashed extensively on issues including immigration, how to handle a looming government shutdown, and dealing with Russian President Vladimir Putin. \n\nJeb Bush, perhaps the campaign's ultimate establishment Republican, has seen his political fortunes tumble in the months since Trump entered the race, and he sought to claw back some of his lost ground by projecting himself as an even-keeled conservative who can lead from day one. \n\n\"You can't just, you know, talk about this stuff and insult leaders around the world and expect a good result,\" Bush said. \n\n\"You have to do this with a steady hand, and I believe I have those skills.\" \n\n- Anti-establishment rise - \n\nAs more conventional candidates like Ohio Governor John Kasich and Senator Marco Rubio struggle to gain precious air time with the media, which is spending vast time and resources on covering Trump, another outsider, retired neurosurgeon Ben Carson, has quietly gained ground. \n\nThe latest CBS News poll found Trump still ahead at 27 percent support, but the soft-spoken Carson -- who is essentially the anti-Trump -- swelled to 23 percent. \n\nWhile it is unclear whether Carson poses an immediate threat to Trump's dominance, the rise of the doctor, who like Trump has never held public office, is more evidence of an anti-establishment wave washing over the 2016 nomination race. \n\n\"I'm extraordinarily concerned about the direction of this country, the fiscal irresponsibility, the failure to take a leadership position in the world,\" Carson said. \n?? 2015 AFP",
-            // "Source":"Look Local",
-            // "NewsTitle":"Trump targeted in11111 US Republican debate",
-            // "mediaType":"News",
-            // "DateTime":"2016-09-04 21:44:25.0",
-            // "sliderData":[]
+
         },
         content1: {
 
@@ -277,7 +269,7 @@ $(function() {
                 getAjax("../data/content/" + data_id + ".json", null, function(data) { //文章内容和slider第一页
                     // postAjax(url,data,function(data){
                     if (data.NewsId == data_id) {
-                        if (data.status == 1) {
+                        if (data.status == 2) {
                             //更新文章内容
                             data.NewsContent = data.NewsContent.replace(/([\"])/g, " ”");
                             data.NewsContent = data.NewsContent.replace(/(['])/g, " ’");
@@ -285,8 +277,8 @@ $(function() {
                             this.guide_show_status = false;
                             this.content_show_status = true;
                             //更新参数内容
-                            vm.sliderData = data.sliderData;
-                            setup_slider_group("slider", vm.sliderData);
+                            // vm.sliderData = data.sliderData;
+                            // setup_slider_group("slider", vm.sliderData);
                         }
                     }
                 });
@@ -304,16 +296,14 @@ $(function() {
                 getAjax("../data/after/" + data_id + ".json", null, function(data) { //指代消解后
                     // postAjax(url,data,function(data){
                     if (data.NewsId == data_id) {
-                        if (data.status == 1) {
+                        if (data.status == 3) {
                             //更新文章内容
                             data.NewsContent = data.NewsContent.replace(/([\"])/g, " ”");
                             data.NewsContent = data.NewsContent.replace(/(['])/g, " ’");
                             vm.content1 = data;
                             this.guide_show_status = false;
                             this.content_show_status = true;
-                            //更新参数内容
-                            vm.sliderData = data.sliderData;
-                            setup_slider_group("slider", vm.sliderData);
+
                         }
                     }
                 });
@@ -358,25 +348,26 @@ $(function() {
                 "SentenceOrder": 1,
                 "Sentence": "Comcast is bringing a couple of new third-party connected devices to Xfinity Home, Comcast subscription-based home-security and home-automation platform.",
                 "TripletsNum": 3,
-                "Triplets": [{
-                    "TripletOrder": 1,
-                    "Confidence": 0.93,
-                    "Subject": "Comcast",
-                    "Relation": " is bringing",
-                    "Object": "a couple of new third-party connected devices",
-                    "Attribute": "attri"
-                }, {
-                    "TripletOrder": 2,
-                    "Confidence": 0.97,
-                    "Subject": "One of them",
-                    "Relation": "is",
-                    "Object": "the garage door",
-                    "Attribute": "attri"
-                }, {
-                    "TripletOrder": 3,
-                    "Confidence": 0.82,
-                    "Context": "Context(this latest move will allow,List([32, 59))):(both products; to be controlled; )"
-                }]
+                "Triplets": [
+                //     "TripletOrder": 1,
+                //     "Confidence": 0.93,
+                //     "Subject": "Comcast",
+                //     "Relation": " is bringing",
+                //     "Object": "a couple of new third-party connected devices",
+                //     "Attribute": "attri"
+                // }, {
+                //     "TripletOrder": 2,
+                //     "Confidence": 0.97,
+                //     "Subject": "One of them",
+                //     "Relation": "is",
+                //     "Object": "the garage door",
+                //     "Attribute": "attri"
+                // }, {
+                //     "TripletOrder": 3,
+                //     "Confidence": 0.82,
+                //     "Context": "Context(this latest move will allow,List([32, 59))):(both products; to be controlled; )"
+                // }
+                ]
             }]
         },
 
@@ -389,7 +380,11 @@ $(function() {
             // postAjax(url,data,function(data){
             if (data.newsId !== "home-tab") {
                 getAjax("../data/triplets/" + data.newsId + ".json", null, function(data) { //slider3-4页三元组部分
-                    vm.TripletsData = data;
+                    vm.TripletsData = data.Data;
+
+                    //更新参数内容
+                    vm.sliderData = data.sliderData;
+                    setup_slider_group("slider", vm.sliderData);
                 });
             }
         },
@@ -847,7 +842,7 @@ $(function() {
     });
     setup_slider_group("slider", vm.sliderData);
     toggle_left_menu(vm);
-    delete_this_tab(vm);
+    delete_tab(vm);
     $("#carousel").on('slid.bs.carousel', function() {
         $("#carousel").carousel("pause");
     });
@@ -1155,8 +1150,13 @@ function addTab(tabTitle, tabId) {
     // enabled_parameter();
 }
 
-function active_tabs_on_right(index, vm) {
+function active_tabs_on_right(index,vm) {
     $("#right-tabs>li").removeClass("active");
+    console.log("index:"+index);
+    if(index==-1){
+      index=$("#right-tabs>li").length-1;
+    }
+    console.log("index_af:"+index);
     $("#right-tabs>li:eq(" + index + ")").addClass("active");
     vm.executeInfo.id = $("#right-tabs>li.active").attr("id");
     // console.log(vm.executeInfo.id);
@@ -1168,7 +1168,7 @@ function change_tabs_on_right(vm) {
         var index = $("#right-tabs>li").index(_this);
         if (!vm.onExecute) { //未在执行中时切换页面
             // console.log("index:"+index);
-            if (index === 0) {
+            if ($("#home-tab.active").length==1) {
                 vm.guide_show_status = true;
                 vm.content_show_status = false;
                 vm.content_slider_show_status = false;
@@ -1195,22 +1195,30 @@ function change_tabs_on_right(vm) {
     });
 }
 
-function delete_this_tab(vm) {
+function delete_tab(vm) {
     $(document).on("click", ".tab-delete", function() {
-        // alert("!");
-        if (!vm.onExecute) {
-            var thisLi = $(this).parent().parent();
-            var index = $("#right-tabs>li").index(thisLi);
-            index = index - 1;
-            active_tabs_on_right(index, vm);
-            thisLi.remove();
-            var thisId = thisLi.attr("id");
-            disabled_change_right_menu(vm);
-            change_folder_icon($("a[data-id=" + thisId + "]"));
-        }
+      if (!vm.onExecute) {
+          var thisLi=$(this).parent().parent();
+          var index = $("#right-tabs>li").index(thisLi);
+          if(index==1){
+            if($("#right-tabs>li").length==2){
+              index = index - 1;
+            }else{
+              index=$("#right-tabs>li").length-1;
+            }
+          }
+          active_tabs_on_right(index, vm);
+          thisLi.remove();
+          var thisId = thisLi.attr("id");
+          disabled_change_right_menu(vm);
+          change_folder_icon($("a[data-id=" + thisId + "]"));
+          // console.log($("#"));
+          if(index===0&&$("#right-tabs>li").length==1){
+            $("#home-tab").trigger("click");
+          }
+      }
     });
 }
-
 //底部tab控制
 function show_hide_tabs() {
     $(document).on("click", ".tabs-handle:not(.disabled)>p", function() {
@@ -1243,6 +1251,7 @@ function setUp_hide_tabs() {
 //控制右侧的顶部菜单的禁用/启用
 function disabled_change_right_menu(vm) {
     if ($("#right-tabs>li").length == 1) {
+      // console.log("yes");
         $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled", true);
         $("#dropdown-toggle").attr({
             "data-toggle": ""
@@ -1251,14 +1260,14 @@ function disabled_change_right_menu(vm) {
             "data-toggle": "",
             "data-target": ""
         });
-        $("#right-tabs>li:first").trigger("click");
-        // $("#left-menu>li:eq(0)").trigger("click");
+
+        $("#home-tab").trigger("click");
         // console.log(vm.guide_show_status);
         vm.guide_show_status = true;
         vm.content_show_status = false;
         vm.content_slider_show_status = false;
         disabled_parameter();
-    } else if (vm.onExecute || vm.onExamlpe) {
+    } else if (vm.onExecute) {
         $("#right-menu>li,ul.dropdown-menu>li").addClass("disabled").find("a").attr("disabled", true);
         $("#dropdown-toggle").attr({
             "data-toggle": ""
@@ -1284,6 +1293,7 @@ function disabled_change_right_menu(vm) {
         });
         // enabled_parameter();
     }
+    avalon.scan(document.body);
 }
 //打开result的tab后，点击右侧的tab，左侧的menu随之切换
 function toggle_left_menu(vm) {

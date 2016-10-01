@@ -35,7 +35,7 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 }
 .result-titles{
   display:inline-block;
-  margin-left:10px;
+  margin-left:2px;
   font-size:16px;
   line-height:20px;
 }
@@ -251,7 +251,7 @@ label[data-selected=selected]{
   /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 .carousel-control{
-  top:95%;
+  top:97%;
   height: 39px;
   border-radius: 10px;
   background-color: #0099ff;
@@ -274,6 +274,10 @@ span.glyphicon{
   overflow: hidden;
   /* clip: rect(0, 0, 0, 0); */
   border: 0;
+}
+.carousel{
+  padding-bottom: 80px;
+  margin-bottom: 70px;
 }
 .carousel-indicators{
   /*background-color: #aaa;*/
@@ -302,7 +306,8 @@ span.glyphicon{
   display: block;
   line-height: 20px;
   font-size: 15px;
-  margin: 0 5px 0 0;
+  margin: 0 2px 0 0;
+  min-width:40px;
 }
 #result-tab .alert-success {
   background-color: rgba(0,0,0,0);
@@ -319,7 +324,6 @@ span.glyphicon{
 .carousel-caption{
   overflow: hidden;
   color: #000;
-  padding-bottom: 80px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .carousel-caption span{

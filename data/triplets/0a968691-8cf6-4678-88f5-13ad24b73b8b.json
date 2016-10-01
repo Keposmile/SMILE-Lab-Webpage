@@ -1,0 +1,599 @@
+{
+  "Status": 4,
+  "Message": "NewsTripletsExtraction",
+  "NewsId": "0a968691-8cf6-4678-88f5-13ad24b73b8b",
+  "Data": {
+    "SentenceNum": 28,
+    "Sentences": [
+      {
+        "SentenceOrder": 1,
+        "Sentence": "Published 09/17/2015",
+        "TripletsNum": 0,
+        "Triplets": []
+      },
+      {
+        "SentenceOrder": 2,
+        "Sentence": "\"Mr. Donald Trump, his rivals don't need an apprentice in the White House, his rivals have one right now,\" Wisconsin Governor Scott Walker told Donald Donald Trump to the title of the real estate mogul's reality television show.",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.97",
+            "Subject": "Wisconsin Governor Scott Walker",
+            "Relation": "told",
+            "Object": "Donald Donald Trump",
+            "Attribute": "to the title of the real estate mogul's reality television show)"
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 3,
+        "Sentence": "That remark kicked off several minutes of Trump-related thrusts and parries that have come to define much of the 2016 presidential race.",
+        "TripletsNum": 3,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.90",
+            "Subject": "That remark",
+            "Relation": "kicked off",
+            "Object": "several minutes of Trump-related thrusts and parries",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.92",
+            "Subject": "Trump-related thrusts and parries",
+            "Relation": "have come",
+            "Object": "to define much of the 2016 presidential race",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.92",
+            "Subject": "Trump-related thrusts and parries",
+            "Relation": "to define",
+            "Object": "much of the 2016 presidential race",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 4,
+        "Sentence": "Ten challengers flanked Donald Trump on stage in the heavyweight clash at the Ronald Reagan Presidential Library in Simi Valley, California.",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.95",
+            "Subject": "Ten challengers",
+            "Relation": "flanked",
+            "Object": "Donald Trump",
+            "Attribute": "L:on stage in the heavyweight clash at the Ronald Reagan Presidential Library in Simi Valley)"
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 5,
+        "Sentence": "Ten challengers are all seeking an opening against the man who has defied all political odds to lead the Republican race for the party's nomination ahead of the November 2016 election.",
+        "TripletsNum": 2,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.86",
+            "Subject": "Ten challengers",
+            "Relation": "are seeking",
+            "Object": "an opening against the man",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.92",
+            "Subject": "the man",
+            "Relation": "has defied",
+            "Object": "all political odds",
+            "Attribute": "to lead the Republican race for the party's nomination ahead of the November 2016 election)"
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 6,
+        "Sentence": "AFP / Frederic J Brown",
+        "TripletsNum": 0,
+        "Triplets": []
+      },
+      {
+        "SentenceOrder": 7,
+        "Sentence": "- Trump on the attack -",
+        "TripletsNum": 0,
+        "Triplets": []
+      },
+      {
+        "SentenceOrder": 8,
+        "Sentence": "Frederic J Brown Carly Frederic J Brown Carly Fiorina , the former chief executive of Hewlett-Packard , the former chief executive of Hewlett-Packard, also delivered a witFrederic J Brown Carly Fiorina , the former chief executive of Hewlett-Packarding response to insulting comments about Frederic J Brown Carly Fiorina , the former chief executive of Hewlett-Packard looks that Donald Trump made in a recent magazine interview.",
+        "TripletsNum": 4,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.93",
+            "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+            "Relation": "also delivered",
+            "Object": "a witFrederic J Brown Carly Fiorina",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.88",
+            "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+            "Relation": "[is] the former chief executive of",
+            "Object": "Hewlett-Packard",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.39",
+            "Subject": "a witFrederic J Brown Carly Fiorina",
+            "Relation": "[is] the former chief executive of",
+            "Object": "Hewlett-Packarding response",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 4,
+            "Confidence": "0.38",
+            "Subject": "Frederic J Brown Carly Fiorina",
+            "Relation": "[is] the former chief executive of",
+            "Object": "Hewlett-Packard",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 9,
+        "Sentence": "\"Mr. Trump think women's all over the fiscal irresponsibility , the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\" Frederic J Brown Carly Fiorina , the former chief executive of Hewlett-Packard said, offering Mr. Trump a cold stare.",
+        "TripletsNum": 3,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.66",
+            "Subject": "Mr. Trump",
+            "Relation": "said",
+            "Object": "",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.93",
+            "Subject": "Mr. Trump",
+            "Relation": "think",
+            "Object": "women's all over the fiscal irresponsibility , the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\" Frederic J Brown Carly Fiorina , the former chief executive of Hewlett-Packard said",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.38",
+            "Subject": "Frederic J Brown Carly Fiorina",
+            "Relation": "[is] the former chief executive of",
+            "Object": "Hewlett-Packard",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 10,
+        "Sentence": "AFP / Frederic J Brown",
+        "TripletsNum": 0,
+        "Triplets": []
+      },
+      {
+        "SentenceOrder": 11,
+        "Sentence": "\"First of all, Rand Paul shouldn't even be on Wednesday's main stage.",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.96",
+            "Subject": "Rand Paul",
+            "Relation": "should n't even be",
+            "Object": "on Wednesday's main stage",
+            "Attribute": "T:First of all)"
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 12,
+        "Sentence": "Rand Paul's number 11 and has one percent in tRand Paul polls,\" Donald Donald Trump said of tRand Paul Kentucky senator who has signalled Rand Paul would not Rand Paulsitate to take tRand Paul gloves off with Donald Donald Trump.",
+        "TripletsNum": 3,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.93",
+            "Subject": "Donald Donald Trump",
+            "Relation": "said",
+            "Object": "of tRand Paul Kentucky senator",
+            "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.94",
+            "Subject": "tRand Paul Kentucky senator",
+            "Relation": "has signalled",
+            "Object": "Rand Paul",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.93",
+            "Subject": "Paulsitate",
+            "Relation": "to take",
+            "Object": "tRand Paul",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 13,
+        "Sentence": "Rand Paul, who has slipped in the polls since brusquely criticizing Trump in the first debate, attacked Donald Trump \"junior high\" snarls.",
+        "TripletsNum": 2,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.93",
+            "Subject": "Rand Paul",
+            "Relation": "has slipped",
+            "Object": "",
+            "Attribute": " L:in the polls"
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.93",
+            "Subject": "Rand Paul",
+            "Relation": "attacked",
+            "Object": "Donald Trump \"junior high\" snarls",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 14,
+        "Sentence": "\"Are Rand Paul not way above Rand Paul?",
+        "TripletsNum": 0,
+        "Triplets": []
+      },
+      {
+        "SentenceOrder": 15,
+        "Sentence": "Would Rand Paul not all be worried to have someone like that in charge of the nuclear arsenal?\"",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.80",
+            "Subject": "Rand Paul",
+            "Relation": "to have",
+            "Object": "someone like that in charge of the nuclear arsenal",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 16,
+        "Sentence": "Rand Paul asked.",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.79",
+            "Subject": "Rand Paul",
+            "Relation": "asked",
+            "Object": "",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 17,
+        "Sentence": "Earlier, a foursome of low-polling candidates took low-polling candidates shots at Donald Trump in the \"undercard\" debate.",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.96",
+            "Subject": "a foursome of low-polling candidates",
+            "Relation": "took",
+            "Object": "low-polling candidates shots",
+            "Attribute": "L:in the \"undercard\" debate"
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 18,
+        "Sentence": "A fiery Senator Lindsey Graham warned against nominating \"cartoon character\" Donald Donald Trump, while former New York governor George Pataki declared Donald Donald Trump \"unfit to be `` cartoon character '' Trump , while former New York governor George Pataki declared Trump `` unfit.\"",
+        "TripletsNum": 6,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.94",
+            "Subject": "A fiery Senator Lindsey Graham",
+            "Relation": "warned",
+            "Object": "against nominating \"cartoon character",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.97",
+            "Subject": "former New York governor George Pataki",
+            "Relation": "declared",
+            "Object": "Donald Donald Trump \"unfit to be `` cartoon character",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.91",
+            "Subject": "Donald Donald Trump",
+            "Relation": "to be",
+            "Object": "cartoon character",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 4,
+            "Confidence": "0.96",
+            "Subject": "former New York governor George Pataki",
+            "Relation": "declared",
+            "Object": "Trump `` unfit",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 5,
+            "Confidence": "0.38",
+            "Subject": "George Pataki",
+            "Relation": "[is] former governor [of]",
+            "Object": "New York",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 6,
+            "Confidence": "0.38",
+            "Subject": "George Pataki",
+            "Relation": "[is] former governor [of]",
+            "Object": "New York",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 19,
+        "Sentence": "AFP / Frederic J Brown",
+        "TripletsNum": 0,
+        "Triplets": []
+      },
+      {
+        "SentenceOrder": 20,
+        "Sentence": "Jeb Bush, perhaps tJeb Bush campaign's ultimate establishment Republican, has seen Jeb Bush political fortunes tumble in tJeb Bush months since Donald Trump entered tJeb Bush Republican race, and Jeb Bush sought to claw back some of Jeb Bush lost ground by projecting some of his lost ground as an even-keeled conservative who can lead from day one.",
+        "TripletsNum": 4,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.92",
+            "Subject": "Jeb Bush",
+            "Relation": "lost",
+            "Object": "ground",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.94",
+            "Subject": "Donald Trump",
+            "Relation": "entered",
+            "Object": "tJeb Bush Republican race",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.92",
+            "Subject": "Jeb Bush",
+            "Relation": "sought",
+            "Object": "to claw back some of Jeb Bush",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 4,
+            "Confidence": "0.60",
+            "Subject": "an even-keeled conservative",
+            "Relation": "can lead",
+            "Object": "",
+            "Attribute": "T:from day one"
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 21,
+        "Sentence": "\"You can't just, You know, talk about this stuff and insult leaders around the world and expect a good result,\" Jeb Bush said.",
+        "TripletsNum": 3,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.38",
+            "Subject": "You",
+            "Relation": "know",
+            "Object": "",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.58",
+            "Subject": "You",
+            "Relation": "expect",
+            "Object": "a good result",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.95",
+            "Subject": "You can't just, You know, talk about this stuff and insult leaders around the world and expect a good result",
+            "Relation": "said",
+            "Object": "Jeb Bush",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 22,
+        "Sentence": "\"You have to do this with a steady hand, and Jeb Bush believe Jeb Bush have those skills.\"",
+        "TripletsNum": 2,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.32",
+            "Subject": "You",
+            "Relation": "to do",
+            "Object": "this",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.82",
+            "Subject": "Jeb Bush",
+            "Relation": "believe",
+            "Object": "Jeb Bush have those skills",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 23,
+        "Sentence": "- Anti-establishment rise -",
+        "TripletsNum": 0,
+        "Triplets": []
+      },
+      {
+        "SentenceOrder": 24,
+        "Sentence": "The latest CBS News poll found Donald Trump still ahead at 27 percent support, but the soft-spoken Carson -- who is essentially the anti-Donald Trump -- swelled to 23 percent.",
+        "TripletsNum": 3,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.92",
+            "Subject": "The latest CBS News poll",
+            "Relation": "found still ahead",
+            "Object": "",
+            "Attribute": "L:at 27 percent support"
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.94",
+            "Subject": "the soft-spoken Carson",
+            "Relation": "is essentially",
+            "Object": "the anti-Donald Trump",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 3,
+            "Confidence": "0.93",
+            "Subject": "the soft-spoken Carson",
+            "Relation": "swelled",
+            "Object": "to 23 percent",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 25,
+        "Sentence": "While it is unclear whether neurosurgeon Ben Carson poses an immediate threat to Donald Donald Trump dominance, the rise of the doctor, who like Donald Trump has never held public office, is more the rise of the doctor , who like Trump has never held public office.",
+        "TripletsNum": 2,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.99",
+            "Subject": "the rise of the doctor, who like Donald Trump has never held public office",
+            "Relation": "is",
+            "Object": "more the rise of the doctor , who like Trump has never held public office.",
+            "Attribute": ""
+          },
+          {
+            "TripletOrder": 2,
+            "Confidence": "0.86",
+            "Subject": "Trump",
+            "Relation": "has never held",
+            "Object": "public office",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 26,
+        "Sentence": "\"neurosurgeon Ben neurosurgeon Ben Carson'm extraordinarily concerned about the direction of the fiscal irresponsibility , the fiscal irresponsibility , the failure to take a leadership position in the world , the fiscal irresponsibility , the failure to take a leadership position in the world,\" neurosurgeon Ben Carson said.",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.98",
+            "Subject": "neurosurgeon Ben neurosurgeon Ben Carson'm extraordinarily concerned about the direction of the fiscal irresponsibility",
+            "Relation": "said",
+            "Object": "neurosurgeon Ben Carson",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 27,
+        "Sentence": "Â© 2015 AFPnd the world and expect a good result,\" Jeb Bush said.",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.98",
+            "Subject": "2015 AFPnd the world and expect a good result",
+            "Relation": "said",
+            "Object": "Jeb Bush",
+            "Attribute": ""
+          }
+        ]
+      },
+      {
+        "SentenceOrder": 28,
+        "Sentence": "\"neurosurgeon Ben Carson have to d",
+        "TripletsNum": 1,
+        "Triplets": [
+          {
+            "TripletOrder": 1,
+            "Confidence": "0.82",
+            "Subject": "neurosurgeon Ben Carson",
+            "Relation": "to d",
+            "Object": "",
+            "Attribute": ""
+          }
+        ]
+      }
+    ]
+  },
+  "sliderData": [
+    {
+      "parameter": "WindowsSize",
+      "min": 0,
+      "max": 10,
+      "val": 4
+    },
+    {
+      "parameter": "slip step",
+      "min": 0,
+      "max": 10,
+      "val": 2
+    },
+    {
+      "parameter": "semantic coef",
+      "min": 0,
+      "max": 1,
+      "val": 0.8
+    },
+    {
+      "parameter": "literal coef",
+      "min": 0,
+      "max": 1,
+      "val": 0.2
+    },
+    {
+      "parameter": "effective triple numbers",
+      "min": 0,
+      "max": 50,
+      "val": 10
+    }
+  ]
+}
