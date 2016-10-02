@@ -194,7 +194,7 @@ $(function() {
                 // }
                 // console.log(this.onExamlpe);
                 // postAjax("../data/search_result",keywords_data,function(data){
-                getAjax("../data/search_result/result22.json", null, function(data) { //文章查询结果
+                getAjax("../data/search_result/result.json", null, function(data) { //文章查询结果
                     if (data.status === 0) {
                         // $("#right-tabs>li:not(:first)").;
                         $("#hide-tab-2>.disabled").removeClass("disabled");
@@ -401,7 +401,7 @@ $(function() {
                         nowFinalIndex = (-1);
                     }
                 }
-            }, 500);
+            }, 15000);
         },
 
         left_menu_status: 0, //左侧页面菜单的选择状态
@@ -797,7 +797,7 @@ $(function() {
                 //           ]
         },
         relationTripletData2: {
-            Groups: []
+
         },
         setUpCharts1: function(id) {
             getAjax("../data/chartsData1/" + id + ".json", null, function(data) { //设置图表1
@@ -818,9 +818,14 @@ $(function() {
         setUpCharts2: function(id) {
             //设置图表二
             getAjax("../data/chartsData2/" + id + ".json", null, function(data) { //设置图表2
-                if (data.Status === 0) {
-                    vm.relationTripletData2 = data.Data;
-                    console.log(data.Data);
+                if (data.Status === 6) {
+                    vm.relationChartData2={
+                      nodes: [],
+                      links: []
+                    };
+                    vm.relationTripletData2=[];
+                    vm.relationTripletData2 = data.Data.Groups;
+                    console.log(data.Data.Groups);
                     vm.relationChartData2 = setNodesAndLinks1(data.EffTriples);
                     // console.log(JSON.stringify(vm.relationChartData2));
                     relation_chart_setup("relation-chart-2", vm.relationChartData2);

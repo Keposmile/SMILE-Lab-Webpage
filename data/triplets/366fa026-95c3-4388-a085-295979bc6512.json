@@ -1,1 +1,1009 @@
-{"Status":4,"Message":"NewsTripletsExtraction","NewsId":"366fa026-95c3-4388-a085-295979bc6512","Data":{"SentenceNum":43,"Sentences":[{"SentenceOrder":1,"Sentence":"The story line around Donald Trump's \"rise\" has got the narrative wrong.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.95","Subject":"The story line around Donald Trump's \"rise","Relation":"has got","Object":"the narrative wrong","Attribute":""}]},{"SentenceOrder":2,"Sentence":"The story line around Donald Trump's `` rise '' mistakes the man for the movement.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.95","Subject":"The story line around Donald Trump's `` rise","Relation":"mistakes","Object":"the man for the movement","Attribute":""}]},{"SentenceOrder":3,"Sentence":"While we do need to reckon with what Donald Trump's `` rise '' means for U.S. politics, we need to reckon even more urgently with what can now be called the \"Trumpists,\" Trumpists.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.81","Subject":"Donald Trump's `` rise","Relation":"means","Object":"","Attribute":""},{"TripletOrder":2,"Confidence":"0.56","Subject":"we","Relation":"do need","Object":"to reckon with what Donald Trump's `` rise '' means for U.S. politics","Attribute":""},{"TripletOrder":3,"Confidence":"0.50","Subject":"we","Relation":"need","Object":"to reckon even more urgently with what can now be called the \"Trumpists,\" Trumpists","Attribute":""}]},{"SentenceOrder":4,"Sentence":"What points to this story?","TripletsNum":0,"Triplets":[]},{"SentenceOrder":5,"Sentence":"The numbers capturing the ebb and flow in the belief that Barack Obama is a Muslim and the crisis over the president's birth certificate.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.87","Subject":"The numbers","Relation":"capturing","Object":"the ebb and flow in the belief that Barack Obama is a Muslim and the crisis over the president's birth certificate","Attribute":""},{"TripletOrder":2,"Confidence":"0.97","Subject":"Barack Obama","Relation":"is","Object":"a Muslim and the crisis over the president's birth certificate","Attribute":""}]},{"SentenceOrder":6,"Sentence":"the ones to watch are the ones to watch.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.73","Subject":"the ones","Relation":"to watch","Object":"","Attribute":""},{"TripletOrder":2,"Confidence":"0.92","Subject":"the ones to watch","Relation":"are","Object":"the ones to watch","Attribute":""},{"TripletOrder":3,"Confidence":"0.73","Subject":"the ones","Relation":"to watch","Object":"","Attribute":""}]},{"SentenceOrder":7,"Sentence":"During most of 2008, leading up to the presidential election, the number of poll respondents who identified Barack Obama as a Muslim was stable at about 12 percent.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"the number of poll respondents","Relation":"identified","Object":"Barack Obama","Attribute":"as a Muslim)"},{"TripletOrder":2,"Confidence":"0.99","Subject":"the number of poll respondents who identified Barack Obama as a Muslim","Relation":"was","Object":"stable","Attribute":"L:at about 12 percent"}]},{"SentenceOrder":8,"Sentence":"By 2010, however, 2010 had risen to 18 percent.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.68","Subject":"2010","Relation":"had risen","Object":"to 18 percent","Attribute":"T:By 2010)"}]},{"SentenceOrder":9,"Sentence":"the Republicans and racial fears -LRB- Steve Chapman -RRB- After the 2008 presidential election, less was obvious that American pollessics was entering a new era in which race would figure less than less had before.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"race","Relation":"would figure","Object":"","Attribute":"L:a new era"}]},{"SentenceOrder":10,"Sentence":"For the first time in our history, our had a president who was not white, and it was bound to have a profound, positive impact.","TripletsNum":4,"Triplets":[{"TripletOrder":1,"Confidence":"0.67","Subject":"our","Relation":"had","Object":"a president who was not white","Attribute":"T:For the first time in our history)"},{"TripletOrder":2,"Confidence":"0.74","Subject":"a president","Relation":"was not","Object":"white","Attribute":""},{"TripletOrder":3,"Confidence":"0.19","Subject":"it","Relation":"was bound","Object":"","Attribute":""},{"TripletOrder":4,"Confidence":"0.41","Subject":"it","Relation":"to have","Object":"a profound, positive impact","Attribute":""}]},{"SentenceOrder":11,"Sentence":"After the 2008 presidential election, less was obvious that American pollessics was entering a new era in which race would figure less than less had before.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.95","Subject":"American pollessics","Relation":"was entering","Object":"a new era in which race would figure less than less","Attribute":""},{"TripletOrder":2,"Confidence":"0.93","Subject":"race","Relation":"would figure less","Object":"","Attribute":"L:a new era"}]},{"SentenceOrder":12,"Sentence":"For the first time in our history, our had a president who was not white, and it was bound to have a profound , positive impact.","TripletsNum":4,"Triplets":[{"TripletOrder":1,"Confidence":"0.67","Subject":"our","Relation":"had","Object":"a president who was not white","Attribute":"T:For the first time in our history)"},{"TripletOrder":2,"Confidence":"0.74","Subject":"a president","Relation":"was not","Object":"white","Attribute":""},{"TripletOrder":3,"Confidence":"0.19","Subject":"it","Relation":"was bound","Object":"","Attribute":""},{"TripletOrder":4,"Confidence":"0.41","Subject":"it","Relation":"to have","Object":"a profound , positive impact","Attribute":""}]},{"SentenceOrder":13,"Sentence":"( Steve Chapman ) And according to Gallup, the release of Barack Barack Obama long-form birth certificate in April 2011 brought only to 47 percent, from 38 percent, the number of Americans who said that Barack Obama was \"definitely\" born in the United States.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.98","Subject":"the release of Barack Barack Obama long-form birth certificate in April 2011","Relation":"brought","Object":"only to 47 percent","Attribute":"the number of Americans)"},{"TripletOrder":2,"Confidence":"0.88","Subject":"the number of Americans","Relation":"said","Object":"that Barack Obama was \"definitely\" born in the United States","Attribute":""}]},{"SentenceOrder":14,"Sentence":"Anot-LRB- Steve Chapman -RRB-r 18 percent said only that -LRB- Steve Chapman -RRB- was \"probably\" born in t-LRB- Steve Chapman -RRB- United States.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.91","Subject":"Anot-LRB- Steve Chapman -RRB-r 18 percent","Relation":"said","Object":"only that -LRB- Steve Chapman -RRB- was \"probably\" born in t-LRB- Steve Chapman -RRB- United States","Attribute":""}]},{"SentenceOrder":15,"Sentence":"Even after the release of Obama's long-form birth certificate in April 2011, 23 percent of the Republicans continued to hold the view that Barack Obama was born overseas.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.98","Subject":"23 percent of the Republicans","Relation":"continued","Object":"","Attribute":"T:Even after the release of Obama's long-form birth certificate in April 2011"},{"TripletOrder":2,"Confidence":"0.86","Subject":"23 percent of the Republicans","Relation":"to hold","Object":"the view that Barack Obama was born overseas","Attribute":""},{"TripletOrder":3,"Confidence":"0.82","Subject":"Barack Obama","Relation":"was born","Object":"","Attribute":"L:overseas"}]},{"SentenceOrder":16,"Sentence":"your Trump voters, the `` Trumpists , '' a solidly right-wing ethno-nationalist voting bloc that has been growing since the mid-1990s suggest, are your Donald Trump's `` rise '' voters.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.91","Subject":"your Trump voters, the `` Trumpists , '' a solidly right-wing ethno-nationalist voting bloc","Relation":"has been growing","Object":"","Attribute":"T:since the mid-1990"},{"TripletOrder":2,"Confidence":"0.88","Subject":"the mid-1990","Relation":"suggest","Object":"s","Attribute":""},{"TripletOrder":3,"Confidence":"0.85","Subject":"the `` Trumpists","Relation":"are","Object":"your Donald Trump's `` rise '' voters","Attribute":""}]},{"SentenceOrder":17,"Sentence":"Recent polling has in fact confirmed that Donald Trump's `` rise '', a particularly prominent \"birther\" in 2010 and 2011, is tapping into this constituency.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.77","Subject":"Recent polling","Relation":"has confirmed","Object":"that Donald Trump's `` rise '', a particularly prominent \"birther\" in 2010 and 2011, is tapping into this constituency","Attribute":""}]},{"SentenceOrder":18,"Sentence":"According to Public Policy Polling, 66 percent of Donald Trump's `` rise '' supporters believe Barack Obama is Muslim and 61 percent think Barack Obama was not born in tBarack Obama United States.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.96","Subject":"66 percent of Donald Trump's `` rise '' supporters","Relation":"believe","Object":"Barack Obama is Muslim","Attribute":""},{"TripletOrder":2,"Confidence":"0.95","Subject":"61 percent","Relation":"think","Object":"Barack Obama was not born in tBarack Obama United States","Attribute":""}]},{"SentenceOrder":19,"Sentence":"lRelated National politicsFor Mexicans, the Donald Trump's `` rise '' candidacy is getting scarierSee all related","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"lRelated National politicsFor Mexicans","Relation":"is getting","Object":"scarierSee","Attribute":"related)"},{"TripletOrder":2,"Confidence":"0.79","Subject":"lRelated National politicsFor Mexicans","Relation":"related","Object":"","Attribute":""}]},{"SentenceOrder":20,"Sentence":"For the past five years, Trumpists have clocked in at about 20 percent of the electorate, if one tracks numbers of committed \"Barack Obama is a Muslim-ists.\"","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"Trumpists","Relation":"have clocked in","Object":"","Attribute":" L:at about 20 percent of the electorate"},{"TripletOrder":2,"Confidence":"0.79","Subject":"if one tracks numbers of","Relation":"committed","Object":"","Attribute":""},{"TripletOrder":3,"Confidence":"0.95","Subject":"Barack Obama","Relation":"is","Object":"a Muslim-ists","Attribute":""}]},{"SentenceOrder":21,"Sentence":"This makes This even more powerful than Britain's Britain's UKIP, which won 12.6 percent of the vote in May's parliamentary election.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.54","Subject":"This","Relation":"makes","Object":"This even more powerful than Britain's Britain's UKIP","Attribute":""},{"TripletOrder":2,"Confidence":"0.92","Subject":"Britain's Britain's UKIP","Relation":"won","Object":"12.6 percent of the vote","Attribute":"L:in May's parliamentary election)"}]},{"SentenceOrder":22,"Sentence":"one tracks numbers of put the Trumpists on par with the National Front in France's, which in March elections took 25 percent of the vote to the 32 percent that went to the center-right party of Nicholas Sarkozy.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.95","Subject":"one tracks numbers of","Relation":"put","Object":"the Trumpists","Attribute":"on par with the National Front in France's)"},{"TripletOrder":2,"Confidence":"0.97","Subject":"the National Front in France's","Relation":"took","Object":"25 percent of the vote","Attribute":"to the 32 percent"},{"TripletOrder":3,"Confidence":"0.93","Subject":"the 32 percent","Relation":"went","Object":"to the center-right party of Nicholas Sarkozy","Attribute":""}]},{"SentenceOrder":23,"Sentence":"The crour two-party modelical difference beta Muslim-istsen a Muslim-ists nationalist faction and the European ones is that the European ones parliamentary systems register the European ones as \"nationalist parties,\" whereas a Muslim-ists two-party model makes our two-party model harder to see that what a Muslim-ists're confronting truly is the rise of a new party.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.81","Subject":"a Muslim-ists two-party model","Relation":"makes","Object":"our two-party model harder to see that what a Muslim-ists're confronting truly is the rise of a new party","Attribute":""},{"TripletOrder":2,"Confidence":"0.73","Subject":"a Muslim-ists","Relation":"'re confronting","Object":"","Attribute":""},{"TripletOrder":3,"Confidence":"0.83","Subject":"The crour two-party modelical difference beta","Relation":"is","Object":"that the European ones parliamentary systems register the European ones as \"nationalist parties,\" whereas a Muslim-ists two-party model makes our two-party model harder to see that what a Muslim-ists're confronting truly is the rise of a new party","Attribute":""}]},{"SentenceOrder":24,"Sentence":"Provided, The critical difference between our nationalist faction and the European ones is, the Republicans don't sell the European ones souls.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.82","Subject":"The critical difference between our nationalist faction and the European ones","Relation":"is","Object":"the Republicans don't sell the European ones souls","Attribute":""}]},{"SentenceOrder":25,"Sentence":"If the Republicans can hang on to the convictions that make their souls the party of Lincoln, a Muslim-ists ought to see the party split.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"the Republicans","Relation":"can hang on","Object":"to the convictions","Attribute":""},{"TripletOrder":2,"Confidence":"0.81","Subject":"the convictions","Relation":"make","Object":"their souls","Attribute":""},{"TripletOrder":3,"Confidence":"0.89","Subject":"a Muslim-ists","Relation":"to see","Object":"the party split","Attribute":""}]},{"SentenceOrder":26,"Sentence":"For the good of the country, a Muslim-ists should hope for the good of the country.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.90","Subject":"a Muslim-ists","Relation":"should hope","Object":"for the good of the country","Attribute":""}]},{"SentenceOrder":27,"Sentence":"Two larger shifts in a Muslim-ists sociopolitical landscape provide the framework necessary for understanding Trumpists.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.95","Subject":"Two larger shifts in a Muslim-ists sociopolitical landscape","Relation":"provide","Object":"the framework necessary for understanding Trumpists","Attribute":""}]},{"SentenceOrder":28,"Sentence":"first, there is the dramatic movement of the United States toward becoming a majority-minority country, where no ethnic group is in the majority.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"no ethnic group","Relation":"is","Object":"in the majority","Attribute":""},{"TripletOrder":2,"Confidence":"0.50","Subject":"there","Relation":"is the dramatic movement of","Object":"the United States","Attribute":""}]},{"SentenceOrder":29,"Sentence":"a Muslim-ists have already crossed several Rubicons.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.92","Subject":"a Muslim-ists","Relation":"have crossed","Object":"several Rubicons","Attribute":"T:already)"}]},{"SentenceOrder":30,"Sentence":"In 2011, new births were majority minority for the first time in our history, and 2014 was the first year that minority students were in the majority at U.S. public schools.","TripletsNum":5,"Triplets":[{"TripletOrder":1,"Confidence":"0.90","Subject":"new births","Relation":"were","Object":"majority minority for the first time in our history","Attribute":"T:In 2011)"},{"TripletOrder":2,"Confidence":"0.53","Subject":"2014","Relation":"was","Object":"the first year that minority students were in the majority at U.S. public schools","Attribute":""},{"TripletOrder":3,"Confidence":"0.92","Subject":"minority students","Relation":"were","Object":"in the majority at U.S. public schools","Attribute":""},{"TripletOrder":4,"Confidence":"0.39","Subject":"new births","Relation":"were majority minority for","Object":"the first time","Attribute":""},{"TripletOrder":5,"Confidence":"0.39","Subject":"2014","Relation":"was the first year that","Object":"minority students","Attribute":""}]},{"SentenceOrder":31,"Sentence":"Several states are already majority minority for the first time.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.90","Subject":"Several states","Relation":"are","Object":"","Attribute":" T:already"},{"TripletOrder":2,"Confidence":"0.89","Subject":"Several states","Relation":"are already majority minority for","Object":"the first time","Attribute":""}]},{"SentenceOrder":32,"Sentence":"cComments @segesta The Republican candidates arent considered clowns because of the way minority students dress.","TripletsNum":0,"Triplets":[]},{"SentenceOrder":33,"Sentence":"Theyre considered clowns because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race, sexuality, religion, and social issues in general.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.77","Subject":"They","Relation":"re","Object":"considered clowns","Attribute":"because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race, sexuality, religion, and social issues in general)"}]},{"SentenceOrder":34,"Sentence":"Randy Cuyler at 11at is, the Republicans don't sell clowns souls.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"Randy Cuyler at 11at","Relation":"is","Object":"the Republicans don't sell clowns souls","Attribute":""}]},{"SentenceOrder":35,"Sentence":"If the Republicans can hang on to the convictions that make their souls the party of Lincoln, we ought to see the party split.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"the Republicans","Relation":"can hang on","Object":"to the convictions","Attribute":""},{"TripletOrder":2,"Confidence":"0.81","Subject":"the convictions","Relation":"make","Object":"their souls","Attribute":""},{"TripletOrder":3,"Confidence":"0.41","Subject":"we","Relation":"to see","Object":"the party split","Attribute":""}]},{"SentenceOrder":36,"Sentence":"For the good of the country, we should hope for the good of the country.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.45","Subject":"we","Relation":"should hope","Object":"for the good of the country","Attribute":""}]},{"SentenceOrder":37,"Sentence":"Two larger shifts in we sociopolitical landscape provide the framework necessary for understanding Trumpists.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.77","Subject":"Two larger shifts in we sociopolitical landscape","Relation":"provide","Object":"the framework necessary for understanding Trumpists","Attribute":""}]},{"SentenceOrder":38,"Sentence":"first, there is the dramatic movement of the United States toward becoming a majority-minority country , where no ethnic group is in the majority.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"no ethnic group","Relation":"is","Object":"in the majority","Attribute":""},{"TripletOrder":2,"Confidence":"0.50","Subject":"there","Relation":"is the dramatic movement of","Object":"the United States","Attribute":""}]},{"SentenceOrder":39,"Sentence":"we have already crossed several Rubicons.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.49","Subject":"we","Relation":"have crossed","Object":"several Rubicons","Attribute":"T:already)"}]},{"SentenceOrder":40,"Sentence":"In 2011, new births were majority minority for the first time in our history, and 2014 was the first year that minority students were in the majority at U.S. public schools.","TripletsNum":5,"Triplets":[{"TripletOrder":1,"Confidence":"0.90","Subject":"new births","Relation":"were","Object":"majority minority for the first time in our history","Attribute":"T:In 2011)"},{"TripletOrder":2,"Confidence":"0.53","Subject":"2014","Relation":"was","Object":"the first year that minority students were in the majority at U.S. public schools","Attribute":""},{"TripletOrder":3,"Confidence":"0.92","Subject":"minority students","Relation":"were","Object":"in the majority at U.S. public schools","Attribute":""},{"TripletOrder":4,"Confidence":"0.39","Subject":"new births","Relation":"were majority minority for","Object":"the first time","Attribute":""},{"TripletOrder":5,"Confidence":"0.39","Subject":"2014","Relation":"was the first year that","Object":"minority students","Attribute":""}]},{"SentenceOrder":41,"Sentence":"Several states are already majority minority for the first time.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.90","Subject":"Several states","Relation":"are","Object":"","Attribute":" T:already"},{"TripletOrder":2,"Confidence":"0.89","Subject":"Several states","Relation":"are already majority minority for","Object":"the first time","Attribute":""}]},{"SentenceOrder":42,"Sentence":"cComments @segesta The Republican candidates arent considered clowns because of the way minority students dress.","TripletsNum":0,"Triplets":[]},{"SentenceOrder":43,"Sentence":"Theyre considered clowns because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race , sexuality , religion , and social issues on race, sexualit","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.77","Subject":"They","Relation":"re","Object":"considered clowns","Attribute":"because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race , sexuality , religion , and social issues on race, sexualit)"}]}]},"sliderData":[{"parameter":"WindowsSize","min":0,"max":10,"val":4},{"parameter":"slip step","min":0,"max":10,"val":2},{"parameter":"semantic coef","min":0,"max":1,"val":0.8},{"parameter":"literal coef","min":0,"max":1,"val":0.2},{"parameter":"effective triple numbers","min":0,"max":50,"val":10}]}
+{
+    "Status": 4,
+    "Message": "NewsTripletsExtraction",
+    "NewsId": "366fa026-95c3-4388-a085-295979bc6512",
+    "Data": {
+        "SentenceNum": 43,
+        "Sentences": [
+            {
+                "SentenceOrder": 1,
+                "Sentence": "The story line around Donald Trump's \"rise\" has got the narrative wrong.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "The story line around Donald Trump's \"rise",
+                        "Relation": "has got",
+                        "Object": "the narrative wrong",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 2,
+                "Sentence": "The story line around Donald Trump's `` rise '' mistakes the man for the movement.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "The story line around Donald Trump's `` rise",
+                        "Relation": "mistakes",
+                        "Object": "the man for the movement",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 3,
+                "Sentence": "While we do need to reckon with what Donald Trump's `` rise '' means for U.S. politics, we need to reckon even more urgently with what can now be called the \"Trumpists,\" Trumpists.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.81",
+                        "Subject": "Donald Trump's `` rise",
+                        "Relation": "means",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.56",
+                        "Subject": "we",
+                        "Relation": "do need",
+                        "Object": "to reckon with what Donald Trump's `` rise '' means for U.S. politics",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.50",
+                        "Subject": "we",
+                        "Relation": "need",
+                        "Object": "to reckon even more urgently with what can now be called the \"Trumpists,\" Trumpists",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 4,
+                "Sentence": "What points to this story?",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 5,
+                "Sentence": "The numbers capturing the ebb and flow in the belief that Barack Obama is a Muslim and the crisis over the president's birth certificate.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.87",
+                        "Subject": "The numbers",
+                        "Relation": "capturing",
+                        "Object": "the ebb and flow in the belief that Barack Obama is a Muslim and the crisis over the president's birth certificate",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.97",
+                        "Subject": "Barack Obama",
+                        "Relation": "is",
+                        "Object": "a Muslim and the crisis over the president's birth certificate",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 6,
+                "Sentence": "the ones to watch are the ones to watch.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.73",
+                        "Subject": "the ones",
+                        "Relation": "to watch",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.92",
+                        "Subject": "the ones to watch",
+                        "Relation": "are",
+                        "Object": "the ones to watch",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.73",
+                        "Subject": "the ones",
+                        "Relation": "to watch",
+                        "Object": "",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 7,
+                "Sentence": "During most of 2008, leading up to the presidential election, the number of poll respondents who identified Barack Obama as a Muslim was stable at about 12 percent.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "the number of poll respondents",
+                        "Relation": "identified",
+                        "Object": "Barack Obama",
+                        "Attribute": "as a Muslim)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.99",
+                        "Subject": "the number of poll respondents who identified Barack Obama as a Muslim",
+                        "Relation": "was",
+                        "Object": "stable",
+                        "Attribute": "L:at about 12 percent"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 8,
+                "Sentence": "By 2010, however, 2010 had risen to 18 percent.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.68",
+                        "Subject": "2010",
+                        "Relation": "had risen",
+                        "Object": "to 18 percent",
+                        "Attribute": "T:By 2010)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 9,
+                "Sentence": "the Republicans and racial fears -LRB- Steve Chapman -RRB- After the 2008 presidential election, less was obvious that American pollessics was entering a new era in which race would figure less than less had before.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "race",
+                        "Relation": "would figure",
+                        "Object": "",
+                        "Attribute": "L:a new era"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 10,
+                "Sentence": "For the first time in our history, our had a president who was not white, and it was bound to have a profound, positive impact.",
+                "TripletsNum": 4,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.67",
+                        "Subject": "our",
+                        "Relation": "had",
+                        "Object": "a president who was not white",
+                        "Attribute": "T:For the first time in our history)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.74",
+                        "Subject": "a president",
+                        "Relation": "was not",
+                        "Object": "white",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.19",
+                        "Subject": "it",
+                        "Relation": "was bound",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.41",
+                        "Subject": "it",
+                        "Relation": "to have",
+                        "Object": "a profound, positive impact",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 11,
+                "Sentence": "After the 2008 presidential election, less was obvious that American pollessics was entering a new era in which race would figure less than less had before.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "American pollessics",
+                        "Relation": "was entering",
+                        "Object": "a new era in which race would figure less than less",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "race",
+                        "Relation": "would figure less",
+                        "Object": "",
+                        "Attribute": "L:a new era"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 12,
+                "Sentence": "For the first time in our history, our had a president who was not white, and it was bound to have a profound , positive impact.",
+                "TripletsNum": 4,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.67",
+                        "Subject": "our",
+                        "Relation": "had",
+                        "Object": "a president who was not white",
+                        "Attribute": "T:For the first time in our history)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.74",
+                        "Subject": "a president",
+                        "Relation": "was not",
+                        "Object": "white",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.19",
+                        "Subject": "it",
+                        "Relation": "was bound",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.41",
+                        "Subject": "it",
+                        "Relation": "to have",
+                        "Object": "a profound , positive impact",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 13,
+                "Sentence": "( Steve Chapman ) And according to Gallup, the release of Barack Barack Obama long-form birth certificate in April 2011 brought only to 47 percent, from 38 percent, the number of Americans who said that Barack Obama was \"definitely\" born in the United States.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.98",
+                        "Subject": "the release of Barack Barack Obama long-form birth certificate in April 2011",
+                        "Relation": "brought",
+                        "Object": "only to 47 percent",
+                        "Attribute": "the number of Americans)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.88",
+                        "Subject": "the number of Americans",
+                        "Relation": "said",
+                        "Object": "that Barack Obama was \"definitely\" born in the United States",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 14,
+                "Sentence": "Anot-LRB- Steve Chapman -RRB-r 18 percent said only that -LRB- Steve Chapman -RRB- was \"probably\" born in t-LRB- Steve Chapman -RRB- United States.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.91",
+                        "Subject": "Anot-LRB- Steve Chapman -RRB-r 18 percent",
+                        "Relation": "said",
+                        "Object": "only that -LRB- Steve Chapman -RRB- was \"probably\" born in t-LRB- Steve Chapman -RRB- United States",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 15,
+                "Sentence": "Even after the release of Obama's long-form birth certificate in April 2011, 23 percent of the Republicans continued to hold the view that Barack Obama was born overseas.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.98",
+                        "Subject": "23 percent of the Republicans",
+                        "Relation": "continued",
+                        "Object": "",
+                        "Attribute": "T:Even after the release of Obama's long-form birth certificate in April 2011"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.86",
+                        "Subject": "23 percent of the Republicans",
+                        "Relation": "to hold",
+                        "Object": "the view that Barack Obama was born overseas",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.82",
+                        "Subject": "Barack Obama",
+                        "Relation": "was born",
+                        "Object": "",
+                        "Attribute": "L:overseas"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 16,
+                "Sentence": "your Trump voters, the `` Trumpists , '' a solidly right-wing ethno-nationalist voting bloc that has been growing since the mid-1990s suggest, are your Donald Trump's `` rise '' voters.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.91",
+                        "Subject": "your Trump voters, the `` Trumpists , '' a solidly right-wing ethno-nationalist voting bloc",
+                        "Relation": "has been growing",
+                        "Object": "",
+                        "Attribute": "T:since the mid-1990"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.88",
+                        "Subject": "the mid-1990",
+                        "Relation": "suggest",
+                        "Object": "s",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.85",
+                        "Subject": "the `` Trumpists",
+                        "Relation": "are",
+                        "Object": "your Donald Trump's `` rise '' voters",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 17,
+                "Sentence": "Recent polling has in fact confirmed that Donald Trump's `` rise '', a particularly prominent \"birther\" in 2010 and 2011, is tapping into this constituency.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.77",
+                        "Subject": "Recent polling",
+                        "Relation": "has confirmed",
+                        "Object": "that Donald Trump's `` rise '', a particularly prominent \"birther\" in 2010 and 2011, is tapping into this constituency",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 18,
+                "Sentence": "According to Public Policy Polling, 66 percent of Donald Trump's `` rise '' supporters believe Barack Obama is Muslim and 61 percent think Barack Obama was not born in tBarack Obama United States.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.96",
+                        "Subject": "66 percent of Donald Trump's `` rise '' supporters",
+                        "Relation": "believe",
+                        "Object": "Barack Obama is Muslim",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.95",
+                        "Subject": "61 percent",
+                        "Relation": "think",
+                        "Object": "Barack Obama was not born in tBarack Obama United States",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 19,
+                "Sentence": "lRelated National politicsFor Mexicans, the Donald Trump's `` rise '' candidacy is getting scarierSee all related",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "lRelated National politicsFor Mexicans",
+                        "Relation": "is getting",
+                        "Object": "scarierSee",
+                        "Attribute": "related)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.79",
+                        "Subject": "lRelated National politicsFor Mexicans",
+                        "Relation": "related",
+                        "Object": "",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 20,
+                "Sentence": "For the past five years, Trumpists have clocked in at about 20 percent of the electorate, if one tracks numbers of committed \"Barack Obama is a Muslim-ists.\"",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Trumpists",
+                        "Relation": "have clocked in",
+                        "Object": "",
+                        "Attribute": " L:at about 20 percent of the electorate"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.79",
+                        "Subject": "if one tracks numbers of",
+                        "Relation": "committed",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.95",
+                        "Subject": "Barack Obama",
+                        "Relation": "is",
+                        "Object": "a Muslim-ists",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 21,
+                "Sentence": "This makes This even more powerful than Britain's Britain's UKIP, which won 12.6 percent of the vote in May's parliamentary election.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.54",
+                        "Subject": "This",
+                        "Relation": "makes",
+                        "Object": "This even more powerful than Britain's Britain's UKIP",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.92",
+                        "Subject": "Britain's Britain's UKIP",
+                        "Relation": "won",
+                        "Object": "12.6 percent of the vote",
+                        "Attribute": "L:in May's parliamentary election)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 22,
+                "Sentence": "one tracks numbers of put the Trumpists on par with the National Front in France's, which in March elections took 25 percent of the vote to the 32 percent that went to the center-right party of Nicholas Sarkozy.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "one tracks numbers of",
+                        "Relation": "put",
+                        "Object": "the Trumpists",
+                        "Attribute": "on par with the National Front in France's)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.97",
+                        "Subject": "the National Front in France's",
+                        "Relation": "took",
+                        "Object": "25 percent of the vote",
+                        "Attribute": "to the 32 percent"
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.93",
+                        "Subject": "the 32 percent",
+                        "Relation": "went",
+                        "Object": "to the center-right party of Nicholas Sarkozy",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 23,
+                "Sentence": "The crour two-party modelical difference beta Muslim-istsen a Muslim-ists nationalist faction and the European ones is that the European ones parliamentary systems register the European ones as \"nationalist parties,\" whereas a Muslim-ists two-party model makes our two-party model harder to see that what a Muslim-ists're confronting truly is the rise of a new party.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.81",
+                        "Subject": "a Muslim-ists two-party model",
+                        "Relation": "makes",
+                        "Object": "our two-party model harder to see that what a Muslim-ists're confronting truly is the rise of a new party",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.73",
+                        "Subject": "a Muslim-ists",
+                        "Relation": "'re confronting",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.83",
+                        "Subject": "The crour two-party modelical difference beta",
+                        "Relation": "is",
+                        "Object": "that the European ones parliamentary systems register the European ones as \"nationalist parties,\" whereas a Muslim-ists two-party model makes our two-party model harder to see that what a Muslim-ists're confronting truly is the rise of a new party",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 24,
+                "Sentence": "Provided, The critical difference between our nationalist faction and the European ones is, the Republicans don't sell the European ones souls.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.82",
+                        "Subject": "The critical difference between our nationalist faction and the European ones",
+                        "Relation": "is",
+                        "Object": "the Republicans don't sell the European ones souls",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 25,
+                "Sentence": "If the Republicans can hang on to the convictions that make their souls the party of Lincoln, a Muslim-ists ought to see the party split.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "the Republicans",
+                        "Relation": "can hang on",
+                        "Object": "to the convictions",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.81",
+                        "Subject": "the convictions",
+                        "Relation": "make",
+                        "Object": "their souls",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.89",
+                        "Subject": "a Muslim-ists",
+                        "Relation": "to see",
+                        "Object": "the party split",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 26,
+                "Sentence": "For the good of the country, a Muslim-ists should hope for the good of the country.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.90",
+                        "Subject": "a Muslim-ists",
+                        "Relation": "should hope",
+                        "Object": "for the good of the country",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 27,
+                "Sentence": "Two larger shifts in a Muslim-ists sociopolitical landscape provide the framework necessary for understanding Trumpists.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "Two larger shifts in a Muslim-ists sociopolitical landscape",
+                        "Relation": "provide",
+                        "Object": "the framework necessary for understanding Trumpists",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 28,
+                "Sentence": "first, there is the dramatic movement of the United States toward becoming a majority-minority country, where no ethnic group is in the majority.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "no ethnic group",
+                        "Relation": "is",
+                        "Object": "in the majority",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.50",
+                        "Subject": "there",
+                        "Relation": "is the dramatic movement of",
+                        "Object": "the United States",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 29,
+                "Sentence": "a Muslim-ists have already crossed several Rubicons.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.92",
+                        "Subject": "a Muslim-ists",
+                        "Relation": "have crossed",
+                        "Object": "several Rubicons",
+                        "Attribute": "T:already)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 30,
+                "Sentence": "In 2011, new births were majority minority for the first time in our history, and 2014 was the first year that minority students were in the majority at U.S. public schools.",
+                "TripletsNum": 5,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.90",
+                        "Subject": "new births",
+                        "Relation": "were",
+                        "Object": "majority minority for the first time in our history",
+                        "Attribute": "T:In 2011)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.53",
+                        "Subject": "2014",
+                        "Relation": "was",
+                        "Object": "the first year that minority students were in the majority at U.S. public schools",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.92",
+                        "Subject": "minority students",
+                        "Relation": "were",
+                        "Object": "in the majority at U.S. public schools",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.39",
+                        "Subject": "new births",
+                        "Relation": "were majority minority for",
+                        "Object": "the first time",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 5,
+                        "Confidence": "0.39",
+                        "Subject": "2014",
+                        "Relation": "was the first year that",
+                        "Object": "minority students",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 31,
+                "Sentence": "Several states are already majority minority for the first time.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.90",
+                        "Subject": "Several states",
+                        "Relation": "are",
+                        "Object": "",
+                        "Attribute": " T:already"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.89",
+                        "Subject": "Several states",
+                        "Relation": "are already majority minority for",
+                        "Object": "the first time",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 32,
+                "Sentence": "cComments @segesta The Republican candidates arent considered clowns because of the way minority students dress.",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 33,
+                "Sentence": "Theyre considered clowns because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race, sexuality, religion, and social issues in general.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.77",
+                        "Subject": "They",
+                        "Relation": "re",
+                        "Object": "considered clowns",
+                        "Attribute": "because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race, sexuality, religion, and social issues in general)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 34,
+                "Sentence": "Randy Cuyler at 11at is, the Republicans don't sell clowns souls.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Randy Cuyler at 11at",
+                        "Relation": "is",
+                        "Object": "the Republicans don't sell clowns souls",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 35,
+                "Sentence": "If the Republicans can hang on to the convictions that make their souls the party of Lincoln, we ought to see the party split.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "the Republicans",
+                        "Relation": "can hang on",
+                        "Object": "to the convictions",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.81",
+                        "Subject": "the convictions",
+                        "Relation": "make",
+                        "Object": "their souls",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.41",
+                        "Subject": "we",
+                        "Relation": "to see",
+                        "Object": "the party split",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 36,
+                "Sentence": "For the good of the country, we should hope for the good of the country.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.45",
+                        "Subject": "we",
+                        "Relation": "should hope",
+                        "Object": "for the good of the country",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 37,
+                "Sentence": "Two larger shifts in we sociopolitical landscape provide the framework necessary for understanding Trumpists.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.77",
+                        "Subject": "Two larger shifts in we sociopolitical landscape",
+                        "Relation": "provide",
+                        "Object": "the framework necessary for understanding Trumpists",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 38,
+                "Sentence": "first, there is the dramatic movement of the United States toward becoming a majority-minority country , where no ethnic group is in the majority.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "no ethnic group",
+                        "Relation": "is",
+                        "Object": "in the majority",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.50",
+                        "Subject": "there",
+                        "Relation": "is the dramatic movement of",
+                        "Object": "the United States",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 39,
+                "Sentence": "we have already crossed several Rubicons.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.49",
+                        "Subject": "we",
+                        "Relation": "have crossed",
+                        "Object": "several Rubicons",
+                        "Attribute": "T:already)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 40,
+                "Sentence": "In 2011, new births were majority minority for the first time in our history, and 2014 was the first year that minority students were in the majority at U.S. public schools.",
+                "TripletsNum": 5,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.90",
+                        "Subject": "new births",
+                        "Relation": "were",
+                        "Object": "majority minority for the first time in our history",
+                        "Attribute": "T:In 2011)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.53",
+                        "Subject": "2014",
+                        "Relation": "was",
+                        "Object": "the first year that minority students were in the majority at U.S. public schools",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.92",
+                        "Subject": "minority students",
+                        "Relation": "were",
+                        "Object": "in the majority at U.S. public schools",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.39",
+                        "Subject": "new births",
+                        "Relation": "were majority minority for",
+                        "Object": "the first time",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 5,
+                        "Confidence": "0.39",
+                        "Subject": "2014",
+                        "Relation": "was the first year that",
+                        "Object": "minority students",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 41,
+                "Sentence": "Several states are already majority minority for the first time.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.90",
+                        "Subject": "Several states",
+                        "Relation": "are",
+                        "Object": "",
+                        "Attribute": " T:already"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.89",
+                        "Subject": "Several states",
+                        "Relation": "are already majority minority for",
+                        "Object": "the first time",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 42,
+                "Sentence": "cComments @segesta The Republican candidates arent considered clowns because of the way minority students dress.",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 43,
+                "Sentence": "Theyre considered clowns because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race , sexuality , religion , and social issues on race, sexualit",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.77",
+                        "Subject": "They",
+                        "Relation": "re",
+                        "Object": "considered clowns",
+                        "Attribute": "because of clowns greed, selfishness, lack of inclusiveness, and ridiculously antiquated views on race , sexuality , religion , and social issues on race, sexualit)"
+                    }
+                ]
+            }
+        ]
+    },
+    "sliderData": [
+        {
+            "parameter": "Slipping Windows Size",
+            "description": "The param specified selected slipping windows size",
+            "min": 0,
+            "max": 10,
+            "val": 5
+        },
+        {
+            "parameter": "Slipping Step",
+            "description": "The param specified slipping steps of the windows in the next step",
+            "min": 0,
+            "max": 10,
+            "val": 3
+        },
+        {
+            "parameter": "Semantic Correlation Coefficient",
+            "description": "The param specified the semantic correlation between two knowledge triples",
+            "min": 1,
+            "max": 10,
+            "val": 8
+        },
+        {
+            "parameter": "Literal Correlation Coefficient",
+            "description": "The param specified the literal correlation between two knowledge triples",
+            "min": 1,
+            "max": 10,
+            "val": 2
+        },
+        {
+            "parameter": "Representative Triples",
+            "description": "The param specified the number of triples used for represent the news",
+            "min": 0,
+            "max": 100,
+            "val": 20
+        }
+    ]
+}

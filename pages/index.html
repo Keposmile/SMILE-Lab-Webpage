@@ -149,7 +149,7 @@
                                     <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                                     <div class="divide_line"></div> -->
 
-                                    <h3>Triplets</h3>
+                                    <h3>Knowledge Triplets</h3>
                                     <div class="Sentences" ms-for="el in @TripletsData.Sentences">
                                         <h5>{{el.Sentence}}</h5>
                                         <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
@@ -214,9 +214,10 @@
                                     <h4><img src="../img/info.png" alt="">tips：</h4>
                                     <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                                     <div class="divide_line"></div>
-                                    <h5 ms-on-click="@setUpCharts1()">charts1</h5>
+                                    <!-- <h5 ms-on-click="@setUpCharts1()">charts1</h5> -->
                                     <div class="carousel-caption">
                                         <div class="sliderLeftBox">
+                                            <div>这是也个标题</div>
                                             <div ms-for="el in @relationTripletData1">
                                                 <h4><b>{{el.Description}}</b></h4>
                                                 <div ms-for="($index,el) in el.Groups">
@@ -239,17 +240,20 @@
                                     <h4><img src="../img/info.png" alt="">tips：</h4>
                                     <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                                     <div class="divide_line"></div>
-                                    <h5 ms-on-click="@setUpCharts2()">charts2</h5>
+                                    <!-- <h5 ms-on-click="@setUpCharts2()">charts2</h5> -->
                                     <div class="carousel-caption">
                                         <div class="sliderLeftBox">
-                                            <div ms-for="el in @relationTripletData2.Groups">
-                                                <h5>{{el.Similarity}}</h5>
+                                            <div>这是个标题</div>
+                                            <div ms-for="($index,el) in @relationTripletData2">
+                                              <!-- <div ms-for="($index,el) in el.Groups"> -->
+                                                <h6><b>Group {{$index+1}} (Similarity) : <span class="Similarity">{{el.Similarity}}</span></b></h6>
                                                 <div ms-for="el in el.Triplets">
                                                     <span class="Confidence">{{el.Confidence}}</span> (
                                                     <span class="Subject">{{el.Subject}}</span>;
                                                     <span class="Relation">{{el.Relation}}</span>;
                                                     <span class="Object">{{el.Object}}</span>)
                                                 </div>
+                                              <!-- </div> -->
                                             </div>
                                         </div>
                                         <div class="sliderRightBox" id="relation-chart-2"></div>
@@ -397,7 +401,9 @@
                 <ul class="list-group">
                     <li ms-for=" ($index,el) in @sliderData " class="list-group-item">
                         <div class="btn-group btn-group-justified">
-                            <span>{{el.parameter}}</span>{{el.description}}<span></span><span class="badge">{{el.val}}</span>
+                            <span>{{el.parameter}}</span>
+                            <span class="badge">{{el.val}}</span>
+                            <p class="parameter-description">{{el.description}}</p>
                             <input ms-attr="{id:'amount-slider-'+$index,class:'amount-slider'}" ms-duplex-string="@sliderData[$index].val" type="text">
                         </div>
                         <div ms-attr="{id:'slider-'+$index}"></div>

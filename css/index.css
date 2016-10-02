@@ -1,3 +1,4 @@
+
 .ms-controller{
    visibility: hidden
 }
@@ -324,7 +325,7 @@ span.glyphicon{
 .carousel-caption{
   overflow: hidden;
   color: #000;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 0;
 }
 .carousel-caption span{
   display: inline-block;
@@ -405,4 +406,8 @@ a.btn-success.disable-execute{
   color: #fff;
   background-color: #f00000;
   border-color: #f00000;
+}
+.parameter-description{
+    font-weight: normal;
+    font-size: 15px;
 }

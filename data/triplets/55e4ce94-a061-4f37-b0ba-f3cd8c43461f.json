@@ -1,1 +1,454 @@
-{"Status":4,"Message":"NewsTripletsExtraction","NewsId":"55e4ce94-a061-4f37-b0ba-f3cd8c43461f","Data":{"SentenceNum":16,"Sentences":[{"SentenceOrder":1,"Sentence":"WASHINGTON (CNN) – Tthe retired neurosurgeon leading Muslim civil liberties group in America called Monday for Republican Ben Carson to drop out of tthe retired neurosurgeon presidential race after tthe retired neurosurgeon retired neurosurgeon said this weekend the retired neurosurgeon doesn’t believe a Muslim should be president of tthe retired neurosurgeon United States.","TripletsNum":4,"Triplets":[{"TripletOrder":1,"Confidence":"0.91","Subject":"neurosurgeon","Relation":"leading","Object":"Muslim civil liberties group in America","Attribute":""},{"TripletOrder":2,"Confidence":"0.96","Subject":"Muslim civil liberties group in America","Relation":"called","Object":"Monday","Attribute":""},{"TripletOrder":3,"Confidence":"0.95","Subject":"tthe retired neurosurgeon retired neurosurgeon","Relation":"said","Object":"","Attribute":" T:this weekend"},{"TripletOrder":4,"Confidence":"0.80","Subject":"Republican Ben Carson","Relation":"to drop out","Object":"","Attribute":""}]},{"SentenceOrder":2,"Sentence":"Nihad Awad, executive director of tRepublican Ben Carson Council on Islamic Foreign Relations, said TRepublican Ben Carson leading Muslim civil liberties group in America called Monday for Republican Ben Republican Ben Carson to drop out of tRepublican Ben Carson presidential race after tRepublican Ben Carson retired neurosurgeon said tRepublican Ben Carson weekend Republican Ben Carson does n't believe a Muslim should be president of tRepublican Ben Carson the United States is calling on Republican Ben Carson to “withdraw from tRepublican Ben Carson presidential race because Republican Ben Carson is unfit to lead, because Republican Ben Carson views are inconsistent with tRepublican Ben Carson the United States Constitution.”","TripletsNum":8,"Triplets":[{"TripletOrder":1,"Confidence":"0.87","Subject":"Republican Ben Carson","Relation":"is","Object":"unfit to lead","Attribute":""},{"TripletOrder":2,"Confidence":"0.96","Subject":"Muslim civil liberties group in America","Relation":"called","Object":"Monday","Attribute":""},{"TripletOrder":3,"Confidence":"0.95","Subject":"Republican Ben Carson views","Relation":"are","Object":"inconsistent with tRepublican Ben Carson","Attribute":""},{"TripletOrder":4,"Confidence":"0.83","Subject":"Republican Ben Republican Ben Carson","Relation":"to drop","Object":"","Attribute":""},{"TripletOrder":5,"Confidence":"0.78","Subject":"Republican Ben Carson","Relation":"to lead","Object":"","Attribute":""},{"TripletOrder":6,"Confidence":"0.78","Subject":"tRepublican Ben Carson","Relation":"is calling","Object":"","Attribute":""},{"TripletOrder":7,"Confidence":"0.93","Subject":"tRepublican Ben Carson","Relation":"retired","Object":"neurosurgeon","Attribute":""},{"TripletOrder":8,"Confidence":"0.88","Subject":"Nihad Awad","Relation":"[is] executive director of","Object":"tRepublican Ben Carson Council","Attribute":""}]},{"SentenceOrder":3,"Sentence":"Nihad Awad pointed out that the United States Constitution clearly states that there shall be “no religious test” for candidates to seek public office.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.89","Subject":"candidates","Relation":"to seek","Object":"public office","Attribute":""},{"TripletOrder":2,"Confidence":"0.79","Subject":"Nihad Awad","Relation":"pointed out","Object":"that the United States Constitution clearly states that there shall be \"no religious test","Attribute":""}]},{"SentenceOrder":4,"Sentence":"Nihad Awad said Republican Ben Carson was “shocked” to Republican Ben Carsonar Carson’s comments, which Republican Ben Carson described as anti-Muslim.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.78","Subject":"Republican Ben Carson","Relation":"shocked","Object":"","Attribute":""},{"TripletOrder":2,"Confidence":"0.85","Subject":"Republican Ben Carsonar Carson's comments","Relation":"described","Object":"as anti-Muslim","Attribute":""},{"TripletOrder":3,"Confidence":"0.95","Subject":"Nihad Awad","Relation":"said","Object":"Republican Ben Carson was \"shocked\" to Republican Ben Carsonar Carson's comments","Attribute":""}]},{"SentenceOrder":5,"Sentence":"Nihad Awad urged the public and other presidential candidates to “repudiate” Carson’s views.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"Nihad Awad","Relation":"urged","Object":"the public and other presidential candidates","Attribute":"to \"repudiate\" Carson's views)"},{"TripletOrder":2,"Confidence":"0.90","Subject":"the public and other presidential candidates","Relation":"to repudiate","Object":"Carson's views","Attribute":""}]},{"SentenceOrder":6,"Sentence":"Immediately following Awad’s comments, Carson’s business manager, Armstrong Williams, said on CNN that many Americans share Carson’s views about Council on Islamic Foreign Relations.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"Carson's business manager","Relation":"said","Object":"","Attribute":" L:on CNN"}]},{"SentenceOrder":7,"Sentence":"“Nihad Awad has to come to the conclusion for what is best for America.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.76","Subject":"Nihad Awad","Relation":"to come","Object":"","Attribute":""}]},{"SentenceOrder":8,"Sentence":"In Nihad Awad Nihad Awadart of Nihad Awadarts Nihad Awad could never advocate for a Muslim to become President of tNihad Awad tNihad Awad United States,” Armstrong Williams said.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"a Muslim","Relation":"to become","Object":"President of tNihad Awad tNihad Awad United States","Attribute":""},{"TripletOrder":2,"Confidence":"0.96","Subject":"In Nihad Awad Nihad Awadart of Nihad Awadarts Nihad Awad could never advocate","Relation":"said","Object":"Armstrong Williams","Attribute":""}]},{"SentenceOrder":9,"Sentence":"Carson’s comments came as Republican Ben Carson responded to anotRepublican Ben Carsonr controversy about Muslims in America that emerged late last week wRepublican Ben Carsonn a questioner at a Donald Trump campaign event in New Hampshire said “we have a problem in this country … called Muslims” and insisted President Barack Obama is a Muslim.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"Republican Ben Carson","Relation":"responded","Object":"to anotRepublican Ben Carsonr controversy about Muslims in America","Attribute":""},{"TripletOrder":2,"Confidence":"0.96","Subject":"anotRepublican Ben Carsonr controversy about Muslims in America","Relation":"emerged","Object":"","Attribute":" T:late last week"}]},{"SentenceOrder":10,"Sentence":"Donald Trump did not respond to Carson's comments , which he described as anti-Muslim during the events and has refused to disavow Carson's views about Islam.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"Donald Trump","Relation":"did not respond","Object":"to Carson's comments","Attribute":""},{"TripletOrder":2,"Confidence":"0.92","Subject":"Carson's comments","Relation":"described","Object":"as anti-Muslim","Attribute":"T:during the events)"},{"TripletOrder":3,"Confidence":"0.46","Subject":"he","Relation":"has refused","Object":"to disavow Carson's views about Islam","Attribute":""}]},{"SentenceOrder":11,"Sentence":"Republican Ben Carson also refused to repudiate Carson's views about Islam and said Republican Ben Carson believed Council on Islamic Foreign Relations was inconsistent with tRepublican Ben Carson U.S. Constitution.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.92","Subject":"Republican Ben Carson","Relation":"refused","Object":"to repudiate Carson's views about Islam","Attribute":""},{"TripletOrder":2,"Confidence":"0.95","Subject":"Republican Ben Carson","Relation":"said","Object":"Republican Ben Carson believed Council on Islamic Foreign Relations was inconsistent with tRepublican Ben Carson U.S. Constitution","Attribute":""}]},{"SentenceOrder":12,"Sentence":".","TripletsNum":0,"Triplets":[]},{"SentenceOrder":13,"Sentence":"Nihad Awad said Republican Ben Carson was “shocked” to Republican Ben Carsonar Carson’s comments, which Republican Ben Carson described as anti-Muslim.","TripletsNum":3,"Triplets":[{"TripletOrder":1,"Confidence":"0.78","Subject":"Republican Ben Carson","Relation":"shocked","Object":"","Attribute":""},{"TripletOrder":2,"Confidence":"0.85","Subject":"Republican Ben Carsonar Carson's comments","Relation":"described","Object":"as anti-Muslim","Attribute":""},{"TripletOrder":3,"Confidence":"0.95","Subject":"Nihad Awad","Relation":"said","Object":"Republican Ben Carson was \"shocked\" to Republican Ben Carsonar Carson's comments","Attribute":""}]},{"SentenceOrder":14,"Sentence":"Nihad Awad urged the public and other presidential candidates to “repudiate” Carson’s views.","TripletsNum":2,"Triplets":[{"TripletOrder":1,"Confidence":"0.94","Subject":"Nihad Awad","Relation":"urged","Object":"the public and other presidential candidates","Attribute":"to \"repudiate\" Carson's views)"},{"TripletOrder":2,"Confidence":"0.90","Subject":"the public and other presidential candidates","Relation":"to repudiate","Object":"Carson's views","Attribute":""}]},{"SentenceOrder":15,"Sentence":"Immediately following Awad’s comments, Carson’s business manager, Armstrong Williams, said on CNN that many Americans share Carson’s views about Council on Islamic Foreign Relations.","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.93","Subject":"Carson's business manager","Relation":"said","Object":"","Attribute":" L:on CNN"}]},{"SentenceOrder":16,"Sentence":"“Nihad Awad has to come to the conclusion for what is best for America","TripletsNum":1,"Triplets":[{"TripletOrder":1,"Confidence":"0.76","Subject":"Nihad Awad","Relation":"to come","Object":"","Attribute":""}]}]},"sliderData":[{"parameter":"WindowsSize","min":0,"max":10,"val":4},{"parameter":"slip step","min":0,"max":10,"val":2},{"parameter":"semantic coef","min":0,"max":1,"val":0.8},{"parameter":"literal coef","min":0,"max":1,"val":0.2},{"parameter":"effective triple numbers","min":0,"max":50,"val":10}]}
+{
+    "Status": 4,
+    "Message": "NewsTripletsExtraction",
+    "NewsId": "55e4ce94-a061-4f37-b0ba-f3cd8c43461f",
+    "Data": {
+        "SentenceNum": 16,
+        "Sentences": [
+            {
+                "SentenceOrder": 1,
+                "Sentence": "WASHINGTON (CNN) – Tthe retired neurosurgeon leading Muslim civil liberties group in America called Monday for Republican Ben Carson to drop out of tthe retired neurosurgeon presidential race after tthe retired neurosurgeon retired neurosurgeon said this weekend the retired neurosurgeon doesn’t believe a Muslim should be president of tthe retired neurosurgeon United States.",
+                "TripletsNum": 4,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.91",
+                        "Subject": "neurosurgeon",
+                        "Relation": "leading",
+                        "Object": "Muslim civil liberties group in America",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.96",
+                        "Subject": "Muslim civil liberties group in America",
+                        "Relation": "called",
+                        "Object": "Monday",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.95",
+                        "Subject": "tthe retired neurosurgeon retired neurosurgeon",
+                        "Relation": "said",
+                        "Object": "",
+                        "Attribute": " T:this weekend"
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.80",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "to drop out",
+                        "Object": "",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 2,
+                "Sentence": "Nihad Awad, executive director of tRepublican Ben Carson Council on Islamic Foreign Relations, said TRepublican Ben Carson leading Muslim civil liberties group in America called Monday for Republican Ben Republican Ben Carson to drop out of tRepublican Ben Carson presidential race after tRepublican Ben Carson retired neurosurgeon said tRepublican Ben Carson weekend Republican Ben Carson does n't believe a Muslim should be president of tRepublican Ben Carson the United States is calling on Republican Ben Carson to “withdraw from tRepublican Ben Carson presidential race because Republican Ben Carson is unfit to lead, because Republican Ben Carson views are inconsistent with tRepublican Ben Carson the United States Constitution.”",
+                "TripletsNum": 8,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.87",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "is",
+                        "Object": "unfit to lead",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.96",
+                        "Subject": "Muslim civil liberties group in America",
+                        "Relation": "called",
+                        "Object": "Monday",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.95",
+                        "Subject": "Republican Ben Carson views",
+                        "Relation": "are",
+                        "Object": "inconsistent with tRepublican Ben Carson",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.83",
+                        "Subject": "Republican Ben Republican Ben Carson",
+                        "Relation": "to drop",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 5,
+                        "Confidence": "0.78",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "to lead",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 6,
+                        "Confidence": "0.78",
+                        "Subject": "tRepublican Ben Carson",
+                        "Relation": "is calling",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 7,
+                        "Confidence": "0.93",
+                        "Subject": "tRepublican Ben Carson",
+                        "Relation": "retired",
+                        "Object": "neurosurgeon",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 8,
+                        "Confidence": "0.88",
+                        "Subject": "Nihad Awad",
+                        "Relation": "[is] executive director of",
+                        "Object": "tRepublican Ben Carson Council",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 3,
+                "Sentence": "Nihad Awad pointed out that the United States Constitution clearly states that there shall be “no religious test” for candidates to seek public office.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.89",
+                        "Subject": "candidates",
+                        "Relation": "to seek",
+                        "Object": "public office",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.79",
+                        "Subject": "Nihad Awad",
+                        "Relation": "pointed out",
+                        "Object": "that the United States Constitution clearly states that there shall be \"no religious test",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 4,
+                "Sentence": "Nihad Awad said Republican Ben Carson was “shocked” to Republican Ben Carsonar Carson’s comments, which Republican Ben Carson described as anti-Muslim.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.78",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "shocked",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.85",
+                        "Subject": "Republican Ben Carsonar Carson's comments",
+                        "Relation": "described",
+                        "Object": "as anti-Muslim",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.95",
+                        "Subject": "Nihad Awad",
+                        "Relation": "said",
+                        "Object": "Republican Ben Carson was \"shocked\" to Republican Ben Carsonar Carson's comments",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 5,
+                "Sentence": "Nihad Awad urged the public and other presidential candidates to “repudiate” Carson’s views.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Nihad Awad",
+                        "Relation": "urged",
+                        "Object": "the public and other presidential candidates",
+                        "Attribute": "to \"repudiate\" Carson's views)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.90",
+                        "Subject": "the public and other presidential candidates",
+                        "Relation": "to repudiate",
+                        "Object": "Carson's views",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 6,
+                "Sentence": "Immediately following Awad’s comments, Carson’s business manager, Armstrong Williams, said on CNN that many Americans share Carson’s views about Council on Islamic Foreign Relations.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "Carson's business manager",
+                        "Relation": "said",
+                        "Object": "",
+                        "Attribute": " L:on CNN"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 7,
+                "Sentence": "“Nihad Awad has to come to the conclusion for what is best for America.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.76",
+                        "Subject": "Nihad Awad",
+                        "Relation": "to come",
+                        "Object": "",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 8,
+                "Sentence": "In Nihad Awad Nihad Awadart of Nihad Awadarts Nihad Awad could never advocate for a Muslim to become President of tNihad Awad tNihad Awad United States,” Armstrong Williams said.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "a Muslim",
+                        "Relation": "to become",
+                        "Object": "President of tNihad Awad tNihad Awad United States",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.96",
+                        "Subject": "In Nihad Awad Nihad Awadart of Nihad Awadarts Nihad Awad could never advocate",
+                        "Relation": "said",
+                        "Object": "Armstrong Williams",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 9,
+                "Sentence": "Carson’s comments came as Republican Ben Carson responded to anotRepublican Ben Carsonr controversy about Muslims in America that emerged late last week wRepublican Ben Carsonn a questioner at a Donald Trump campaign event in New Hampshire said “we have a problem in this country … called Muslims” and insisted President Barack Obama is a Muslim.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "responded",
+                        "Object": "to anotRepublican Ben Carsonr controversy about Muslims in America",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.96",
+                        "Subject": "anotRepublican Ben Carsonr controversy about Muslims in America",
+                        "Relation": "emerged",
+                        "Object": "",
+                        "Attribute": " T:late last week"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 10,
+                "Sentence": "Donald Trump did not respond to Carson's comments , which he described as anti-Muslim during the events and has refused to disavow Carson's views about Islam.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "did not respond",
+                        "Object": "to Carson's comments",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.92",
+                        "Subject": "Carson's comments",
+                        "Relation": "described",
+                        "Object": "as anti-Muslim",
+                        "Attribute": "T:during the events)"
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.46",
+                        "Subject": "he",
+                        "Relation": "has refused",
+                        "Object": "to disavow Carson's views about Islam",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 11,
+                "Sentence": "Republican Ben Carson also refused to repudiate Carson's views about Islam and said Republican Ben Carson believed Council on Islamic Foreign Relations was inconsistent with tRepublican Ben Carson U.S. Constitution.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.92",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "refused",
+                        "Object": "to repudiate Carson's views about Islam",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.95",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "said",
+                        "Object": "Republican Ben Carson believed Council on Islamic Foreign Relations was inconsistent with tRepublican Ben Carson U.S. Constitution",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 12,
+                "Sentence": ".",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 13,
+                "Sentence": "Nihad Awad said Republican Ben Carson was “shocked” to Republican Ben Carsonar Carson’s comments, which Republican Ben Carson described as anti-Muslim.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.78",
+                        "Subject": "Republican Ben Carson",
+                        "Relation": "shocked",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.85",
+                        "Subject": "Republican Ben Carsonar Carson's comments",
+                        "Relation": "described",
+                        "Object": "as anti-Muslim",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.95",
+                        "Subject": "Nihad Awad",
+                        "Relation": "said",
+                        "Object": "Republican Ben Carson was \"shocked\" to Republican Ben Carsonar Carson's comments",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 14,
+                "Sentence": "Nihad Awad urged the public and other presidential candidates to “repudiate” Carson’s views.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Nihad Awad",
+                        "Relation": "urged",
+                        "Object": "the public and other presidential candidates",
+                        "Attribute": "to \"repudiate\" Carson's views)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.90",
+                        "Subject": "the public and other presidential candidates",
+                        "Relation": "to repudiate",
+                        "Object": "Carson's views",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 15,
+                "Sentence": "Immediately following Awad’s comments, Carson’s business manager, Armstrong Williams, said on CNN that many Americans share Carson’s views about Council on Islamic Foreign Relations.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "Carson's business manager",
+                        "Relation": "said",
+                        "Object": "",
+                        "Attribute": " L:on CNN"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 16,
+                "Sentence": "“Nihad Awad has to come to the conclusion for what is best for America",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.76",
+                        "Subject": "Nihad Awad",
+                        "Relation": "to come",
+                        "Object": "",
+                        "Attribute": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "sliderData": [
+        {
+            "parameter": "Slipping Windows Size",
+            "description": "The param specified selected slipping windows size",
+            "min": 0,
+            "max": 10,
+            "val": 4
+        },
+        {
+            "parameter": "Slipping Step",
+            "description": "The param specified slipping steps of the windows in the next step",
+            "min": 0,
+            "max": 10,
+            "val": 2
+        },
+        {
+            "parameter": "Semantic Correlation Coefficient",
+            "description": "The param specified the semantic correlation between two knowledge triples",
+            "min": 1,
+            "max": 10,
+            "val": 8
+        },
+        {
+            "parameter": "Literal Correlation Coefficient",
+            "description": "The param specified the literal correlation between two knowledge triples",
+            "min": 1,
+            "max": 10,
+            "val": 2
+        },
+        {
+            "parameter": "Representative Triples",
+            "description": "The param specified the number of triples used for represent the news",
+            "min": 0,
+            "max": 100,
+            "val": 20
+        }
+    ]
+}
