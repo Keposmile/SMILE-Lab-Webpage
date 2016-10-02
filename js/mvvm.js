@@ -401,7 +401,7 @@ $(function() {
                         nowFinalIndex = (-1);
                     }
                 }
-            }, 15000);
+            }, 500);
         },
 
         left_menu_status: 0, //左侧页面菜单的选择状态
@@ -720,7 +720,7 @@ $(function() {
                         clearInterval(timer);
                         vm.finish_execute();
                     }
-                }, 1000); //execute切换时间
+                }, 15000); //execute切换时间
             // }
 
         },

@@ -1,0 +1,2696 @@
+{
+  "Status":6,
+  "Message":"GetEffTriplets",
+  "NewsId":"2d521d1f-dd75-4a12-9bfe-db3f051f7e16",
+  "Data":{
+    "EffectTripletsNum":17,
+    "GroupNum":136,
+    "Groups":[
+      {
+        "GroupNum":1,
+        "Similarity":1.037,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          }
+        ]
+      },
+      {
+        "GroupNum":2,
+        "Similarity":0.943,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          }
+        ]
+      },
+      {
+        "GroupNum":3,
+        "Similarity":0.518,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          }
+        ]
+      },
+      {
+        "GroupNum":4,
+        "Similarity":0.975,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          }
+        ]
+      },
+      {
+        "GroupNum":5,
+        "Similarity":0.912,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          }
+        ]
+      },
+      {
+        "GroupNum":6,
+        "Similarity":2.768,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          }
+        ]
+      },
+      {
+        "GroupNum":7,
+        "Similarity":0.478,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          }
+        ]
+      },
+      {
+        "GroupNum":8,
+        "Similarity":1.2,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":9,
+        "Similarity":1.274,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":10,
+        "Similarity":2.762,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":11,
+        "Similarity":2.487,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":12,
+        "Similarity":1.215,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":13,
+        "Similarity":3.05,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":14,
+        "Similarity":0.97,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":15,
+        "Similarity":0.418,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":16,
+        "Similarity":1.003,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":17,
+        "Similarity":0.957,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          }
+        ]
+      },
+      {
+        "GroupNum":18,
+        "Similarity":0.48,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          }
+        ]
+      },
+      {
+        "GroupNum":19,
+        "Similarity":0.854,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          }
+        ]
+      },
+      {
+        "GroupNum":20,
+        "Similarity":0.725,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          }
+        ]
+      },
+      {
+        "GroupNum":21,
+        "Similarity":0.991,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          }
+        ]
+      },
+      {
+        "GroupNum":22,
+        "Similarity":0.462,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          }
+        ]
+      },
+      {
+        "GroupNum":23,
+        "Similarity":0.827,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":24,
+        "Similarity":0.82,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":25,
+        "Similarity":0.967,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":26,
+        "Similarity":1.072,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":27,
+        "Similarity":0.818,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":28,
+        "Similarity":1.161,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":29,
+        "Similarity":0.791,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":30,
+        "Similarity":0.387,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":31,
+        "Similarity":0.879,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only governor",
+            "Relation":"is",
+            "Object":"a medical doctor"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":32,
+        "Similarity":0.524,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          }
+        ]
+      },
+      {
+        "GroupNum":33,
+        "Similarity":0.986,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          }
+        ]
+      },
+      {
+        "GroupNum":34,
+        "Similarity":0.855,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          }
+        ]
+      },
+      {
+        "GroupNum":35,
+        "Similarity":0.949,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          }
+        ]
+      },
+      {
+        "GroupNum":36,
+        "Similarity":0.518,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          }
+        ]
+      },
+      {
+        "GroupNum":37,
+        "Similarity":0.975,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":38,
+        "Similarity":0.922,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":39,
+        "Similarity":1.035,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":40,
+        "Similarity":0.938,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":41,
+        "Similarity":0.981,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":42,
+        "Similarity":1.008,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":43,
+        "Similarity":0.906,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":44,
+        "Similarity":0.412,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":45,
+        "Similarity":0.911,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"The issue",
+            "Relation":"'s",
+            "Object":"about advancing the frontiers of governance"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":46,
+        "Similarity":2.807,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          }
+        ]
+      },
+      {
+        "GroupNum":47,
+        "Similarity":2.536,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          }
+        ]
+      },
+      {
+        "GroupNum":48,
+        "Similarity":1.721,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          }
+        ]
+      },
+      {
+        "GroupNum":49,
+        "Similarity":0.959,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          }
+        ]
+      },
+      {
+        "GroupNum":50,
+        "Similarity":1.753,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":51,
+        "Similarity":2.435,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":52,
+        "Similarity":0.767,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":53,
+        "Similarity":0.737,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":54,
+        "Similarity":0.691,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":55,
+        "Similarity":0.759,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":56,
+        "Similarity":0.616,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":57,
+        "Similarity":0.394,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":58,
+        "Similarity":0.625,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"the only dualised road",
+            "Relation":"had",
+            "Object":"we"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":59,
+        "Similarity":3.484,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          }
+        ]
+      },
+      {
+        "GroupNum":60,
+        "Similarity":1.908,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          }
+        ]
+      },
+      {
+        "GroupNum":61,
+        "Similarity":1.785,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          }
+        ]
+      },
+      {
+        "GroupNum":62,
+        "Similarity":2.305,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":63,
+        "Similarity":3.117,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":64,
+        "Similarity":0.966,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":65,
+        "Similarity":0.958,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":66,
+        "Similarity":0.936,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":67,
+        "Similarity":1.041,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":68,
+        "Similarity":0.792,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":69,
+        "Similarity":0.39,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":70,
+        "Similarity":0.865,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the only dualised road we had",
+            "Relation":"was",
+            "Object":"the Oba Adesida Road,
+             Akure and Oba Adesida Road",
+            "Attribute":"T:Before Olusegun Mimiko government)"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":71,
+        "Similarity":1.728,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          }
+        ]
+      },
+      {
+        "GroupNum":72,
+        "Similarity":1.675,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          }
+        ]
+      },
+      {
+        "GroupNum":73,
+        "Similarity":2.174,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":74,
+        "Similarity":3.087,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":75,
+        "Similarity":0.884,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":76,
+        "Similarity":0.894,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":77,
+        "Similarity":0.903,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":78,
+        "Similarity":0.994,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":79,
+        "Similarity":0.776,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":80,
+        "Similarity":0.4,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":81,
+        "Similarity":0.846,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Oba Adesida Road",
+            "Relation":"was wOba Adesida Roadhout",
+            "Object":"road furnOba Adesida Roadure"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":82,
+        "Similarity":0.946,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          }
+        ]
+      },
+      {
+        "GroupNum":83,
+        "Similarity":2.127,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":84,
+        "Similarity":2.41,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":85,
+        "Similarity":2.491,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":86,
+        "Similarity":1.924,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":87,
+        "Similarity":1.166,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":88,
+        "Similarity":2.418,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":89,
+        "Similarity":0.978,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":90,
+        "Similarity":0.46,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":91,
+        "Similarity":1.066,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"about six dualised roads in Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats",
+            "Attribute":"T:now)"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":92,
+        "Similarity":0.682,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          }
+        ]
+      },
+      {
+        "GroupNum":93,
+        "Similarity":0.685,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":94,
+        "Similarity":0.32,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":95,
+        "Similarity":0.226,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":96,
+        "Similarity":0.259,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":97,
+        "Similarity":0.31,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":98,
+        "Similarity":0.203,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":99,
+        "Similarity":0.021,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":100,
+        "Similarity":0.262,
+        "Triplets":[
+          {
+            "Confidence":"0.55",
+            "Subject":"Those",
+            "Relation":"knew",
+            "Object":"what Arakale Road used to be"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":101,
+        "Similarity":2.614,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          }
+        ]
+      },
+      {
+        "GroupNum":102,
+        "Similarity":1.13,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":103,
+        "Similarity":1.065,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":104,
+        "Similarity":0.965,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":105,
+        "Similarity":1.201,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":106,
+        "Similarity":0.973,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":107,
+        "Similarity":0.461,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":108,
+        "Similarity":1.045,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Those who knew what Arakale Road used to be",
+            "Relation":"dThose",
+            "Object":"who knew what Arakale Road used to beto for Owo,
+             Ondo South,
+            Igbokoda and other roads that have been dualised or being dualised"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":109,
+        "Similarity":1.088,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          },
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          }
+        ]
+      },
+      {
+        "GroupNum":110,
+        "Similarity":0.907,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":111,
+        "Similarity":0.914,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":112,
+        "Similarity":1.113,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":113,
+        "Similarity":0.853,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":114,
+        "Similarity":0.404,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":115,
+        "Similarity":0.944,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Arakale Road",
+            "Relation":"to beto",
+            "Object":"for Owo,
+             Ondo South,
+            Igbokoda and other roads"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":116,
+        "Similarity":1.914,
+        "Triplets":[
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":117,
+        "Similarity":1.166,
+        "Triplets":[
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":118,
+        "Similarity":2.339,
+        "Triplets":[
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":119,
+        "Similarity":0.98,
+        "Triplets":[
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":120,
+        "Similarity":0.456,
+        "Triplets":[
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":121,
+        "Similarity":1.283,
+        "Triplets":[
+          {
+            "Confidence":"0.94",
+            "Subject":"pupils across Ondo State",
+            "Relation":"winning",
+            "Object":"21 of the 26 seats"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":122,
+        "Similarity":1.692,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          }
+        ]
+      },
+      {
+        "GroupNum":123,
+        "Similarity":2.932,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":124,
+        "Similarity":0.993,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":125,
+        "Similarity":0.418,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":126,
+        "Similarity":1.061,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"Ondo State",
+            "Relation":"has witnessed",
+            "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":127,
+        "Similarity":1.275,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          }
+        ]
+      },
+      {
+        "GroupNum":128,
+        "Similarity":0.991,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":129,
+        "Similarity":0.39,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":130,
+        "Similarity":0.953,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"peace and tranquility",
+            "Relation":"occasioned",
+            "Object":"by the responsible leadership of Olusegun Mimiko"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":131,
+        "Similarity":0.955,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          },
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          }
+        ]
+      },
+      {
+        "GroupNum":132,
+        "Similarity":0.462,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":133,
+        "Similarity":1.099,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"neighbweing states",
+            "Relation":"rushing",
+            "Object":"to the state",
+            "Attribute":"to access the free health care)"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":134,
+        "Similarity":1.972,
+        "Triplets":[
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          },
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          }
+        ]
+      },
+      {
+        "GroupNum":135,
+        "Similarity":2.505,
+        "Triplets":[
+          {
+            "Confidence":"0.44",
+            "Subject":"Some of our projects",
+            "Relation":"are trying",
+            "Object":"to follow on we footsteps"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      },
+      {
+        "GroupNum":136,
+        "Similarity":2.138,
+        "Triplets":[
+          {
+            "Confidence":"0.34",
+            "Subject":"our projects",
+            "Relation":"is criticizing",
+            "Object":"too"
+          },
+          {
+            "Confidence":"0.74",
+            "Subject":"Some of our projects",
+            "Relation":"are building",
+            "Object":"markets,
+             mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+          }
+        ]
+      }
+    ]
+  },
+  "EffTriples":[
+    {
+      "Subject":"Ondo State",
+      "Relation":"winning",
+      "Object":"21 of the 26 seats"
+    },
+    {
+      "Subject":"the only governor",
+      "Relation":"is",
+      "Object":"a medical doctor"
+    },
+    {
+      "Subject":"The issue",
+      "Relation":"'s",
+      "Object":"about advancing the frontiers of governance"
+    },
+    {
+      "Subject":"the only dualised road",
+      "Relation":"had",
+      "Object":"we"
+    },
+    {
+      "Subject":"the only dualised road we had",
+      "Relation":"was",
+      "Object":"the Oba Adesida Road,
+       Akure and Oba Adesida Road"
+    },
+    {
+      "Subject":"Oba Adesida Road",
+      "Relation":"was wOba Adesida Roadhout",
+      "Object":"road furnOba Adesida Roadure"
+    },
+    {
+      "Subject":"about six dualised roads in Ondo State",
+      "Relation":"winning",
+      "Object":"21 of the 26 seats"
+    },
+    {
+      "Subject":"Those",
+      "Relation":"knew",
+      "Object":"what Arakale Road used to be"
+    },
+    {
+      "Subject":"Those who knew what Arakale Road used to be",
+      "Relation":"dThose",
+      "Object":"who knew what Arakale Road used to beto for Owo,
+       Ondo South,
+      Igbokoda and other roads that have been dualised or being dualised"
+    },
+    {
+      "Subject":"Arakale Road",
+      "Relation":"to beto",
+      "Object":"for Owo,
+       Ondo South,
+      Igbokoda and other roads"
+    },
+    {
+      "Subject":"pupils across Ondo State",
+      "Relation":"winning",
+      "Object":"21 of the 26 seats"
+    },
+    {
+      "Subject":"Ondo State",
+      "Relation":"has witnessed",
+      "Object":"peace and tranquility occasioned by the responsible leadership of Olusegun Mimiko"
+    },
+    {
+      "Subject":"peace and tranquility",
+      "Relation":"occasioned",
+      "Object":"by the responsible leadership of Olusegun Mimiko"
+    },
+    {
+      "Subject":"neighbweing states",
+      "Relation":"rushing",
+      "Object":"to the state"
+    },
+    {
+      "Subject":"Some of our projects",
+      "Relation":"are trying",
+      "Object":"to follow on we footsteps"
+    },
+    {
+      "Subject":"our projects",
+      "Relation":"is criticizing",
+      "Object":"too"
+    },
+    {
+      "Subject":"Some of our projects",
+      "Relation":"are building",
+      "Object":"markets,
+       mega schools and even aping the school the free school shuttle buses for pupils across the state and so on"
+    }
+  ]
+}
