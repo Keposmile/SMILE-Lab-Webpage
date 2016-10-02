@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>AIDA</title>
+    <title>VMSE</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.css" rel="stylesheet">
@@ -55,7 +55,7 @@
                                 <!-- execute()的第一个参数改为example对应的id即可 -->
                             </ul>
                         </li>
-                        <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Generate Knowledge Graph</a></li>
+                        <li><a ms-on-click="@update_selected_content" href="#" id="modal-trigger">Knowledge Graph</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -176,8 +176,6 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-
-
                     <div ms-if="@show_content_slider()" id="carousel" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -188,57 +186,6 @@
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox" data-interval="false">
-                            <!-- <div class="item active">
-                                <div class="carousel-caption">
-                                    <h4><img src="../img/info.png" alt="">tips：</h4>
-                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                                    <div class="divide_line"></div>
-
-                                    <h3 ms-text="@content.NewsTitle"></h3>
-                                    <div>
-                                        <p><b>Source：</b><span ms-html="@content.Source"></span><b>Datetime：</b><span ms-html="@content.DateTime"></span></p>
-                                    </div>
-                                    <p><b>Content：</b></p>
-                                    <div><pre ms-html="@content.NewsContent"></pre></div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="item">
-                                <div class="carousel-caption">
-                                    <h4><img src="../img/info.png" alt="">tips：</h4>
-                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                                    <div class="divide_line"></div>
-
-                                    <h3 ms-text="@content1.NewsTitle"></h3>
-                                    <div>
-                                        <p><b>Source：</b><span ms-html="@content1.Source"></span><b>Datetime：</b><span ms-html="@content1.DateTime"></span></p>
-                                    </div>
-                                    <p><b>Content：</b></p>
-                                    <div><pre ms-html="@content1.NewsContent"></pre></div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="item">
-                                <div class="carousel-caption">
-                                    <h4><img src="../img/info.png" alt="">tips：</h4>
-                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                                    <div class="divide_line"></div>
-
-                                    <h3>Triplets</h3>
-                                    <div class="Sentences" ms-for="el in @TripletsData.Sentences">
-                                        <h5>{{el.Sentence}}</h5>
-                                        <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
-                                            <span class="Confidence">{{el.Confidence}}</span> (
-                                            <span class="Subject">{{el.Subject}}</span>;
-                                            <span class="Relation">{{el.Relation}}</span>;
-                                            <span class="Object">{{el.Object}}</span>)
-                                        </div>
-                                        <div class="triplets" ms-if="el.Context" ms-for="el in el.Triplets">
-                                            <span class="Confidence">{{el.Confidence}}</span>
-                                            <span class="Context">{{el.Context}}</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> -->
                             <div class="item active">
                                 <!-- <img src="..." alt="..."> -->
                                 <div class="carousel-caption">
@@ -270,13 +217,16 @@
                                     <h5 ms-on-click="@setUpCharts1()">charts1</h5>
                                     <div class="carousel-caption">
                                         <div class="sliderLeftBox">
-                                            <div ms-for="el in @relationTripletData1.Groups">
-                                                <h5>{{el.Similarity}}</h5>
-                                                <div ms-for="el in el.Triplets">
-                                                    <span class="Confidence">{{el.Confidence}}</span> (
-                                                    <span class="Subject">{{el.Subject}}</span>;
-                                                    <span class="Relation">{{el.Relation}}</span>;
-                                                    <span class="Object">{{el.Object}}</span>)
+                                            <div ms-for="el in @relationTripletData1">
+                                                <h3><b>{{el.Description}}</b></h3>
+                                                <div ms-for="($index,el) in el.Groups">
+                                                  <h6><b>Group{{$index+1}} (Similarity) : <span class="Similarity">{{el.Similarity}}</span></b></h6>
+                                                  <div ms-for="el in el.Triplets">
+                                                      <span class="Confidence">{{el.Confidence}}</span> (
+                                                      <span class="Subject">{{el.Subject}}</span>;
+                                                      <span class="Relation">{{el.Relation}}</span>;
+                                                      <span class="Object">{{el.Object}}</span>)
+                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -381,7 +331,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                    <a class="navbar-brand" href="#">AIDA</a>
+                    <a class="navbar-brand" href="#">VMSE</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

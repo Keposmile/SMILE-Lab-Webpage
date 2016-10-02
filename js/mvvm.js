@@ -385,10 +385,8 @@ $(function() {
             var firstIndex = -1;
             var step = this.TripletsData.step;
             var nowFinalIndex = winSize - step;
-            console.log(totalTriGroup.length);
 
             var timer = setInterval(function() {
-                console.log(nowFinalIndex);
                 if (nowFinalIndex == (-1)) {
                     //回调点
                     clearInterval(timer);
@@ -396,7 +394,6 @@ $(function() {
                 } else {
                     nowFinalIndex += step;
                     var nowInWin = getItemsBetween(firstIndex, winSize, ".Sentences1");
-                    console.log(nowInWin.length);
                     totalTriGroup.removeClass("in-win");
                     nowInWin.addClass("in-win");
                     firstIndex += step;
@@ -723,7 +720,7 @@ $(function() {
                         clearInterval(timer);
                         vm.finish_execute();
                     }
-                }, 15000); //execute切换时间
+                }, 1000); //execute切换时间
             // }
 
         },
@@ -763,15 +760,19 @@ $(function() {
         },
 
         relationChartData1: {
-            nodes: [],
-            links: []
+          nodes: [],
+          links: []
         },
-        relationTripletData1: {
-            // SentenceNum:null,
-            // EffectTripletsNum:null,
-            // GroupNum:null,
-            Groups: []
-        },
+        relationTripletData1: [
+          // {
+          //   "Windows": null,
+          //   "Description": "",
+          //   "TripletsNum": null,
+          //   "GroupNum": null,
+          //   "Groups": [
+          //   ]
+          // }
+        ],
         relationChartData2: {
             nodes: [],
             links: []
@@ -800,10 +801,10 @@ $(function() {
         },
         setUpCharts1: function(id) {
             getAjax("../data/chartsData1/" + id + ".json", null, function(data) { //设置图表1
-                if (data.Status === 0) {
-                    vm.relationTripletData1 = data.Data;
-                    console.log(data.Data);
-                    vm.relationChartData1 = setNodesAndLinks1(data.Data, false);
+                if (data.Status === 5) {
+                    vm.relationTripletData1 = data.Data.WindowsGroup;
+                    console.log(vm.relationTripletData1);
+                    vm.relationChartData1 = setNodesAndLinks1(data.EffTriples);
                     relation_chart_setup("relation-chart-1", vm.relationChartData1);
                 }
             });
@@ -815,8 +816,8 @@ $(function() {
                 if (data.Status === 0) {
                     vm.relationTripletData2 = data.Data;
                     console.log(data.Data);
-                    vm.relationChartData2 = setNodesAndLinks2(data.Data, true);
-                    console.log(JSON.stringify(vm.relationChartData2));
+                    vm.relationChartData2 = setNodesAndLinks1(data.EffTriples);
+                    // console.log(JSON.stringify(vm.relationChartData2));
                     relation_chart_setup("relation-chart-2", vm.relationChartData2);
                 }
             });
@@ -963,7 +964,7 @@ function relation_chart_setup(id, data) {
         // },
         series: [{
             type: 'force',
-            name: "Triplets",
+            name: "Entity",
             ribbonType: false,
             categories: [{
                 name: ''
@@ -1035,7 +1036,58 @@ function relation_chart_setup(id, data) {
     //   $("#hide-tab-2>div.tabs-handle>p").trigger("click");
     // }
 }
+function setNodesAndLinks1(data){
+  var nodes = [];
+  var links = [];
+  for(var i=0;i< data.length;i++){
+    var _thisTriplet=data[i];
+    var nodeObj_1= {};
+    nodeObj_1.category = 1;
+    // nodeObj_1.name ="Subject :"+data[i].Subject;
+    nodeObj_1.name = data[i].Subject;
+    nodeObj_1.label = i + "-1";
+    nodeObj_1.value = 1;
+    var nodeObj_2= {};
+    nodeObj_2.category = 1;
+    // nodeObj_2.name ="Object :"+data[i].Object;
+    nodeObj_2.name = data[i].Object;
+    nodeObj_2.label = i + "-2";
+    nodeObj_2.value = 2;
+    // {category:1, name: '1-1',value : 2,label:'2'},
 
+    var linkObj = {};
+    linkObj.source = nodeObj_1.name;
+    linkObj.target = nodeObj_2.name;
+    linkObj.weight = 1;
+    linkObj.name ="Relation:"+data[i].Relation;
+    // {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
+    var nodeSame1 = 0;
+    var nodeSame2 = 0;
+    for(var j=0;j<nodes.length;j++){
+      if(nodes[j].name == data[i].Subject){
+        nodeSame1++;
+        nodes[j].value++;
+      }
+      if(nodes[j].name == data[i].Object){
+        nodeSame2++;
+        nodes[j].value++;
+      }
+    }
+    if(nodeSame1 === 0){
+      nodes.push(nodeObj_1);
+    }
+    if(nodeSame2 === 0){
+      nodes.push(nodeObj_2);
+    }
+    links.push(linkObj);
+  }
+  console.log(nodes);
+  console.log(links);
+  return {
+      links: links,
+      nodes: nodes
+  };
+}
 function setNodesAndLinks2(data, coverSame) {
     var nodes = [];
     // {category:1, name: '1-1',value : 2,label:'2'},
@@ -1168,7 +1220,8 @@ function change_tabs_on_right(vm) {
         var index = $("#right-tabs>li").index(_this);
         if (!vm.onExecute) { //未在执行中时切换页面
             // console.log("index:"+index);
-            if ($("#home-tab.active").length==1) {
+
+            if(index===0){
                 vm.guide_show_status = true;
                 vm.content_show_status = false;
                 vm.content_slider_show_status = false;

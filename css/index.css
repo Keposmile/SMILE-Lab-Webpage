@@ -363,6 +363,9 @@ pre>b{
   margin-left:20px;
   margin-right: 20px;
 }
+ .Similarity{
+   color: rgb(222, 30, 30);
+ }
 .Confidence{
   color:#00aa99;
 }
@@ -379,8 +382,10 @@ pre>b{
   margin:10px;
   padding:10px;
   min-height: 400px;
+  max-height: 800px;
   border-radius: 5px;
   border: 1px solid rgba(121, 121, 121, 0.2);
+  overflow-y: scroll;
 }
 .sliderRightBox{
   float: left;
