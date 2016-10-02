@@ -382,7 +382,7 @@ pre>b{
   margin:10px;
   padding:10px;
   min-height: 400px;
-  max-height: 800px;
+  max-height: 600px;
   border-radius: 5px;
   border: 1px solid rgba(121, 121, 121, 0.2);
   overflow-y: scroll;
@@ -390,7 +390,7 @@ pre>b{
 .sliderRightBox{
   float: left;
   width:60%;
-  height: 500px;
+  height: 600px;
   margin:10px;
   padding:10px;
   min-height: 400px;

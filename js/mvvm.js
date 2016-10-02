@@ -802,8 +802,13 @@ $(function() {
         setUpCharts1: function(id) {
             getAjax("../data/chartsData1/" + id + ".json", null, function(data) { //设置图表1
                 if (data.Status === 5) {
+                  vm.relationChartData1={
+                    nodes: [],
+                    links: []
+                  };
+                  vm.relationTripletData1=[];
                     vm.relationTripletData1 = data.Data.WindowsGroup;
-                    console.log(vm.relationTripletData1);
+                    // console.log(vm.relationTripletData1);
                     vm.relationChartData1 = setNodesAndLinks1(data.EffTriples);
                     relation_chart_setup("relation-chart-1", vm.relationChartData1);
                 }
@@ -955,7 +960,7 @@ function relation_chart_setup(id, data) {
                     show: true
                 },
                 // magicType: {show: true, type: ['force', 'chord']},
-                // saveAsImage : {show: true}
+                saveAsImage : {show: true}
             }
         },
         // legend: {
@@ -998,7 +1003,7 @@ function relation_chart_setup(id, data) {
                             // textStyle: null      // 默认使用全局文本样式，详见TEXTSTYLE
                     },
                     nodeStyle: {
-                        //r: 30
+                        r: 20
                     },
                     linkStyle: {}
                 }
@@ -1006,9 +1011,9 @@ function relation_chart_setup(id, data) {
             useWorker: true,
             minRadius: 15,
             maxRadius: 20,
-            gravity: 5.1,
+            gravity: 1.1,
             scaling: 1.5,
-            roam: 'move',
+            roam: true,
             nodes: data.nodes,
             // {category:1, name: '乔布斯', value : 10, label: '乔布斯\n（主要）'},
             // {category:1, name: '1-1',value : 2},
@@ -1045,13 +1050,13 @@ function setNodesAndLinks1(data){
     nodeObj_1.category = 1;
     // nodeObj_1.name ="Subject :"+data[i].Subject;
     nodeObj_1.name = data[i].Subject;
-    nodeObj_1.label = i + "-1";
+    // nodeObj_1.label = i + "-1";
     nodeObj_1.value = 1;
     var nodeObj_2= {};
     nodeObj_2.category = 1;
     // nodeObj_2.name ="Object :"+data[i].Object;
     nodeObj_2.name = data[i].Object;
-    nodeObj_2.label = i + "-2";
+    // nodeObj_2.label = i + "-2";
     nodeObj_2.value = 2;
     // {category:1, name: '1-1',value : 2,label:'2'},
 

@@ -218,9 +218,9 @@
                                     <div class="carousel-caption">
                                         <div class="sliderLeftBox">
                                             <div ms-for="el in @relationTripletData1">
-                                                <h3><b>{{el.Description}}</b></h3>
+                                                <h4><b>{{el.Description}}</b></h4>
                                                 <div ms-for="($index,el) in el.Groups">
-                                                  <h6><b>Group{{$index+1}} (Similarity) : <span class="Similarity">{{el.Similarity}}</span></b></h6>
+                                                  <h6><b>Group {{$index+1}} (Similarity) : <span class="Similarity">{{el.Similarity}}</span></b></h6>
                                                   <div ms-for="el in el.Triplets">
                                                       <span class="Confidence">{{el.Confidence}}</span> (
                                                       <span class="Subject">{{el.Subject}}</span>;
@@ -262,7 +262,7 @@
                             <span class="glyphicon glyphicon-chevron-left"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a ms-on-click="@right_slider_ctn()" class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                        <a  class="right carousel-control" href="#carousel" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -397,7 +397,7 @@
                 <ul class="list-group">
                     <li ms-for=" ($index,el) in @sliderData " class="list-group-item">
                         <div class="btn-group btn-group-justified">
-                            <span>{{el.parameter}}</span><span class="badge">{{el.val}}</span>
+                            <span>{{el.parameter}}</span>{{el.description}}<span></span><span class="badge">{{el.val}}</span>
                             <input ms-attr="{id:'amount-slider-'+$index,class:'amount-slider'}" ms-duplex-string="@sliderData[$index].val" type="text">
                         </div>
                         <div ms-attr="{id:'slider-'+$index}"></div>
