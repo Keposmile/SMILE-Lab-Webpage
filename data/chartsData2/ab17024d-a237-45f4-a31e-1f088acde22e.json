@@ -1,0 +1,1832 @@
+{
+  "Status":6,
+  "Message":"GetEffTriplets",
+  "NewsId":"ab17024d-a237-45f4-a31e-1f088acde22e",
+  "Data":{
+    "EffectTripletsNum":14,
+    "GroupNum":91,
+    "Groups":[
+      {
+        "GroupNum":1,
+        "Similarity":1.165,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          }
+        ]
+      },
+      {
+        "GroupNum":2,
+        "Similarity":1.375,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          }
+        ]
+      },
+      {
+        "GroupNum":3,
+        "Similarity":1.158,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          }
+        ]
+      },
+      {
+        "GroupNum":4,
+        "Similarity":1.093,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          }
+        ]
+      },
+      {
+        "GroupNum":5,
+        "Similarity":1.315,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          }
+        ]
+      },
+      {
+        "GroupNum":6,
+        "Similarity":1.233,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":7,
+        "Similarity":0.711,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":8,
+        "Similarity":1.227,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":9,
+        "Similarity":1.286,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":10,
+        "Similarity":1.248,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":11,
+        "Similarity":1.202,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":12,
+        "Similarity":1.321,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":13,
+        "Similarity":1.192,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"Open Hearts The United States",
+            "Relation":"was circulating",
+            "Object":"A new Facebook group,
+             Open Homes,
+             Open Hearts The United States,
+             was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":14,
+        "Similarity":1.026,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          }
+        ]
+      },
+      {
+        "GroupNum":15,
+        "Similarity":1.002,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          }
+        ]
+      },
+      {
+        "GroupNum":16,
+        "Similarity":1.129,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          }
+        ]
+      },
+      {
+        "GroupNum":17,
+        "Similarity":1.186,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          }
+        ]
+      },
+      {
+        "GroupNum":18,
+        "Similarity":0.765,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":19,
+        "Similarity":0.652,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":20,
+        "Similarity":0.757,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":21,
+        "Similarity":1.031,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":22,
+        "Similarity":0.873,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":23,
+        "Similarity":0.647,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":24,
+        "Similarity":0.854,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":25,
+        "Similarity":0.637,
+        "Triplets":[
+          {
+            "Confidence":"0.95",
+            "Subject":"an online petition",
+            "Relation":"urging",
+            "Object":"Obama administration officials",
+            "Attribute":"to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home)"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":26,
+        "Similarity":1.134,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          }
+        ]
+      },
+      {
+        "GroupNum":27,
+        "Similarity":1.208,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          }
+        ]
+      },
+      {
+        "GroupNum":28,
+        "Similarity":1.087,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          }
+        ]
+      },
+      {
+        "GroupNum":29,
+        "Similarity":0.979,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":30,
+        "Similarity":0.724,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":31,
+        "Similarity":0.979,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":32,
+        "Similarity":1.198,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":33,
+        "Similarity":1.091,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":34,
+        "Similarity":0.825,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":35,
+        "Similarity":0.951,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":36,
+        "Similarity":0.825,
+        "Triplets":[
+          {
+            "Confidence":"0.93",
+            "Subject":"Obama administration officials",
+            "Relation":"to let",
+            "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":37,
+        "Similarity":1.056,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          }
+        ]
+      },
+      {
+        "GroupNum":38,
+        "Similarity":0.949,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          }
+        ]
+      },
+      {
+        "GroupNum":39,
+        "Similarity":0.76,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":40,
+        "Similarity":0.496,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":41,
+        "Similarity":0.817,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":42,
+        "Similarity":0.95,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":43,
+        "Similarity":1.012,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":44,
+        "Similarity":0.793,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":45,
+        "Similarity":1.494,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":46,
+        "Similarity":0.793,
+        "Triplets":[
+          {
+            "Confidence":"0.92",
+            "Subject":"Immigration",
+            "Relation":"has become",
+            "Object":"a major issue in the campaign"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":47,
+        "Similarity":0.99,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          }
+        ]
+      },
+      {
+        "GroupNum":48,
+        "Similarity":0.776,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":49,
+        "Similarity":0.667,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":50,
+        "Similarity":0.76,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":51,
+        "Similarity":0.944,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":52,
+        "Similarity":0.83,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":53,
+        "Similarity":0.876,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":54,
+        "Similarity":0.941,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":55,
+        "Similarity":0.876,
+        "Triplets":[
+          {
+            "Confidence":"0.90",
+            "Subject":"the campaign",
+            "Relation":"leading",
+            "Object":"up to the 2016 presidential election"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":56,
+        "Similarity":2.012,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":57,
+        "Similarity":1.128,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":58,
+        "Similarity":1.932,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":59,
+        "Similarity":0.945,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":60,
+        "Similarity":0.899,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":61,
+        "Similarity":0.737,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":62,
+        "Similarity":0.886,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":63,
+        "Similarity":0.737,
+        "Triplets":[
+          {
+            "Confidence":"0.97",
+            "Subject":"Billionaire businessman Donald Trump",
+            "Relation":"has risen",
+            "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":64,
+        "Similarity":1.472,
+        "Triplets":[
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          },
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":65,
+        "Similarity":2.953,
+        "Triplets":[
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":66,
+        "Similarity":0.711,
+        "Triplets":[
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":67,
+        "Similarity":0.73,
+        "Triplets":[
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":68,
+        "Similarity":0.623,
+        "Triplets":[
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":69,
+        "Similarity":0.723,
+        "Triplets":[
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":70,
+        "Similarity":0.623,
+        "Triplets":[
+          {
+            "Confidence":"0.88",
+            "Subject":"Donald Trump",
+            "Relation":"is businessman of",
+            "Object":"Billionaire"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":71,
+        "Similarity":1.635,
+        "Triplets":[
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          },
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          }
+        ]
+      },
+      {
+        "GroupNum":72,
+        "Similarity":0.772,
+        "Triplets":[
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":73,
+        "Similarity":0.751,
+        "Triplets":[
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":74,
+        "Similarity":0.64,
+        "Triplets":[
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":75,
+        "Similarity":0.71,
+        "Triplets":[
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":76,
+        "Similarity":0.64,
+        "Triplets":[
+          {
+            "Confidence":"0.39",
+            "Subject":"Donald Trump Republican field",
+            "Relation":"is businessman of",
+            "Object":"tBillionaire"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":77,
+        "Similarity":0.714,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          }
+        ]
+      },
+      {
+        "GroupNum":78,
+        "Similarity":0.717,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":79,
+        "Similarity":0.621,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":80,
+        "Similarity":0.77,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":81,
+        "Similarity":0.621,
+        "Triplets":[
+          {
+            "Confidence":"0.38",
+            "Subject":"Donald Trump",
+            "Relation":"is said last businessman of",
+            "Object":"week Billionaire"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":82,
+        "Similarity":1.628,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          },
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          }
+        ]
+      },
+      {
+        "GroupNum":83,
+        "Similarity":0.683,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":84,
+        "Similarity":1.222,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":85,
+        "Similarity":0.681,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"John Kasich,
+             John Kasich,
+             also appearing on ABC's \"This Week",
+            "Relation":"said",
+            "Object":"John Kasich favored TJohn Kasich United States with 1,
+            500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":86,
+        "Similarity":0.724,
+        "Triplets":[
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          },
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":87,
+        "Similarity":1.144,
+        "Triplets":[
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":88,
+        "Similarity":0.724,
+        "Triplets":[
+          {
+            "Confidence":"0.99",
+            "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+             making sure tJohn Kasichy assimilate",
+            "Relation":"said",
+            "Object":"John Kasich"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":89,
+        "Similarity":2.048,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          },
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          }
+        ]
+      },
+      {
+        "GroupNum":90,
+        "Similarity":3.048,
+        "Triplets":[
+          {
+            "Confidence":"0.91",
+            "Subject":"Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      },
+      {
+        "GroupNum":91,
+        "Similarity":2.066,
+        "Triplets":[
+          {
+            "Confidence":"0.98",
+            "Subject":"an issue Europe has to come to grips with",
+            "Relation":"is fundamentally",
+            "Object":"an issue EUROPE ' Europe has to come to grips with"
+          },
+          {
+            "Confidence":"0.86",
+            "Subject":"EUROPE ' Europe",
+            "Relation":"to come",
+            "Object":"to grips"
+          }
+        ]
+      }
+    ]
+  },
+  "EffTriples":[
+    {
+      "Subject":"Open Hearts The United States",
+      "Relation":"was circulating",
+      "Object":"A new Facebook group,
+       Open Homes,
+       Open Hearts The United States,
+       was circulating an online petition urging Obama administration officials to \"greatly increase the number of Syrian refugees who are resettled in the country as refugees and let The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+    },
+    {
+      "Subject":"an online petition",
+      "Relation":"urging",
+      "Object":"Obama administration officials"
+    },
+    {
+      "Subject":"Obama administration officials",
+      "Relation":"to let",
+      "Object":"The United States know John Kirby would be willing to welcome an individual or a family into John Kirbyr home"
+    },
+    {
+      "Subject":"Immigration",
+      "Relation":"has become",
+      "Object":"a major issue in the campaign"
+    },
+    {
+      "Subject":"the campaign",
+      "Relation":"leading",
+      "Object":"up to the 2016 presidential election"
+    },
+    {
+      "Subject":"Billionaire businessman Donald Trump",
+      "Relation":"has risen",
+      "Object":"to tBillionaire businessman Donald Trump top of tBillionaire businessman Donald Trump Republican field"
+    },
+    {
+      "Subject":"Donald Trump",
+      "Relation":"is businessman of",
+      "Object":"Billionaire"
+    },
+    {
+      "Subject":"Donald Trump Republican field",
+      "Relation":"is businessman of",
+      "Object":"tBillionaire"
+    },
+    {
+      "Subject":"Donald Trump",
+      "Relation":"is said last businessman of",
+      "Object":"week Billionaire"
+    },
+    {
+      "Subject":"John Kasich,
+       John Kasich,
+       also appearing on ABC's \"This Week",
+      "Relation":"said",
+      "Object":"John Kasich favored TJohn Kasich United States with 1,
+      500 more refugees but that tJohn Kasich situation was not primarily a WASHINGTON problem"
+    },
+    {
+      "Subject":"John Kasich think TJohn Kasich United States do have a responsibility in terms of taking some more folks in,
+       making sure tJohn Kasichy assimilate",
+      "Relation":"said",
+      "Object":"John Kasich"
+    },
+    {
+      "Subject":"Europe",
+      "Relation":"to come",
+      "Object":"to grips"
+    },
+    {
+      "Subject":"an issue Europe has to come to grips with",
+      "Relation":"is fundamentally",
+      "Object":"an issue EUROPE ' Europe has to come to grips with"
+    },
+    {
+      "Subject":"EUROPE ' Europe",
+      "Relation":"to come",
+      "Object":"to grips"
+    }
+  ]
+}
