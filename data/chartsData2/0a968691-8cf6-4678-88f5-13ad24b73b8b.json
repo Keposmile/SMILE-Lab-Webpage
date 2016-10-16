@@ -1,2346 +1,2298 @@
 {
-  "Status":6,
-  "Message":"GetEffTriplets",
-  "NewsId":"0a968691-8cf6-4678-88f5-13ad24b73b8b",
-  "Data":{
-    "EffectTripletsNum":16,
-    "GroupNum":120,
-    "Groups":[
-      {
-        "GroupNum":1,
-        "Similarity":2.019,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          }
-        ]
-      },
-      {
-        "GroupNum":2,
-        "Similarity":2.409,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          }
-        ]
-      },
-      {
-        "GroupNum":3,
-        "Similarity":1.913,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          }
-        ]
-      },
-      {
-        "GroupNum":4,
-        "Similarity":1.073,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          }
-        ]
-      },
-      {
-        "GroupNum":5,
-        "Similarity":0.81,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          }
-        ]
-      },
-      {
-        "GroupNum":6,
-        "Similarity":0.902,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          }
-        ]
-      },
-      {
-        "GroupNum":7,
-        "Similarity":0.884,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":8,
-        "Similarity":0.312,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":9,
-        "Similarity":0.84,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":10,
-        "Similarity":0.981,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":11,
-        "Similarity":1.025,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":12,
-        "Similarity":0.92,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":13,
-        "Similarity":0.878,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":14,
-        "Similarity":0.732,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":15,
-        "Similarity":0.813,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"also delivered",
-            "Object":"a witFrederic J Brown Carly Fiorina"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":16,
-        "Similarity":2.289,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          }
-        ]
-      },
-      {
-        "GroupNum":17,
-        "Similarity":2.102,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          }
-        ]
-      },
-      {
-        "GroupNum":18,
-        "Similarity":0.772,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          }
-        ]
-      },
-      {
-        "GroupNum":19,
-        "Similarity":0.589,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          }
-        ]
-      },
-      {
-        "GroupNum":20,
-        "Similarity":0.665,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          }
-        ]
-      },
-      {
-        "GroupNum":21,
-        "Similarity":0.718,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":22,
-        "Similarity":0.175,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":23,
-        "Similarity":0.619,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":24,
-        "Similarity":0.74,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":25,
-        "Similarity":0.775,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":26,
-        "Similarity":0.682,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":27,
-        "Similarity":0.626,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":28,
-        "Similarity":0.514,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":29,
-        "Similarity":0.61,
-        "Triplets":[
-          {
-            "Confidence":"0.88",
-            "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":30,
-        "Similarity":2.132,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          }
-        ]
-      },
-      {
-        "GroupNum":31,
-        "Similarity":0.987,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          }
-        ]
-      },
-      {
-        "GroupNum":32,
-        "Similarity":0.792,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          }
-        ]
-      },
-      {
-        "GroupNum":33,
-        "Similarity":0.843,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          }
-        ]
-      },
-      {
-        "GroupNum":34,
-        "Similarity":0.858,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":35,
-        "Similarity":0.331,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":36,
-        "Similarity":0.84,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":37,
-        "Similarity":0.974,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":38,
-        "Similarity":0.958,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":39,
-        "Similarity":0.887,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":40,
-        "Similarity":0.757,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":41,
-        "Similarity":0.878,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":42,
-        "Similarity":0.788,
-        "Triplets":[
-          {
-            "Confidence":"0.39",
-            "Subject":"a witFrederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packarding response"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":43,
-        "Similarity":0.761,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          }
-        ]
-      },
-      {
-        "GroupNum":44,
-        "Similarity":0.595,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          }
-        ]
-      },
-      {
-        "GroupNum":45,
-        "Similarity":0.676,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          }
-        ]
-      },
-      {
-        "GroupNum":46,
-        "Similarity":0.73,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":47,
-        "Similarity":0.175,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":48,
-        "Similarity":0.638,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":49,
-        "Similarity":0.769,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":50,
-        "Similarity":0.773,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":51,
-        "Similarity":0.69,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":52,
-        "Similarity":0.639,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":53,
-        "Similarity":0.519,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":54,
-        "Similarity":0.627,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"Frederic J Brown Carly Fiorina",
-            "Relation":"is the former chief executive of",
-            "Object":"Hewlett-Packard"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":55,
-        "Similarity":0.724,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          }
-        ]
-      },
-      {
-        "GroupNum":56,
-        "Similarity":1.862,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          }
-        ]
-      },
-      {
-        "GroupNum":57,
-        "Similarity":0.759,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":58,
-        "Similarity":0.434,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":59,
-        "Similarity":0.866,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":60,
-        "Similarity":0.877,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":61,
-        "Similarity":1.15,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":62,
-        "Similarity":1.812,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":63,
-        "Similarity":0.789,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":64,
-        "Similarity":0.753,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":65,
-        "Similarity":1.905,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Mr. Trump",
-            "Relation":"think",
-            "Object":"women's all over the fiscal irresponsibility ,
-             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-            \" Frederic J Brown Carly Fiorina ,
-             the former chief executive of Hewlett-Packard said"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":66,
-        "Similarity":1.028,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          }
-        ]
-      },
-      {
-        "GroupNum":67,
-        "Similarity":2.208,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":68,
-        "Similarity":1.148,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":69,
-        "Similarity":0.883,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":70,
-        "Similarity":1.08,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":71,
-        "Similarity":0.949,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":72,
-        "Similarity":0.874,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":73,
-        "Similarity":0.928,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":74,
-        "Similarity":0.755,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":75,
-        "Similarity":0.757,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"Rand Paul",
-            "Relation":"should n't even be",
-            "Object":"on Wednesday's main stage",
-            "Attribute":"T:First of all)"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":76,
-        "Similarity":0.986,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":77,
-        "Similarity":0.709,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":78,
-        "Similarity":0.77,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":79,
-        "Similarity":0.81,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":80,
-        "Similarity":1.048,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":81,
-        "Similarity":2.406,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":82,
-        "Similarity":0.69,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":83,
-        "Similarity":0.603,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":84,
-        "Similarity":2.38,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Donald Donald Trump",
-            "Relation":"said",
-            "Object":"of tRand Paul Kentucky senator",
-            "Attribute":"would not Rand Paulsitate to take tRand Paul)"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":85,
-        "Similarity":1.496,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          }
-        ]
-      },
-      {
-        "GroupNum":86,
-        "Similarity":0.937,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":87,
-        "Similarity":1.628,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":88,
-        "Similarity":1.08,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":89,
-        "Similarity":0.809,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":90,
-        "Similarity":1.018,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":91,
-        "Similarity":0.849,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":92,
-        "Similarity":0.879,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"tRand Paul Kentucky senator",
-            "Relation":"has signalled",
-            "Object":"Rand Paul"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":93,
-        "Similarity":0.276,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          },
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          }
-        ]
-      },
-      {
-        "GroupNum":94,
-        "Similarity":0.247,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":95,
-        "Similarity":0.287,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":96,
-        "Similarity":0.225,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":97,
-        "Similarity":0.328,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":98,
-        "Similarity":0.179,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":99,
-        "Similarity":0.272,
-        "Triplets":[
-          {
-            "Confidence":"0.93",
-            "Subject":"Paulsitate",
-            "Relation":"to take",
-            "Object":"tRand Paul"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":100,
-        "Similarity":1.287,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":101,
-        "Similarity":0.85,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":102,
-        "Similarity":0.703,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":103,
-        "Similarity":0.771,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":104,
-        "Similarity":0.871,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":105,
-        "Similarity":0.869,
-        "Triplets":[
-          {
-            "Confidence":"0.96",
-            "Subject":"a foursome of low-polling candidates",
-            "Relation":"took",
-            "Object":"low-polling candidates shots",
-            "Attribute":"L:in the \"undercard\" debate"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":106,
-        "Similarity":1.393,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          },
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":107,
-        "Similarity":1.445,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":108,
-        "Similarity":0.866,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":109,
-        "Similarity":0.766,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":110,
-        "Similarity":0.87,
-        "Triplets":[
-          {
-            "Confidence":"0.94",
-            "Subject":"A fiery Senator Lindsey Graham",
-            "Relation":"warned",
-            "Object":"against nominating \"cartoon character"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":111,
-        "Similarity":1.247,
-        "Triplets":[
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          },
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          }
-        ]
-      },
-      {
-        "GroupNum":112,
-        "Similarity":2.001,
-        "Triplets":[
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":113,
-        "Similarity":0.83,
-        "Triplets":[
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":114,
-        "Similarity":0.791,
-        "Triplets":[
-          {
-            "Confidence":"0.97",
-            "Subject":"former New York governor George Pataki",
-            "Relation":"declared",
-            "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":115,
-        "Similarity":0.58,
-        "Triplets":[
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          },
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          }
-        ]
-      },
-      {
-        "GroupNum":116,
-        "Similarity":0.646,
-        "Triplets":[
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":117,
-        "Similarity":2.337,
-        "Triplets":[
-          {
-            "Confidence":"0.91",
-            "Subject":"Donald Donald Trump",
-            "Relation":"to be",
-            "Object":"cartoon character"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":118,
-        "Similarity":0.883,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          },
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          }
-        ]
-      },
-      {
-        "GroupNum":119,
-        "Similarity":0.77,
-        "Triplets":[
-          {
-            "Confidence":"0.38",
-            "Subject":"George Pataki",
-            "Relation":"is former governor of",
-            "Object":"New York"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      },
-      {
-        "GroupNum":120,
-        "Similarity":1.076,
-        "Triplets":[
-          {
-            "Confidence":"0.92",
-            "Subject":"Jeb Bush",
-            "Relation":"lost",
-            "Object":"ground"
-          },
-          {
-            "Confidence":"0.94",
-            "Subject":"Donald Trump",
-            "Relation":"entered",
-            "Object":"tJeb Bush Republican race"
-          }
-        ]
-      }
+    "Status": 6,
+    "Message": "GetEffTriplets",
+    "NewsId": "0a968691-8cf6-4678-88f5-13ad24b73b8b",
+    "Data": {
+        "EffectTripletsNum": 16,
+        "GroupNum": 120,
+        "Groups": [
+            {
+                "GroupNum": 1,
+                "Similarity": 2.019,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 2,
+                "Similarity": 2.409,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 3,
+                "Similarity": 1.913,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 4,
+                "Similarity": 1.073,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 5,
+                "Similarity": 0.81,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 6,
+                "Similarity": 0.902,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 7,
+                "Similarity": 0.884,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 8,
+                "Similarity": 0.312,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 9,
+                "Similarity": 0.84,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 10,
+                "Similarity": 0.981,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 11,
+                "Similarity": 1.025,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 12,
+                "Similarity": 0.92,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 13,
+                "Similarity": 0.878,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 14,
+                "Similarity": 0.732,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 15,
+                "Similarity": 0.813,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "also delivered",
+                        "Object": "a witFrederic J Brown Carly Fiorina"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 16,
+                "Similarity": 2.289,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 17,
+                "Similarity": 2.102,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 18,
+                "Similarity": 0.772,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 19,
+                "Similarity": 0.589,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 20,
+                "Similarity": 0.665,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 21,
+                "Similarity": 0.718,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 22,
+                "Similarity": 0.175,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 23,
+                "Similarity": 0.619,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 24,
+                "Similarity": 0.74,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 25,
+                "Similarity": 0.775,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 26,
+                "Similarity": 0.682,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 27,
+                "Similarity": 0.626,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 28,
+                "Similarity": 0.514,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 29,
+                "Similarity": 0.61,
+                "Triplets": [
+                    {
+                        "Confidence": "0.88",
+                        "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 30,
+                "Similarity": 2.132,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 31,
+                "Similarity": 0.987,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 32,
+                "Similarity": 0.792,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 33,
+                "Similarity": 0.843,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 34,
+                "Similarity": 0.858,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 35,
+                "Similarity": 0.331,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 36,
+                "Similarity": 0.84,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 37,
+                "Similarity": 0.974,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 38,
+                "Similarity": 0.958,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 39,
+                "Similarity": 0.887,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 40,
+                "Similarity": 0.757,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 41,
+                "Similarity": 0.878,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 42,
+                "Similarity": 0.788,
+                "Triplets": [
+                    {
+                        "Confidence": "0.39",
+                        "Subject": "a witFrederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packarding response"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 43,
+                "Similarity": 0.761,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 44,
+                "Similarity": 0.595,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 45,
+                "Similarity": 0.676,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 46,
+                "Similarity": 0.73,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 47,
+                "Similarity": 0.175,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 48,
+                "Similarity": 0.638,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 49,
+                "Similarity": 0.769,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 50,
+                "Similarity": 0.773,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 51,
+                "Similarity": 0.69,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 52,
+                "Similarity": 0.639,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 53,
+                "Similarity": 0.519,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 54,
+                "Similarity": 0.627,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "Frederic J Brown Carly Fiorina",
+                        "Relation": "is the former chief executive of",
+                        "Object": "Hewlett-Packard"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 55,
+                "Similarity": 0.724,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 56,
+                "Similarity": 1.862,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 57,
+                "Similarity": 0.759,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 58,
+                "Similarity": 0.434,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 59,
+                "Similarity": 0.866,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 60,
+                "Similarity": 0.877,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 61,
+                "Similarity": 1.15,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 62,
+                "Similarity": 1.812,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 63,
+                "Similarity": 0.789,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 64,
+                "Similarity": 0.753,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 65,
+                "Similarity": 1.905,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Mr. Trump",
+                        "Relation": "think",
+                        "Object": "women's all over the fiscal irresponsibility ,\n             the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n            \" Frederic J Brown Carly Fiorina ,\n             the former chief executive of Hewlett-Packard said"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 66,
+                "Similarity": 1.028,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 67,
+                "Similarity": 2.208,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 68,
+                "Similarity": 1.148,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 69,
+                "Similarity": 0.883,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 70,
+                "Similarity": 1.08,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 71,
+                "Similarity": 0.949,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 72,
+                "Similarity": 0.874,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 73,
+                "Similarity": 0.928,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 74,
+                "Similarity": 0.755,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 75,
+                "Similarity": 0.757,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "Rand Paul",
+                        "Relation": "should n't even be",
+                        "Object": "on Wednesday's main stage",
+                        "Attribute": "T:First of all)"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 76,
+                "Similarity": 0.986,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 77,
+                "Similarity": 0.709,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 78,
+                "Similarity": 0.77,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 79,
+                "Similarity": 0.81,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 80,
+                "Similarity": 1.048,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 81,
+                "Similarity": 2.406,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 82,
+                "Similarity": 0.69,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 83,
+                "Similarity": 0.603,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 84,
+                "Similarity": 2.38,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "said",
+                        "Object": "of tRand Paul Kentucky senator",
+                        "Attribute": "would not Rand Paulsitate to take tRand Paul)"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 85,
+                "Similarity": 1.496,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 86,
+                "Similarity": 0.937,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 87,
+                "Similarity": 1.628,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 88,
+                "Similarity": 1.08,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 89,
+                "Similarity": 0.809,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 90,
+                "Similarity": 1.018,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 91,
+                "Similarity": 0.849,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 92,
+                "Similarity": 0.879,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "tRand Paul Kentucky senator",
+                        "Relation": "has signalled",
+                        "Object": "Rand Paul"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 93,
+                "Similarity": 0.276,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    },
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 94,
+                "Similarity": 0.247,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 95,
+                "Similarity": 0.287,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 96,
+                "Similarity": 0.225,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 97,
+                "Similarity": 0.328,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 98,
+                "Similarity": 0.179,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 99,
+                "Similarity": 0.272,
+                "Triplets": [
+                    {
+                        "Confidence": "0.93",
+                        "Subject": "Paulsitate",
+                        "Relation": "to take",
+                        "Object": "tRand Paul"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 100,
+                "Similarity": 1.287,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 101,
+                "Similarity": 0.85,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 102,
+                "Similarity": 0.703,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 103,
+                "Similarity": 0.771,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 104,
+                "Similarity": 0.871,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 105,
+                "Similarity": 0.869,
+                "Triplets": [
+                    {
+                        "Confidence": "0.96",
+                        "Subject": "a foursome of low-polling candidates",
+                        "Relation": "took",
+                        "Object": "low-polling candidates shots",
+                        "Attribute": "L:in the \"undercard\" debate"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 106,
+                "Similarity": 1.393,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    },
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 107,
+                "Similarity": 1.445,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 108,
+                "Similarity": 0.866,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 109,
+                "Similarity": 0.766,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 110,
+                "Similarity": 0.87,
+                "Triplets": [
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "A fiery Senator Lindsey Graham",
+                        "Relation": "warned",
+                        "Object": "against nominating \"cartoon character"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 111,
+                "Similarity": 1.247,
+                "Triplets": [
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    },
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 112,
+                "Similarity": 2.001,
+                "Triplets": [
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 113,
+                "Similarity": 0.83,
+                "Triplets": [
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 114,
+                "Similarity": 0.791,
+                "Triplets": [
+                    {
+                        "Confidence": "0.97",
+                        "Subject": "former New York governor George Pataki",
+                        "Relation": "declared",
+                        "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 115,
+                "Similarity": 0.58,
+                "Triplets": [
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    },
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 116,
+                "Similarity": 0.646,
+                "Triplets": [
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 117,
+                "Similarity": 2.337,
+                "Triplets": [
+                    {
+                        "Confidence": "0.91",
+                        "Subject": "Donald Donald Trump",
+                        "Relation": "to be",
+                        "Object": "cartoon character"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 118,
+                "Similarity": 0.883,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    },
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 119,
+                "Similarity": 0.77,
+                "Triplets": [
+                    {
+                        "Confidence": "0.38",
+                        "Subject": "George Pataki",
+                        "Relation": "is former governor of",
+                        "Object": "New York"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            },
+            {
+                "GroupNum": 120,
+                "Similarity": 1.076,
+                "Triplets": [
+                    {
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush",
+                        "Relation": "lost",
+                        "Object": "ground"
+                    },
+                    {
+                        "Confidence": "0.94",
+                        "Subject": "Donald Trump",
+                        "Relation": "entered",
+                        "Object": "tJeb Bush Republican race"
+                    }
+                ]
+            }
+        ]
+    },
+    "EffTriples": [
+        {
+            "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+            "Relation": "also delivered",
+            "Object": "a witFrederic J Brown Carly Fiorina"
+        },
+        {
+            "Subject": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+            "Relation": "is the former chief executive of",
+            "Object": "Hewlett-Packard"
+        },
+        {
+            "Subject": "a witFrederic J Brown Carly Fiorina",
+            "Relation": "is the former chief executive of",
+            "Object": "Hewlett-Packarding response"
+        },
+        {
+            "Subject": "Frederic J Brown Carly Fiorina",
+            "Relation": "is the former chief executive of",
+            "Object": "Hewlett-Packard"
+        },
+        {
+            "Subject": "Mr. Trump",
+            "Relation": "think",
+            "Object": "women's all over the fiscal irresponsibility ,\n       the failure to take a leadership position in the world heard very clearly what Mr. Trump said,\n      \" Frederic J Brown Carly Fiorina ,\n       the former chief executive of Hewlett-Packard said"
+        },
+        {
+            "Subject": "Rand Paul",
+            "Relation": "should n't even be",
+            "Object": "on Wednesday's main stage"
+        },
+        {
+            "Subject": "Donald Donald Trump",
+            "Relation": "said",
+            "Object": "of tRand Paul Kentucky senator"
+        },
+        {
+            "Subject": "tRand Paul Kentucky senator",
+            "Relation": "has signalled",
+            "Object": "Rand Paul"
+        },
+        {
+            "Subject": "Paulsitate",
+            "Relation": "to take",
+            "Object": "tRand Paul"
+        },
+        {
+            "Subject": "a foursome of low-polling candidates",
+            "Relation": "took",
+            "Object": "low-polling candidates shots"
+        },
+        {
+            "Subject": "A fiery Senator Lindsey Graham",
+            "Relation": "warned",
+            "Object": "against nominating \"cartoon character"
+        },
+        {
+            "Subject": "former New York governor George Pataki",
+            "Relation": "declared",
+            "Object": "Donald Donald Trump \"unfit to be `` cartoon character"
+        },
+        {
+            "Subject": "Donald Donald Trump",
+            "Relation": "to be",
+            "Object": "cartoon character"
+        },
+        {
+            "Subject": "George Pataki",
+            "Relation": "is former governor of",
+            "Object": "New York"
+        },
+        {
+            "Subject": "Jeb Bush",
+            "Relation": "lost",
+            "Object": "ground"
+        },
+        {
+            "Subject": "Donald Trump",
+            "Relation": "entered",
+            "Object": "tJeb Bush Republican race"
+        }
     ]
-  },
-  "EffTriples":[
-    {
-      "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-      "Relation":"also delivered",
-      "Object":"a witFrederic J Brown Carly Fiorina"
-    },
-    {
-      "Subject":"Frederic J Brown Carly Frederic J Brown Carly Fiorina",
-      "Relation":"is the former chief executive of",
-      "Object":"Hewlett-Packard"
-    },
-    {
-      "Subject":"a witFrederic J Brown Carly Fiorina",
-      "Relation":"is the former chief executive of",
-      "Object":"Hewlett-Packarding response"
-    },
-    {
-      "Subject":"Frederic J Brown Carly Fiorina",
-      "Relation":"is the former chief executive of",
-      "Object":"Hewlett-Packard"
-    },
-    {
-      "Subject":"Mr. Trump",
-      "Relation":"think",
-      "Object":"women's all over the fiscal irresponsibility ,
-       the failure to take a leadership position in the world heard very clearly what Mr. Trump said,
-      \" Frederic J Brown Carly Fiorina ,
-       the former chief executive of Hewlett-Packard said"
-    },
-    {
-      "Subject":"Rand Paul",
-      "Relation":"should n't even be",
-      "Object":"on Wednesday's main stage"
-    },
-    {
-      "Subject":"Donald Donald Trump",
-      "Relation":"said",
-      "Object":"of tRand Paul Kentucky senator"
-    },
-    {
-      "Subject":"tRand Paul Kentucky senator",
-      "Relation":"has signalled",
-      "Object":"Rand Paul"
-    },
-    {
-      "Subject":"Paulsitate",
-      "Relation":"to take",
-      "Object":"tRand Paul"
-    },
-    {
-      "Subject":"a foursome of low-polling candidates",
-      "Relation":"took",
-      "Object":"low-polling candidates shots"
-    },
-    {
-      "Subject":"A fiery Senator Lindsey Graham",
-      "Relation":"warned",
-      "Object":"against nominating \"cartoon character"
-    },
-    {
-      "Subject":"former New York governor George Pataki",
-      "Relation":"declared",
-      "Object":"Donald Donald Trump \"unfit to be `` cartoon character"
-    },
-    {
-      "Subject":"Donald Donald Trump",
-      "Relation":"to be",
-      "Object":"cartoon character"
-    },
-    {
-      "Subject":"George Pataki",
-      "Relation":"is former governor of",
-      "Object":"New York"
-    },
-    {
-      "Subject":"Jeb Bush",
-      "Relation":"lost",
-      "Object":"ground"
-    },
-    {
-      "Subject":"Donald Trump",
-      "Relation":"entered",
-      "Object":"tJeb Bush Republican race"
-    }
-  ]
 }

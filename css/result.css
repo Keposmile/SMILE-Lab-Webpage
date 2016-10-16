@@ -11,6 +11,16 @@
   margin: 20px 0 20px 20px;
   overflow-y: scroll;
 }
+.accordion{
+    margin: 20px auto;
+}
+.accordion-toggle{
+    font-size: 20px;
+    color:#0099ff;
+}
+.accordion-toggle:hover{
+    color: #00aaff;
+}
 #main{
   float: left;
   overflow: hidden;
@@ -40,4 +50,10 @@ svg>rect{
 body{
   background-color: #0099ff;
   overflow-x: scroll;
+}
+.triplets{
+    margin: 5px 10px;
+}
+.this{
+    color: red;
 }

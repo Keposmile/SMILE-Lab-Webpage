@@ -27,24 +27,36 @@
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/main.css">
     <link type="text/css" rel="stylesheet" href="../css/result.css">
+    <link type="text/css" rel="stylesheet" href="../css/datepicker.css">
 </head>
 
 <body data-feedly-mini="yes" style="zoom: 1;">
     <div>
         <div ms-controller="leftDiv" id="leftDiv" class="well well-large">
             <input id="returnBtn" class="btn btn-success" type="button" value="返回">
-            <h1>{{@title}}</h1>
-            <div ms-for="el in @content" class="well well-large">
-                <h2>{{el.title}}</h2>
-                <h3>Triplets:</h3>
-                <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
-                    <span class="Confidence">{{el.Confidence}}</span> (
-                    <span class="Subject">{{el.Subject}}</span>;
-                    <span class="Relation">{{el.Relation}}</span>;
-                    <span class="Object">{{el.Object}}</span>)
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group" ms-for="($index,el) in @content">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" ms-attr={href:"#collapse"+$index}>
+                    {{el.Entity}}
+                  </a>
                 </div>
+                <div ms-attr={id:"collapse"+$index} class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div ms-for="el in el.Neighbours">
+                            <span  class="Confidence triplets">{{el.Confidence}}</span>
+                            <span  class="triplets this" ms-if=el.Subject==el.this>{{el.Subject}}</span>
+                            <span  class="triplets" ms-if=!(el.Subject==el.this)>{{el.Subject}}</span>
+                            <span class="triplets">{{el.Relation}}</span>
+                            <span class="triplets this" ms-if=el.Object==el.this>{{el.Object}}</span>
+                            <span class="triplets" ms-if=!(el.Object==el.this)>{{el.Object}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
+
         <div id="main" class="well well-large">
             <div id="vis"></div>
         </div>

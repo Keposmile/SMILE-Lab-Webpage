@@ -974,15 +974,15 @@ function relation_chart_setup(id, data) {
         // },
         series: [{
             type: 'force',
-            name: "Entity",
-            ribbonType: false,
-            categories: [{
-                name: ''
-            }, {
-                name: ''
-            }, {
-                name: ''
-            }],
+            name: null,
+            // ribbonType: false,
+            // categories: [{
+            //     // name: ''
+            // }, {
+            //     // name: ''
+            // }, {
+            //     // name: ''
+            // }],
             itemStyle: {
                 normal: {
                     label: {
@@ -1069,7 +1069,7 @@ function setNodesAndLinks1(data){
     linkObj.source = nodeObj_1.name;
     linkObj.target = nodeObj_2.name;
     linkObj.weight = 1;
-    linkObj.name ="Relation:"+data[i].Relation;
+    linkObj.name ="Relation : "+data[i].Relation;
     // {source : '保罗-乔布斯', target : '乔布斯', weight :2 , name: '父亲'},
     var nodeSame1 = 0;
     var nodeSame2 = 0;

@@ -5,7 +5,7 @@
   currentExpander = null;
   currentFrom = void 0;
   currentTo = void 0;
-  window.showRelationship = function(url) {
+  window.showRelationship = function(url,graphData) {
     var name1, name2, expander, num, from, to;
     var entityUrl, fromQ, numQ, toQ;
     clearGraph();
@@ -15,6 +15,15 @@
     // numQ = num ? "&num=" + num : "";
     // showGlobalLoading();
     return $.getJSON(url, function(graph) {
+        // console.log(JSON.stringify(graphData));
+        graphData=JSON.parse(JSON.stringify(graphData));
+      for(var i = 0;i<graph.nodes.length;i++){
+        graphData.nodes.push(graph.nodes[i]);
+      }
+      for(var j = 0;j<graph.links.length;j++){
+        graphData.links.push(graph.links[j]);
+      }
+      graph=graphData;
       var focusNodes, vis;
       focusNodes = $.grep(graph.nodes, function(n, i) {
         return n.name === name1 || n.name === name2;

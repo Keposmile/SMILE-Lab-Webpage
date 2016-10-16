@@ -1,0 +1,26 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "name": "LADY Elsie Robson",
+            "numNeighbors": 14
+        },
+        {
+            "id": 2,
+            "name": "Works by the Newcastle Painters Group",
+            "numNeighbors": 23
+        }
+    ],
+    "links": [
+        {
+            "id": 10,
+            "source": 1,
+            "target": 2,
+            "tags": [
+                {
+                    "label": "will officially unveil"
+                }
+            ]
+        }
+    ]
+}

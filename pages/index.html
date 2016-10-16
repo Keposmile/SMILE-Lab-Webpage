@@ -221,7 +221,7 @@
                                             <div ms-for="el in @relationTripletData1">
                                                 <h4><b>{{el.Description}}</b></h4>
                                                 <div ms-for="($index,el) in el.Groups">
-                                                  <h6><b>Group {{$index+1}} (Similarity) : <span class="Similarity">{{el.Similarity}}</span></b></h6>
+                                                  <h6><b>Similarity : <span class="Similarity">{{el.Similarity}}</span></b></h6>
                                                   <div ms-for="el in el.Triplets">
                                                       <span class="Confidence">{{el.Confidence}}</span> (
                                                       <span class="Subject">{{el.Subject}}</span>;
@@ -246,7 +246,7 @@
                                             <div>这是个标题</div>
                                             <div ms-for="($index,el) in @relationTripletData2">
                                               <!-- <div ms-for="($index,el) in el.Groups"> -->
-                                                <h6><b>Group {{$index+1}} (Similarity) : <span class="Similarity">{{el.Similarity}}</span></b></h6>
+                                                <h6><b>Similarity : <span class="Similarity">{{el.Similarity}}</span></b></h6>
                                                 <div ms-for="el in el.Triplets">
                                                     <span class="Confidence">{{el.Confidence}}</span> (
                                                     <span class="Subject">{{el.Subject}}</span>;
