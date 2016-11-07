@@ -1,0 +1,739 @@
+{
+    "Status": 4,
+    "Message": "NewsTripletsExtraction",
+    "NewsId": "b5521a54-4e42-4b56-a06a-4a453414a5f5",
+    "Data": {
+        "SentenceNum": 34,
+        "Sentences": [
+            {
+                "SentenceOrder": 1,
+                "Sentence": "Hillary, Trump still leading their parties as front-runners But Sanders , Carson, Carson continue to climb just below their parties in second place Poll shows more bad news for deposed front-runner Jeb Bush ",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.83",
+                        "Subject": "Trump",
+                        "Relation": "leading",
+                        "Object": "their parties",
+                        "Attribute": "T:still)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "Sanders , Carson, Carson",
+                        "Relation": "continue",
+                        "Object": "to climb just below their parties in second place Poll shows more bad news for deposed front-runner Jeb Bush",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 2,
+                "Sentence": "But Poll , by Fox News, also shows the up-and-coming challenges facing their parties parties within their parties own parties.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.89",
+                        "Subject": "the up-and-coming challenges",
+                        "Relation": "facing",
+                        "Object": "their parties parties",
+                        "Attribute": "L:within their parties)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "Poll , by Fox News",
+                        "Relation": "shows",
+                        "Object": "the up-and-coming challenges facing their parties parties within their parties",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 3,
+                "Sentence": "Sanders , Carson continues to eat away at Jeb Bush Hillary Clinton's front-runner status among Democratic voters, while Republican candidates Ben Carson and Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates are gaining ground on Trump among GOP voters.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Republican candidates Ben Carson and Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "are gaining",
+                        "Object": "ground",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.94",
+                        "Subject": "Carson",
+                        "Relation": "continues",
+                        "Object": "to eat away at Jeb Bush Hillary Clinton's front-runner status among Democratic voters",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 4,
+                "Sentence": "Jeb Bush Hillary Clinton's has struggled to keep Jeb Bush Hillary Clinton's front-runner status on tBen Carson Democratic side of tBen Carson 2016 presidential race, as a new poll shows Jeb Bush Hillary Clinton's is staying afloat despite growing unfavorability numbers",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.96",
+                        "Subject": "Jeb Bush Hillary Clinton's",
+                        "Relation": "has struggled",
+                        "Object": "to keep Jeb Bush Hillary Clinton's front-runner status on tBen Carson Democratic side of tBen Carson 2016",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.95",
+                        "Subject": "a new poll",
+                        "Relation": "shows",
+                        "Object": "Jeb Bush Hillary Clinton's is staying afloat despite growing unfavorability numbers",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 5,
+                "Sentence": "The erosion of Jeb Bush Hillary Clinton's lead over Sanders , Carson is perhaps Poll most dramatic news, as the former first lady and secretary of state has tumbled from 64 percent in July 2014 to 44 percent now.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "Carson",
+                        "Relation": "is perhaps",
+                        "Object": "Poll most dramatic news",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.95",
+                        "Subject": "the former first lady and secretary of state",
+                        "Relation": "has tumbled",
+                        "Object": "from 64 percent",
+                        "Attribute": "T:in July 2014)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 6,
+                "Sentence": "Jeb Bush Hillary Clinton's campaign has been overwhelmed by controversy after it was revealed this spring that Jeb Bush Hillary Clinton's used a private, home-based email server while Jeb Bush Hillary Clinton's was secretary of state.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.88",
+                        "Subject": "Jeb Bush Hillary Clinton's campaign",
+                        "Relation": "has been overwhelmed",
+                        "Object": "by controversy",
+                        "Attribute": "T:after it was revealed this spring that Jeb Bush Hillary Clinton's used a private, home-based email server"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.40",
+                        "Subject": "it",
+                        "Relation": "was revealed",
+                        "Object": "",
+                        "Attribute": "T:this spring"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 7,
+                "Sentence": "The FBI is investigating whether Jeb Bush Hillary Clinton's mishandled any classified information.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "The FBI",
+                        "Relation": "is investigating",
+                        "Object": "whether Jeb Bush Hillary Clinton's mishandled any classified information",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 8,
+                "Sentence": "Jeb Bush Hillary Clinton's has denied any wrongdoing and has not been formally accused of any crime.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Jeb Bush Hillary Clinton's",
+                        "Relation": "has denied",
+                        "Object": "any wrongdoing",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "Jeb Bush Hillary Clinton's",
+                        "Relation": "has not been formally accused",
+                        "Object": "of any crime",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 9,
+                "Sentence": "Jeb Bush Hillary Clinton's has also apologized multiple times in national interviews and is expected to testify in late October before a House committee.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.92",
+                        "Subject": "Jeb Bush Hillary Clinton's",
+                        "Relation": "has apologized",
+                        "Object": "",
+                        "Attribute": " T:multiple times"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 10,
+                "Sentence": "Yet none of Jeb Bush Hillary Clinton's efforts at atonement seem to be stopping Jeb Bush Hillary Clinton's stumbling in national Fox News polls.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.89",
+                        "Subject": "none of Jeb Bush Hillary Clinton's efforts at atonement",
+                        "Relation": "seem",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.98",
+                        "Subject": "none of Jeb Bush Hillary Clinton's efforts at atonement",
+                        "Relation": "to be stopping",
+                        "Object": "Jeb Bush Hillary Clinton's stumbling in national Fox News polls",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 11,
+                "Sentence": "Jeb Bush Hillary Clinton's favorability ratings are at a new low after three years of national Fox News polls, for example, as only 38 percent of respondents in a new poll view Jeb Bush Hillary Clinton's favorably, down from a high of 56 percent in June 2013.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "Jeb Bush Hillary Clinton's favorability ratings",
+                        "Relation": "are down",
+                        "Object": "",
+                        "Attribute": "T:after three years of national Fox News polls, for example"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 12,
+                "Sentence": "None of the other major candidates had as dramatic of a downward change in the other major candidates favorability numbers.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.84",
+                        "Subject": "None of the other major candidates",
+                        "Relation": "had",
+                        "Object": "",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 13,
+                "Sentence": "Billionaire Donald Billionaire Donald Trump, is viewed favorably by 34 percent of respondents in the new poll in tBillionaire Donald Trump new poll - virtually unchanged from tBillionaire Donald Trump 33 percent Billionaire Donald Trump received back in April 2011.",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 14,
+                "Sentence": "Ben Carson does not appear to have been harmed by Ben Carson controversial comments about a Muslim president - Poll shows Ben Carson favorability rating has risen from 26 percent in May to 46 percent today.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "Ben Carson",
+                        "Relation": "to have been harmed",
+                        "Object": "by Ben Carson",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 15,
+                "Sentence": "Likewise, Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates star continues to rise in terms of Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates favorability ratings, which have gone up from 13 percent in May to 38 percent in a new poll.",
+                "TripletsNum": 4,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.72",
+                        "Subject": "Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "to rise",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.95",
+                        "Subject": "Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "has notched",
+                        "Object": "back-to-back impressive performances in the national GOP debates favorability ratings",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.90",
+                        "Subject": "favorability ratings",
+                        "Relation": "have gone",
+                        "Object": "up",
+                        "Attribute": "from 13 percent in May"
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.93",
+                        "Subject": "Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "continues",
+                        "Object": "to rise in terms of Former Hewlett-Packard CEO Carly Fiorina",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 16,
+                "Sentence": "Billionaire Donald Trump barely registered in polls taken The past six months ago, but Billionaire Donald Trump status as the GOP presidential front-runner has stayed steady despite frequent controversies and attacks from rivals",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "Billionaire Donald Trump",
+                        "Relation": "barely registered",
+                        "Object": "",
+                        "Attribute": "L:in polls"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.81",
+                        "Subject": "polls",
+                        "Relation": "taken",
+                        "Object": "",
+                        "Attribute": "T:The past six months ago"
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.85",
+                        "Subject": "Billionaire Donald Trump status as the GOP presidential front-runner",
+                        "Relation": "has stayed",
+                        "Object": "steady",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 17,
+                "Sentence": "Sanders , Carson registered at only 3 percent in January, and now stands at 30 percent, solidly in second place behind Jeb Bush Hillary Clinton's.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.96",
+                        "Subject": "Carson",
+                        "Relation": "registered",
+                        "Object": "",
+                        "Attribute": " L:at only 3 percent"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 18,
+                "Sentence": "Vice President Joe Biden, who is still undecided on whether to run for the office, sits in third place with 18 percent.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Vice President Joe Biden",
+                        "Relation": "is",
+                        "Object": "",
+                        "Attribute": " T:still"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.94",
+                        "Subject": "Vice President Joe Biden",
+                        "Relation": "sits",
+                        "Object": "in third place",
+                        "Attribute": "with 18 percent)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 19,
+                "Sentence": "Among Republican, Billionaire Donald Trump rocketing rise to the top of the field has been just as dramatic.",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 20,
+                "Sentence": "Republican wasn't even in a Fox News poll until March, wRepublicann Republican received 3 percent.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.66",
+                        "Subject": "Republican",
+                        "Relation": "was n't",
+                        "Object": "even",
+                        "Attribute": "L:in a Fox News poll"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "wRepublicann Republican",
+                        "Relation": "received",
+                        "Object": "3 percent",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 21,
+                "Sentence": "Republican current level of support of 26 percent is unchanged since the end of July 2014, despite consistent controversies and attacks from other candidates.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.96",
+                        "Subject": "Republican current level of support of 26 percent",
+                        "Relation": "is",
+                        "Object": "unchanged",
+                        "Attribute": "T:since the end of July 2014)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 22,
+                "Sentence": "Ben Carson rise has been just as impressive as that of Sanders , Carson.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.86",
+                        "Subject": "Ben Carson rise",
+                        "Relation": "has been",
+                        "Object": "just as impressive as that of Sanders",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 23,
+                "Sentence": "Registering at 9 percent at tBen Carson beginning of tBen Carson year, Ben Carson has doubled that total to 18 percent, or just 8 percent behind Billionaire Donald Trump.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.79",
+                        "Subject": "tBen Carson",
+                        "Relation": "beginning",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.87",
+                        "Subject": "Ben Carson",
+                        "Relation": "has doubled",
+                        "Object": "that total",
+                        "Attribute": "to 18 percent, or just 8 percent behind Billionaire Donald Trump)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 24,
+                "Sentence": "Retired neurosurgeon Ben Carson has solidified Ben Carson hold on second place in a new, national Fox News poll that puts Ben Carson just 8 percent behind Trump among Republican voters",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "a new, national Fox News poll",
+                        "Relation": "puts",
+                        "Object": "Ben Carson",
+                        "Attribute": "just 8 percent behind Trump"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.96",
+                        "Subject": "Retired neurosurgeon Ben Carson",
+                        "Relation": "has solidified",
+                        "Object": "Ben Carson hold on second place in a new, national Fox News poll",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 25,
+                "Sentence": "Like Ben Carson, Jeb Bush Hillary Clinton's ascent has been steady - Jeb Bush Hillary Clinton's only received 1 percent in a Fox News poll in March.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "Jeb Bush Hillary Clinton's ascent",
+                        "Relation": "has been",
+                        "Object": "steady - Jeb Bush Hillary Clinton's only received 1 percent",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 26,
+                "Sentence": "Sen. Marco Rubio of Florida, who has been on a mini-surge of Ben Carson own over the past several days, is tied with Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates at 9 percent.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Sen. Marco Rubio of Florida",
+                        "Relation": "has been",
+                        "Object": "on a mini-surge of Ben Carson own",
+                        "Attribute": "T:over the past several days)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.81",
+                        "Subject": "Sen. Marco Rubio of Florida",
+                        "Relation": "is tied",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.95",
+                        "Subject": "Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "has notched",
+                        "Object": "back-to-back impressive performances in the national GOP debates",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 27,
+                "Sentence": "For former front-runner Jeb Bush Hillary Jeb Bush Hillary Clinton's, Poll shows the same fate as that of Jeb Bush Hillary Clinton's - a slow-but-steady slump over the past several months.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.85",
+                        "Subject": "Poll",
+                        "Relation": "shows",
+                        "Object": "the same fate as that of Jeb Bush Hillary Clinton's - a slow-but-steady slump over the past several months",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 28,
+                "Sentence": "The former Florida governor was at 12 percent in March but now received just 7 percent in a new poll - putting The former Florida governor in sixth place.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.96",
+                        "Subject": "The former Florida governor",
+                        "Relation": "was",
+                        "Object": "at 12 percent",
+                        "Attribute": "T:in March)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 29,
+                "Sentence": "Jeb Bush Hillary Clinton's was deposed as the Republican leader over the summer after Billionaire Donald Trump entered the 2016 presidential race.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "Jeb Bush Hillary Clinton's",
+                        "Relation": "was deposed",
+                        "Object": "as the Republican leader",
+                        "Attribute": "T:over the summer"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "Billionaire Donald Trump",
+                        "Relation": "entered",
+                        "Object": "the 2016 presidential race",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 30,
+                "Sentence": "a Fox News poll included 1,013 randomly chosen registered voters nationwide from Sept. 20-22.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "a Fox News poll",
+                        "Relation": "included",
+                        "Object": "1,013 randomly chosen registered voters nationwide from Sept",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 31,
+                "Sentence": "a Fox News poll has a margin of error of plus or minus 3 percentage points for all registered voters, 5 percentage points for Democratic respondents and 4.5 percentage points for Republican.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.98",
+                        "Subject": "a Fox News poll",
+                        "Relation": "has",
+                        "Object": "a margin of error of plus or minus 3 percentage points for all registered voters, 5 percentage points for Democratic respondents and 4.5 percentage points for Republican",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 32,
+                "Sentence": "Former Hewlett-Packard Former Hewlett-Packard CEO Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates , who has notched back-to-back impressive performances in the national GOP debates , who has notched back-to-back impressive performances in the national GOP debates, is in third place with 9 percent.",
+                "TripletsNum": 4,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.98",
+                        "Subject": "Former Hewlett-Packard Former Hewlett-Packard CEO Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "has notched",
+                        "Object": "back-to-back impressive performances in the national GOP debates",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.96",
+                        "Subject": "the national GOP debates",
+                        "Relation": "has notched",
+                        "Object": "back-to-back impressive performances in the national GOP debates",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.96",
+                        "Subject": "the national GOP debates",
+                        "Relation": "has notched",
+                        "Object": "back-to-back impressive performances in the national GOP debates",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.97",
+                        "Subject": "Former Hewlett-Packard Former Hewlett-Packard CEO Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "is",
+                        "Object": "in third place",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 33,
+                "Sentence": "Like Ben Carson, Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates ascent has been steady - Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates only received 1 percent in a Fox News poll in March.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Ben Carson",
+                        "Relation": "has been",
+                        "Object": "steady - Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates only received 1 percent in a Fox News poll in March",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 34,
+                "Sentence": "Sen. Marco Rubio of Florida, who has been on a mini-surge of Ben Carson own over the past several days, is tied with Former Hewlett-Packard CEO Carly Fiorina , who has notched back-to-back impressive performances in the national GOP debates at 9 percent",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Sen. Marco Rubio of Florida",
+                        "Relation": "has been",
+                        "Object": "on a mini-surge of Ben Carson own",
+                        "Attribute": "T:over the past several days)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.81",
+                        "Subject": "Sen. Marco Rubio of Florida",
+                        "Relation": "is tied",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.95",
+                        "Subject": "Former Hewlett-Packard CEO Carly Fiorina",
+                        "Relation": "has notched",
+                        "Object": "back-to-back impressive performances in the national GOP debates",
+                        "Attribute": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "sliderData": [
+        {
+            "parameter": "The size of Slipping Window",
+            "description": "The param specifies the size of slipping window",
+            "min": 0,
+            "max": 10,
+            "val": 5
+        },
+        {
+            "parameter": "Slipping Step",
+            "description": "The param specifies the slipping steps in selection",
+            "min": 0,
+            "max": 10,
+            "val": 3
+        },
+        {
+            "parameter": "The Coefficient of Semantic Similarity",
+            "description": "The param specifies the weighted proportions of semantic similarity in calculation",
+            "min": 1,
+            "max": 10,
+            "val": 8
+        },
+        {
+            "parameter": "The Coefficient of Literal Similartiy",
+            "description": "The param specifies the weighted proportions of literal similarity in calculation",
+            "min": 1,
+            "max": 10,
+            "val": 2
+        },
+        {
+            "parameter": "The Representative Facts",
+            "description": "The param specifies the number of representative resulting facts",
+            "min": 0,
+            "max": 100,
+            "val": 30
+        }
+    ]
+}

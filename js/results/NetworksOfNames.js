@@ -71,6 +71,7 @@
       });
       return data.links.forEach(function(l) {
         if (!l.preprocessed) {
+            console.log(l.source);
           nodesMap.get(l.source).numShown = nodesMap.get(l.source).numShown + 1;
           nodesMap.get(l.target).numShown = nodesMap.get(l.target).numShown + 1;
           l.source = nodesMap.get(l.source);

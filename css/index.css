@@ -411,3 +411,6 @@ a.btn-success.disable-execute{
     font-weight: normal;
     font-size: 15px;
 }
+.chartdata-list-title{
+    margin-bottom: 50px;
+}

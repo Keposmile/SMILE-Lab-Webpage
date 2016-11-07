@@ -1,1 +1,743 @@
-{"Status":5,"Message":"CalTripletsSimilarity","NewsId":"42370647-bb57-4b72-b91d-67f4eab6213c","Data":{"WindowsGroup":[{"Windows":1,"Description":"Windows1","TripletsNum":3,"GroupNum":3,"Groups":[{"GroupNum":1,"Similarity":0.959,"Triplets":[{"Confidence":"0.88","Subject":"David Miliband","Relation":"is head of","Object":"the International Rescue Committee"},{"Confidence":"0.94","Subject":"The United States","Relation":"has been","Object":"a leader in refugee","Attribute":"T:always)"}]},{"GroupNum":2,"Similarity":1.066,"Triplets":[{"Confidence":"0.88","Subject":"David Miliband","Relation":"is head of","Object":"the International Rescue Committee"},{"Confidence":"0.88","Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"}]},{"GroupNum":3,"Similarity":1.068,"Triplets":[{"Confidence":"0.94","Subject":"The United States","Relation":"has been","Object":"a leader in refugee","Attribute":"T:always)"},{"Confidence":"0.88","Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"}]}]},{"Windows":2,"Description":"Windows2","TripletsNum":5,"GroupNum":10,"Groups":[{"GroupNum":1,"Similarity":1.068,"Triplets":[{"Confidence":"0.94","Subject":"The United States","Relation":"has been","Object":"a leader in refugee","Attribute":"T:always)"},{"Confidence":"0.88","Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"}]},{"GroupNum":2,"Similarity":1.428,"Triplets":[{"Confidence":"0.94","Subject":"The United States","Relation":"has been","Object":"a leader in refugee","Attribute":"T:always)"},{"Confidence":"0.94","Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."}]},{"GroupNum":3,"Similarity":0.477,"Triplets":[{"Confidence":"0.94","Subject":"The United States","Relation":"has been","Object":"a leader in refugee","Attribute":"T:always)"},{"Confidence":"0.95","Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"}]},{"GroupNum":4,"Similarity":0.489,"Triplets":[{"Confidence":"0.94","Subject":"The United States","Relation":"has been","Object":"a leader in refugee","Attribute":"T:always)"},{"Confidence":"0.89","Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"}]},{"GroupNum":5,"Similarity":2.569,"Triplets":[{"Confidence":"0.88","Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"},{"Confidence":"0.94","Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."}]},{"GroupNum":6,"Similarity":1.001,"Triplets":[{"Confidence":"0.88","Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"},{"Confidence":"0.95","Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"}]},{"GroupNum":7,"Similarity":0.728,"Triplets":[{"Confidence":"0.88","Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"},{"Confidence":"0.89","Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"}]},{"GroupNum":8,"Similarity":1.025,"Triplets":[{"Confidence":"0.94","Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."},{"Confidence":"0.95","Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"}]},{"GroupNum":9,"Similarity":0.765,"Triplets":[{"Confidence":"0.94","Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."},{"Confidence":"0.89","Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"}]},{"GroupNum":10,"Similarity":0.858,"Triplets":[{"Confidence":"0.95","Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"},{"Confidence":"0.89","Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"}]}]},{"Windows":3,"Description":"Windows3","TripletsNum":4,"GroupNum":6,"Groups":[{"GroupNum":1,"Similarity":1.025,"Triplets":[{"Confidence":"0.94","Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."},{"Confidence":"0.95","Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"}]},{"GroupNum":2,"Similarity":0.765,"Triplets":[{"Confidence":"0.94","Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."},{"Confidence":"0.89","Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"}]},{"GroupNum":3,"Similarity":0.799,"Triplets":[{"Confidence":"0.94","Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."},{"Confidence":"0.93","Subject":"U.S. authorities","Relation":"want","Object":"to prevent militants from Islamic"}]},{"GroupNum":4,"Similarity":0.858,"Triplets":[{"Confidence":"0.95","Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"},{"Confidence":"0.89","Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"}]},{"GroupNum":5,"Similarity":0.283,"Triplets":[{"Confidence":"0.95","Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"},{"Confidence":"0.93","Subject":"U.S. authorities","Relation":"want","Object":"to prevent militants from Islamic"}]},{"GroupNum":6,"Similarity":0.215,"Triplets":[{"Confidence":"0.89","Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"},{"Confidence":"0.93","Subject":"U.S. authorities","Relation":"want","Object":"to prevent militants from Islamic"}]}]},{"Windows":4,"Description":"Windows4","TripletsNum":1,"GroupNum":0,"Groups":[]},{"Windows":5,"Description":"Windows5","TripletsNum":1,"GroupNum":0,"Groups":[]},{"Windows":6,"Description":"Windows6","TripletsNum":2,"GroupNum":1,"Groups":[{"GroupNum":1,"Similarity":0.943,"Triplets":[{"Confidence":"0.76","Subject":"Austria and Germany","Relation":"expects","Object":"to receive 800,000"},{"Confidence":"0.91","Subject":"John Kirby","Relation":"said","Object":"as many as 1,500 more refugees could be"}]}]},{"Windows":7,"Description":"Windows7","TripletsNum":2,"GroupNum":1,"Groups":[{"GroupNum":1,"Similarity":0.859,"Triplets":[{"Confidence":"0.91","Subject":"John Kirby","Relation":"said","Object":"as many as 1,500 more refugees could be"},{"Confidence":"0.92","Subject":"Immigration","Relation":"has become","Object":"a major issue in the campaign leading"}]}]},{"Windows":8,"Description":"Windows8","TripletsNum":2,"GroupNum":1,"Groups":[{"GroupNum":1,"Similarity":0.891,"Triplets":[{"Confidence":"0.92","Subject":"Immigration","Relation":"has become","Object":"a major issue in the campaign leading"},{"Confidence":"0.96","Subject":"John Kasich","Relation":"think","Object":"1,500 more refugees do have a responsibility in terms of taking some"}]}]},{"Windows":9,"Description":"Windows9","TripletsNum":2,"GroupNum":1,"Groups":[{"GroupNum":1,"Similarity":0.757,"Triplets":[{"Confidence":"0.96","Subject":"John Kasich","Relation":"think","Object":"1,500 more refugees do have a responsibility in terms of taking some"},{"Confidence":"0.91","Subject":"Europe","Relation":"to come","Object":"to grips"}]}]},{"Windows":10,"Description":"Windows10","TripletsNum":2,"GroupNum":1,"Groups":[{"GroupNum":1,"Similarity":0.771,"Triplets":[{"Confidence":"0.91","Subject":"Europe","Relation":"to come","Object":"to grips"},{"Confidence":"0.94","Subject":"TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies","Relation":"have","Object":"a responsibility to"}]}]},{"Windows":11,"Description":"Windows11","TripletsNum":2,"GroupNum":1,"Groups":[{"GroupNum":1,"Similarity":1.096,"Triplets":[{"Confidence":"0.94","Subject":"TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies","Relation":"have","Object":"a responsibility to"},{"Confidence":"0.93","Subject":"Blaming EUROPE ' Europe","Relation":"is","Object":"EUROPE ' Europe and the rest of European allies"}]}]},{"Windows":12,"Description":"Windows12","TripletsNum":1,"GroupNum":0,"Groups":[]},{"Windows":13,"Description":"Windows13","TripletsNum":1,"GroupNum":0,"Groups":[]},{"Windows":14,"Description":"Windows14","TripletsNum":2,"GroupNum":1,"Groups":[{"GroupNum":1,"Similarity":1.096,"Triplets":[{"Confidence":"0.94","Subject":"TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies","Relation":"have","Object":"a responsibility to"},{"Confidence":"0.93","Subject":"Blaming EUROPE ' Europe","Relation":"is","Object":"EUROPE ' Europe and the rest of European allies"}]}]}]},"EffTriples":[{"Subject":"David Miliband","Relation":"is head of","Object":"the International Rescue Committee"},{"Subject":"The United States","Relation":"has been","Object":"a leader in refugee"},{"Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"},{"Subject":"The United States","Relation":"has been","Object":"a leader in refugee"},{"Subject":"John Kirby","Relation":"is spokesman of","Object":"State Department"},{"Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."},{"Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"},{"Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"},{"Subject":"John Kirby","Relation":"cited","Object":"the $4 billion U.S."},{"Subject":"TJohn Kirbyre","Relation":"is","Object":"a significant vetting process John Kirbyre for folks"},{"Subject":"\" TJohn Kirbyre","Relation":"is a significant vetting process John Kirbyre for","Object":"folks"},{"Subject":"U.S. authorities","Relation":"want","Object":"to prevent militants from Islamic"},{"Subject":"U.S. authorities","Relation":"want","Object":"to prevent militants from Islamic"},{"Subject":"Austria and Germany","Relation":"expects","Object":"to receive 800,000"},{"Subject":"Austria and Germany","Relation":"expects","Object":"to receive 800,000"},{"Subject":"John Kirby","Relation":"said","Object":"as many as 1,500 more refugees could be"},{"Subject":"John Kirby","Relation":"said","Object":"as many as 1,500 more refugees could be"},{"Subject":"Immigration","Relation":"has become","Object":"a major issue in the campaign leading"},{"Subject":"Immigration","Relation":"has become","Object":"a major issue in the campaign leading"},{"Subject":"John Kasich","Relation":"think","Object":"1,500 more refugees do have a responsibility in terms of taking some"},{"Subject":"John Kasich","Relation":"think","Object":"1,500 more refugees do have a responsibility in terms of taking some"},{"Subject":"Europe","Relation":"to come","Object":"to grips"},{"Subject":"Europe","Relation":"to come","Object":"to grips"},{"Subject":"TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies","Relation":"have","Object":"a responsibility to"},{"Subject":"TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies","Relation":"have","Object":"a responsibility to"},{"Subject":"Blaming EUROPE ' Europe","Relation":"is","Object":"EUROPE ' Europe and the rest of European allies"},{"Subject":"Blaming EUROPE ' Europe","Relation":"is","Object":"EUROPE ' Europe and the rest of European allies"},{"Subject":"TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies","Relation":"have","Object":"a responsibility to"},{"Subject":"TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies","Relation":"have","Object":"a responsibility to"},{"Subject":"Blaming EUROPE ' Europe","Relation":"is","Object":"EUROPE ' Europe and the rest of European allies"}]}
+{
+    "Status": 5,
+    "Message": "CalTripletsSimilarity",
+    "NewsId": "42370647-bb57-4b72-b91d-67f4eab6213c",
+    "Data": {
+        "WindowsGroup": [
+            {
+                "Windows": 1,
+                "Description": "Windows1",
+                "TripletsNum": 3,
+                "GroupNum": 3,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.959,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "David Miliband",
+                                "Relation": "is head of",
+                                "Object": "the International Rescue Committee"
+                            },
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "The United States",
+                                "Relation": "has been",
+                                "Object": "a leader in refugee",
+                                "Attribute": "T:always)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 1.066,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "David Miliband",
+                                "Relation": "is head of",
+                                "Object": "the International Rescue Committee"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "John Kirby",
+                                "Relation": "is spokesman of",
+                                "Object": "State Department"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.068,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "The United States",
+                                "Relation": "has been",
+                                "Object": "a leader in refugee",
+                                "Attribute": "T:always)"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "John Kirby",
+                                "Relation": "is spokesman of",
+                                "Object": "State Department"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 2,
+                "Description": "Windows2",
+                "TripletsNum": 5,
+                "GroupNum": 10,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.068,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "The United States",
+                                "Relation": "has been",
+                                "Object": "a leader in refugee",
+                                "Attribute": "T:always)"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "John Kirby",
+                                "Relation": "is spokesman of",
+                                "Object": "State Department"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 1.428,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "The United States",
+                                "Relation": "has been",
+                                "Object": "a leader in refugee",
+                                "Attribute": "T:always)"
+                            },
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "John Kirby",
+                                "Relation": "cited",
+                                "Object": "the $4 billion U.S."
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 0.477,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "The United States",
+                                "Relation": "has been",
+                                "Object": "a leader in refugee",
+                                "Attribute": "T:always)"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TJohn Kirbyre",
+                                "Relation": "is",
+                                "Object": "a significant vetting process John Kirbyre for folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.489,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "The United States",
+                                "Relation": "has been",
+                                "Object": "a leader in refugee",
+                                "Attribute": "T:always)"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "\" TJohn Kirbyre",
+                                "Relation": "is a significant vetting process John Kirbyre for",
+                                "Object": "folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 2.569,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "John Kirby",
+                                "Relation": "is spokesman of",
+                                "Object": "State Department"
+                            },
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "John Kirby",
+                                "Relation": "cited",
+                                "Object": "the $4 billion U.S."
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.001,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "John Kirby",
+                                "Relation": "is spokesman of",
+                                "Object": "State Department"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TJohn Kirbyre",
+                                "Relation": "is",
+                                "Object": "a significant vetting process John Kirbyre for folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 0.728,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "John Kirby",
+                                "Relation": "is spokesman of",
+                                "Object": "State Department"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "\" TJohn Kirbyre",
+                                "Relation": "is a significant vetting process John Kirbyre for",
+                                "Object": "folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 1.025,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "John Kirby",
+                                "Relation": "cited",
+                                "Object": "the $4 billion U.S."
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TJohn Kirbyre",
+                                "Relation": "is",
+                                "Object": "a significant vetting process John Kirbyre for folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 0.765,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "John Kirby",
+                                "Relation": "cited",
+                                "Object": "the $4 billion U.S."
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "\" TJohn Kirbyre",
+                                "Relation": "is a significant vetting process John Kirbyre for",
+                                "Object": "folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 0.858,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TJohn Kirbyre",
+                                "Relation": "is",
+                                "Object": "a significant vetting process John Kirbyre for folks"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "\" TJohn Kirbyre",
+                                "Relation": "is a significant vetting process John Kirbyre for",
+                                "Object": "folks"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 3,
+                "Description": "Windows3",
+                "TripletsNum": 4,
+                "GroupNum": 6,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.025,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "John Kirby",
+                                "Relation": "cited",
+                                "Object": "the $4 billion U.S."
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TJohn Kirbyre",
+                                "Relation": "is",
+                                "Object": "a significant vetting process John Kirbyre for folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.765,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "John Kirby",
+                                "Relation": "cited",
+                                "Object": "the $4 billion U.S."
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "\" TJohn Kirbyre",
+                                "Relation": "is a significant vetting process John Kirbyre for",
+                                "Object": "folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 0.799,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "John Kirby",
+                                "Relation": "cited",
+                                "Object": "the $4 billion U.S."
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "U.S. authorities",
+                                "Relation": "want",
+                                "Object": "to prevent militants from Islamic"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.858,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TJohn Kirbyre",
+                                "Relation": "is",
+                                "Object": "a significant vetting process John Kirbyre for folks"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "\" TJohn Kirbyre",
+                                "Relation": "is a significant vetting process John Kirbyre for",
+                                "Object": "folks"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.283,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TJohn Kirbyre",
+                                "Relation": "is",
+                                "Object": "a significant vetting process John Kirbyre for folks"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "U.S. authorities",
+                                "Relation": "want",
+                                "Object": "to prevent militants from Islamic"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 0.215,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "\" TJohn Kirbyre",
+                                "Relation": "is a significant vetting process John Kirbyre for",
+                                "Object": "folks"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "U.S. authorities",
+                                "Relation": "want",
+                                "Object": "to prevent militants from Islamic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 4,
+                "Description": "Windows4",
+                "TripletsNum": 1,
+                "GroupNum": 0,
+                "Groups": []
+            },
+            {
+                "Windows": 5,
+                "Description": "Windows5",
+                "TripletsNum": 1,
+                "GroupNum": 0,
+                "Groups": []
+            },
+            {
+                "Windows": 6,
+                "Description": "Windows6",
+                "TripletsNum": 2,
+                "GroupNum": 1,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.943,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.76",
+                                "Subject": "Austria and Germany",
+                                "Relation": "expects",
+                                "Object": "to receive 800,000"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "John Kirby",
+                                "Relation": "said",
+                                "Object": "as many as 1,500 more refugees could be"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 7,
+                "Description": "Windows7",
+                "TripletsNum": 2,
+                "GroupNum": 1,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.859,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "John Kirby",
+                                "Relation": "said",
+                                "Object": "as many as 1,500 more refugees could be"
+                            },
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Immigration",
+                                "Relation": "has become",
+                                "Object": "a major issue in the campaign leading"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 8,
+                "Description": "Windows8",
+                "TripletsNum": 2,
+                "GroupNum": 1,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.891,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Immigration",
+                                "Relation": "has become",
+                                "Object": "a major issue in the campaign leading"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "John Kasich",
+                                "Relation": "think",
+                                "Object": "1,500 more refugees do have a responsibility in terms of taking some"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 9,
+                "Description": "Windows9",
+                "TripletsNum": 2,
+                "GroupNum": 1,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.757,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "John Kasich",
+                                "Relation": "think",
+                                "Object": "1,500 more refugees do have a responsibility in terms of taking some"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Europe",
+                                "Relation": "to come",
+                                "Object": "to grips"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 10,
+                "Description": "Windows10",
+                "TripletsNum": 2,
+                "GroupNum": 1,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.771,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Europe",
+                                "Relation": "to come",
+                                "Object": "to grips"
+                            },
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies",
+                                "Relation": "have",
+                                "Object": "a responsibility to"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 11,
+                "Description": "Windows11",
+                "TripletsNum": 2,
+                "GroupNum": 1,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.096,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies",
+                                "Relation": "have",
+                                "Object": "a responsibility to"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Blaming EUROPE ' Europe",
+                                "Relation": "is",
+                                "Object": "EUROPE ' Europe and the rest of European allies"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 12,
+                "Description": "Windows12",
+                "TripletsNum": 1,
+                "GroupNum": 0,
+                "Groups": []
+            },
+            {
+                "Windows": 13,
+                "Description": "Windows13",
+                "TripletsNum": 1,
+                "GroupNum": 0,
+                "Groups": []
+            },
+            {
+                "Windows": 14,
+                "Description": "Windows14",
+                "TripletsNum": 2,
+                "GroupNum": 1,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.096,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies",
+                                "Relation": "have",
+                                "Object": "a responsibility to"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Blaming EUROPE ' Europe",
+                                "Relation": "is",
+                                "Object": "EUROPE ' Europe and the rest of European allies"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "EffTriples": [
+        {
+            "Subject": "David Miliband",
+            "Relation": "is head of",
+            "Object": "the International Rescue Committee"
+        },
+        {
+            "Subject": "The United States",
+            "Relation": "has been",
+            "Object": "a leader in refugee"
+        },
+        {
+            "Subject": "John Kirby",
+            "Relation": "is spokesman of",
+            "Object": "State Department"
+        },
+        {
+            "Subject": "The United States",
+            "Relation": "has been",
+            "Object": "a leader in refugee"
+        },
+        {
+            "Subject": "John Kirby",
+            "Relation": "is spokesman of",
+            "Object": "State Department"
+        },
+        {
+            "Subject": "John Kirby",
+            "Relation": "cited",
+            "Object": "the $4 billion U.S."
+        },
+        {
+            "Subject": "TJohn Kirbyre",
+            "Relation": "is",
+            "Object": "a significant vetting process John Kirbyre for folks"
+        },
+        {
+            "Subject": "\" TJohn Kirbyre",
+            "Relation": "is a significant vetting process John Kirbyre for",
+            "Object": "folks"
+        },
+        {
+            "Subject": "John Kirby",
+            "Relation": "cited",
+            "Object": "the $4 billion U.S."
+        },
+        {
+            "Subject": "TJohn Kirbyre",
+            "Relation": "is",
+            "Object": "a significant vetting process John Kirbyre for folks"
+        },
+        {
+            "Subject": "\" TJohn Kirbyre",
+            "Relation": "is a significant vetting process John Kirbyre for",
+            "Object": "folks"
+        },
+        {
+            "Subject": "U.S. authorities",
+            "Relation": "want",
+            "Object": "to prevent militants from Islamic"
+        },
+        {
+            "Subject": "U.S. authorities",
+            "Relation": "want",
+            "Object": "to prevent militants from Islamic"
+        },
+        {
+            "Subject": "Austria and Germany",
+            "Relation": "expects",
+            "Object": "to receive 800,000"
+        },
+        {
+            "Subject": "Austria and Germany",
+            "Relation": "expects",
+            "Object": "to receive 800,000"
+        },
+        {
+            "Subject": "John Kirby",
+            "Relation": "said",
+            "Object": "as many as 1,500 more refugees could be"
+        },
+        {
+            "Subject": "John Kirby",
+            "Relation": "said",
+            "Object": "as many as 1,500 more refugees could be"
+        },
+        {
+            "Subject": "Immigration",
+            "Relation": "has become",
+            "Object": "a major issue in the campaign leading"
+        },
+        {
+            "Subject": "Immigration",
+            "Relation": "has become",
+            "Object": "a major issue in the campaign leading"
+        },
+        {
+            "Subject": "John Kasich",
+            "Relation": "think",
+            "Object": "1,500 more refugees do have a responsibility in terms of taking some"
+        },
+        {
+            "Subject": "John Kasich",
+            "Relation": "think",
+            "Object": "1,500 more refugees do have a responsibility in terms of taking some"
+        },
+        {
+            "Subject": "Europe",
+            "Relation": "to come",
+            "Object": "to grips"
+        },
+        {
+            "Subject": "Europe",
+            "Relation": "to come",
+            "Object": "to grips"
+        },
+        {
+            "Subject": "TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies",
+            "Relation": "have",
+            "Object": "a responsibility to"
+        },
+        {
+            "Subject": "TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies",
+            "Relation": "have",
+            "Object": "a responsibility to"
+        },
+        {
+            "Subject": "Blaming EUROPE ' Europe",
+            "Relation": "is",
+            "Object": "EUROPE ' Europe and the rest of European allies"
+        },
+        {
+            "Subject": "Blaming EUROPE ' Europe",
+            "Relation": "is",
+            "Object": "EUROPE ' Europe and the rest of European allies"
+        },
+        {
+            "Subject": "TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies",
+            "Relation": "have",
+            "Object": "a responsibility to"
+        },
+        {
+            "Subject": "TMichael Ignatieff TMichael Ignatieff United States and TMichael Ignatieff United States allies",
+            "Relation": "have",
+            "Object": "a responsibility to"
+        },
+        {
+            "Subject": "Blaming EUROPE ' Europe",
+            "Relation": "is",
+            "Object": "EUROPE ' Europe and the rest of European allies"
+        }
+    ]
+}

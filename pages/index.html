@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
@@ -71,38 +71,41 @@
                 <div class="content-tab panel-body">
                     <div ms-if="@show_guide()" id="guide">
                         <div ms-if="!@showExampleSlider">
-                          <h1>The Guide</h1>
+                            <!-- <h1>Introduction</h1> -->
+                            <h3>We present a system that extracts salient entities,concepts, and their relationships from a set of related documents, discoers connections within and across them,and presents the resulting information in a graph-based visualization.</h3>
+                            <h3>In our demonstration, we use a large collection of news crawled from the Web. We show how groups of documents can be selected and showcase interesting new connections that can be explored using our system.
+        </h3>
                         </div>
                         <div ms-if="@showExampleSlider" id="example" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators">
-                            <li data-target="#example" data-slide-to="0" class="active"></li>
-                            <li data-target="#example" data-slide-to="1"></li>
-                            <li data-target="#example" data-slide-to="2"></li>
-                            <li data-target="#example" data-slide-to="3"></li>
-                            <li data-target="#example" data-slide-to="4"></li>
-                            <li data-target="#example" data-slide-to="5"></li>
-                          </ol>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#example" data-slide-to="0" class="active"></li>
+                                <li data-target="#example" data-slide-to="1"></li>
+                                <li data-target="#example" data-slide-to="2"></li>
+                                <li data-target="#example" data-slide-to="3"></li>
+                                <li data-target="#example" data-slide-to="4"></li>
+                                <li data-target="#example" data-slide-to="5"></li>
+                            </ol>
 
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner" role="listbox">
-                            <div class="item example-items active">
-                              <img ms-attr="{src:@example_img.first}" alt="">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item example-items active">
+                                    <img ms-attr="{src:@example_img.first}" alt="">
+                                </div>
+                                <div class="item example-items" ms-for="el in @example_img.list">
+                                    <img ms-attr="{src:el}">
+                                </div>
                             </div>
-                            <div class="item example-items" ms-for="el in @example_img.list">
-                              <img ms-attr="{src:el}">
-                            </div>
-                          </div>
 
-                          <!-- Controls -->
-                          <a class="left carousel-control" href="#example" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#example" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#example" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#example" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                     <div ms-if="@show_content()" id="content" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
@@ -149,7 +152,7 @@
                                     <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
                                     <div class="divide_line"></div> -->
 
-                                    <h3>Knowledge Triples</h3>
+                                    <h3>Fact candidates</h3>
                                     <div class="Sentences" ms-for="el in @TripletsData.Sentences">
                                         <h5>{{el.Sentence}}</h5>
                                         <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
@@ -189,10 +192,10 @@
                             <div class="item active">
                                 <!-- <img src="..." alt="..."> -->
                                 <div class="carousel-caption">
-                                    <h4><img src="../img/info.png" alt="">tips：</h4>
-                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <h4><img src="../img/info.png" alt="">Fact Extraction</h4>
+                                    <p>Open domain fact extraction extracts all fact candidates from the document.</p>
                                     <div class="divide_line"></div>
-                                    <h3 ms-on-click="@show_slider_win_effect()">Triples</h3>
+                                    <h3 ms-on-click="@show_slider_win_effect()">Fact candidates</h3>
                                     <div class="Sentences1" ms-for="el in @TripletsData.Sentences">
                                         <h5>{{el.Sentence}}</h5>
                                         <div class="triplets" ms-if="!el.Context" ms-for="el in el.Triplets">
@@ -211,23 +214,24 @@
                             </div>
                             <div class="item">
                                 <div class="carousel-caption">
-                                    <h4><img src="../img/info.png" alt="">tips：</h4>
-                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
+                                    <h4><img src="../img/info.png" alt="">The Graph-based Visualization of Fact Extraction</h4>
+                                    <!-- <p>这是说明1！！！！！！！</p> -->
                                     <div class="divide_line"></div>
                                     <!-- <h5 ms-on-click="@setUpCharts1()">charts1</h5> -->
                                     <div class="carousel-caption">
                                         <div class="sliderLeftBox">
-                                            <div>这是也个标题</div>
+                                            <div>
+                                                <h4 class="chartdata-list-title">Similarity Measurement across Fact Candidates (Semantic Similarity + Literal Similarity)</h4></div>
                                             <div ms-for="el in @relationTripletData1">
-                                                <h4><b>{{el.Description}}</b></h4>
+                                                <h4><b>Fact candidates in slipping {{el.Description}}</b></h4>
                                                 <div ms-for="($index,el) in el.Groups">
-                                                  <h6><b>Similarity : <span class="Similarity">{{el.Similarity}}</span></b></h6>
-                                                  <div ms-for="el in el.Triplets">
-                                                      <span class="Confidence">{{el.Confidence}}</span> (
-                                                      <span class="Subject">{{el.Subject}}</span>;
-                                                      <span class="Relation">{{el.Relation}}</span>;
-                                                      <span class="Object">{{el.Object}}</span>)
-                                                  </div>
+                                                    <h6><b>The similarity between facts: <span class="Similarity">{{el.Similarity}}</span></b></h6>
+                                                    <div ms-for="el in el.Triplets">
+                                                        <span class="Confidence">{{el.Confidence}}</span> (
+                                                        <span class="Subject">{{el.Subject}}</span>;
+                                                        <span class="Relation">{{el.Relation}}</span>;
+                                                        <span class="Object">{{el.Object}}</span>)
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -237,23 +241,24 @@
                             </div>
                             <div class="item">
                                 <div class="carousel-caption">
-                                    <h4><img src="../img/info.png" alt="">tips：</h4>
-                                    <p>sahkshdkhakldhasjhkjhdalkj这是说明！！！！！！！</p>
-                                    <div class="divide_line"></div>
+                                    <h4><img src="../img/info.png" alt="">The Graph-based Visualization of the Fact after Filtering  </h4>
+                                    <!-- <p>这是说明2！！！！！！！</p> -->
+                                    <!-- <div class="divide_line"></div> -->
                                     <!-- <h5 ms-on-click="@setUpCharts2()">charts2</h5> -->
                                     <div class="carousel-caption">
                                         <div class="sliderLeftBox">
-                                            <div>这是个标题</div>
+                                            <div>
+                                                <h4 class="chartdata-list-title">The similarity across salient facts</h4></div>
                                             <div ms-for="($index,el) in @relationTripletData2">
-                                              <!-- <div ms-for="($index,el) in el.Groups"> -->
-                                                <h6><b>Similarity : <span class="Similarity">{{el.Similarity}}</span></b></h6>
+                                                <!-- <div ms-for="($index,el) in el.Groups"> -->
+                                                <h6><b>The similarity between facts: <span class="Similarity">{{el.Similarity}}</span></b></h6>
                                                 <div ms-for="el in el.Triplets">
                                                     <span class="Confidence">{{el.Confidence}}</span> (
                                                     <span class="Subject">{{el.Subject}}</span>;
                                                     <span class="Relation">{{el.Relation}}</span>;
                                                     <span class="Object">{{el.Object}}</span>)
                                                 </div>
-                                              <!-- </div> -->
+                                                <!-- </div> -->
                                             </div>
                                         </div>
                                         <div class="sliderRightBox" id="relation-chart-2"></div>
@@ -266,7 +271,7 @@
                             <span class="glyphicon glyphicon-chevron-left"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a  class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -381,7 +386,7 @@
             <!-- 查询结果面板 -->
             <div ms-visible="@show_result()" id="result-tab" class="left-tabs panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Multi-doc Ranking</h3>
+                    <h3 class="panel-title">Document Ranking</h3>
                 </div>
                 <div class="panel-body">
                     <div ms-for="el in @result.content" class="alert alert-success" role="alert">
@@ -472,7 +477,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/echarts-all.js"></script>
-    <script src="../js/mvvm.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

@@ -57,3 +57,8 @@ body{
 .this{
     color: red;
 }
+.triplets-source{
+    margin:10px auto;
+    font-size: 15px;
+    font-weight: bold;
+}

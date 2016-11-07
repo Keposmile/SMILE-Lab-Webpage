@@ -1,0 +1,649 @@
+{
+    "Status": 4,
+    "Message": "NewsTripletsExtraction",
+    "NewsId": "b0f4aee5-8935-4c41-93d8-56547ee5bd78",
+    "Data": {
+        "SentenceNum": 28,
+        "Sentences": [
+            {
+                "SentenceOrder": 1,
+                "Sentence": "Hillary Hillary Hillary Clinton is no longer the Democratic frontrunner for the second campaign; Hillary Hillary Clinton is seeing Hillary Hillary Clinton leads shrinks while an up and coming candidate over shadows Hillary Hillary Clinton.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "Hillary Hillary Clinton",
+                        "Relation": "is seeing",
+                        "Object": "Hillary Hillary Clinton leads shrinks",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 2,
+                "Sentence": "A new NBC News/Marist Poll released on Sunday, Sept. 6, 2015 shows Vermont Senator Bernie Sanders now leads Clinton in the all important early primary state of New Hampshire.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.93",
+                        "Subject": "A new NBC News/Marist Poll",
+                        "Relation": "released",
+                        "Object": "",
+                        "Attribute": "T:on Sunday"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.97",
+                        "Subject": "A new NBC News/Marist Poll released on Sunday, Sept. 6",
+                        "Relation": "shows",
+                        "Object": "Vermont Senator Bernie Sanders now leads Clinton in the all important early primary state of New Hampshire",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 3,
+                "Sentence": "Meanwhile another poll by SurveyUSA released on Saturday, Sept. 5 proves that Hillary Clinton is no longer unstoppable and maybe real estate mogul Donald Trump has become that.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "another poll by SurveyUSA",
+                        "Relation": "released",
+                        "Object": "",
+                        "Attribute": "T:on Saturday"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.89",
+                        "Subject": "another poll by SurveyUSA",
+                        "Relation": "proves",
+                        "Object": "that Hillary Clinton is no longer unstoppable",
+                        "Attribute": "T:Meanwhile)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 4,
+                "Sentence": "real estate mogul Donald Trump leads Hillary Clinton and all the Democratic candidates in a general election matchup.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "real estate mogul Donald Trump",
+                        "Relation": "leads",
+                        "Object": "Hillary Clinton and all the Democratic candidates",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 5,
+                "Sentence": "In the new shows Vermont Senator Bernie shows Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton 32 percent.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.94",
+                        "Subject": "Vermont Senator Bernie Sanders",
+                        "Relation": "having",
+                        "Object": "41 percent support",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.98",
+                        "Subject": "Vermont Senator Bernie",
+                        "Relation": "shows",
+                        "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                        "Attribute": "L:In the new shows)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 6,
+                "Sentence": "Meanwhile Vice President Joe Biden has 16 percent support in another poll by SurveyUSA released on Saturday , Sept. 5.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "Vice President Joe Biden",
+                        "Relation": "has",
+                        "Object": "16 percent support",
+                        "Attribute": "T:Meanwhile)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.95",
+                        "Subject": "another poll by SurveyUSA",
+                        "Relation": "released",
+                        "Object": "",
+                        "Attribute": "T:on Saturday"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 7,
+                "Sentence": "Hillary Hillary Clinton is seeing the reverse position being in second place, in July's version of another poll by SurveyUSA released on Saturday , Sept. 5 Hillary Hillary Clinton had 42 percent support to shows Vermont Senator Bernie Sanders 32 percent with Biden at 12 percent.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.91",
+                        "Subject": "the reverse position",
+                        "Relation": "being",
+                        "Object": "in second place",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.95",
+                        "Subject": "another poll by SurveyUSA",
+                        "Relation": "released",
+                        "Object": "",
+                        "Attribute": "T:on Saturday"
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.92",
+                        "Subject": "Hillary Hillary Clinton",
+                        "Relation": "is seeing",
+                        "Object": "the reverse position being in second place",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 8,
+                "Sentence": "shows Vermont Senator Bernie Sanders is still in only a mere 11 percent lead margin if Biden at 12 percent chooses not to run, and with a larger margin over Hillary Clinton.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.81",
+                        "Subject": "Biden at 12 percent",
+                        "Relation": "chooses",
+                        "Object": "not to run",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 9,
+                "Sentence": "shows Vermont Senator Bernie Sanders leads 49 percent to Hillary Clinton 38 percent.",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 10,
+                "Sentence": "Hillary Clinton, still has the upper hand in Iowa , Iowa.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "Hillary Clinton",
+                        "Relation": "has",
+                        "Object": "the upper hand in Iowa",
+                        "Attribute": "T:still)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 11,
+                "Sentence": "Hillary Clinton leads with 38 percent to shows Vermont Senator Bernie Sanders 27 percent.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.79",
+                        "Subject": "Hillary Clinton",
+                        "Relation": "leads",
+                        "Object": "",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.94",
+                        "Subject": "Hillary Clinton",
+                        "Relation": "shows",
+                        "Object": "Vermont Senator Bernie Sanders 27 percent",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 12,
+                "Sentence": "only a mere 11 percent lead margin is not much of a victory as only a mere 11 percent lead margin only a mere 11 percent lead margin, down from Hillary Clinton 24 percent lead just in July's.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "only a mere 11 percent lead margin",
+                        "Relation": "is not down",
+                        "Object": "much of a victory as only a mere 11 percent lead margin",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 13,
+                "Sentence": "Hillary Clinton is underwater now in potential matchups with Hillary Clinton main Republican opponent, real estate mogul Donald Trump.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "Hillary Clinton",
+                        "Relation": "is",
+                        "Object": "underwater",
+                        "Attribute": "T:now"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 14,
+                "Sentence": "The new poll by SurveyUSA released on Saturday , Sept. 5 gives real estate mogul Donald Trump the advantage over all Democratic candidates including Hillary Hillary Clinton; in fact, real estate mogul Donald Trump margin over Hillary Hillary Clinton is a larger margin over Clinton.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "The new poll by SurveyUSA",
+                        "Relation": "released",
+                        "Object": "",
+                        "Attribute": "T:on Saturday"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.97",
+                        "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                        "Relation": "is",
+                        "Object": "a larger margin over Clinton",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.38",
+                        "Subject": "Hillary Hillary Clinton",
+                        "Relation": "is a larger margin over",
+                        "Object": "Clinton",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 15,
+                "Sentence": "real estate mogul Donald Trump leads Hillary Clinton 45 percent to 40 percent.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "real estate mogul Donald Trump",
+                        "Relation": "leads",
+                        "Object": "Hillary Clinton",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 16,
+                "Sentence": "real estate mogul Donald real estate mogul Donald Trump leads Sanders 44 to 40 percent, former Vice President Al Gore who was rumored to plan a run, but will not loses to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                        "Relation": "leads",
+                        "Object": "Sanders 44",
+                        "Attribute": "to 40 percent)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "former Vice President Al Gore",
+                        "Relation": "to plan",
+                        "Object": "a run",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.96",
+                        "Subject": "former Vice President Al Gore",
+                        "Relation": "will not loses",
+                        "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 17,
+                "Sentence": "another poll by SurveyUSA released on Saturday , Sept. 5 shows Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden who trails only by 2 points, with 42 percent to real estate mogul Donald Trump 44 percent support.",
+                "TripletsNum": 4,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "another poll by SurveyUSA",
+                        "Relation": "released",
+                        "Object": "",
+                        "Attribute": "T:on Saturday"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.91",
+                        "Subject": "Biden",
+                        "Relation": "trails",
+                        "Object": "only by 2 points",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.91",
+                        "Subject": "Biden",
+                        "Relation": "trails",
+                        "Object": "only by 2 points",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.96",
+                        "Subject": "another poll by SurveyUSA",
+                        "Relation": "shows",
+                        "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 18,
+                "Sentence": "The numbers show just how much trouble Hillary Clinton campaign is in, The Hill looked at the progression from June to now show Hillary Clinton poll lead margins in CNN/ORC sampling over real estate mogul Donald Trump have shrunk from 59 percent support to real estate mogul Donald real estate mogul Donald Trump 34 percent national support to trouble Clinton's leading Hillary Clinton even if is just by five points.",
+                "TripletsNum": 3,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.90",
+                        "Subject": "The numbers",
+                        "Relation": "show",
+                        "Object": "just how much trouble",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.88",
+                        "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                        "Relation": "even is",
+                        "Object": "just by five points",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.94",
+                        "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                        "Relation": "sampling",
+                        "Object": "",
+                        "Attribute": "L:over real estate mogul Donald Trump"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 19,
+                "Sentence": "real estate mogul Donald Trump is certifiably real estate mogul Donald Trump by all accounts in treal estate mogul Donald Trump NBC/Marist Poll real estate mogul Donald Trump leads treal estate mogul Donald Trump field in Iowa and New Hampshire, with a 7-point margin in Iowa and 16 points in New Hampshire.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.96",
+                        "Subject": "real estate mogul Donald Trump",
+                        "Relation": "is",
+                        "Object": "certifiably real estate mogul Donald Trump",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.89",
+                        "Subject": "real estate mogul Donald Trump",
+                        "Relation": "is certifiably real estate mogul Donald Trump by",
+                        "Object": "all accounts",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 20,
+                "Sentence": "real estate mogul Donald Trump leads in Iowa with 29 percent and 28 percent in New Hampshire.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "real estate mogul Donald Trump",
+                        "Relation": "leads",
+                        "Object": "",
+                        "Attribute": "L:in Iowa"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 21,
+                "Sentence": "Meanwhile retired Neurosurgeon is in second place in Iowa with 22 percent, while Ohio Gov. John Kasich is seeing Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire.",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "retired Neurosurgeon",
+                        "Relation": "is",
+                        "Object": "in second place in Iowa",
+                        "Attribute": "T:Meanwhile)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.96",
+                        "Subject": "Ohio Gov. John Kasich",
+                        "Relation": "is seeing",
+                        "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 22,
+                "Sentence": "real estate mogul Donald Trump has leaded nearly all treal estate mogul Donald Trump polls in treal estate mogul Donald Trump last month with treal estate mogul Donald Trump exception of one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump tied with Carson for Iowa support in a Monmouth University poll .",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "real estate mogul Donald Trump",
+                        "Relation": "has leaded",
+                        "Object": "nearly all treal estate mogul Donald Trump polls",
+                        "Attribute": "T:last month)"
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.98",
+                        "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                        "Relation": "tied",
+                        "Object": "with Carson for Iowa support in a Monmouth University poll",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 23,
+                "Sentence": "real estate mogul Donald Trump now has treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters believing real estate mogul Donald Trump would be treal estate mogul Donald Trump GOP nominee, until now trump led in treal estate mogul Donald Trump polls but Americans still though former Florida Governor Jeb Bush would be treal estate mogul Donald Trump inevitable nominee.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.98",
+                        "Subject": "real estate mogul Donald Trump",
+                        "Relation": "has",
+                        "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                        "Attribute": "T:now)"
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 24,
+                "Sentence": "The new poll by SurveyUSA shows 30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump, only 20 percent feel that way now about former Florida Governor Jeb Bush.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.97",
+                        "Subject": "The new poll by SurveyUSA",
+                        "Relation": "shows",
+                        "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 25,
+                "Sentence": "The remaining top five includes Carson for Iowa support, Texas Sen. Ted Cruz and Florida Sen. Marco Rubio.",
+                "TripletsNum": 1,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.66",
+                        "Subject": "The remaining top five",
+                        "Relation": "includes",
+                        "Object": "Carson for Iowa support",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 26,
+                "Sentence": "shows Vermont Senator Bernie Sanders contributes the enthusiasm for shows Vermont Senator Bernie Sanders campaign as the reason for Hillary Clinton downfall.",
+                "TripletsNum": 0,
+                "Triplets": []
+            },
+            {
+                "SentenceOrder": 27,
+                "Sentence": "Speaking while campaigning in Altoona, campaigning in Altoona , Iowa , Sandersowa, Sanders said , \"So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble Clinton's campaign is bringing forth.\"",
+                "TripletsNum": 2,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.79",
+                        "Subject": "the energy and enthusiasm trouble",
+                        "Relation": "is bringing",
+                        "Object": "forth",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.93",
+                        "Subject": "Sanders",
+                        "Relation": "said",
+                        "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble",
+                        "Attribute": ""
+                    }
+                ]
+            },
+            {
+                "SentenceOrder": 28,
+                "Sentence": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows Vermont Senator Bernie Sanders and real estate mogul Donald Trump might be affecting Hillary Hillary Clinton campaign, but nothing is doing TSecretary of State.rs excitement for Sanders and Trump more than Hillary Hillary Clinton own going email scandal that only keeps growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone who abused Hillary Hillary Clinton power as Secretary of State.rs believing Secretary of State.rs would be tSecretary of State.rs GO",
+                "TripletsNum": 6,
+                "Triplets": [
+                    {
+                        "TripletOrder": 1,
+                        "Confidence": "0.95",
+                        "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                        "Relation": "might be affecting",
+                        "Object": "Hillary Hillary Clinton campaign",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 2,
+                        "Confidence": "0.91",
+                        "Subject": "nothing",
+                        "Relation": "is doing",
+                        "Object": "TSecretary of State.rs excitement for Sanders and Trump",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 3,
+                        "Confidence": "0.93",
+                        "Subject": "Secretary of State.rs",
+                        "Relation": "believing",
+                        "Object": "Secretary of State.rs would be tSecretary of State.rs GO",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 4,
+                        "Confidence": "0.96",
+                        "Subject": "Hillary Hillary Clinton own going email scandal",
+                        "Relation": "only keeps",
+                        "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 5,
+                        "Confidence": "0.87",
+                        "Subject": "possibly someone",
+                        "Relation": "abused",
+                        "Object": "power",
+                        "Attribute": ""
+                    },
+                    {
+                        "TripletOrder": 6,
+                        "Confidence": "0.84",
+                        "Subject": "Hillary Hillary Clinton own going email scandal",
+                        "Relation": "growing",
+                        "Object": "",
+                        "Attribute": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "sliderData": [
+        {
+            "parameter": "The size of Slipping Window",
+            "description": "The param specifies the size of slipping window",
+            "min": 0,
+            "max": 10,
+            "val": 4
+        },
+        {
+            "parameter": "Slipping Step",
+            "description": "The param specifies the slipping steps in selection",
+            "min": 0,
+            "max": 10,
+            "val": 2
+        },
+        {
+            "parameter": "The Coefficient of Semantic Similarity",
+            "description": "The param specifies the weighted proportions of semantic similarity in calculation",
+            "min": 1,
+            "max": 10,
+            "val": 8
+        },
+        {
+            "parameter": "The Coefficient of Literal Similartiy",
+            "description": "The param specifies the weighted proportions of literal similarity in calculation",
+            "min": 1,
+            "max": 10,
+            "val": 2
+        },
+        {
+            "parameter": "The Representative Facts",
+            "description": "The param specifies the number of representative resulting facts",
+            "min": 0,
+            "max": 100,
+            "val": 10
+        }
+    ]
+}

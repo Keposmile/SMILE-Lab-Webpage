@@ -1,0 +1,3700 @@
+{
+    "Status": 5,
+    "Message": "CalTripletsSimilarity",
+    "NewsId": "b0f4aee5-8935-4c41-93d8-56547ee5bd78",
+    "Data": {
+        "WindowsGroup": [
+            {
+                "Windows": 1,
+                "Description": "Windows1",
+                "TripletsNum": 4,
+                "GroupNum": 6,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.355,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "Hillary Hillary Clinton leads shrinks"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "A new NBC News/Marist Poll released on Sunday, Sept. 6",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders now leads Clinton in the all important early primary state of New Hampshire"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 1.576,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "Hillary Hillary Clinton leads shrinks"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "proves",
+                                "Object": "that Hillary Clinton is no longer unstoppable",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.676,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "Hillary Hillary Clinton leads shrinks"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton and all the Democratic candidates"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 1.48,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "A new NBC News/Marist Poll released on Sunday, Sept. 6",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders now leads Clinton in the all important early primary state of New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "proves",
+                                "Object": "that Hillary Clinton is no longer unstoppable",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 1.162,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "A new NBC News/Marist Poll released on Sunday, Sept. 6",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders now leads Clinton in the all important early primary state of New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton and all the Democratic candidates"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.199,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "proves",
+                                "Object": "that Hillary Clinton is no longer unstoppable",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton and all the Democratic candidates"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 2,
+                "Description": "Windows2",
+                "TripletsNum": 5,
+                "GroupNum": 10,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.199,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "proves",
+                                "Object": "that Hillary Clinton is no longer unstoppable",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton and all the Democratic candidates"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.915,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "proves",
+                                "Object": "that Hillary Clinton is no longer unstoppable",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.127,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "proves",
+                                "Object": "that Hillary Clinton is no longer unstoppable",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.879,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "proves",
+                                "Object": "that Hillary Clinton is no longer unstoppable",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.875,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton and all the Democratic candidates"
+                            },
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.164,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton and all the Democratic candidates"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 0.857,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton and all the Democratic candidates"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 2.722,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 1.669,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 1.179,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 3,
+                "Description": "Windows3",
+                "TripletsNum": 6,
+                "GroupNum": 15,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 2.722,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 1.669,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 0.927,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 1.197,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            },
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.942,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Vermont Senator Bernie Sanders",
+                                "Relation": "having",
+                                "Object": "41 percent support"
+                            },
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.179,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 1.082,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 1.408,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            },
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 0.93,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "Vermont Senator Bernie",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton",
+                                "Attribute": "L:In the new shows)"
+                            },
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 0.963,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 11,
+                        "Similarity": 1.227,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 12,
+                        "Similarity": 0.855,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Vice President Joe Biden",
+                                "Relation": "has",
+                                "Object": "16 percent support",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 13,
+                        "Similarity": 1.76,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            },
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 14,
+                        "Similarity": 0.81,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            },
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 15,
+                        "Similarity": 0.781,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            },
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 4,
+                "Description": "Windows4",
+                "TripletsNum": 4,
+                "GroupNum": 6,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.76,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            },
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.81,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            },
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 0.796,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "the reverse position",
+                                "Relation": "being",
+                                "Object": "in second place"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "has",
+                                "Object": "the upper hand in Iowa",
+                                "Attribute": "T:still)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.781,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            },
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 2.574,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.92",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is seeing",
+                                "Object": "the reverse position being in second place"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "has",
+                                "Object": "the upper hand in Iowa",
+                                "Attribute": "T:still)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 0.684,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.81",
+                                "Subject": "Biden at 12 percent",
+                                "Relation": "chooses",
+                                "Object": "not to run"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "has",
+                                "Object": "the upper hand in Iowa",
+                                "Attribute": "T:still)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 5,
+                "Description": "Windows5",
+                "TripletsNum": 3,
+                "GroupNum": 3,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 2.634,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "has",
+                                "Object": "the upper hand in Iowa",
+                                "Attribute": "T:still)"
+                            },
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders 27 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.961,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "has",
+                                "Object": "the upper hand in Iowa",
+                                "Attribute": "T:still)"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "only a mere 11 percent lead margin",
+                                "Relation": "is not down",
+                                "Object": "much of a victory as only a mere 11 percent lead margin"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.132,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders 27 percent"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "only a mere 11 percent lead margin",
+                                "Relation": "is not down",
+                                "Object": "much of a victory as only a mere 11 percent lead margin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 6,
+                "Description": "Windows6",
+                "TripletsNum": 5,
+                "GroupNum": 10,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.132,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders 27 percent"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "only a mere 11 percent lead margin",
+                                "Relation": "is not down",
+                                "Object": "much of a victory as only a mere 11 percent lead margin"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 2.407,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders 27 percent"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 2.052,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders 27 percent"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 2.998,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.94",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "shows",
+                                "Object": "Vermont Senator Bernie Sanders 27 percent"
+                            },
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.943,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "only a mere 11 percent lead margin",
+                                "Relation": "is not down",
+                                "Object": "much of a victory as only a mere 11 percent lead margin"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.783,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "only a mere 11 percent lead margin",
+                                "Relation": "is not down",
+                                "Object": "much of a victory as only a mere 11 percent lead margin"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 0.856,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "only a mere 11 percent lead margin",
+                                "Relation": "is not down",
+                                "Object": "much of a victory as only a mere 11 percent lead margin"
+                            },
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 1.988,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 2.805,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 2.16,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            },
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 7,
+                "Description": "Windows7",
+                "TripletsNum": 7,
+                "GroupNum": 21,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.988,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 2.805,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.619,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.866,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 1.613,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.447,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "underwater",
+                                "Attribute": "T:now"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 2.16,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            },
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 2.598,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 1.816,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 1.301,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 11,
+                        "Similarity": 1.653,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+                                "Relation": "is",
+                                "Object": "a larger margin over Clinton"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 12,
+                        "Similarity": 2.114,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 13,
+                        "Similarity": 0.691,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 14,
+                        "Similarity": 1.505,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 15,
+                        "Similarity": 1.439,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.38",
+                                "Subject": "Hillary Hillary Clinton",
+                                "Relation": "is a larger margin over",
+                                "Object": "Clinton"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 16,
+                        "Similarity": 2.184,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 17,
+                        "Similarity": 0.858,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 18,
+                        "Similarity": 1.478,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 19,
+                        "Similarity": 0.797,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 20,
+                        "Similarity": 1.493,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 21,
+                        "Similarity": 2.398,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 8,
+                "Description": "Windows8",
+                "TripletsNum": 8,
+                "GroupNum": 28,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 2.184,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.858,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.478,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.571,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.959,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 0.807,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 1.161,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Hillary Clinton"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 0.797,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 1.493,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 0.463,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 11,
+                        "Similarity": 0.952,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 12,
+                        "Similarity": 0.735,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 13,
+                        "Similarity": 1.072,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+                                "Relation": "leads",
+                                "Object": "Sanders 44",
+                                "Attribute": "to 40 percent)"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 14,
+                        "Similarity": 2.398,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 15,
+                        "Similarity": 0.675,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 16,
+                        "Similarity": 0.925,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 17,
+                        "Similarity": 0.686,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 18,
+                        "Similarity": 1.275,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "to plan",
+                                "Object": "a run"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 19,
+                        "Similarity": 0.49,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 20,
+                        "Similarity": 1.23,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 21,
+                        "Similarity": 0.669,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 22,
+                        "Similarity": 1.192,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "former Vice President Al Gore",
+                                "Relation": "will not loses",
+                                "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 23,
+                        "Similarity": 0.459,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 24,
+                        "Similarity": 0.227,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 25,
+                        "Similarity": 0.716,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 26,
+                        "Similarity": 1.037,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 27,
+                        "Similarity": 1.428,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 28,
+                        "Similarity": 1.243,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 9,
+                "Description": "Windows9",
+                "TripletsNum": 6,
+                "GroupNum": 15,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.459,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.227,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 0.716,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.261,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.233,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "Biden",
+                                "Relation": "trails",
+                                "Object": "only by 2 points"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.037,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            },
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 1.428,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 0.922,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 0.739,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "another poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 1.243,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            },
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 11,
+                        "Similarity": 0.835,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 12,
+                        "Similarity": 0.832,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.90",
+                                "Subject": "The numbers",
+                                "Relation": "show",
+                                "Object": "just how much trouble"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 13,
+                        "Similarity": 1.218,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 14,
+                        "Similarity": 1.109,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.88",
+                                "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+                                "Relation": "even is",
+                                "Object": "just by five points"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 15,
+                        "Similarity": 2.473,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 10,
+                "Description": "Windows10",
+                "TripletsNum": 6,
+                "GroupNum": 15,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 2.473,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            },
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.913,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 0.978,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 3.348,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 2.006,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is",
+                                "Object": "certifiably real estate mogul Donald Trump"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 0.847,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 0.934,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 2.888,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 1.994,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.89",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "is certifiably real estate mogul Donald Trump by",
+                                "Object": "all accounts"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 1.15,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 11,
+                        "Similarity": 0.896,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 12,
+                        "Similarity": 1.031,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 13,
+                        "Similarity": 1.048,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 14,
+                        "Similarity": 1.165,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 15,
+                        "Similarity": 2.151,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 11,
+                "Description": "Windows11",
+                "TripletsNum": 6,
+                "GroupNum": 15,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.15,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.896,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.031,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.888,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has",
+                                "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                                "Attribute": "T:now)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.922,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "retired Neurosurgeon",
+                                "Relation": "is",
+                                "Object": "in second place in Iowa",
+                                "Attribute": "T:Meanwhile)"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "The new poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.048,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 1.165,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 0.982,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has",
+                                "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                                "Attribute": "T:now)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 0.95,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Ohio Gov. John Kasich",
+                                "Relation": "is seeing",
+                                "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "The new poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 2.151,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 11,
+                        "Similarity": 3.322,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has",
+                                "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                                "Attribute": "T:now)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 12,
+                        "Similarity": 1.684,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has leaded",
+                                "Object": "nearly all treal estate mogul Donald Trump polls",
+                                "Attribute": "T:last month)"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "The new poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 13,
+                        "Similarity": 2.622,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            },
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has",
+                                "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                                "Attribute": "T:now)"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 14,
+                        "Similarity": 1.721,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+                                "Relation": "tied",
+                                "Object": "with Carson for Iowa support in a Monmouth University poll"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "The new poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 15,
+                        "Similarity": 1.731,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has",
+                                "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                                "Attribute": "T:now)"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "The new poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 12,
+                "Description": "Windows12",
+                "TripletsNum": 3,
+                "GroupNum": 3,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 1.731,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has",
+                                "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                                "Attribute": "T:now)"
+                            },
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "The new poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.859,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.98",
+                                "Subject": "real estate mogul Donald Trump",
+                                "Relation": "has",
+                                "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters",
+                                "Attribute": "T:now)"
+                            },
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 0.964,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.97",
+                                "Subject": "The new poll by SurveyUSA",
+                                "Relation": "shows",
+                                "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+                            },
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Windows": 13,
+                "Description": "Windows13",
+                "TripletsNum": 8,
+                "GroupNum": 28,
+                "Groups": [
+                    {
+                        "GroupNum": 1,
+                        "Similarity": 0.948,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            },
+                            {
+                                "Confidence": "0.79",
+                                "Subject": "the energy and enthusiasm trouble",
+                                "Relation": "is bringing",
+                                "Object": "forth"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 2,
+                        "Similarity": 0.595,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Sanders",
+                                "Relation": "said",
+                                "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 3,
+                        "Similarity": 1.057,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                                "Relation": "might be affecting",
+                                "Object": "Hillary Hillary Clinton campaign"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 4,
+                        "Similarity": 0.498,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "nothing",
+                                "Relation": "is doing",
+                                "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 5,
+                        "Similarity": 0.994,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Secretary of State.rs",
+                                "Relation": "believing",
+                                "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 6,
+                        "Similarity": 1.07,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Hillary Hillary Clinton own going email scandal",
+                                "Relation": "only keeps",
+                                "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 7,
+                        "Similarity": 0.894,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.66",
+                                "Subject": "The remaining top five",
+                                "Relation": "includes",
+                                "Object": "Carson for Iowa support"
+                            },
+                            {
+                                "Confidence": "0.87",
+                                "Subject": "possibly someone",
+                                "Relation": "abused",
+                                "Object": "power"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 8,
+                        "Similarity": 0.761,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.79",
+                                "Subject": "the energy and enthusiasm trouble",
+                                "Relation": "is bringing",
+                                "Object": "forth"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Sanders",
+                                "Relation": "said",
+                                "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 9,
+                        "Similarity": 1.032,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.79",
+                                "Subject": "the energy and enthusiasm trouble",
+                                "Relation": "is bringing",
+                                "Object": "forth"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                                "Relation": "might be affecting",
+                                "Object": "Hillary Hillary Clinton campaign"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 10,
+                        "Similarity": 0.521,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.79",
+                                "Subject": "the energy and enthusiasm trouble",
+                                "Relation": "is bringing",
+                                "Object": "forth"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "nothing",
+                                "Relation": "is doing",
+                                "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 11,
+                        "Similarity": 1.173,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.79",
+                                "Subject": "the energy and enthusiasm trouble",
+                                "Relation": "is bringing",
+                                "Object": "forth"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Secretary of State.rs",
+                                "Relation": "believing",
+                                "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 12,
+                        "Similarity": 0.996,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.79",
+                                "Subject": "the energy and enthusiasm trouble",
+                                "Relation": "is bringing",
+                                "Object": "forth"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Hillary Hillary Clinton own going email scandal",
+                                "Relation": "only keeps",
+                                "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 13,
+                        "Similarity": 0.886,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.79",
+                                "Subject": "the energy and enthusiasm trouble",
+                                "Relation": "is bringing",
+                                "Object": "forth"
+                            },
+                            {
+                                "Confidence": "0.87",
+                                "Subject": "possibly someone",
+                                "Relation": "abused",
+                                "Object": "power"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 14,
+                        "Similarity": 0.439,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Sanders",
+                                "Relation": "said",
+                                "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+                            },
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                                "Relation": "might be affecting",
+                                "Object": "Hillary Hillary Clinton campaign"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 15,
+                        "Similarity": 0.41,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Sanders",
+                                "Relation": "said",
+                                "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "nothing",
+                                "Relation": "is doing",
+                                "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 16,
+                        "Similarity": 0.355,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Sanders",
+                                "Relation": "said",
+                                "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Secretary of State.rs",
+                                "Relation": "believing",
+                                "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 17,
+                        "Similarity": 0.477,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Sanders",
+                                "Relation": "said",
+                                "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Hillary Hillary Clinton own going email scandal",
+                                "Relation": "only keeps",
+                                "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 18,
+                        "Similarity": 0.256,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Sanders",
+                                "Relation": "said",
+                                "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+                            },
+                            {
+                                "Confidence": "0.87",
+                                "Subject": "possibly someone",
+                                "Relation": "abused",
+                                "Object": "power"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 19,
+                        "Similarity": 0.942,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                                "Relation": "might be affecting",
+                                "Object": "Hillary Hillary Clinton campaign"
+                            },
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "nothing",
+                                "Relation": "is doing",
+                                "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 20,
+                        "Similarity": 1.06,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                                "Relation": "might be affecting",
+                                "Object": "Hillary Hillary Clinton campaign"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Secretary of State.rs",
+                                "Relation": "believing",
+                                "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 21,
+                        "Similarity": 1.163,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                                "Relation": "might be affecting",
+                                "Object": "Hillary Hillary Clinton campaign"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Hillary Hillary Clinton own going email scandal",
+                                "Relation": "only keeps",
+                                "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 22,
+                        "Similarity": 0.733,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.95",
+                                "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+                                "Relation": "might be affecting",
+                                "Object": "Hillary Hillary Clinton campaign"
+                            },
+                            {
+                                "Confidence": "0.87",
+                                "Subject": "possibly someone",
+                                "Relation": "abused",
+                                "Object": "power"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 23,
+                        "Similarity": 0.298,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "nothing",
+                                "Relation": "is doing",
+                                "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+                            },
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Secretary of State.rs",
+                                "Relation": "believing",
+                                "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 24,
+                        "Similarity": 0.323,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "nothing",
+                                "Relation": "is doing",
+                                "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Hillary Hillary Clinton own going email scandal",
+                                "Relation": "only keeps",
+                                "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 25,
+                        "Similarity": 0.148,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.91",
+                                "Subject": "nothing",
+                                "Relation": "is doing",
+                                "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+                            },
+                            {
+                                "Confidence": "0.87",
+                                "Subject": "possibly someone",
+                                "Relation": "abused",
+                                "Object": "power"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 26,
+                        "Similarity": 1.058,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Secretary of State.rs",
+                                "Relation": "believing",
+                                "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+                            },
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Hillary Hillary Clinton own going email scandal",
+                                "Relation": "only keeps",
+                                "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 27,
+                        "Similarity": 0.856,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.93",
+                                "Subject": "Secretary of State.rs",
+                                "Relation": "believing",
+                                "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+                            },
+                            {
+                                "Confidence": "0.87",
+                                "Subject": "possibly someone",
+                                "Relation": "abused",
+                                "Object": "power"
+                            }
+                        ]
+                    },
+                    {
+                        "GroupNum": 28,
+                        "Similarity": 0.832,
+                        "Triplets": [
+                            {
+                                "Confidence": "0.96",
+                                "Subject": "Hillary Hillary Clinton own going email scandal",
+                                "Relation": "only keeps",
+                                "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+                            },
+                            {
+                                "Confidence": "0.87",
+                                "Subject": "possibly someone",
+                                "Relation": "abused",
+                                "Object": "power"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "EffTriples": [
+        {
+            "Subject": "Hillary Hillary Clinton",
+            "Relation": "is seeing",
+            "Object": "Hillary Hillary Clinton leads shrinks"
+        },
+        {
+            "Subject": "A new NBC News/Marist Poll released on Sunday, Sept. 6",
+            "Relation": "shows",
+            "Object": "Vermont Senator Bernie Sanders now leads Clinton in the all important early primary state of New Hampshire"
+        },
+        {
+            "Subject": "another poll by SurveyUSA",
+            "Relation": "proves",
+            "Object": "that Hillary Clinton is no longer unstoppable"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "leads",
+            "Object": "Hillary Clinton and all the Democratic candidates"
+        },
+        {
+            "Subject": "another poll by SurveyUSA",
+            "Relation": "proves",
+            "Object": "that Hillary Clinton is no longer unstoppable"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "leads",
+            "Object": "Hillary Clinton and all the Democratic candidates"
+        },
+        {
+            "Subject": "Vermont Senator Bernie Sanders",
+            "Relation": "having",
+            "Object": "41 percent support"
+        },
+        {
+            "Subject": "Vermont Senator Bernie",
+            "Relation": "shows",
+            "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton"
+        },
+        {
+            "Subject": "Vice President Joe Biden",
+            "Relation": "has",
+            "Object": "16 percent support"
+        },
+        {
+            "Subject": "Vermont Senator Bernie Sanders",
+            "Relation": "having",
+            "Object": "41 percent support"
+        },
+        {
+            "Subject": "Vermont Senator Bernie",
+            "Relation": "shows",
+            "Object": "Vermont Senator Bernie Sanders is now leading Clinton a by a nine point margin with shows Vermont Senator Bernie Sanders having 41 percent support to Hillary Clinton"
+        },
+        {
+            "Subject": "Vice President Joe Biden",
+            "Relation": "has",
+            "Object": "16 percent support"
+        },
+        {
+            "Subject": "the reverse position",
+            "Relation": "being",
+            "Object": "in second place"
+        },
+        {
+            "Subject": "Hillary Hillary Clinton",
+            "Relation": "is seeing",
+            "Object": "the reverse position being in second place"
+        },
+        {
+            "Subject": "Biden at 12 percent",
+            "Relation": "chooses",
+            "Object": "not to run"
+        },
+        {
+            "Subject": "the reverse position",
+            "Relation": "being",
+            "Object": "in second place"
+        },
+        {
+            "Subject": "Hillary Hillary Clinton",
+            "Relation": "is seeing",
+            "Object": "the reverse position being in second place"
+        },
+        {
+            "Subject": "Biden at 12 percent",
+            "Relation": "chooses",
+            "Object": "not to run"
+        },
+        {
+            "Subject": "Hillary Clinton",
+            "Relation": "has",
+            "Object": "the upper hand in Iowa"
+        },
+        {
+            "Subject": "Hillary Clinton",
+            "Relation": "has",
+            "Object": "the upper hand in Iowa"
+        },
+        {
+            "Subject": "Hillary Clinton",
+            "Relation": "shows",
+            "Object": "Vermont Senator Bernie Sanders 27 percent"
+        },
+        {
+            "Subject": "only a mere 11 percent lead margin",
+            "Relation": "is not down",
+            "Object": "much of a victory as only a mere 11 percent lead margin"
+        },
+        {
+            "Subject": "Hillary Clinton",
+            "Relation": "shows",
+            "Object": "Vermont Senator Bernie Sanders 27 percent"
+        },
+        {
+            "Subject": "only a mere 11 percent lead margin",
+            "Relation": "is not down",
+            "Object": "much of a victory as only a mere 11 percent lead margin"
+        },
+        {
+            "Subject": "Hillary Clinton",
+            "Relation": "is",
+            "Object": "underwater"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+            "Relation": "is",
+            "Object": "a larger margin over Clinton"
+        },
+        {
+            "Subject": "Hillary Hillary Clinton",
+            "Relation": "is a larger margin over",
+            "Object": "Clinton"
+        },
+        {
+            "Subject": "Hillary Clinton",
+            "Relation": "is",
+            "Object": "underwater"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump margin over Hillary Hillary Clinton",
+            "Relation": "is",
+            "Object": "a larger margin over Clinton"
+        },
+        {
+            "Subject": "Hillary Hillary Clinton",
+            "Relation": "is a larger margin over",
+            "Object": "Clinton"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "leads",
+            "Object": "Hillary Clinton"
+        },
+        {
+            "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+            "Relation": "leads",
+            "Object": "Sanders 44"
+        },
+        {
+            "Subject": "former Vice President Al Gore",
+            "Relation": "to plan",
+            "Object": "a run"
+        },
+        {
+            "Subject": "former Vice President Al Gore",
+            "Relation": "will not loses",
+            "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "leads",
+            "Object": "Hillary Clinton"
+        },
+        {
+            "Subject": "real estate mogul Donald real estate mogul Donald Trump",
+            "Relation": "leads",
+            "Object": "Sanders 44"
+        },
+        {
+            "Subject": "former Vice President Al Gore",
+            "Relation": "to plan",
+            "Object": "a run"
+        },
+        {
+            "Subject": "former Vice President Al Gore",
+            "Relation": "will not loses",
+            "Object": "to real estate mogul Donald real estate mogul Donald Trump 44 percent to 41 percent"
+        },
+        {
+            "Subject": "Biden",
+            "Relation": "trails",
+            "Object": "only by 2 points"
+        },
+        {
+            "Subject": "another poll by SurveyUSA",
+            "Relation": "shows",
+            "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+        },
+        {
+            "Subject": "The numbers",
+            "Relation": "show",
+            "Object": "just how much trouble"
+        },
+        {
+            "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+            "Relation": "even is",
+            "Object": "just by five points"
+        },
+        {
+            "Subject": "Biden",
+            "Relation": "trails",
+            "Object": "only by 2 points"
+        },
+        {
+            "Subject": "another poll by SurveyUSA",
+            "Relation": "shows",
+            "Object": "Biden who trails only by 2 points , with 42 percent to Trump's 44 percent support is Biden"
+        },
+        {
+            "Subject": "The numbers",
+            "Relation": "show",
+            "Object": "just how much trouble"
+        },
+        {
+            "Subject": "Hillary Clinton poll lead margins in CNN/ORC",
+            "Relation": "even is",
+            "Object": "just by five points"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "is",
+            "Object": "certifiably real estate mogul Donald Trump"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "is certifiably real estate mogul Donald Trump by",
+            "Object": "all accounts"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "is",
+            "Object": "certifiably real estate mogul Donald Trump"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "is certifiably real estate mogul Donald Trump by",
+            "Object": "all accounts"
+        },
+        {
+            "Subject": "retired Neurosurgeon",
+            "Relation": "is",
+            "Object": "in second place in Iowa"
+        },
+        {
+            "Subject": "Ohio Gov. John Kasich",
+            "Relation": "is seeing",
+            "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "has leaded",
+            "Object": "nearly all treal estate mogul Donald Trump polls"
+        },
+        {
+            "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+            "Relation": "tied",
+            "Object": "with Carson for Iowa support in a Monmouth University poll"
+        },
+        {
+            "Subject": "retired Neurosurgeon",
+            "Relation": "is",
+            "Object": "in second place in Iowa"
+        },
+        {
+            "Subject": "Ohio Gov. John Kasich",
+            "Relation": "is seeing",
+            "Object": "Ohio Gov. John Kasich poll numbers rise to second place with 12 percent in New Hampshire"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "has leaded",
+            "Object": "nearly all treal estate mogul Donald Trump polls"
+        },
+        {
+            "Subject": "one poll wreal estate mogul Donald Trumpre real estate mogul Donald Trump",
+            "Relation": "tied",
+            "Object": "with Carson for Iowa support in a Monmouth University poll"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "has",
+            "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters"
+        },
+        {
+            "Subject": "The new poll by SurveyUSA",
+            "Relation": "shows",
+            "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+        },
+        {
+            "Subject": "real estate mogul Donald Trump",
+            "Relation": "has",
+            "Object": "treal estate mogul Donald Trump distinction of treal estate mogul Donald Trump voters"
+        },
+        {
+            "Subject": "The new poll by SurveyUSA",
+            "Relation": "shows",
+            "Object": "30 percent believe real estate mogul Donald Trump will be real estate mogul Donald Trump"
+        },
+        {
+            "Subject": "The remaining top five",
+            "Relation": "includes",
+            "Object": "Carson for Iowa support"
+        },
+        {
+            "Subject": "The remaining top five",
+            "Relation": "includes",
+            "Object": "Carson for Iowa support"
+        },
+        {
+            "Subject": "the energy and enthusiasm trouble",
+            "Relation": "is bringing",
+            "Object": "forth"
+        },
+        {
+            "Subject": "Sanders",
+            "Relation": "said",
+            "Object": "So obviously, campaigning in Altoona , Iowa , Sanders think the secretary's people are getting nervous about the energy and enthusiasm trouble"
+        },
+        {
+            "Subject": "TSecretary of State.rs excTSecretary of State.rs excitement for Sanders and Trumpement for shows",
+            "Relation": "might be affecting",
+            "Object": "Hillary Hillary Clinton campaign"
+        },
+        {
+            "Subject": "nothing",
+            "Relation": "is doing",
+            "Object": "TSecretary of State.rs excitement for Sanders and Trump"
+        },
+        {
+            "Subject": "Secretary of State.rs",
+            "Relation": "believing",
+            "Object": "Secretary of State.rs would be tSecretary of State.rs GO"
+        },
+        {
+            "Subject": "Hillary Hillary Clinton own going email scandal",
+            "Relation": "only keeps",
+            "Object": "growing and making tSecretary of State.rs American voter believe Hillary Clinton truly is untrustworthy, dishonest and a liar and possibly someone"
+        },
+        {
+            "Subject": "possibly someone",
+            "Relation": "abused",
+            "Object": "power"
+        }
+    ]
+}

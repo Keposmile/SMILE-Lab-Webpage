@@ -34,22 +34,35 @@
     <div>
         <div ms-controller="leftDiv" id="leftDiv" class="well well-large">
             <input id="returnBtn" class="btn btn-success" type="button" value="返回">
+            <h3>The Representative Facts</h3>
             <div class="accordion" id="accordion2">
               <div class="accordion-group" ms-for="($index,el) in @content">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" ms-attr={href:"#collapse"+$index}>
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" ms-attr={href:"#collapse"+$index} ms-click=@updateGraphData("/data/result/tep1.json","/data/result/temp.json")>
                     {{el.Entity}}
                   </a>
                 </div>
                 <div ms-attr={id:"collapse"+$index} class="accordion-body collapse">
                   <div class="accordion-inner">
+                    <!-- <div ms-for="el in el.Neighbours">
+                        <span  class="Confidence triplets">{{el.Confidence}}</span>
+                        <span  class="triplets this" ms-if=el.Subject==el.this>{{el.Subject}}</span>
+                        <span  class="triplets" ms-if=!(el.Subject==el.this)>{{el.Subject}}</span>
+                        <span class="triplets">{{el.Relation}}</span>
+                        <span class="triplets this" ms-if=el.Object==el.this>{{el.Object}}</span>
+                        <span class="triplets" ms-if=!(el.Object==el.this)>{{el.Object}}</span>
+                    </div> -->
                     <div ms-for="el in el.Neighbours">
+                        <p class="triplets-source">Document:{{el.Source}}</p>
+                        <div ms-for="el in el.Triples">
                             <span  class="Confidence triplets">{{el.Confidence}}</span>
                             <span  class="triplets this" ms-if=el.Subject==el.this>{{el.Subject}}</span>
                             <span  class="triplets" ms-if=!(el.Subject==el.this)>{{el.Subject}}</span>
                             <span class="triplets">{{el.Relation}}</span>
                             <span class="triplets this" ms-if=el.Object==el.this>{{el.Object}}</span>
                             <span class="triplets" ms-if=!(el.Object==el.this)>{{el.Object}}</span>
+                            <span class="triplets">{{el.Context}}</span>
+                        </div>
                     </div>
                   </div>
                 </div>

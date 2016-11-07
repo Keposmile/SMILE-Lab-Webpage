@@ -2,113 +2,888 @@
     "nodes": [
         {
             "id": 1,
-            "name": "LADY Elsie Robson",
-            "numNeighbors": 14
+            "name": "Frederic J Brown Carly Frederic J Brown Carly Fiorina",
+            "numNeighbors": 2
         },
         {
             "id": 2,
-            "name": "Works by the Newcastle Painters Group",
-            "numNeighbors": 23
+            "name": "a witFrederic J Brown Carly Fiorina",
+            "numNeighbors": 2
         },
         {
             "id": 3,
-            "name": "the Newcastle Painters Group",
-            "numNeighbors": 10
+            "name": "Hewlett-Packard",
+            "numNeighbors": 2
         },
         {
             "id": 4,
-            "name": "the region",
-            "numNeighbors": 10
+            "name": "Hewlett-Packarding response",
+            "numNeighbors": 1
         },
         {
             "id": 5,
-            "name": "to go on show at Willow Burn Hospice, near Lanchester later this month",
-            "numNeighbors": 10
+            "name": "Frederic J Brown Carly Fiorina",
+            "numNeighbors": 1
         },
         {
             "id": 6,
-            "name": "later this month",
-            "numNeighbors": 10
+            "name": "Mr. Trump",
+            "numNeighbors": 1
         },
         {
             "id": 7,
-            "name": "_",
-            "numNeighbors": 10
+            "name": "women's fiscal irresponsibility",
+            "numNeighbors": 1
         },
         {
             "id": 8,
-            "name": "in Newcastle",
-            "numNeighbors": 10
+            "name": "Rand Paul",
+            "numNeighbors": 2
         },
         {
             "id": 9,
-            "name": "an art exhibition",
-            "numNeighbors": 10
+            "name": "on Wednesday's main stage",
+            "numNeighbors": 1
+        },
+        {
+            "id": 10,
+            "name": "Donald Donald Trump",
+            "numNeighbors": 2
+        },
+        {
+            "id": 11,
+            "name": "of tRand Paul Kentucky senator",
+            "numNeighbors": 1
+        },
+        {
+            "id": 12,
+            "name": "tRand Paul Kentucky senator",
+            "numNeighbors": 1
+        },
+        {
+            "id": 13,
+            "name": "Paulsitate",
+            "numNeighbors": 1
+        },
+        {
+            "id": 14,
+            "name": "tRand Paul",
+            "numNeighbors": 1
+        },
+        {
+            "id": 15,
+            "name": "a foursome of low-polling candidates",
+            "numNeighbors": 1
+        },
+        {
+            "id": 16,
+            "name": "low-polling candidates shots",
+            "numNeighbors": 1
+        },
+        {
+            "id": 17,
+            "name": "A fiery Senator Lindsey Graham",
+            "numNeighbors": 1
+        },
+        {
+            "id": 18,
+            "name": "against nominating",
+            "numNeighbors": 1
+        },
+        {
+            "id": 19,
+            "name": "former New York governor George Pataki",
+            "numNeighbors": 1
+        },
+        {
+            "id": 20,
+            "name": "Donald Donald Trump",
+            "numNeighbors": 1
         },
         {
             "id": 21,
-            "name": "20 years ago",
-            "numNeighbors": 10
+            "name": "cartoon character",
+            "numNeighbors": 1
+        },
+        {
+            "id": 22,
+            "name": "George Pataki",
+            "numNeighbors": 1
+        },
+        {
+            "id": 23,
+            "name": "New York",
+            "numNeighbors": 1
+        },
+        {
+            "id": 24,
+            "name": "Jeb Bush",
+            "numNeighbors": 1
+        },
+        {
+            "id": 25,
+            "name": "ground",
+            "numNeighbors": 1
+        },
+        {
+            "id": 26,
+            "name": "Donald Trump",
+            "numNeighbors": 3
+        },
+        {
+            "id": 27,
+            "name": "tJeb Bush Republican race",
+            "numNeighbors": 1
+        },
+        {
+            "id": 28,
+            "name": "Ondo State",
+            "numNeighbors": 2
+        },
+        {
+            "id": 29,
+            "name": "21 of the 26 seats",
+            "numNeighbors": 3
+        },
+        {
+            "id": 30,
+            "name": "the only governor",
+            "numNeighbors": 1
+        },
+        {
+            "id": 31,
+            "name": "a medical doctor",
+            "numNeighbors": 1
+        },
+        {
+            "id": 32,
+            "name": "The issue",
+            "numNeighbors": 1
+        },
+        {
+            "id": 33,
+            "name": "about advancing the frontiers of governance",
+            "numNeighbors": 1
+        },
+        {
+            "id": 34,
+            "name": "the only dualised road",
+            "numNeighbors": 1
+        },
+        {
+            "id": 35,
+            "name": "the Oba Adesida Road,Akure and Oba Adesida Road",
+            "numNeighbors": 1
+        },
+        {
+            "id": 36,
+            "name": "Oba Adesida Road",
+            "numNeighbors": 1
+        },
+        {
+            "id": 37,
+            "name": "road furnOba Adesida Roadure",
+            "numNeighbors": 1
+        },
+        {
+            "id": 38,
+            "name": "about six dualised roads in Ondo State",
+            "numNeighbors": 1
+        },
+        {
+            "id": 39,
+            "name": "Those",
+            "numNeighbors": 1
+        },
+        {
+            "id": 40,
+            "name": "what Arakale Road used to be",
+            "numNeighbors": 1
+        },
+        {
+            "id": 41,
+            "name": "Arakale Road used to be",
+            "numNeighbors": 1
+        },
+        {
+            "id": 42,
+            "name": "who knew Arakale Roadlised",
+            "numNeighbors": 1
+        },
+        {
+            "id": 43,
+            "name": "Arakale Road",
+            "numNeighbors": 1
+        },
+        {
+            "id": 44,
+            "name": "for Owo,Ondo South,Igbokoda and other roads",
+            "numNeighbors": 1
+        },
+        {
+            "id": 45,
+            "name": "pupils across Ondo State",
+            "numNeighbors": 1
+        },
+        {
+            "id": 46,
+            "name": "Olusegun Mimiko",
+            "numNeighbors": 1
+        },
+        {
+            "id": 47,
+            "name": "peace and tranquility",
+            "numNeighbors": 1
+        },
+        {
+            "id": 48,
+            "name": "by the responsible leadership of Olusegun Mimiko",
+            "numNeighbors": 1
+        },
+        {
+            "id": 49,
+            "name": "neighbweing states",
+            "numNeighbors": 1
+        },
+        {
+            "id": 50,
+            "name": "to the state",
+            "numNeighbors": 1
+        },
+        {
+            "id": 51,
+            "name": "Some of our projects",
+            "numNeighbors": 1
+        },
+        {
+            "id": 52,
+            "name": "to follow on we footsteps",
+            "numNeighbors": 1
+        },
+        {
+            "id": 53,
+            "name": "our projects",
+            "numNeighbors": 1
+        },
+        {
+            "id": 54,
+            "name": "markets",
+            "numNeighbors": 1
+        },
+        {
+            "id": 55,
+            "name": "Open Hearts The United States",
+            "numNeighbors": 1
+        },
+        {
+            "id": 56,
+            "name": "A new Facebook groupStates",
+            "numNeighbors": 1
+        },
+        {
+            "id": 57,
+            "name": "an online petition",
+            "numNeighbors": 1
+        },
+        {
+            "id": 58,
+            "name": "Obama administration officials",
+            "numNeighbors": 1
+        },
+        {
+            "id": 59,
+            "name": "The United States",
+            "numNeighbors": 1
+        },
+        {
+            "id": 60,
+            "name": "Immigration",
+            "numNeighbors": 1
+        },
+        {
+            "id": 61,
+            "name": "a major issue in the campaign",
+            "numNeighbors": 1
+        },
+        {
+            "id": 62,
+            "name": "the campaign",
+            "numNeighbors": 1
+        },
+        {
+            "id": 63,
+            "name": "up to the 2016 presidential election",
+            "numNeighbors": 1
+        },
+        {
+            "id": 64,
+            "name": "Billionaire businessman Donald Trump",
+            "numNeighbors": 1
+        },
+        {
+            "id": 65,
+            "name": "to tBillionaire businessman Donald Trump",
+            "numNeighbors": 1
+        },
+        {
+            "id": 66,
+            "name": "Billionaire",
+            "numNeighbors": 1
+        },
+        {
+            "id": 67,
+            "name": "Donald Trump Republican field",
+            "numNeighbors": 1
+        },
+        {
+            "id": 68,
+            "name": "tBillionaire",
+            "numNeighbors": 1
+        },
+        {
+            "id": 69,
+            "name": "week Billionaire",
+            "numNeighbors": 1
+        },
+        {
+            "id": 70,
+            "name": "John Kasich",
+            "numNeighbors": 1
+        },
+        {
+            "id": 71,
+            "name": "JJohn Kasich favored TJohn Kasich",
+            "numNeighbors": 1
+        },
+        {
+            "id": 72,
+            "name": "John Kasich think TJohn Kasich United States",
+            "numNeighbors": 1
+        },
+        {
+            "id": 73,
+            "name": "John Kasich",
+            "numNeighbors": 1
+        },
+        {
+            "id": 74,
+            "name": "Europe",
+            "numNeighbors": 1
+        },
+        {
+            "id": 75,
+            "name": "to grips",
+            "numNeighbors": 2
+        },
+        {
+            "id": 76,
+            "name": "an issue Europe has to come to grips with",
+            "numNeighbors": 1
+        },
+        {
+            "id": 77,
+            "name": "an issue EUROPE",
+            "numNeighbors": 1
+        },
+        {
+            "id": 78,
+            "name": "EUROPE ' Europe",
+            "numNeighbors": 1
+        },
+        {
+            "id": 100,
+            "name": "we",
+            "numNeighbors": 1
+        },
+        {
+            "id": 101,
+            "name": "the only dualised road we had",
+            "numNeighbors": 1
+        },
+        {
+            "id": 113,
+            "name": "too",
+            "numNeighbors": 1
         }
     ],
     "links": [
         {
-            "id": 10,
+            "id": 79,
             "source": 1,
-            "target": 9,
+            "target": 2,
             "tags": [
                 {
-                    "label": "will officially unveil"
+                    "label": "also delivered"
                 }
             ]
         },
         {
-            "id": 11,
+            "id": 80,
+            "source": 1,
+            "target": 3,
+            "tags": [
+                {
+                    "label": "is the former chief executive of"
+                }
+            ]
+        },
+        {
+            "id": 81,
             "source": 2,
-            "target": 5,
+            "target": 3,
             "tags": [
                 {
-                    "label": "are"
+                    "label": "is the former chief executive of"
                 }
             ]
         },
         {
-            "id": 12,
-            "source": 2,
-            "target": 6,
+            "id": 82,
+            "source": 5,
+            "target": 3,
             "tags": [
                 {
-                    "label": "to go"
+                    "label": "is the former chief executive of"
                 }
             ]
         },
         {
-            "id": 13,
-            "source": 3,
-            "target": 21,
-            "tags": [
-                {
-                    "label": "formed"
-                }
-            ]
-        },
-        {
-            "id": 14,
-            "source": 4,
+            "id": 83,
+            "source": 6,
             "target": 7,
             "tags": [
                 {
-                    "label": "have studied"
+                    "label": "think"
                 }
             ]
         },
         {
-            "id": 15,
-            "source": 4,
+            "id": 85,
+            "source": 8,
+            "target": 9,
+            "tags": [
+                {
+                    "label": "should n't even be"
+                }
+            ]
+        },
+        {
+            "id": 86,
+            "source": 10,
+            "target": 11,
+            "tags": [
+                {
+                    "label": "said"
+                }
+            ]
+        },
+        {
+            "id": 87,
+            "source": 12,
             "target": 8,
             "tags": [
                 {
-                    "label": "taught"
+                    "label": "has signalled"
+                }
+            ]
+        },
+        {
+            "id": 88,
+            "source": 13,
+            "target": 14,
+            "tags": [
+                {
+                    "label": "to take"
+                }
+            ]
+        },
+        {
+            "id": 89,
+            "source": 15,
+            "target": 16,
+            "tags": [
+                {
+                    "label": "took"
+                }
+            ]
+        },
+        {
+            "id": 90,
+            "source": 17,
+            "target": 18,
+            "tags": [
+                {
+                    "label": "warned"
+                }
+            ]
+        },
+        {
+            "id": 91,
+            "source": 19,
+            "target": 20,
+            "tags": [
+                {
+                    "label": "declared"
+                }
+            ]
+        },
+        {
+            "id": 92,
+            "source": 10,
+            "target": 21,
+            "tags": [
+                {
+                    "label": "to be"
+                }
+            ]
+        },
+        {
+            "id": 93,
+            "source": 22,
+            "target": 23,
+            "tags": [
+                {
+                    "label": "is former governor of"
+                }
+            ]
+        },
+        {
+            "id": 94,
+            "source": 24,
+            "target": 25,
+            "tags": [
+                {
+                    "label": "lost"
+                }
+            ]
+        },
+        {
+            "id": 95,
+            "source": 26,
+            "target": 27,
+            "tags": [
+                {
+                    "label": "entered"
+                }
+            ]
+        },
+        {
+            "id": 96,
+            "source": 28,
+            "target": 29,
+            "tags": [
+                {
+                    "label": "winning"
+                }
+            ]
+        },
+        {
+            "id": 97,
+            "source": 30,
+            "target": 31,
+            "tags": [
+                {
+                    "label": "is"
+                }
+            ]
+        },
+        {
+            "id": 98,
+            "source": 32,
+            "target": 33,
+            "tags": [
+                {
+                    "label": "s"
+                }
+            ]
+        },
+        {
+            "id": 99,
+            "source": 34,
+            "target": 100,
+            "tags": [
+                {
+                    "label": "had"
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "source": 101,
+            "target": 35,
+            "tags": [
+                {
+                    "label": "had"
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "source": 36,
+            "target": 37,
+            "tags": [
+                {
+                    "label": "was wOba Adesida Roadhout"
+                }
+            ]
+        },
+        {
+            "id": 104,
+            "source": 38,
+            "target": 29,
+            "tags": [
+                {
+                    "label": "winning"
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "source": 39,
+            "target": 40,
+            "tags": [
+                {
+                    "label": "knew"
+                }
+            ]
+        },
+        {
+            "id": 106,
+            "source": 41,
+            "target": 42,
+            "tags": [
+                {
+                    "label": "dThose"
+                }
+            ]
+        },
+        {
+            "id": 107,
+            "source": 43,
+            "target": 44,
+            "tags": [
+                {
+                    "label": "to beto"
+                }
+            ]
+        },
+        {
+            "id": 108,
+            "source": 45,
+            "target": 29,
+            "tags": [
+                {
+                    "label": "winning"
+                }
+            ]
+        },
+        {
+            "id": 109,
+            "source": 28,
+            "target": 46,
+            "tags": [
+                {
+                    "label": "has witnessed"
+                }
+            ]
+        },
+        {
+            "id": 110,
+            "source": 47,
+            "target": 48,
+            "tags": [
+                {
+                    "label": "occasioned"
+                }
+            ]
+        },
+        {
+            "id": 111,
+            "source": 49,
+            "target": 50,
+            "tags": [
+                {
+                    "label": "rushing"
+                }
+            ]
+        },
+        {
+            "id": 112,
+            "source": 51,
+            "target": 52,
+            "tags": [
+                {
+                    "label": "are trying"
+                }
+            ]
+        },
+        {
+            "id": 114,
+            "source": 53,
+            "target": 113,
+            "tags": [
+                {
+                    "label": "is criticizing"
+                }
+            ]
+        },
+        {
+            "id": 115,
+            "source": 51,
+            "target": 54,
+            "tags": [
+                {
+                    "label": "are building"
+                }
+            ]
+        },
+        {
+            "id": 116,
+            "source": 55,
+            "target": 56,
+            "tags": [
+                {
+                    "label": "was circulating"
+                }
+            ]
+        },
+        {
+            "id": 117,
+            "source": 57,
+            "target": 58,
+            "tags": [
+                {
+                    "label": "urging"
+                }
+            ]
+        },
+        {
+            "id": 118,
+            "source": 58,
+            "target": 59,
+            "tags": [
+                {
+                    "label": "to let"
+                }
+            ]
+        },
+        {
+            "id": 119,
+            "source": 60,
+            "target": 61,
+            "tags": [
+                {
+                    "label": "has become"
+                }
+            ]
+        },
+        {
+            "id": 120,
+            "source": 60,
+            "target": 61,
+            "tags": [
+                {
+                    "label": "has become"
+                }
+            ]
+        },
+        {
+            "id": 121,
+            "source": 62,
+            "target": 63,
+            "tags": [
+                {
+                    "label": "leading"
+                }
+            ]
+        },
+        {
+            "id": 123,
+            "source": 64,
+            "target": 65,
+            "tags": [
+                {
+                    "label": "has risen"
+                }
+            ]
+        },
+        {
+            "id": 124,
+            "source": 26,
+            "target": 66,
+            "tags": [
+                {
+                    "label": "is businessman of"
+                }
+            ]
+        },
+        {
+            "id": 125,
+            "source": 67,
+            "target": 68,
+            "tags": [
+                {
+                    "label": "is businessman of"
+                }
+            ]
+        },
+        {
+            "id": 126,
+            "source": 26,
+            "target": 69,
+            "tags": [
+                {
+                    "label": "is said last businessman of"
+                }
+            ]
+        },
+        {
+            "id": 127,
+            "source": 70,
+            "target": 71,
+            "tags": [
+                {
+                    "label": "said"
+                }
+            ]
+        },
+        {
+            "id": 128,
+            "source": 72,
+            "target": 73,
+            "tags": [
+                {
+                    "label": "said"
+                }
+            ]
+        },
+        {
+            "id": 129,
+            "source": 74,
+            "target": 75,
+            "tags": [
+                {
+                    "label": "to come"
+                }
+            ]
+        },
+        {
+            "id": 130,
+            "source": 76,
+            "target": 77,
+            "tags": [
+                {
+                    "label": "is fundamentally"
+                }
+            ]
+        },
+        {
+            "id": 131,
+            "source": 78,
+            "target": 75,
+            "tags": [
+                {
+                    "label": "to come"
                 }
             ]
         }

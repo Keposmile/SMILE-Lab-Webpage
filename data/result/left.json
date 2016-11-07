@@ -1,0 +1,122 @@
+{
+    "Status": 8,
+    "Message": " GetArchorEntities",
+    "Data": {
+        "ArchorEntitiesNum": 50,
+        "ArchorEntities": [
+            {
+                "Num": 1,
+                "Entity": "Billionaire Donald Trump",
+                "Neighbours": [
+                    {
+                        "Source": "Hillary's 'favorable' number plummets to 38 percent as Ben Carson's headline-grabbing comments about Muslims have made him MORE popular",
+                        "Triples": [
+                            {
+                                "TripletOrder": 1,
+                                "Confidence": 0.82,
+                                "Subject": "Billionaire Donald Trump status as the GOP presidential front-runner",
+                                "Relation": "has stayed",
+                                "Object": "steady",
+                                "Context": "",
+                                "this": "Billionaire Donald Trump"
+                            },
+                            {
+                                "TripletOrder": 2,
+                                "Confidence": 0.82,
+                                "Subject": "Billionaire Donald Trump",
+                                "Relation": "entered",
+                                "Object": "the 2016 presidential race",
+                                "Context": ""
+                            },
+                            {
+                                "TripletOrder": 3,
+                                "Confidence": 0.82,
+                                "Subject": "Billionaire Donald Trump",
+                                "Relation": "has stayed",
+                                "Object": "steady",
+                                "Context": ""
+                            }
+                        ]
+                    },
+                    {
+                        "Source": "Insider vs. Outsider Matchup Finds Clinton, Trump Near Even",
+                        "Triplets": [
+                            {
+                                "TripletOrder": 1,
+                                "Confidence": 0.82,
+                                "Subject": "Ben Carson",
+                                "Relation": "that total",
+                                "Object": "just 8 percent behind Billionaire Donald Trump",
+                                "Context": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Num": 2,
+                "Entity": "archorTwo",
+                "Neighbours": [
+                    {
+                        "Source": "Democratic",
+                        "Triples": [
+                            {
+                                "TripletOrder": 1,
+                                "Confidence": 0.82,
+                                "Subject": "Comcast",
+                                "Relation": "aa",
+                                "Object": "bb",
+                                "Context": "attri"
+                            },
+                            {
+                                "TripletOrder": 2,
+                                "Confidence": 0.82,
+                                "Subject": "Comcast",
+                                "Relation": "aa",
+                                "Object": "bb",
+                                "Context": "attri"
+                            },
+                            {
+                                "TripletOrder": 3,
+                                "Confidence": 0.82,
+                                "Subject": "Comcast",
+                                "Relation": "aa",
+                                "Object": "bb",
+                                "Context": "attri"
+                            }
+                        ]
+                    },
+                    {
+                        "Source": "articleTwo",
+                        "Triples": [
+                            {
+                                "TripletOrder": 1,
+                                "Confidence": 0.82,
+                                "Subject": "Comcast",
+                                "Relation": "aa",
+                                "Object": "bb",
+                                "Context": "attri"
+                            },
+                            {
+                                "TripletOrder": 2,
+                                "Confidence": 0.82,
+                                "Subject": "Comcast",
+                                "Relation": "aa",
+                                "Object": "bb",
+                                "Context": "attri"
+                            },
+                            {
+                                "TripletOrder": 3,
+                                "Confidence": 0.82,
+                                "Subject": "Comcast",
+                                "Relation": "aa",
+                                "Object": "bb",
+                                "Context": "attri"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

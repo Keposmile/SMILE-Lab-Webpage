@@ -8,6 +8,9 @@
   window.showRelationship = function(url,graphData) {
     var name1, name2, expander, num, from, to;
     var entityUrl, fromQ, numQ, toQ;
+    console.log(graphData);
+    graphData=JSON.parse(JSON.stringify(graphData.$model));
+    console.log(graphData);
     clearGraph();
     // entityUrl = jsRoutes.controllers.Graphs.relationship(name1, name2, expander).url;
     // fromQ = from ? "&from=" + from : "";
@@ -15,15 +18,32 @@
     // numQ = num ? "&num=" + num : "";
     // showGlobalLoading();
     return $.getJSON(url, function(graph) {
-        // console.log(JSON.stringify(graphData));
-        graphData=JSON.parse(JSON.stringify(graphData));
-      for(var i = 0;i<graph.nodes.length;i++){
-        graphData.nodes.push(graph.nodes[i]);
-      }
-      for(var j = 0;j<graph.links.length;j++){
-        graphData.links.push(graph.links[j]);
-      }
-      graph=graphData;
+    //   for(var i = 0;i<graph.nodes.length;i++){
+    //     var flag=0;
+    //     for(var k1=0;k1<graphData.nodes.length;k1++){
+    //         var node=graphData.nodes[k1];
+    //         if(node == graph.nodes[i]||node.id==graph.nodes[i].id||node.name== graph.nodes[i].name){
+    //             flag=1;
+    //         }
+    //     }
+    //     if(flag===0){
+    //         graphData.nodes.push(graph.nodes[i]);
+    //     }
+    //   }
+    //   for(var j = 0;j<graph.links.length;j++){
+    //     var flag=0;
+    //     for(var k2=0;k2<graphData.links.length;k2++){
+    //         var link=graphData.links[k2];
+    //         if(link == graph.links[j]||link.id==graph.links[j].id||link.tag== graph.links[j].tag){
+    //             flag=1;
+    //         }
+    //     }
+    //     if(flag===0){
+    //         graphData.links.push(graph.links[j]);
+    //     }
+    //   }
+    //   console.log(graphData);
+    //   graph=graphData;
       var focusNodes, vis;
       focusNodes = $.grep(graph.nodes, function(n, i) {
         return n.name === name1 || n.name === name2;
@@ -31,6 +51,7 @@
       vis = NetworksOfNames().dom(visElement).graph(graph).highlight(focusNodes);
       rememberCurrent(vis, expander, from, to);
       registerMouseHandlers();
+    //   console.log(vm_result.graphData);
       return vis();
     }).success(function() {
       return hideGlobalError();
